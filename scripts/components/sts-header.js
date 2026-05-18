@@ -89,7 +89,6 @@ class StsHeader extends HTMLElement {
         rutas: 'Todas las Rutas',
         servicios: 'Servicios',
         nosotros: 'Sobre Nosotros',
-        blog: 'Blog',
         cta: 'Consigue Tu Presupuesto Gratis',
         logoAlt: 'Step To Santiago - Agencia del Camino de Santiago'
       },
@@ -97,7 +96,6 @@ class StsHeader extends HTMLElement {
         rutas: 'All Routes',
         servicios: 'Services',
         nosotros: 'About Us',
-        blog: 'Blog',
         cta: 'Get Your Free Quote',
         logoAlt: 'Step To Santiago - Camino de Santiago Agency'
       },
@@ -105,7 +103,6 @@ class StsHeader extends HTMLElement {
         rutas: 'Todas as Rotas',
         servicios: 'Serviços',
         nosotros: 'Sobre Nós',
-        blog: 'Blog',
         cta: 'Consiga Seu Orçamento Grátis',
         logoAlt: 'Step To Santiago - Agência do Caminho de Santiago'
       }
@@ -117,7 +114,6 @@ class StsHeader extends HTMLElement {
       { href: `/${lang}/pages/rutas.html`, label: t.rutas },
       { href: `/${lang}/pages/servicios.html`, label: t.servicios },
       { href: `/${lang}/pages/nosotros.html`, label: t.nosotros },
-      { href: `/${lang}/pages/blog.html`, label: t.blog },
     ];
 
     const desktopLinks = navLinks.map(link => {

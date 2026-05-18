@@ -61,7 +61,6 @@ class StsFooter extends HTMLElement {
                 <li><a href="/servicios" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino en Grupo</a></li>
                 <li><a href="/servicios" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino Privado</a></li>
                 <li><a href="/servicios" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino en Bicicleta</a></li>
-                <li><a href="/blog"      class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Blog</a></li>
               </ul>
             </div>
 

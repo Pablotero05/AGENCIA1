@@ -6,7 +6,6 @@ class StsHeader extends HTMLElement {
       { href: '/es/pages/rutas.html', label: 'Todas las Rutas' },
       { href: '/es/pages/servicios.html', label: 'Servicios' },
       { href: '/es/pages/nosotros.html', label: 'Sobre Nosotros' },
-      { href: '/es/pages/blog.html', label: 'Blog' },
     ];
 
     const desktopLinks = navLinks.map(link => {
