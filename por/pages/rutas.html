@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="h-full" lang="pt">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+  <link id="google-fonts-link"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  
+  <script src="../../scripts/components/sts-header.js"></script>
+  <script src="../../scripts/components/sts-footer.js" defer></script>
+  <script src="../../scripts/components/routeCards.js" defer></script>
+  <script src="../../scripts/filterDiff.js" defer></script>
+
+  <link rel="stylesheet" href="../../../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../fontawesome/css/brands.min.css">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title>Rotas do Caminho de Santiago - Step To Santiago</title>
+  <meta name="description"
+    content="Explore todas as rotas do Caminho de Santiago. Do clássico Caminho Francês às rotas mais autênticas e remotas. Planeje sua peregrinação conosco.">
+  
+  <link rel="alternate" hreflang="es" href="/es/pages/rutas.html" />
+  <link rel="alternate" hreflang="en" href="/en/pages/rutas.html" />
+  <link rel="alternate" hreflang="pt" href="/por/pages/rutas.html" />
+</head>
+
+<body class="h-full bg-white">
+  <div class="frame-root">
+    <div class="frame-content">
+      <div class="[font-family:var(--font-family-body)]">
+        <sts-header logo="../../../assets/ststrasp.png"></sts-header>
+
+        <!-- ===== HERO ===== -->
+        <section class="relative py-24 overflow-hidden">
+          <div class="absolute inset-0 z-0">
+            <img src="../../assets/catedral-hero.jpg" alt="Mapa do Caminho de Santiago" class="w-full h-full object-cover" loading="eager">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-transparent"></div>
+          </div>
+          <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl">
+              <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">8 rotas jacobeias</p>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight" style="font-family: var(--font-family-heading);">
+                Todas as Rotas do Caminho de Santiago
+              </h1>
+              <p class="text-gray-200 text-xl mb-8 leading-relaxed">Do Caminho Francês clássico até os caminhos mais remotos e autênticos. Encontre a rota que melhor se adapta a você.</p>
+              <nav class="flex gap-2 text-sm text-gray-400">
+                <a href="/por/index.html" class="hover:text-white transition-colors">Início</a>
+                <span>/</span>
+                <span class="text-white">Rotas</span>
+              </nav>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== FILTRO VISUAL ===== -->
+        <section class="py-8 bg-white border-b border-[var(--light-border-color)] top-24 z-40 shadow-sm">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-3 items-center">
+              <span class="text-[var(--gray-text-color)] font-medium text-sm mr-2">Filtrar por dificuldade:</span>
+              <button onclick="filterRoutes('all')" class="filter-btn active px-5 py-2 rounded-full text-sm font-semibold bg-[var(--primary-color)] text-white transition-all" data-filter="all">Todas</button>
+              <button onclick="filterRoutes('facil')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-[var(--gray-text-color)] hover:bg-green-100 hover:text-green-700 transition-all" data-filter="facil">Fácil</button>
+              <button onclick="filterRoutes('moderado')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-[var(--gray-text-color)] hover:bg-yellow-100 hover:text-yellow-700 transition-all" data-filter="moderado">Moderado</button>
+              <button onclick="filterRoutes('exigente')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-[var(--gray-text-color)] hover:bg-orange-100 hover:text-orange-700 transition-all" data-filter="exigente">Exigente</button>
+              <button onclick="filterRoutes('muy-exigente')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-[var(--gray-text-color)] hover:bg-red-100 hover:text-red-700 transition-all" data-filter="muy-exigente">Muito Exigente</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== GRID DE RUTAS ===== -->
+        <section class="py-20 bg-[var(--light-background-color)]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="routes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- As cards são geradas automaticamente pelo routeCards.js -->
+            </div>
+          </div>
+        </section>
+
+        <sts-footer logo="../../../assets/ststrasp.png"></sts-footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

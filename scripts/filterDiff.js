@@ -9,11 +9,34 @@
   };
 
   const DIFFICULTY_LABELS = {
-    'all':          'rutas disponibles',
-    'facil':        'rutas fáciles',
-    'moderado':     'rutas moderadas',
-    'exigente':     'rutas exigentes',
-    'muy-exigente': 'rutas muy exigentes',
+    es: {
+      'all':          'rutas disponibles',
+      'facil':        'rutas fáciles',
+      'moderado':     'rutas moderadas',
+      'exigente':     'rutas exigentes',
+      'muy-exigente': 'rutas muy exigentes',
+    },
+    en: {
+      'all':          'available routes',
+      'facil':        'easy routes',
+      'moderado':     'moderate routes',
+      'exigente':     'exigent routes',
+      'muy-exigente': 'very exigent routes',
+    },
+    por: {
+      'all':          'rotas disponíveis',
+      'facil':        'rotas fáceis',
+      'moderado':     'rotas moderadas',
+      'exigente':     'rotas exigentes',
+      'muy-exigente': 'rotas muito exigentes',
+    }
+  };
+
+  const getLang = () => {
+    const p = window.location.pathname;
+    if (p.includes('/en/')) return 'en';
+    if (p.includes('/por/')) return 'por';
+    return 'es';
   };
 
   let activeFilter  = 'all';
@@ -98,7 +121,9 @@
   function updateCounter(count, difficulty) {
     const counter = document.getElementById('routes-counter');
     if (counter) {
-      counter.textContent = `${count} ${DIFFICULTY_LABELS[difficulty] || 'rutas'}`;
+      const lang = getLang();
+      const labels = DIFFICULTY_LABELS[lang] || DIFFICULTY_LABELS.es;
+      counter.textContent = `${count} ${labels[difficulty] || labels.all}`;
     }
   }
 
@@ -127,12 +152,20 @@
       noResults.id        = 'no-results';
       noResults.style.display = 'none';
       noResults.className = 'col-span-full text-center py-16';
+      const lang = getLang();
+      const noResultsMsgs = {
+        es: { text: 'No hay rutas con esta dificultad', btn: 'Ver todas las rutas' },
+        en: { text: 'No routes with this difficulty', btn: 'See all routes' },
+        por: { text: 'Não há rotas com esta dificuldade', btn: 'Ver todas as rotas' }
+      };
+      const msg = noResultsMsgs[lang] || noResultsMsgs.es;
+
       noResults.innerHTML = `
         <i class="fa-solid fa-route text-5xl text-gray-300 mb-4 block"></i>
-        <p class="text-[var(--gray-text-color)] text-lg font-medium mb-4">No hay rutas con esta dificultad</p>
+        <p class="text-[var(--gray-text-color)] text-lg font-medium mb-4">${msg.text}</p>
         <button onclick="filterRoutes('all')"
           class="px-6 py-2 bg-[var(--primary-color)] text-white rounded-lg text-sm font-semibold hover:bg-[var(--primary-button-hover-bg-color)] transition-all">
-          Ver todas las rutas
+          ${msg.btn}
         </button>
       `;
       grid.appendChild(noResults);

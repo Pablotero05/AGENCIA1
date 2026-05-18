@@ -1,0 +1,120 @@
+[
+  {
+    "id": "frances",
+    "nombre": "Caminho Francês",
+    "slug": "/rutas/frances",
+    "imagen": "../../assets/miniatura-frances.png",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+    "badge": "⭐ Mais popular",
+    "badgeColor": "bg-yellow-400 text-yellow-900",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderado",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderado. Terreno variado com algumas etapas de montanha e boa infraestrutura.",
+    "km": "780 km",
+    "dias": "30-35 dias",
+    "descripcion": "El caminho clássico por excelência. Parte de Saint-Jean-Pied-de-Port e atravessa as paisagens mais emblemáticas de Navarra, La Rioja, Castela e Galiza.",
+    "descripcionLarga": [
+      "O Caminho de Santiago Francês é a rota jacobeia com maior tradição histórica e a mais reconhecida internacionalmente.",
+      "Atravessa o norte da Península Ibérica desde Roncesvalles até Santiago de Compostela.",
+      "É uma experiência transformadora repleta de cultura, arte e natureza."
+    ],
+    "inicio": "Saint-Jean-Pied-de-Port",
+    "fin": "Santiago de Compostela",
+    "epoca": "Abril a Outubro",
+    "tags": ["Paisagens únicas", "Mais serviços", "Ideal para iniciantes"],
+    "precio": "365 €/pessoa",
+    "puntosDestacados": [
+      "Atravessar os Pirenéus a partir de França",
+      "A Catedral de Burgos e Leão",
+      "A Cruz de Ferro em Astorga",
+      "A chegada mística a O Cebreiro",
+      "Entrada triunfal na Praça do Obradoiro"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Saint-Jean-Pied-de-Port",
+        "destino": "Roncesvalles",
+        "desc": "Etapa dura atravessando os Pirenéus.",
+        "km": 25,
+        "horas": "7-8",
+        "desnivel": "+1200/-500"
+      },
+      {
+        "dia": 2,
+        "origen": "Roncesvalles",
+        "destino": "Zubiri",
+        "desc": "Descida por exuberantes florestas navarras.",
+        "km": 21,
+        "horas": "5-6",
+        "desnivel": "+200/-500"
+      }
+    ],
+    "galeria": [
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
+    ]
+  },
+  {
+    "id": "portugues",
+    "nombre": "Caminho Português",
+    "slug": "/rutas/portugues",
+    "imagen": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🌊 Costal disponível",
+    "badgeColor": "bg-blue-500 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Fácil",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Fácil. Terreno plano e suave, ideal para iniciantes.",
+    "km": "280 km",
+    "dias": "12-14 dias (de Porto)",
+    "descripcion": "O caminho internacional mais frequentado. Do Porto atravessa a bela região das Rias Baixas galegas até chegar à Catedral.",
+    "descripcionLarga": [
+      "O Caminho Português é a segunda rota mais percorrida e destaca-se pela sua beleza natural e riqueza cultural.",
+      "Iniciando no Porto, permite descobrir o norte de Portugal e entrar na Galiza cruzando o rio Minho.",
+      "Oferece opções pela costa e pelo interior."
+    ],
+    "inicio": "Porto / Lisboa",
+    "fin": "Santiago de Compostela",
+    "epoca": "Março a Novembro",
+    "tags": ["Terreno suave", "Ria de Pontevedra", "Para famílias"],
+    "precio": "365 €/pessoa",
+    "puntosDestacados": [
+      "Centro histórico do Porto",
+      "Travessia do rio Minho em Tui",
+      "Passeio pelas Rias Baixas",
+      "Gastronomia galega e portuguesa",
+      "Chegada a Padrón e Santiago"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Porto",
+        "destino": "Vilarinho",
+        "desc": "Partida do Porto rumo ao norte.",
+        "km": 26,
+        "horas": "6-7",
+        "desnivel": "+100/-50"
+      },
+      {
+        "dia": 2,
+        "origen": "Vilarinho",
+        "destino": "Barcelos",
+        "desc": "Etapa de transição para o interior.",
+        "km": 27,
+        "horas": "6-7",
+        "desnivel": "+150/-100"
+      }
+    ],
+    "galeria": [
+      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  }
+]

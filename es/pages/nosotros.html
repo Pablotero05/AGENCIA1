@@ -9,13 +9,18 @@
   <link id="google-fonts-link"
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
     rel="stylesheet">
-  <script src="../components/sts-header.js" defer></script>
-  <script src="../components/sts-footer.js" defer></script>
-  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../fontawesome/css/brands.min.css">
-  <!--<script src="https://cdn.tailwindcss.com/"></script>-->
+  <script src="../../scripts/components/sts-header.js"></script>
+  <script src="../../scripts/components/sts-footer.js" defer></script>
+  <script src="../../scripts/animations.js" defer></script>
+  
+  <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../fontawesome/css/brands.min.css">
   <link rel="stylesheet" href="../../css/tailwind.css">
   <link rel="stylesheet" href="../../css/styles.css">
+
+  <link rel="alternate" hreflang="es" href="/es/pages/nosotros.html" />
+  <link rel="alternate" hreflang="en" href="/en/pages/nosotros.html" />
+  <link rel="alternate" hreflang="pt" href="/por/pages/nosotros.html" />
 
   <title>Step To Santiago - Agencia de Viajes Especializada en el Camino de Santiago | Santiago de Compostela</title>
   <meta name="description"
@@ -37,7 +42,7 @@
     <div class="frame-content">
       <div class="[font-family:var(--font-family-body)]">
         <div>
-          <sts-header logo="../assets/ststrasp.png"></sts-header>
+        <sts-header logo="../../assets/ststrasp.png"></sts-header>
 
           <!-- ===== HERO PEQUEÑO ===== -->
           <section class="relative py-24 bg-[var(--dark-text-color)] overflow-hidden">
@@ -64,7 +69,7 @@
           </section>
 
           <!-- ===== NUESTRA HISTORIA ===== -->
-          <section class="py-20 bg-white">
+          <section class="py-20 bg-white scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
@@ -135,7 +140,7 @@
           </section>
 
           <!-- ===== ESTADÍSTICAS ===== -->
-          <section class="py-16 bg-[var(--primary-color)]">
+          <section class="py-16 bg-[var(--primary-color)] scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
                 <div>
@@ -159,7 +164,7 @@
           </section>
 
           <!-- ===== NUESTROS VALORES ===== -->
-          <section class="py-20 bg-[var(--light-background-color)]">
+          <section class="py-20 bg-[var(--light-background-color)] scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="text-center mb-14">
                 <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Lo que nos
@@ -223,7 +228,7 @@
           </section>
 
           <!-- ===== EQUIPO ===== -->
-          <section class="py-20 bg-white">
+          <section class="py-20 bg-white scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="text-center mb-14">
                 <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Las personas
@@ -341,7 +346,7 @@
           </section>
 
           <!-- ===== CERTIFICACIONES ===== -->
-          <section class="py-20 bg-[var(--light-background-color)]">
+          <section class="py-20 bg-[var(--light-background-color)] scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)]"
@@ -412,7 +417,7 @@
 
 
 
-          <sts-footer logo="../assets/stsLOGO.png"></sts-footer>
+          <sts-footer logo="../../assets/stsLOGO.png"></sts-footer>
         </div>
       </div>
     </div>

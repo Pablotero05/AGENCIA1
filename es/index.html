@@ -9,13 +9,18 @@
   <link id="google-fonts-link"
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
     rel="stylesheet">
-  <script src="components/sts-header.js" defer></script>
-  <script src="components/sts-footer.js" defer></script>
+  <script src="../scripts/components/sts-header.js"></script>
+  <script src="../scripts/components/sts-footer.js" defer></script>
+  <script src="../scripts/animations.js" defer></script>
+  
   <link rel="stylesheet" href="../fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../fontawesome/css/brands.min.css">
-  <!--<script src="https://cdn.tailwindcss.com/"></script>-->
-  <link rel="stylesheet" href="/css/tailwind.css">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <link rel="alternate" hreflang="es" href="/es/index.html" />
+  <link rel="alternate" hreflang="en" href="/en/index.html" />
+  <link rel="alternate" hreflang="pt" href="/por/index.html" />
   
   
 
@@ -37,9 +42,7 @@
   <div class="frame-root">
     <div class="frame-content">
       <div class="[font-family:var(--font-family-body)]">
-        <div>
-          <sts-header logo="../assets/ststrasp.png"></sts-header>
-        </div>
+        <sts-header logo="../assets/ststrasp.png"></sts-header>
         <div>
           <section class="code-section relative min-h-[90vh] flex items-center justify-center overflow-hidden"
             id="s4tz3o">
@@ -77,12 +80,12 @@
 
                 <!-- CTAs -->
                 <div class="flex flex-col sm:flex-row gap-4">
-                  <a href="/contacto"
+                  <a href="/es/pages/contacto.html"
                     class="inline-flex items-center justify-center px-5 py-3 sm:px-8 sm:py-4 bg-[var(--secondary-button-bg-color)] text-[var(--secondary-button-text-color)] font-bold rounded-lg hover:bg-[var(--secondary-button-hover-bg-color)] hover:text-[var(--secondary-button-hover-text-color)] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                     <i class="fa-solid fa-map-location-dot mr-3" aria-hidden="true"></i>
                     Planifica tu Camino
                   </a>
-                  <a href="/rutas"
+                  <a href="/es/pages/rutas.html"
                     class="inline-flex items-center justify-center px-5 py-3 sm:px-8 sm:py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-[var(--primary-color)] transition-all duration-300">
                     <i class="fa-solid fa-compass mr-3" aria-hidden="true"></i>
                     Ver rutas disponibles
@@ -116,7 +119,7 @@
             </div>
           </section>
 
-          <section id="confianza" class="code-section py-16 md:py-24 bg-[var(--light-background-color)]">
+          <section id="confianza" class="code-section scroll-reveal py-16 md:py-24 bg-[var(--light-background-color)]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <!-- Section Header -->
               <div class="text-center mb-12">
@@ -224,7 +227,7 @@
             </div>
           </section>
 
-          <section class="code-section py-16 md:py-24 bg-[var(--medium-background-color)]" id="s7tjyx">
+          <section class="code-section scroll-reveal py-16 md:py-24 bg-[var(--medium-background-color)]" id="s7tjyx">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <!-- Section Header -->
               <div class="text-center mb-12">
@@ -281,7 +284,7 @@
                         <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
                         <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.290€</span>
                       </div>
-                      <a href="/rutas/camino-frances"
+                      <a href="/es/pages/ruta.html?id=frances"
                         class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
                         Ver itinerario <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                       </a>
@@ -321,7 +324,7 @@
                         <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
                         <span class="text-xl font-bold text-[var(--primary-color)] ml-1">890€</span>
                       </div>
-                      <a href="/rutas/camino-portugues"
+                      <a href="/es/pages/ruta.html?id=portugues"
                         class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
                         Ver itinerario <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                       </a>
@@ -362,7 +365,7 @@
                         <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
                         <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.490€</span>
                       </div>
-                      <a href="/rutas/camino-del-norte"
+                      <a href="/es/pages/ruta.html?id=norte"
                         class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
                         Ver itinerario <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                       </a>
@@ -403,7 +406,7 @@
                         <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
                         <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.090€</span>
                       </div>
-                      <a href="/rutas/camino-primitivo"
+                      <a href="/es/pages/ruta.html?id=primitivo"
                         class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
                         Ver itinerario <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                       </a>
@@ -445,7 +448,7 @@
                         <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
                         <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.590€</span>
                       </div>
-                      <a href="/rutas/via-de-la-plata"
+                      <a href="/es/pages/ruta.html?id=plata"
                         class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
                         Ver itinerario <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                       </a>
@@ -465,7 +468,7 @@
                   <p class="text-white/80 text-sm mb-6">
                     Descubre todas nuestras rutas disponibles
                   </p>
-                  <a href="/rutas"
+                  <a href="/es/pages/rutas.html"
                     class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent-color)] text-[var(--dark-text-color)] font-bold rounded-lg hover:bg-white transition-all duration-300">
                     Ver todas las rutas <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                   </a>
@@ -474,7 +477,7 @@
             </div>
           </section>
 
-          <section class="code-section py-16 md:py-24 bg-white" id="szb7o0r">
+          <section class="code-section scroll-reveal py-16 md:py-24 bg-white" id="szb7o0r">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <!-- Left Column - Image -->
@@ -618,7 +621,7 @@
             </div>
           </section>
 
-          <section class="code-section py-16 md:py-24 bg-[var(--light-background-color)]" id="s09p8r">
+          <section class="code-section scroll-reveal py-16 md:py-24 bg-[var(--light-background-color)]" id="s09p8r">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <!-- Section Header -->
               <div class="text-center mb-12">
@@ -738,7 +741,7 @@
 
               <!-- CTA -->
               <div class="text-center mt-12">
-                <a href="/contacto"
+                <a href="/es/pages/contacto.html"
                   class="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 bg-[var(--primary-color)] text-white font-bold rounded-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                   <i class="fa-solid fa-phone mr-3" aria-hidden="true"></i>
                   Solicitar presupuesto gratuito

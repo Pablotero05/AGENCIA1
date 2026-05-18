@@ -1,35 +1,37 @@
 <html class="h-full" lang="en">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
   <link id="google-fonts-link"
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
     rel="stylesheet">
-  <script src="../components/sts-header.js" defer></script>
-  <script src="../components/sts-footer.js" defer></script>
-  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../fontawesome/css/brands.min.css">
-  <!--<script src="https://cdn.tailwindcss.com/"></script>-->
+  <script src="../../scripts/components/sts-header.js"></script>
+  <script src="../../scripts/components/sts-footer.js" defer></script>
+  <script src="../../scripts/animations.js" defer></script>
+  
+  <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../fontawesome/css/brands.min.css">
   <link rel="stylesheet" href="../../css/tailwind.css">
   <link rel="stylesheet" href="../../css/styles.css">
 
-  <title>Step To Santiago - Agencia de Viajes Especializada en el Camino de Santiago | Santiago de Compostela</title>
+  <link rel="alternate" hreflang="es" href="/es/pages/nosotros.html" />
+  <link rel="alternate" hreflang="en" href="/en/pages/nosotros.html" />
+  <link rel="alternate" hreflang="pt" href="/por/pages/nosotros.html" />
+
+  <title>Step To Santiago - Travel Agency Specialized in the Camino de Santiago | Santiago de Compostela</title>
   <meta name="description"
-    content="Agencia de viajes especializada en el Camino de Santiago con sede en Santiago de Compostela. Más de 10 años organizando peregrinaciones únicas por el Camino Francés, Portugués, del Norte y más. Guías certificados, alojamientos seleccionados y asistencia 24h.">
-  <meta name="language" content="es">
-  <meta property="og:title" content="Step To Santiago - Tu Camino de Santiago a Medida desde Galicia">
+    content="Travel agency specialized in the Camino de Santiago based in Santiago de Compostela. More than 10 years organizing unique pilgrimages through the French, Portuguese, Northern Way and more. Certified guides, selected accommodations and 24h assistance.">
+  <meta name="language" content="en">
+  <meta property="og:title" content="Step To Santiago - Your Tailor-made Camino de Santiago from Galicia">
   <meta property="og:description"
-    content="Especialistas locales en el Camino de Santiago. Organizamos tu peregrinación con alojamientos seleccionados, traslado de equipaje, guías certificados y asistencia completa. Más de 5.000 peregrinos nos confían su experiencia.">
+    content="Local specialists in the Camino de Santiago. We organize your pilgrimage with selected accommodations, luggage transfer, certified guides and full assistance. More than 5,000 pilgrims trust us.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Step To Santiago - Agencia Especializada en el Camino de Santiago">
+  <meta name="twitter:title" content="Step To Santiago - Specialized Agency in the Camino de Santiago">
   <meta name="twitter:description"
-    content="Vive el Camino de Santiago con expertos locales de Galicia. Rutas personalizadas, alojamientos con encanto y asistencia 24h. Solicita tu presupuesto gratuito.">
-
+    content="Experience the Camino de Santiago with local experts from Galicia. Personalized routes, charming accommodations and 24h assistance. Request your free quote.">
 </head>
 
 <body class="h-full bg-white">
@@ -37,61 +39,49 @@
     <div class="frame-content">
       <div class="[font-family:var(--font-family-body)]">
         <div>
-          <sts-header logo="../assets/ststrasp.png"></sts-header>
+          <sts-header logo="../../assets/ststrasp.png"></sts-header>
 
-          <!-- ===== HERO PEQUEÑO ===== -->
+          <!-- ===== HERO SECTION ===== -->
           <section class="relative py-24 bg-[var(--dark-text-color)] overflow-hidden">
             <div class="absolute inset-0 z-0">
               <img src="https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?w=1400&q=80"
-                alt="Catedral de Santiago de Compostela" class="w-full h-full object-cover opacity-30">
+                alt="Cathedral of Santiago de Compostela" class="w-full h-full object-cover opacity-30">
             </div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Conoce nuestro
-                equipo</p>
+              <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Meet our team</p>
               <h1 class="text-4xl md:text-5xl font-bold text-white mb-4"
                 style="font-family: var(--font-family-heading);">
-                Sobre Nosotros
+                About Us
               </h1>
-              <p class="text-gray-300 text-xl max-w-2xl mx-auto">Peregrinos apasionados convertidos en los mejores guías
-                del Camino</p>
+              <p class="text-gray-300 text-xl max-w-2xl mx-auto">Passionate pilgrims turned into the best guides of the Camino</p>
               <!-- Breadcrumb -->
               <nav class="mt-6 flex justify-center gap-2 text-sm text-gray-400">
-                <a href="/" class="hover:text-white transition-colors">Inicio</a>
+                <a href="/en/index.html" class="hover:text-white transition-colors">Home</a>
                 <span>/</span>
-                <span class="text-white">Sobre Nosotros</span>
+                <span class="text-white">About Us</span>
               </nav>
             </div>
           </section>
 
-          <!-- ===== NUESTRA HISTORIA ===== -->
-          <section class="py-20 bg-white">
+          <!-- ===== OUR HISTORY ===== -->
+          <section class="py-20 bg-white scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
-                  <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Nuestra
-                    historia</p>
+                  <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Our History</p>
                   <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)] mb-6"
                     style="font-family: var(--font-family-heading);">
-                    Nacimos del Camino.<br>Vivimos por el Camino.
+                    Born from the Camino.<br>Living for the Camino.
                   </h2>
                   <div class="space-y-5 text-[var(--gray-text-color)] text-lg leading-relaxed">
                     <p>
-                      Todo comenzó en 2014 cuando Carlos, nuestro fundador, completó su primer Camino Francés y quedó
-                      profundamente transformado por la experiencia. Viendo cómo tantos peregrinos llegaban sin la
-                      preparación adecuada, decidió crear <strong class="text-[var(--dark-text-color)]">Step To
-                        Santiago</strong>: una agencia nacida desde el corazón de Galicia para que nadie viva el Camino
-                      sin el apoyo que merece.
+                      It all started in 2014 when Carlos, our founder, completed his first French Way and was deeply transformed by the experience. Seeing how many pilgrims arrived without proper preparation, he decided to create <strong class="text-[var(--dark-text-color)]">Step To Santiago</strong>: an agency born from the heart of Galicia so that no one lives the Camino without the support they deserve.
                     </p>
                     <p>
-                      Hoy somos un equipo de <strong class="text-[var(--dark-text-color)]">12 profesionales</strong>,
-                      todos peregrinos con múltiples Caminos a sus espaldas. No vendemos paquetes turísticos;
-                      organizamos experiencias de vida únicas, cuidando cada detalle para que tú solo tengas que
-                      caminar.
+                      Today we are a team of <strong class="text-[var(--dark-text-color)]">12 professionals</strong>, all pilgrims with multiple Caminos behind them. We don't sell tourist packages; we organize unique life experiences, taking care of every detail so you only have to walk.
                     </p>
                     <p>
-                      Con sede en <strong class="text-[var(--dark-text-color)]">Santiago de Compostela</strong>, somos
-                      especialistas locales que conocen el Camino palmo a palmo, desde los mejores albergues hasta los
-                      atajos que no aparecen en los mapas.
+                      Based in <strong class="text-[var(--dark-text-color)]">Santiago de Compostela</strong>, we are local specialists who know the Camino inch by inch, from the best hostels to the shortcuts that don't appear on the maps.
                     </p>
                   </div>
                   <div class="mt-8 flex flex-wrap gap-6">
@@ -100,8 +90,8 @@
                         <i class="fa-solid fa-calendar text-[var(--primary-color)] text-lg"></i>
                       </div>
                       <div>
-                        <div class="font-bold text-[var(--dark-text-color)] text-xl">Desde 2014</div>
-                        <div class="text-[var(--gray-text-color)] text-sm">+10 años de experiencia</div>
+                        <div class="font-bold text-[var(--dark-text-color)] text-xl">Since 2014</div>
+                        <div class="text-[var(--gray-text-color)] text-sm">+10 years of experience</div>
                       </div>
                     </div>
                     <div class="flex items-center gap-3">
@@ -110,23 +100,23 @@
                       </div>
                       <div>
                         <div class="font-bold text-[var(--dark-text-color)] text-xl">Santiago de Compostela</div>
-                        <div class="text-[var(--gray-text-color)] text-sm">Galicia, España</div>
+                        <div class="text-[var(--gray-text-color)] text-sm">Galicia, Spain</div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="relative">
                   <img src="https://images.unsplash.com/photo-1599751449318-8498edd9dce7?w=800&q=80"
-                    alt="Equipo de Step To Santiago en el Camino de Santiago"
+                    alt="Step To Santiago team on the Camino"
                     class="rounded-2xl shadow-2xl w-full object-cover h-[500px]">
-                  <!-- Badge flotante -->
+                  <!-- Floating Badge -->
                   <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6 flex items-center gap-4">
                     <div class="w-14 h-14 bg-[var(--accent-color)] rounded-full flex items-center justify-center">
                       <i class="fa-solid fa-award text-white text-2xl"></i>
                     </div>
                     <div>
-                      <div class="font-bold text-[var(--dark-text-color)] text-lg">+5.000 peregrinos</div>
-                      <div class="text-[var(--gray-text-color)] text-sm">Acompañados con éxito</div>
+                      <div class="font-bold text-[var(--dark-text-color)] text-lg">+5,000 pilgrims</div>
+                      <div class="text-[var(--gray-text-color)] text-sm">Accompanied with success</div>
                     </div>
                   </div>
                 </div>
@@ -134,39 +124,38 @@
             </div>
           </section>
 
-          <!-- ===== ESTADÍSTICAS ===== -->
-          <section class="py-16 bg-[var(--primary-color)]">
+          <!-- ===== STATISTICS ===== -->
+          <section class="py-16 bg-[var(--primary-color)] scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
                 <div>
-                  <div class="text-5xl font-bold mb-2">+5.000</div>
-                  <div class="text-white/80 font-medium">Peregrinos acompañados</div>
+                  <div class="text-5xl font-bold mb-2">+5,000</div>
+                  <div class="text-white/80 font-medium">Pilgrims accompanied</div>
                 </div>
                 <div>
                   <div class="text-5xl font-bold mb-2">4.9/5</div>
-                  <div class="text-white/80 font-medium">Valoración media</div>
+                  <div class="text-white/80 font-medium">Average rating</div>
                 </div>
                 <div>
                   <div class="text-5xl font-bold mb-2">8</div>
-                  <div class="text-white/80 font-medium">Rutas jacobeas</div>
+                  <div class="text-white/80 font-medium">Jacobean routes</div>
                 </div>
                 <div>
                   <div class="text-5xl font-bold mb-2">12</div>
-                  <div class="text-white/80 font-medium">Guías certificados</div>
+                  <div class="text-white/80 font-medium">Certified guides</div>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- ===== NUESTROS VALORES ===== -->
-          <section class="py-20 bg-[var(--light-background-color)]">
+          <!-- ===== OUR VALUES ===== -->
+          <section class="py-20 bg-[var(--light-background-color)] scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="text-center mb-14">
-                <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Lo que nos
-                  define</p>
+                <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">What defines us</p>
                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)]"
                   style="font-family: var(--font-family-heading);">
-                  Nuestros Valores
+                  Our Values
                 </h2>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -178,9 +167,8 @@
                       class="fa-solid fa-heart text-2xl text-[var(--primary-color)] group-hover:text-white transition-colors"></i>
                   </div>
                   <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                    style="font-family: var(--font-family-heading);">Pasión</h3>
-                  <p class="text-[var(--gray-text-color)] leading-relaxed">El Camino es nuestra vida. Cada ruta que
-                    organizamos la vivimos con la misma ilusión que la primera vez.</p>
+                    style="font-family: var(--font-family-heading);">Passion</h3>
+                  <p class="text-[var(--gray-text-color)] leading-relaxed">The Camino is our life. Every route we organize, we live it with the same excitement as the first time.</p>
                 </div>
                 <div
                   class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group">
@@ -190,9 +178,8 @@
                       class="fa-solid fa-handshake text-2xl text-[var(--accent-color)] group-hover:text-white transition-colors"></i>
                   </div>
                   <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                    style="font-family: var(--font-family-heading);">Confianza</h3>
-                  <p class="text-[var(--gray-text-color)] leading-relaxed">Transparencia total en precios, rutas y
-                    servicios. Sin sorpresas. Tu confianza es nuestra mayor recompensa.</p>
+                    style="font-family: var(--font-family-heading);">Trust</h3>
+                  <p class="text-[var(--gray-text-color)] leading-relaxed">Total transparency in prices, routes and services. No surprises. Your trust is our greatest reward.</p>
                 </div>
                 <div
                   class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group">
@@ -202,9 +189,8 @@
                       class="fa-solid fa-leaf text-2xl text-[var(--accent2-color)] group-hover:text-white transition-colors"></i>
                   </div>
                   <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                    style="font-family: var(--font-family-heading);">Sostenibilidad</h3>
-                  <p class="text-[var(--gray-text-color)] leading-relaxed">Apostamos por el turismo responsable,
-                    apoyando a los pequeños negocios locales del Camino.</p>
+                    style="font-family: var(--font-family-heading);">Sustainability</h3>
+                  <p class="text-[var(--gray-text-color)] leading-relaxed">We are committed to responsible tourism, supporting small local businesses along the Camino.</p>
                 </div>
                 <div
                   class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group">
@@ -214,122 +200,111 @@
                       class="fa-solid fa-person-walking text-2xl text-[var(--primary-color)] group-hover:text-white transition-colors"></i>
                   </div>
                   <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                    style="font-family: var(--font-family-heading);">Personalización</h3>
-                  <p class="text-[var(--gray-text-color)] leading-relaxed">Cada peregrino es único. Adaptamos cada
-                    experiencia a tus necesidades, ritmo y objetivos personales.</p>
+                    style="font-family: var(--font-family-heading);">Personalization</h3>
+                  <p class="text-[var(--gray-text-color)] leading-relaxed">Each pilgrim is unique. We adapt every experience to your needs, pace and personal goals.</p>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- ===== EQUIPO ===== -->
-          <section class="py-20 bg-white">
+          <!-- ===== TEAM ===== -->
+          <section class="py-20 bg-white scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="text-center mb-14">
-                <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">Las personas
-                  detrás del Camino</p>
+                <p class="text-[var(--accent-color)] font-semibold text-lg mb-3 tracking-wider uppercase">The people behind the Camino</p>
                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)]"
                   style="font-family: var(--font-family-heading);">
-                  Nuestro Equipo
+                  Our Team
                 </h2>
-                <p class="text-[var(--gray-text-color)] text-lg max-w-2xl mx-auto mt-4">Peregrinos con experiencia,
-                  profesionales con vocación. Conoce a las personas que harán de tu Camino una experiencia inolvidable.
-                </p>
+                <p class="text-[var(--gray-text-color)] text-lg max-w-2xl mx-auto mt-4">Experienced pilgrims, dedicated professionals. Meet the people who will make your Camino an unforgettable experience.</p>
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Miembro 1 -->
+                <!-- Member 1 -->
                 <div
                   class="bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                   <div class="relative overflow-hidden h-64">
                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
-                      alt="Carlos Rodríguez - Fundador"
+                      alt="Carlos Rodríguez - Founder"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                       <span
-                        class="bg-[var(--primary-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Fundador</span>
+                        class="bg-[var(--primary-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Founder</span>
                     </div>
                   </div>
                   <div class="p-6">
                     <h3 class="text-lg font-bold text-[var(--dark-text-color)] mb-1"
                       style="font-family: var(--font-family-heading);">Carlos Rodríguez</h3>
-                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Director & Guía Senior</p>
-                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Peregrino desde 2005. Ha completado
-                      todos los Caminos principales y es el alma de Step To Santiago.</p>
+                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Director & Senior Guide</p>
+                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Pilgrim since 2005. He has completed all the main Ways and is the soul of Step To Santiago.</p>
                     <div class="mt-4 flex items-center gap-2 text-[var(--gray-text-color)] text-sm">
                       <i class="fa-solid fa-route text-[var(--accent-color)]"></i>
-                      <span>+15 Caminos completados</span>
+                      <span>+15 Caminos completed</span>
                     </div>
                   </div>
                 </div>
-                <!-- Miembro 2 -->
+                <!-- Member 2 -->
                 <div
                   class="bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                   <div class="relative overflow-hidden h-64">
                     <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80"
-                      alt="María González - Coordinadora"
+                      alt="María González - Coordinator"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                       <span
-                        class="bg-[var(--accent-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Guía
-                        Certificada</span>
+                        class="bg-[var(--accent-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Certified Guide</span>
                     </div>
                   </div>
                   <div class="p-6">
                     <h3 class="text-lg font-bold text-[var(--dark-text-color)] mb-1"
                       style="font-family: var(--font-family-heading);">María González</h3>
-                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Coordinadora de Rutas</p>
-                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Especialista en el Camino Portugués
-                      y el Primitivo. Habla castellano, inglés y alemán.</p>
+                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Route Coordinator</p>
+                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Specialist in the Portuguese Way and the Primitive Way. Speaks Spanish, English and German.</p>
                     <div class="mt-4 flex items-center gap-2 text-[var(--gray-text-color)] text-sm">
                       <i class="fa-solid fa-language text-[var(--accent-color)]"></i>
                       <span>ES · EN · DE</span>
                     </div>
                   </div>
                 </div>
-                <!-- Miembro 3 -->
+                <!-- Member 3 -->
                 <div
                   class="bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                   <div class="relative overflow-hidden h-64">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
-                      alt="José Antonio López - Guía Senior"
+                      alt="José Antonio López - Senior Guide"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                       <span
-                        class="bg-[var(--accent2-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Guía
-                        Senior</span>
+                        class="bg-[var(--accent2-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Senior Guide</span>
                     </div>
                   </div>
                   <div class="p-6">
                     <h3 class="text-lg font-bold text-[var(--dark-text-color)] mb-1"
                       style="font-family: var(--font-family-heading);">José Antonio López</h3>
-                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Guía Senior & Logística</p>
-                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Experto en el Camino Francés.
-                      Organiza el traslado de equipaje y la logística de grupos grandes.</p>
+                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Senior Guide & Logistics</p>
+                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Expert in the French Way. Organizes luggage transfer and large group logistics.</p>
                     <div class="mt-4 flex items-center gap-2 text-[var(--gray-text-color)] text-sm">
                       <i class="fa-solid fa-route text-[var(--accent-color)]"></i>
-                      <span>+20 Caminos completados</span>
+                      <span>+20 Caminos completed</span>
                     </div>
                   </div>
                 </div>
-                <!-- Miembro 4 -->
+                <!-- Member 4 -->
                 <div
                   class="bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                   <div class="relative overflow-hidden h-64">
                     <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80"
-                      alt="Ana Fernández - Atención al Cliente"
+                      alt="Ana Fernández - Pilgrim Support"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                       <span
-                        class="bg-[var(--primary-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Atención
-                        al Peregrino</span>
+                        class="bg-[var(--primary-color)] text-white text-xs font-semibold px-3 py-1 rounded-full">Pilgrim Support</span>
                     </div>
                   </div>
                   <div class="p-6">
                     <h3 class="text-lg font-bold text-[var(--dark-text-color)] mb-1"
                       style="font-family: var(--font-family-heading);">Ana Fernández</h3>
-                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Atención al Peregrino</p>
-                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Tu primer contacto con el Camino.
-                      Ana responde todas tus dudas y personaliza cada presupuesto.</p>
+                    <p class="text-[var(--primary-color)] font-medium text-sm mb-3">Pilgrim Support</p>
+                    <p class="text-[var(--gray-text-color)] text-sm leading-relaxed">Your first contact with the Camino. Ana answers all your questions and personalizes each quote.</p>
                     <div class="mt-4 flex items-center gap-2 text-[var(--gray-text-color)] text-sm">
                       <i class="fa-solid fa-language text-[var(--accent-color)]"></i>
                       <span>ES · EN · FR · PT</span>
@@ -340,16 +315,15 @@
             </div>
           </section>
 
-          <!-- ===== CERTIFICACIONES ===== -->
-          <section class="py-20 bg-[var(--light-background-color)]">
+          <!-- ===== CERTIFICATIONS ===== -->
+          <section class="py-20 bg-[var(--light-background-color)] scroll-reveal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)]"
                   style="font-family: var(--font-family-heading);">
-                  Reconocimientos y Certificaciones
+                  Recognitions and Certifications
                 </h2>
-                <p class="text-[var(--gray-text-color)] text-lg max-w-2xl mx-auto mt-4">Nuestra calidad está avalada por
-                  las principales organizaciones del Camino de Santiago</p>
+                <p class="text-[var(--gray-text-color)] text-lg max-w-2xl mx-auto mt-4">Our quality is backed by the main organizations of the Camino de Santiago</p>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl p-8 shadow-lg text-center flex flex-col items-center">
@@ -358,18 +332,16 @@
                     <i class="fa-solid fa-certificate text-4xl text-[var(--primary-color)]"></i>
                   </div>
                   <h3 class="text-lg font-bold text-[var(--dark-text-color)] mb-2"
-                    style="font-family: var(--font-family-heading);">Guías Xacobeos Oficiales</h3>
-                  <p class="text-[var(--gray-text-color)]">Todos nuestros guías cuentan con la certificación oficial de
-                    la Xunta de Galicia para el Camino de Santiago.</p>
+                    style="font-family: var(--font-family-heading);">Official Xacobeo Guides</h3>
+                  <p class="text-[var(--gray-text-color)]">All our guides have the official certification from the Xunta de Galicia for the Camino de Santiago.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-lg text-center flex flex-col items-center">
                   <div class="w-20 h-20 bg-[var(--accent-color)]/10 rounded-full flex items-center justify-center mb-5">
                     <i class="fa-solid fa-shield-halved text-4xl text-[var(--accent-color)]"></i>
                   </div>
                   <h3 class="text-lg font-bold text-[var(--dark-text-color)] mb-2"
-                    style="font-family: var(--font-family-heading);">Agencia Registrada</h3>
-                  <p class="text-[var(--gray-text-color)]">Agencia de viajes legalmente registrada en Galicia, con todos
-                    los seguros y garantías que exige la ley.</p>
+                    style="font-family: var(--font-family-heading);">Registered Agency</h3>
+                  <p class="text-[var(--gray-text-color)]">Legally registered travel agency in Galicia, with all the insurance and guarantees required by law.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-lg text-center flex flex-col items-center">
                   <div
@@ -377,47 +349,40 @@
                     <i class="fa-solid fa-star text-4xl text-[var(--accent2-color)]"></i>
                   </div>
                   <h3 class="text-lg font-bold text-[var(--dark-text-color)] mb-2"
-                    style="font-family: var(--font-family-heading);">Premio Turismo Sostenible</h3>
-                  <p class="text-[var(--gray-text-color)]">Reconocidos por la Xunta de Galicia por nuestro compromiso
-                    con el turismo sostenible en el Camino.</p>
+                    style="font-family: var(--font-family-heading);">Sustainable Tourism Award</h3>
+                  <p class="text-[var(--gray-text-color)]">Recognized by the Xunta de Galicia for our commitment to sustainable tourism on the Camino.</p>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- ===== CTA FINAL ===== -->
+          <!-- ===== FINAL CTA ===== -->
           <section class="py-20 bg-[var(--primary-color)]">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 class="text-3xl md:text-4xl font-bold text-white mb-4"
                 style="font-family: var(--font-family-heading);">
-                ¿Listo para comenzar tu Camino?
+                Ready to start your Camino?
               </h2>
-              <p class="text-white/80 text-xl mb-8">Cuéntanos tu historia y diseñaremos juntos la peregrinación perfecta
-                para ti.</p>
+              <p class="text-white/80 text-xl mb-8">Tell us your story and we will design the perfect pilgrimage for you together.</p>
               <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contacto"
+                <a href="/en/pages/contacto.html"
                   class="inline-flex items-center justify-center px-8 py-4 bg-[var(--secondary-button-bg-color)] text-[var(--secondary-button-text-color)] font-bold rounded-lg hover:bg-[var(--secondary-button-hover-bg-color)] hover:text-[var(--secondary-button-hover-text-color)] transition-all duration-300 shadow-lg">
                   <i class="fa-solid fa-paper-plane mr-3"></i>
-                  Solicitar Presupuesto Gratis
+                  Request Free Quote
                 </a>
-                <a href="/rutas"
+                <a href="/en/pages/rutas.html"
                   class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-[var(--primary-color)] transition-all duration-300">
                   <i class="fa-solid fa-map mr-3"></i>
-                  Ver Nuestras Rutas
+                  View Our Routes
                 </a>
               </div>
             </div>
           </section>
 
-
-
-
-          <sts-footer logo="../assets/stsLOGO.png"></sts-footer>
+          <sts-footer logo="../../assets/stsLOGO.png"></sts-footer>
         </div>
       </div>
     </div>
-    <div class="frame-content"></div>
   </div>
 </body>
-
 </html>
