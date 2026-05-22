@@ -819,85 +819,114 @@
 
                 <!-- Right Form -->
                 <div class="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                  <h3 class="text-2xl font-bold text-[var(--dark-text-color)] mb-6"
-                    style="font-family: var(--font-family-heading);">
+                  <h3
+                    class="text-2xl font-bold text-[var(--dark-text-color)] mb-6"
+                    style="font-family: var(--font-family-heading);"
+                  >
                     Request your free quote
                   </h3>
 
-                  <form data-landingsite-contact-form="" class="space-y-4" data-ls-rendered-at="1772634541463">
+                  <form id="sts-contact-form" class="space-y-4">
                     <div class="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Name *</label>
-                        <input type="text" name="nombre" required=""
+                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                          Full name
+                        </label>
+                        <input
+                          type="text"
+                          name="nombre"
+                          required
                           class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all"
-                          placeholder="Your name">
+                          placeholder="Your full name"
+                        >
                       </div>
-                      <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Email *</label>
-                        <input type="email" name="email" required=""
-                          class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all"
-                          placeholder="tu@email.com">
-                      </div>
-                    </div>
 
-                    <div class="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Phone</label>
-                        <input type="tel" name="telefono"
+                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                          Phone
+                        </label>
+                        <input
+                          type="tel"
+                          name="telefono"
+                          required
                           class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all"
-                          placeholder="+34 XXX XXX XXX">
-                      </div>
-                      <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Número de
-                          peregrinos</label>
-                        <select name="peregrinos"
-                          class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all">
-                          <option value="">Select</option>
-                          <option value="1">1 pilgrim</option>
-                          <option value="2">2 pilgrims</option>
-                          <option value="3">3 pilgrims</option>
-                          <option value="4">4 pilgrims</option>
-                          <option value="5+">5 or more</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Ruta de
-                          interés</label>
-                        <select name="ruta"
-                          class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all">
-                          <option value="">Select a route</option>
-                          <option value="frances">Camino Francés</option>
-                          <option value="portugues">Camino Portugués</option>
-                          <option value="norte">Camino del Norte</option>
-                          <option value="primitivo">Camino Primitivo</option>
-                          <option value="ingles">English Way</option>
-                          <option value="plata">Vía de la Plata</option>
-                          <option value="finisterre">Way to Finisterre</option>
-                          <option value="invierno">Winter Way</option>
-                          <option value="otro">Other / Not sure yet</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Fecha
-                          estimada</label>
-                        <input type="date" name="fecha"
-                          class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all">
+                          placeholder="+34 XXX XXX XXX"
+                        >
                       </div>
                     </div>
 
                     <div>
-                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Comentarios o
-                        preferencias</label>
-                      <textarea name="comentarios" rows="3"
-                        class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all resize-none"
-                        placeholder="Tell us any additional details about your pilgrimage..."></textarea>
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        required
+                        class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all"
+                        placeholder="your@email.com"
+                      >
                     </div>
 
-                    <button type="submit"
-                      class="w-full px-8 py-4 bg-[var(--secondary-button-bg-color)] text-[var(--secondary-button-text-color)] font-bold rounded-lg hover:bg-[var(--secondary-button-hover-bg-color)] hover:text-[var(--secondary-button-hover-text-color)] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    <div class="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                          Route of interest
+                        </label>
+                        <select
+                          name="ruta"
+                          class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all bg-white"
+                        >
+                          <option value="sin-decidir">I’m not sure yet</option>
+                          <option value="frances">Camino Francés</option>
+                          <option value="portugues">Camino Portugués</option>
+                          <option value="norte">Camino del Norte</option>
+                          <option value="primitivo">Camino Primitivo</option>
+                          <option value="plata">Vía de la Plata</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                          Number of people
+                        </label>
+                        <input
+                          type="number"
+                          name="personas"
+                          min="1"
+                          class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all"
+                          placeholder="1"
+                        >
+                      </div>
+                    </div>
+
+                    <div>
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                        Approximate date
+                      </label>
+                      <input
+                        type="month"
+                        name="fecha"
+                        class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all"
+                      >
+                    </div>
+
+                    <div>
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                        Message / Special requirements
+                      </label>
+                      <textarea
+                        name="mensaje"
+                        rows="4"
+                        class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all resize-none"
+                        placeholder="Tell us any additional details about your pilgrimage..."
+                      ></textarea>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="w-full px-8 py-4 bg-[var(--secondary-button-bg-color)] text-[var(--secondary-button-text-color)] font-bold rounded-lg hover:bg-[var(--secondary-button-hover-bg-color)] hover:text-[var(--secondary-button-hover-text-color)] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    >
                       <i class="fa-solid fa-paper-plane mr-2" aria-hidden="true"></i>
                       Request a free quote
                     </button>
@@ -906,6 +935,7 @@
                       By submitting this form, you agree to our privacy policy.
                     </p>
                   </form>
+                  <script src="../scripts/LeadsContact.js"></script>
                 </div>
               </div>
             </div>

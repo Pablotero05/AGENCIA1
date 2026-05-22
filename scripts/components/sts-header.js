@@ -147,7 +147,7 @@ class StsHeader extends HTMLElement {
     const flags = {
       es: `${assetPrefix}assets/flags/es_flag.png`,
       en: `${assetPrefix}assets/flags/en_flag.png`,
-      por: `${assetPrefix}assets/flags/por_flag.png` // Using local flag if available
+      por: `${assetPrefix}assets/flags/por_flag.svg` // Using local flag if available
     };
 
     this.innerHTML = `

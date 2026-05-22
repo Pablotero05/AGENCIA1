@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html class="h-full" lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+  <link id="google-fonts-link"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="../../scripts/components/sts-header.js"></script>
+  <script src="../../scripts/components/sts-footer.js" defer></script>
+  <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../fontawesome/css/brands.min.css">
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <title>Servicios — Step To Santiago</title>
+  <style>
+    /* Estilos dinámicos para el acordeón mejorado */
+    .services-grid {
+      transition: all 0.5s ease;
+    }
+
+    .service-card {
+      will-change: transform, opacity;
+      transform-origin: top center;
+    }
+
+    /* Cuando una card está expandida, las demás se apartan/difuminan ligeramente */
+    .services-grid.has-expanded .service-card:not(.expanded) {
+      opacity: 0.4;
+      transform: scale(0.95) translateY(10px);
+      filter: blur(2px) grayscale(50%);
+      pointer-events: none;
+      /* Evita clics accidentales en las otras mientras una está abierta */
+    }
+
+    .service-card.expanded {
+      /* La card expandida puede ocupar todo el ancho en pantallas grandes si se desea, o simplemente destacar */
+      z-index: 50;
+      transform: scale(1.02);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Efectos del botón toggle al expandir */
+    .card-toggle[aria-expanded="true"] {
+      border-radius: 1.5rem 1.5rem 0 0;
+      border-bottom-color: transparent;
+    }
+
+    .card-toggle[aria-expanded="true"] .card-image-wrapper {
+      height: 250px;
+      /* Se hace más pequeño el header al abrir para dar espacio al texto */
+    }
+
+    .card-toggle[aria-expanded="true"] .expand-icon {
+      transform: rotate(45deg);
+      background-color: var(--accent-color);
+    }
+
+    .card-toggle[aria-expanded="true"]+.detail-panel {
+      opacity: 1 !important;
+    }
+
+    /* Transiciones fluidas */
+    .card-image-wrapper {
+      transition: height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+
+<body class="h-full bg-[var(--light-background-color)] overflow-x-hidden">
+  <div class="frame-root">
+    <div class="frame-content">
+      <div class="[font-family:var(--font-family-body)]">
+
+        <!-- HEADER -->
+        <div>
+          <sts-header logo="../../assets/ststrasp.png"></sts-header>
+        </div>
+
+        <!-- HERO SECTION -->
+        <section class="relative py-24 md:py-32 overflow-hidden bg-[#0f172a]">
+          <!-- Background image for hero -->
+          <div class="absolute inset-0 opacity-40">
+            <img src="../../assets/service_luggage.png" alt="Camino Services" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a] via-[#0f172a]/80 to-[#0f172a]"></div>
+          </div>
+
+          <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav
+              class="flex items-center justify-center gap-3 text-white/60 text-sm mb-10 font-medium tracking-wide uppercase">
+              <a href="/es/index.html" class="hover:text-[var(--accent-color)] transition-colors">Inicio</a>
+              <div class="w-1.5 h-1.5 rounded-full bg-[var(--accent-color)]"></div>
+              <span class="text-white">Servicios</span>
+            </nav>
+            <div class="max-w-4xl mx-auto">
+              <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight"
+                style="font-family: var(--font-family-heading);">
+                Nuestros <span class="text-[var(--accent-color)]">Servicios</span>
+              </h1>
+              <p class="text-white/80 text-xl md:text-2xl leading-relaxed font-light max-w-3xl mx-auto">
+                Descubre todo lo que podemos hacer para que tu Camino de Santiago sea más cómodo, fácil y sin
+                preocupaciones. ¡Nosotros nos encargamos de todo!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES GRID -->
+        <section class="py-20 md:py-32 bg-[var(--light-background-color)] relative">
+          <!-- Decoración de fondo -->
+          <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            <div
+              class="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-gradient-to-br from-[var(--primary-color)]/5 to-transparent blur-[100px]">
+            </div>
+            <div
+              class="absolute top-[40%] -left-[10%] w-[40%] h-[40%] rounded-full bg-gradient-to-tr from-[var(--accent-color)]/5 to-transparent blur-[100px]">
+            </div>
+          </div>
+
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <!-- Intro hint -->
+            <div class="flex justify-center mb-16">
+              <div
+                class="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-full shadow-md border border-gray-100">
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-[var(--primary-color)] animate-bounce">
+                  <i class="fa-solid fa-arrow-pointer text-sm"></i>
+                </div>
+                <span class="text-gray-600 font-medium">Descubre más haciendo clic en cada servicio</span>
+              </div>
+            </div>
+
+            <!-- Cards Grid: se usa flex column con gap para diseño impactante, o grid de 2 columnas pero que al expandirse ocupen 2 -->
+            <div class="services-grid flex flex-col gap-10 md:gap-14 max-w-5xl mx-auto">
+
+              <!-- SERVICE CARD: Desayunos -->
+              <div class="service-card group transition-all duration-700 ease-in-out" id="desayunos">
+                <!-- CARD HEADER (always visible) -->
+                <button
+                  class="card-toggle w-full text-left focus:outline-none relative block overflow-hidden rounded-3xl shadow-xl border border-white/20"
+                  aria-expanded="false" aria-controls="detail-desayunos">
+                  <div class="card-image-wrapper relative h-[400px] md:h-[450px] overflow-hidden bg-gray-900">
+                    <!-- Background Image -->
+                    <img src="../../assets/service_breakfast.png" alt="Desayunos"
+                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                      loading="lazy">
+                    <!-- Dark overlay gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-transparent"></div>
+
+                    <!-- Top icon badge -->
+                    <div
+                      class="absolute top-6 left-6 z-10 transition-transform duration-500 group-hover:-translate-y-1">
+                      <div
+                        class="w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center shadow-2xl">
+                        <i class="fa-solid fa-mug-hot text-white text-2xl"></i>
+                      </div>
+                    </div>
+
+                    <!-- Expand indicator -->
+                    <div class="absolute top-6 right-6 z-10">
+                      <div
+                        class="expand-icon w-10 h-10 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-500">
+                        <i class="fa-solid fa-plus text-lg"></i>
+                      </div>
+                    </div>
+
+                    <!-- Bottom content -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 z-10">
+                      <div class="content-wrapper transition-all duration-500 transform translate-y-0">
+                        <p
+                          class="text-[var(--accent-color)] text-sm font-bold uppercase tracking-[0.2em] mb-2 drop-shadow-md">
+                          Empieza cada etapa con energía</p>
+                        <h2 class="text-white text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg"
+                          style="font-family: var(--font-family-heading);">Desayunos</h2>
+                        <!-- Characteristics pills -->
+                        <div class="flex flex-wrap gap-3">
+
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-bolt text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Energía para el camino</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-clock text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Disponible muy temprano</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-leaf text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Opciones equilibradas</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <!-- EXPANDABLE DETAIL PANEL -->
+                <div id="detail-desayunos"
+                  class="detail-panel overflow-hidden bg-white rounded-b-3xl shadow-2xl mx-2 relative -mt-4 z-0"
+                  style="max-height: 0; transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease; opacity: 0;">
+                  <div class="px-6 md:px-12 pt-12 pb-10 text-gray-700 text-base md:text-lg">
+
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                      <div>
+                        <h3 class="text-2xl font-bold text-[var(--dark-text-color)] mb-4"
+                          style="font-family: var(--font-family-heading);">El mejor inicio para tu jornada</h3>
+                        <p class="leading-relaxed mb-4">Cada jornada del Camino comienza con un reto, y tu cuerpo
+                          necesita la energía adecuada para afrontarlo desde el primer paso. Después de todo, te esperan
+                          kilómetros de esfuerzo, por lo que empezar el día bien alimentado marca la diferencia.</p>
+                        <p class="leading-relaxed mb-4">Sabemos que muchas veces los peregrinos salen muy temprano,
+                          incluso antes del amanecer, lo que complica disfrutar de un desayuno completo y tranquilo. Por
+                          eso, queremos ponértelo fácil. Con nuestro servicio de desayunos, tendrás cada mañana una
+                          opción práctica, equilibrada y pensada para darte la fuerza que necesitas.</p>
+                      </div>
+                      <div>
+                        <div
+                          class="p-6 bg-amber-50 border border-amber-200 rounded-2xl shadow-sm relative overflow-hidden">
+                          <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-amber-100 rounded-full -mr-10 -mt-10 opacity-50">
+                          </div>
+                          <i class="fa-solid fa-star text-amber-400 text-3xl mb-4 relative z-10"></i>
+                          <p class="text-amber-900 font-medium relative z-10 text-lg leading-relaxed">Por un precio
+                            asequible, podrás disfrutar de un desayuno de calidad. Te recomendamos reservarlo con
+                            antelación junto a tu alojamiento, para ganar tiempo y comodidad durante tu viaje.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="mt-8 flex justify-center border-t border-gray-100 pt-6">
+                      <button
+                        class="card-close inline-flex items-center gap-2 px-6 py-2.5 bg-gray-100 text-gray-600 font-bold rounded-full hover:bg-gray-200 hover:text-gray-900 transition-colors shadow-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                        Cerrar detalles
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SERVICE CARD: Comidas y Cenas -->
+              <div class="service-card group transition-all duration-700 ease-in-out" id="comidas">
+                <!-- CARD HEADER (always visible) -->
+                <button
+                  class="card-toggle w-full text-left focus:outline-none relative block overflow-hidden rounded-3xl shadow-xl border border-white/20"
+                  aria-expanded="false" aria-controls="detail-comidas">
+                  <div class="card-image-wrapper relative h-[400px] md:h-[450px] overflow-hidden bg-gray-900">
+                    <!-- Background Image -->
+                    <img src="../../assets/service_meals.png" alt="Comidas y Cenas"
+                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                      loading="lazy">
+                    <!-- Dark overlay gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-transparent"></div>
+
+                    <!-- Top icon badge -->
+                    <div
+                      class="absolute top-6 left-6 z-10 transition-transform duration-500 group-hover:-translate-y-1">
+                      <div
+                        class="w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center shadow-2xl">
+                        <i class="fa-solid fa-utensils text-white text-2xl"></i>
+                      </div>
+                    </div>
+
+                    <!-- Expand indicator -->
+                    <div class="absolute top-6 right-6 z-10">
+                      <div
+                        class="expand-icon w-10 h-10 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-500">
+                        <i class="fa-solid fa-plus text-lg"></i>
+                      </div>
+                    </div>
+
+                    <!-- Bottom content -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 z-10">
+                      <div class="content-wrapper transition-all duration-500 transform translate-y-0">
+                        <p
+                          class="text-[var(--accent-color)] text-sm font-bold uppercase tracking-[0.2em] mb-2 drop-shadow-md">
+                          Gastronomía gallega en tu ruta</p>
+                        <h2 class="text-white text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg"
+                          style="font-family: var(--font-family-heading);">Comidas y Cenas</h2>
+                        <!-- Characteristics pills -->
+                        <div class="flex flex-wrap gap-3">
+
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-plate-wheat text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Cocina gallega local</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-calendar-check text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Mesa reservada sin esperas</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-tag text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Precio equilibrado</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <!-- EXPANDABLE DETAIL PANEL -->
+                <div id="detail-comidas"
+                  class="detail-panel overflow-hidden bg-white rounded-b-3xl shadow-2xl mx-2 relative -mt-4 z-0"
+                  style="max-height: 0; transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease; opacity: 0;">
+                  <div class="px-6 md:px-12 pt-12 pb-10 text-gray-700 text-base md:text-lg">
+
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                      <div>
+                        <h3 class="text-2xl font-bold text-[var(--dark-text-color)] mb-4"
+                          style="font-family: var(--font-family-heading);">Recupera fuerzas con sabor</h3>
+                        <p class="leading-relaxed mb-4">Después de cada etapa, lo más habitual es que llegues con ganas
+                          de descansar y sin demasiada energía para buscar dónde comer o cenar. Y durante la jornada,
+                          muchas veces tampoco resulta sencillo encontrar un lugar adecuado para hacer una pausa
+                          tranquila.</p>
+                        <p class="leading-relaxed mb-4">Te ofrecemos nuestro servicio de comidas y cenas, pensado para
+                          que no tengas que preocuparte por nada. Tendrás tu mesa lista en el momento adecuado, ya sea a
+                          mitad de jornada o al finalizar el día, evitando desplazamientos innecesarios.</p>
+                        <p class="leading-relaxed mb-4">Podrás disfrutar de platos variados y de calidad, incluyendo
+                          especialidades de la gastronomía gallega, todo a un precio equilibrado.</p>
+                      </div>
+                      <div>
+                        <div
+                          class="p-6 bg-orange-50 border border-orange-200 rounded-2xl shadow-sm relative overflow-hidden">
+                          <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-orange-100 rounded-full -mr-10 -mt-10 opacity-50">
+                          </div>
+                          <i class="fa-solid fa-bell-concierge text-orange-400 text-3xl mb-4 relative z-10"></i>
+                          <p class="text-orange-900 font-medium relative z-10 text-lg leading-relaxed">Te recomendamos
+                            reservar este servicio con antelación, ya que es una de las opciones más solicitadas por los
+                            peregrinos.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="mt-8 flex justify-center border-t border-gray-100 pt-6">
+                      <button
+                        class="card-close inline-flex items-center gap-2 px-6 py-2.5 bg-gray-100 text-gray-600 font-bold rounded-full hover:bg-gray-200 hover:text-gray-900 transition-colors shadow-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                        Cerrar detalles
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SERVICE CARD: Transporte de Mochilas -->
+              <div class="service-card group transition-all duration-700 ease-in-out" id="mochilas">
+                <!-- CARD HEADER (always visible) -->
+                <button
+                  class="card-toggle w-full text-left focus:outline-none relative block overflow-hidden rounded-3xl shadow-xl border border-white/20"
+                  aria-expanded="false" aria-controls="detail-mochilas">
+                  <div class="card-image-wrapper relative h-[400px] md:h-[450px] overflow-hidden bg-gray-900">
+                    <!-- Background Image -->
+                    <img src="../../assets/service_luggage.png" alt="Transporte de Mochilas"
+                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                      loading="lazy">
+                    <!-- Dark overlay gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-transparent"></div>
+
+                    <!-- Top icon badge -->
+                    <div
+                      class="absolute top-6 left-6 z-10 transition-transform duration-500 group-hover:-translate-y-1">
+                      <div
+                        class="w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center shadow-2xl">
+                        <i class="fa-solid fa-suitcase-rolling text-white text-2xl"></i>
+                      </div>
+                    </div>
+
+                    <!-- Expand indicator -->
+                    <div class="absolute top-6 right-6 z-10">
+                      <div
+                        class="expand-icon w-10 h-10 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-500">
+                        <i class="fa-solid fa-plus text-lg"></i>
+                      </div>
+                    </div>
+
+                    <!-- Bottom content -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 z-10">
+                      <div class="content-wrapper transition-all duration-500 transform translate-y-0">
+                        <p
+                          class="text-[var(--accent-color)] text-sm font-bold uppercase tracking-[0.2em] mb-2 drop-shadow-md">
+                          Camina ligero, disfruta más</p>
+                        <h2 class="text-white text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg"
+                          style="font-family: var(--font-family-heading);">Transporte de Mochilas</h2>
+                        <!-- Characteristics pills -->
+                        <div class="flex flex-wrap gap-3">
+
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-person-walking text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Sin dolor de espalda</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-route text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">4 rutas disponibles</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-map-location-dot text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Sarria, Tui, Ferrol, Lugo</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <!-- EXPANDABLE DETAIL PANEL -->
+                <div id="detail-mochilas"
+                  class="detail-panel overflow-hidden bg-white rounded-b-3xl shadow-2xl mx-2 relative -mt-4 z-0"
+                  style="max-height: 0; transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease; opacity: 0;">
+                  <div class="px-6 md:px-12 pt-12 pb-10 text-gray-700 text-base md:text-lg">
+
+                    <div class="mb-8 text-center max-w-2xl mx-auto">
+                      <h3 class="text-2xl font-bold text-[var(--dark-text-color)] mb-4"
+                        style="font-family: var(--font-family-heading);">Tu equipaje, en buenas manos</h3>
+                      <p class="leading-relaxed text-lg">¿Quieres evitar dolores de espalda mientras haces el Camino? En
+                        Tu Buen Camino nos preocupamos por tu comodidad. De esta manera irás más rápido y evitarás
+                        dolores de espalda innecesarios.</p>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                      <div
+                        class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-[var(--accent2-color)]"></div>
+                        <h4 class="font-bold text-gray-800 mb-2"><i
+                            class="fa-solid fa-map-location-dot text-[var(--accent2-color)] mr-2"></i>Camino Portugués
+                        </h4>
+                        <p class="text-sm text-gray-600">Te llevamos la mochila desde Tui hasta el siguiente
+                          alojamiento.</p>
+                      </div>
+                      <div
+                        class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-[var(--accent2-color)]"></div>
+                        <h4 class="font-bold text-gray-800 mb-2"><i
+                            class="fa-solid fa-map-location-dot text-[var(--accent2-color)] mr-2"></i>Camino Francés
+                        </h4>
+                        <p class="text-sm text-gray-600">Desde el comienzo de la etapa en Sarria hasta el albergue,
+                          pensión u hotel.</p>
+                      </div>
+                      <div
+                        class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-[var(--accent2-color)]"></div>
+                        <h4 class="font-bold text-gray-800 mb-2"><i
+                            class="fa-solid fa-map-location-dot text-[var(--accent2-color)] mr-2"></i>Camino Inglés</h4>
+                        <p class="text-sm text-gray-600">Llevamos tu mochila desde Ferrol al próximo alojamiento.</p>
+                      </div>
+                      <div
+                        class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-[var(--accent2-color)]"></div>
+                        <h4 class="font-bold text-gray-800 mb-2"><i
+                            class="fa-solid fa-map-location-dot text-[var(--accent2-color)] mr-2"></i>Camino Primitivo
+                        </h4>
+                        <p class="text-sm text-gray-600">Transportamos tu mochila desde Lugo hasta el siguiente
+                          alojamiento.</p>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button
+                        class="px-8 py-3 bg-[var(--accent2-color)] text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">¡Contrata
+                        AHORA nuestro servicio!</button>
+                    </div>
+
+
+                    <div class="mt-8 flex justify-center border-t border-gray-100 pt-6">
+                      <button
+                        class="card-close inline-flex items-center gap-2 px-6 py-2.5 bg-gray-100 text-gray-600 font-bold rounded-full hover:bg-gray-200 hover:text-gray-900 transition-colors shadow-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                        Cerrar detalles
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SERVICE CARD: Traslado al Aeropuerto -->
+              <div class="service-card group transition-all duration-700 ease-in-out" id="aeropuerto">
+                <!-- CARD HEADER (always visible) -->
+                <button
+                  class="card-toggle w-full text-left focus:outline-none relative block overflow-hidden rounded-3xl shadow-xl border border-white/20"
+                  aria-expanded="false" aria-controls="detail-aeropuerto">
+                  <div class="card-image-wrapper relative h-[400px] md:h-[450px] overflow-hidden bg-gray-900">
+                    <!-- Background Image -->
+                    <img src="../../assets/service_airport.png" alt="Traslado al Aeropuerto"
+                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                      loading="lazy">
+                    <!-- Dark overlay gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-transparent"></div>
+
+                    <!-- Top icon badge -->
+                    <div
+                      class="absolute top-6 left-6 z-10 transition-transform duration-500 group-hover:-translate-y-1">
+                      <div
+                        class="w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center shadow-2xl">
+                        <i class="fa-solid fa-plane-departure text-white text-2xl"></i>
+                      </div>
+                    </div>
+
+                    <!-- Expand indicator -->
+                    <div class="absolute top-6 right-6 z-10">
+                      <div
+                        class="expand-icon w-10 h-10 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-500">
+                        <i class="fa-solid fa-plus text-lg"></i>
+                      </div>
+                    </div>
+
+                    <!-- Bottom content -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 z-10">
+                      <div class="content-wrapper transition-all duration-500 transform translate-y-0">
+                        <p
+                          class="text-[var(--accent-color)] text-sm font-bold uppercase tracking-[0.2em] mb-2 drop-shadow-md">
+                          Cierra tu Camino sin estrés</p>
+                        <h2 class="text-white text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg"
+                          style="font-family: var(--font-family-heading);">Traslado al Aeropuerto</h2>
+                        <!-- Characteristics pills -->
+                        <div class="flex flex-wrap gap-3">
+
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-house-user text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Recogida en tu alojamiento</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-users text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Individual o en grupo</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-clock-rotate-left text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Puntualidad garantizada</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <!-- EXPANDABLE DETAIL PANEL -->
+                <div id="detail-aeropuerto"
+                  class="detail-panel overflow-hidden bg-white rounded-b-3xl shadow-2xl mx-2 relative -mt-4 z-0"
+                  style="max-height: 0; transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease; opacity: 0;">
+                  <div class="px-6 md:px-12 pt-12 pb-10 text-gray-700 text-base md:text-lg">
+
+                    <div class="grid md:grid-cols-5 gap-8 items-center">
+                      <div class="md:col-span-3">
+                        <h3 class="text-2xl font-bold text-[var(--dark-text-color)] mb-4"
+                          style="font-family: var(--font-family-heading);">Despídete del Camino con tranquilidad</h3>
+                        <p class="leading-relaxed mb-4">Si al terminar tu Camino tienes previsto regresar en avión,
+                          nosotros te facilitamos el último paso del viaje. Nos encargamos de llevarte cómodamente hasta
+                          el aeropuerto para que no tengas que preocuparte por nada.</p>
+                        <p class="leading-relaxed mb-4">Te recogemos directamente en tu alojamiento final y te
+                          trasladamos de forma puntual, evitando esperas innecesarias y el estrés de organizar el
+                          transporte por tu cuenta. Así podrás despedirte del Camino con tranquilidad y sin prisas.</p>
+                        <p class="leading-relaxed mb-4">Nuestro servicio está disponible tanto para viajeros
+                          individuales como para grupos, adaptándose a tus necesidades en todo momento.</p>
+                      </div>
+                      <div class="md:col-span-2">
+                        <div
+                          class="p-6 bg-blue-50 border border-blue-200 rounded-2xl shadow-sm relative overflow-hidden">
+                          <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-blue-100 rounded-full -mr-10 -mt-10 opacity-50">
+                          </div>
+                          <i class="fa-solid fa-ticket text-blue-400 text-3xl mb-4 relative z-10"></i>
+                          <p class="text-blue-900 font-medium relative z-10 text-lg leading-relaxed">Reserva con
+                            antelación y asegúrate un traslado cómodo, sin imprevistos ni costes inesperados.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="mt-8 flex justify-center border-t border-gray-100 pt-6">
+                      <button
+                        class="card-close inline-flex items-center gap-2 px-6 py-2.5 bg-gray-100 text-gray-600 font-bold rounded-full hover:bg-gray-200 hover:text-gray-900 transition-colors shadow-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                        Cerrar detalles
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SERVICE CARD: Transporte al Inicio -->
+              <div class="service-card group transition-all duration-700 ease-in-out" id="inicio">
+                <!-- CARD HEADER (always visible) -->
+                <button
+                  class="card-toggle w-full text-left focus:outline-none relative block overflow-hidden rounded-3xl shadow-xl border border-white/20"
+                  aria-expanded="false" aria-controls="detail-inicio">
+                  <div class="card-image-wrapper relative h-[400px] md:h-[450px] overflow-hidden bg-gray-900">
+                    <!-- Background Image -->
+                    <img src="../../assets/service_transfer.png" alt="Transporte al Inicio"
+                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                      loading="lazy">
+                    <!-- Dark overlay gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-transparent"></div>
+
+                    <!-- Top icon badge -->
+                    <div
+                      class="absolute top-6 left-6 z-10 transition-transform duration-500 group-hover:-translate-y-1">
+                      <div
+                        class="w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center shadow-2xl">
+                        <i class="fa-solid fa-van-shuttle text-white text-2xl"></i>
+                      </div>
+                    </div>
+
+                    <!-- Expand indicator -->
+                    <div class="absolute top-6 right-6 z-10">
+                      <div
+                        class="expand-icon w-10 h-10 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-500">
+                        <i class="fa-solid fa-plus text-lg"></i>
+                      </div>
+                    </div>
+
+                    <!-- Bottom content -->
+                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 z-10">
+                      <div class="content-wrapper transition-all duration-500 transform translate-y-0">
+                        <p
+                          class="text-[var(--accent-color)] text-sm font-bold uppercase tracking-[0.2em] mb-2 drop-shadow-md">
+                          Empieza tu aventura sin complicaciones</p>
+                        <h2 class="text-white text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg"
+                          style="font-family: var(--font-family-heading);">Transporte al Inicio</h2>
+                        <!-- Characteristics pills -->
+                        <div class="flex flex-wrap gap-3">
+
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-plane-arrival text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Desde el aeropuerto</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-map-pin text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Sarria, Tui, Ferrol y más</span>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 text-sm text-white/90 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                            <i class="fa-solid fa-people-group text-xs text-[var(--accent-color)]"></i>
+                            <span class="font-medium">Grupos reducidos</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <!-- EXPANDABLE DETAIL PANEL -->
+                <div id="detail-inicio"
+                  class="detail-panel overflow-hidden bg-white rounded-b-3xl shadow-2xl mx-2 relative -mt-4 z-0"
+                  style="max-height: 0; transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease; opacity: 0;">
+                  <div class="px-6 md:px-12 pt-12 pb-10 text-gray-700 text-base md:text-lg">
+
+                    <div class="grid md:grid-cols-5 gap-8 items-center">
+                      <div class="md:col-span-2 order-2 md:order-1">
+                        <div
+                          class="p-6 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-sm relative overflow-hidden h-full flex flex-col justify-center">
+                          <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-emerald-100 rounded-full -mr-10 -mt-10 opacity-50">
+                          </div>
+                          <i class="fa-solid fa-location-dot text-emerald-400 text-3xl mb-4 relative z-10"></i>
+                          <p class="text-emerald-900 font-medium relative z-10 text-lg leading-relaxed">Para disfrutar
+                            de este servicio, solo necesitas contar con uno de nuestros planes y añadir el transporte
+                            como extra en tu reserva.</p>
+                        </div>
+                      </div>
+                      <div class="md:col-span-3 order-1 md:order-2">
+                        <h3 class="text-2xl font-bold text-[var(--dark-text-color)] mb-4"
+                          style="font-family: var(--font-family-heading);">Comienza con buen pie</h3>
+                        <p class="leading-relaxed mb-4">Si estás pensando en hacer el Camino de Santiago pero no tienes
+                          claro cómo llegar al lugar desde el que comenzarás tu ruta, no te preocupes: nosotros nos
+                          ocupamos de todo.</p>
+                        <p class="leading-relaxed mb-4">Ponemos a tu disposición un servicio pensado para llevarte
+                          directamente a tu punto de partida sin complicaciones. Ya sea que inicies el Camino desde
+                          Sarria, Tui o Ferrol, nos adaptamos a tu itinerario para que llegues de forma rápida, cómoda y
+                          sin gastar de más tiempo ni dinero.</p>
+                        <p class="leading-relaxed mb-4">Además, ofrecemos traslados desde el aeropuerto o desde otros
+                          puntos clave hasta el inicio de tu ruta. Nuestros vehículos están preparados para grupos
+                          reducidos.</p>
+                      </div>
+                    </div>
+
+
+                    <div class="mt-8 flex justify-center border-t border-gray-100 pt-6">
+                      <button
+                        class="card-close inline-flex items-center gap-2 px-6 py-2.5 bg-gray-100 text-gray-600 font-bold rounded-full hover:bg-gray-200 hover:text-gray-900 transition-colors shadow-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                        Cerrar detalles
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <sts-footer></sts-footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCORDION SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('.card-toggle');
+      const grid = document.querySelector('.services-grid');
+
+      toggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function () {
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+          const panelId = toggle.getAttribute('aria-controls');
+          const panel = document.getElementById(panelId);
+          const currentCard = toggle.closest('.service-card');
+
+          // Collapse all others
+          toggles.forEach(function (t) {
+            if (t !== toggle) {
+              t.setAttribute('aria-expanded', 'false');
+              const otherId = t.getAttribute('aria-controls');
+              const otherPanel = document.getElementById(otherId);
+              otherPanel.style.maxHeight = '0';
+              otherPanel.style.opacity = '0';
+              t.closest('.service-card').classList.remove('expanded');
+            }
+          });
+
+          // Toggle current
+          if (isExpanded) {
+            toggle.setAttribute('aria-expanded', 'false');
+            panel.style.maxHeight = '0';
+            panel.style.opacity = '0';
+            currentCard.classList.remove('expanded');
+            grid.classList.remove('has-expanded');
+          } else {
+            toggle.setAttribute('aria-expanded', 'true');
+            currentCard.classList.add('expanded');
+            grid.classList.add('has-expanded');
+
+            // Calculate exact height needed
+            panel.style.maxHeight = panel.scrollHeight + 100 + 'px';
+            panel.style.opacity = '1';
+
+            // Smooth scroll to card
+            setTimeout(function () {
+              const offset = 100; // margin top
+              const bodyRect = document.body.getBoundingClientRect().top;
+              const elementRect = currentCard.getBoundingClientRect().top;
+              const elementPosition = elementRect - bodyRect;
+              const offsetPosition = elementPosition - offset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }, 300); // wait for animation to mostly finish
+          }
+        });
+      });
+
+      // Close buttons inside panels
+      document.querySelectorAll('.card-close').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const panel = btn.closest('.detail-panel');
+          const panelId = panel.id;
+          const toggle = document.querySelector('[aria-controls="' + panelId + '"]');
+          const currentCard = toggle.closest('.service-card');
+
+          toggle.setAttribute('aria-expanded', 'false');
+          panel.style.maxHeight = '0';
+          panel.style.opacity = '0';
+          currentCard.classList.remove('expanded');
+
+          // If no cards are expanded, remove has-expanded from grid
+          const anyExpanded = document.querySelector('.service-card.expanded');
+          if (!anyExpanded) {
+            grid.classList.remove('has-expanded');
+          }
+
+          // Scroll back up slightly if needed
+          setTimeout(function () {
+            const offset = 100;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = currentCard.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }, 100);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

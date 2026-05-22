@@ -826,7 +826,7 @@
                     Solicita tu presupuesto gratis
                   </h3>
 
-                  <form data-landingsite-contact-form="" class="space-y-4" data-ls-rendered-at="1772634541463">
+                  <form id="sts-contact-form" class="space-y-4">
                     <div class="grid md:grid-cols-2 gap-4">
                       <div>
                         <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Nombre *</label>
@@ -891,9 +891,8 @@
                     </div>
 
                     <div>
-                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Comentarios o
-                        preferencias</label>
-                      <textarea name="comentarios" rows="3"
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Mensaje / Requisitos especiales</label>
+                      <textarea name="mensaje" rows="4"
                         class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all resize-none"
                         placeholder="Cuéntanos cualquier detalle adicional sobre tu peregrinación..."></textarea>
                     </div>
@@ -908,6 +907,7 @@
                       Al enviar este formulario, aceptas nuestra política de privacidad.
                     </p>
                   </form>
+                  <script src="../scripts/LeadsContact.js"></script>
                 </div>
               </div>
             </div>
