@@ -54,64 +54,143 @@
     "galeria": [
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "../../assets/ruta_portugues.png",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
     ]
   },
   {
-    "id": "portugues",
-    "nombre": "Portuguese Way",
-    "slug": "/rutas/portugues",
-    "imagen": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+    "id": "portugues-tui",
+    "nombre": "Portuguese Way from Tui",
+    "slug": "/rutas/portugues-tui",
+    "imagen": "../../assets/ruta_portugues.png",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
-    "badge": "🌊 Coastal available",
-    "badgeColor": "bg-blue-500 text-white",
+    "badge": "🇵🇹 From Tui",
+    "badgeColor": "bg-green-600 text-white",
     "dificultad": "facil",
     "dificultadLabel": "Easy",
     "dificultadColor": "bg-green-500/90",
-    "dificultadDesc": "Easy. Flat and gentle terrain, ideal for beginners.",
-    "km": "280 km",
-    "dias": "12-14 days (from Porto)",
-    "descripcion": "The most popular international route. From Porto, it crosses the beautiful Galician Rías Baixas region all the way to the Cathedral.",
+    "dificultadDesc": "Easy. Predominantly flat and gentle terrain, with some moderate difficulty stages.",
+    "km": "117 km",
+    "dias": "7 days (6 stages)",
+    "descripcion": "The Galician section of the Portuguese Way, starting in Tui next to the Minho river. The most popular option to complete the required kilometers for the Compostela in a week.",
     "descripcionLarga": [
-      "The Portuguese Way is the second most traveled route and stands out for its natural beauty and cultural richness.",
-      "Starting in Porto, it allows you to discover northern Portugal and enter Galicia by crossing the Minho River.",
-      "It offers coastal and inland options."
+      "The Portuguese Way from Tui is the Galician section of the most frequented international Jacobean route. Tui, a historic city next to the Minho river, is one of the most popular starting points because from here you complete the kilometers needed to obtain the Compostela.",
+      "The route combines rural paths, small Galician villages, forests, and landscapes of the Rías Baixas. Throughout the stages, you pass through municipalities like O Porriño, Redondela, Pontevedra, Caldas de Reis, and Padrón before arriving in Santiago de Compostela.",
+      "It is an accessible, well-signposted route with excellent infrastructure for the pilgrim, ideal both for those making their debut on the Camino and for those who want to enjoy a quiet week walking through Galicia."
     ],
-    "inicio": "Porto / Lisbon",
+    "inicio": "Tui",
     "fin": "Santiago de Compostela",
-    "epoca": "March to November",
-    "tags": ["Gentle terrain", "Ría de Pontevedra", "Family-friendly"],
+    "epoca": "All year (best spring and autumn)",
+    "tags": ["Galician section", "Get the Compostela", "Ideal for 1 week"],
     "precio": "365 €/person",
     "puntosDestacados": [
-      "Historic center of Porto",
-      "Crossing the Minho River in Tui",
-      "Walk through the Rías Baixas",
-      "Galician and Portuguese gastronomy",
-      "Arrival in Padrón and Santiago"
+      "The Cathedral of Santa María de Tui and its medieval historic center",
+      "The Town Hall of O Porriño, work of Antonio Palacios",
+      "The railway viaducts of Redondela",
+      "The historic center of Pontevedra and the Basilica of Santa María la Mayor",
+      "The Segade Waterfall on the stage to Caldas de Reis",
+      "Padrón and its Jacobean tradition: the Church of Santiago de Padrón",
+      "Arrival at the Cathedral of Santiago de Compostela"
     ],
     "etapas": [
       {
         "dia": 1,
-        "origen": "Porto",
-        "destino": "Vilarinho",
-        "desc": "Departure from Porto heading north.",
-        "km": 26,
-        "horas": "6-7",
-        "desnivel": "+100/-50"
+        "origen": "Arrival",
+        "destino": "Tui",
+        "desc": "Tui is one of the most popular starting points for the Portuguese Way to Santiago, as the necessary kilometers to obtain the Compostela are completed from here. This historic city located next to the Minho river preserves a beautiful old town and a great pilgrim atmosphere.",
+        "km": 0,
+        "horas": "-",
+        "dificultad": "-",
+        "puntosInteres": [
+          "Cathedral of Santa María de Tui, located at the top of the city",
+          "Medieval historic center with its cobblestone streets",
+          "Chapel of San Telmo, dedicated to the city's patron saint",
+          "River walk along the Minho river and views towards Valença (Portugal)"
+        ]
       },
       {
         "dia": 2,
-        "origen": "Vilarinho",
-        "destino": "Barcelos",
-        "desc": "Transition stage towards the interior.",
-        "km": 27,
-        "horas": "6-7",
-        "desnivel": "+150/-100"
+        "origen": "Tui",
+        "destino": "O Porriño",
+        "desc": "First stage of the Portuguese Way in Galicia. The route alternates rural paths, small population centers, and quiet areas among forests and fields.",
+        "km": 16,
+        "horas": "4",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Small rural churches and traditional cruceiros of the Portuguese Way",
+          "Town Hall of O Porriño, work of the architect Antonio Palacios"
+        ]
+      },
+      {
+        "dia": 3,
+        "origen": "O Porriño",
+        "destino": "Redondela",
+        "desc": "The stage crosses the municipality of Mos and combines forest stretches with small villages and traditional paths of the Portuguese Way.",
+        "km": 16,
+        "horas": "4–5",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Chapel of Santiaguiño de Antas, a place with great Jacobean tradition",
+          "Railway viaducts of Redondela, dominating the municipality's landscape"
+        ]
+      },
+      {
+        "dia": 4,
+        "origen": "Redondela",
+        "destino": "Pontevedra",
+        "desc": "One of the most pleasant stages of the Portuguese Way, with paths among forests and traditional roads crossing rural areas.",
+        "km": 19,
+        "horas": "5",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Views towards the Vigo estuary during some sections of the route",
+          "Basilica of Santa María la Mayor in Pontevedra",
+          "Plaza de la Leña and Sanctuary of the Pilgrim Virgin in Pontevedra"
+        ]
+      },
+      {
+        "dia": 5,
+        "origen": "Pontevedra",
+        "destino": "Caldas de Reis",
+        "desc": "Quiet stage crossing rural landscapes, vineyards, and small typical Galician villages.",
+        "km": 23,
+        "horas": "6",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Historic bridges of the Camino and natural areas next to the river",
+          "Segade Waterfall, one of the best-known natural corners of the area",
+          "Thermal tradition of Caldas de Reis"
+        ]
+      },
+      {
+        "dia": 6,
+        "origen": "Caldas de Reis",
+        "destino": "Padrón",
+        "desc": "The Camino continues through forests, villages, and rural paths until reaching one of the places with the greatest Jacobean tradition.",
+        "km": 19,
+        "horas": "5",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Town of Padrón, closely linked to the history of the Apostle Santiago",
+          "Church of Santiago de Padrón, where according to tradition the pedrón related to the arrival of the Apostle's remains is preserved"
+        ]
+      },
+      {
+        "dia": 7,
+        "origen": "Padrón",
+        "destino": "Santiago de Compostela",
+        "desc": "Last stage before reaching Santiago de Compostela. The route crosses small towns and rural areas until approaching the Galician capital.",
+        "km": 24,
+        "horas": "6",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Historic center of Santiago de Compostela, declared a World Heritage Site",
+          "Cathedral of Santiago de Compostela, goal of the Camino and one of the most important pilgrimage sites in the world"
+        ]
       }
     ],
     "galeria": [
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "../../assets/ruta_portugues.png",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"

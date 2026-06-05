@@ -54,64 +54,143 @@
     "galeria": [
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "../../assets/ruta_portugues.png",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
     ]
   },
   {
-    "id": "portugues",
-    "nombre": "Caminho Português",
-    "slug": "/rutas/portugues",
-    "imagen": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+    "id": "portugues-tui",
+    "nombre": "Caminho Português desde Tui",
+    "slug": "/rutas/portugues-tui",
+    "imagen": "../../assets/ruta_portugues.png",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
-    "badge": "🌊 Costal disponível",
-    "badgeColor": "bg-blue-500 text-white",
+    "badge": "🇵🇹 Desde Tui",
+    "badgeColor": "bg-green-600 text-white",
     "dificultad": "facil",
     "dificultadLabel": "Fácil",
     "dificultadColor": "bg-green-500/90",
-    "dificultadDesc": "Fácil. Terreno plano e suave, ideal para iniciantes.",
-    "km": "280 km",
-    "dias": "12-14 dias (de Porto)",
-    "descripcion": "O caminho internacional mais frequentado. Do Porto atravessa a bela região das Rias Baixas galegas até chegar à Catedral.",
+    "dificultadDesc": "Fácil. Terreno predominantemente plano e suave, com alguma etapa de dificuldade média.",
+    "km": "117 km",
+    "dias": "7 dias (6 etapas)",
+    "descripcion": "A seção galega do Caminho Português, começando em Tui junto ao rio Minho. A opção mais popular para completar os quilômetros necessários para a Compostela em uma semana.",
     "descripcionLarga": [
-      "O Caminho Português é a segunda rota mais percorrida e destaca-se pela sua beleza natural e riqueza cultural.",
-      "Iniciando no Porto, permite descobrir o norte de Portugal e entrar na Galiza cruzando o rio Minho.",
-      "Oferece opções pela costa e pelo interior."
+      "O Caminho Português desde Tui é a seção galega da rota jacobeia internacional mais frequentada. Tui, cidade histórica junto ao rio Minho, é um dos pontos de partida mais populares porque daqui se completam os quilômetros necessários para obter a Compostela.",
+      "O percurso combina caminhos rurais, pequenas aldeias galegas, florestas e paisagens das Rias Baixas. Ao longo das etapas, atravessam-se municípios como O Porriño, Redondela, Pontevedra, Caldas de Reis e Padrón antes de chegar a Santiago de Compostela.",
+      "É uma rota acessível, bem sinalizada e com excelente infraestrutura para o peregrino, ideal tanto para quem se estreia no Caminho como para quem quer desfrutar de uma semana tranquila a caminhar pela Galiza."
     ],
-    "inicio": "Porto / Lisboa",
+    "inicio": "Tui",
     "fin": "Santiago de Compostela",
-    "epoca": "Março a Novembro",
-    "tags": ["Terreno suave", "Ria de Pontevedra", "Para famílias"],
+    "epoca": "Todo o ano (melhor primavera e outono)",
+    "tags": ["Trecho galego", "Obtenha a Compostela", "Ideal para 1 semana"],
     "precio": "365 €/pessoa",
     "puntosDestacados": [
-      "Centro histórico do Porto",
-      "Travessia do rio Minho em Tui",
-      "Passeio pelas Rias Baixas",
-      "Gastronomia galega e portuguesa",
-      "Chegada a Padrón e Santiago"
+      "A Catedral de Santa Maria de Tui e o seu centro histórico medieval",
+      "A Câmara Municipal de O Porriño, obra de Antonio Palacios",
+      "Os viadutos ferroviários de Redondela",
+      "O centro histórico de Pontevedra e a Basílica de Santa Maria Maior",
+      "A Cascata de Segade na etapa para Caldas de Reis",
+      "Padrón e a sua tradição jacobeia: a Igreja de Santiago de Padrón",
+      "Chegada à Catedral de Santiago de Compostela"
     ],
     "etapas": [
       {
         "dia": 1,
-        "origen": "Porto",
-        "destino": "Vilarinho",
-        "desc": "Partida do Porto rumo ao norte.",
-        "km": 26,
-        "horas": "6-7",
-        "desnivel": "+100/-50"
+        "origen": "Chegada",
+        "destino": "Tui",
+        "desc": "Tui é um dos pontos de partida mais populares do Caminho Português a Santiago, já que a partir daqui se completam os quilômetros necessários para obter a Compostela. Esta cidade histórica situada junto ao rio Minho conserva um belo centro histórico e um grande ambiente peregrino.",
+        "km": 0,
+        "horas": "-",
+        "dificultad": "-",
+        "puntosInteres": [
+          "Catedral de Santa Maria de Tui, situada no alto da cidade",
+          "Centro histórico medieval com as suas ruas calcetadas",
+          "Capela de San Telmo, dedicada ao padroeiro da cidade",
+          "Passeio fluvial do rio Minho e vistas para Valença (Portugal)"
+        ]
       },
       {
         "dia": 2,
-        "origen": "Vilarinho",
-        "destino": "Barcelos",
-        "desc": "Etapa de transição para o interior.",
-        "km": 27,
-        "horas": "6-7",
-        "desnivel": "+150/-100"
+        "origen": "Tui",
+        "destino": "O Porriño",
+        "desc": "Primeira etapa do Caminho Português na Galiza. O percurso alterna caminhos rurais, pequenos núcleos populacionais e áreas tranquilas entre florestas e campos.",
+        "km": 16,
+        "horas": "4",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Pequenas igrejas rurais e cruzeiros tradicionais do Caminho Português",
+          "Câmara Municipal de O Porriño, obra do arquiteto Antonio Palacios"
+        ]
+      },
+      {
+        "dia": 3,
+        "origen": "O Porriño",
+        "destino": "Redondela",
+        "desc": "A etapa atravessa o município de Mos e combina trechos de floresta com pequenas aldeias e caminhos tradicionais do Caminho Português.",
+        "km": 16,
+        "horas": "4–5",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Capela de Santiaguiño de Antas, local com grande tradição jacobeia",
+          "Viadutos ferroviários de Redondela, que dominam a paisagem do município"
+        ]
+      },
+      {
+        "dia": 4,
+        "origen": "Redondela",
+        "destino": "Pontevedra",
+        "desc": "Uma das etapas mais agradáveis do Caminho Português, com caminhos entre florestas e estradas tradicionais que atravessam áreas rurais.",
+        "km": 19,
+        "horas": "5",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Vistas para a ria de Vigo durante alguns trechos do percurso",
+          "Basílica de Santa Maria Maior em Pontevedra",
+          "Praça da Lenha e Santuário da Virgem Peregrina em Pontevedra"
+        ]
+      },
+      {
+        "dia": 5,
+        "origen": "Pontevedra",
+        "destino": "Caldas de Reis",
+        "desc": "Etapa tranquila que atravessa paisagens rurais, vinhedos e pequenas aldeias típicas galegas.",
+        "km": 23,
+        "horas": "6",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Pontes históricas do Caminho e áreas naturais junto ao rio",
+          "Cascata de Segade, um dos recantos naturais mais conhecidos da região",
+          "Tradição termal de Caldas de Reis"
+        ]
+      },
+      {
+        "dia": 6,
+        "origen": "Caldas de Reis",
+        "destino": "Padrón",
+        "desc": "O Caminho continua entre florestas, aldeias e caminhos rurais até chegar a um dos locais com maior tradição jacobeia.",
+        "km": 19,
+        "horas": "5",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Vila de Padrón, muito ligada à história do Apóstolo Santiago",
+          "Igreja de Santiago de Padrón, onde segundo a tradição se conserva o pedrón relacionado à chegada dos restos mortais do Apóstolo"
+        ]
+      },
+      {
+        "dia": 7,
+        "origen": "Padrón",
+        "destino": "Santiago de Compostela",
+        "desc": "Última etapa antes de chegar a Santiago de Compostela. O percurso atravessa pequenas localidades e áreas rurais até se aproximar da capital galega.",
+        "km": 24,
+        "horas": "6",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Centro histórico de Santiago de Compostela, declarado Patrimônio da Humanidade",
+          "Catedral de Santiago de Compostela, meta do Caminho e um dos locais de peregrinação mais importantes do mundo"
+        ]
       }
     ],
     "galeria": [
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "../../assets/ruta_portugues.png",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"

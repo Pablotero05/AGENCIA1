@@ -54,74 +54,15 @@
     "galeria": [
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "../../assets/ruta_portugues.png",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
-    ]
-  },
-  {
-    "id": "portugues",
-    "nombre": "Camino Portugués",
-    "slug": "/rutas/portugues",
-    "imagen": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
-    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
-    "badge": "🌊 Costal disponible",
-    "badgeColor": "bg-blue-500 text-white",
-    "dificultad": "facil",
-    "dificultadLabel": "Fácil",
-    "dificultadColor": "bg-green-500/90",
-    "dificultadDesc": "Fácil. Terreno llano y suave, ideal para principiantes.",
-    "km": "280 km",
-    "dias": "12-14 días (desde Porto)",
-    "descripcion": "El camino internacional más frecuentado. Desde Porto atraviesa la hermosa región de las Rías Baixas gallegas hasta llegar a la Catedral.",
-    "descripcionLarga": [
-      "El Camino Portugués es la segunda ruta más transitada y destaca por su belleza natural y riqueza cultural.",
-      "Iniciando en Porto, permite descubrir el norte de Portugal y entrar a Galicia cruzando el río Miño.",
-      "Ofrece opciones por la costa y por el interior."
-    ],
-    "inicio": "Porto / Lisboa",
-    "fin": "Santiago de Compostela",
-    "epoca": "Marzo a Noviembre",
-    "tags": ["Terreno suave", "Ría de Pontevedra", "Para familias"],
-    "precio": "365 €/persona",
-    "puntosDestacados": [
-      "Casco histórico de Porto",
-      "Cruce del río Miño en Tui",
-      "Paseo por las Rías Baixas",
-      "Gastronomía gallega y portuguesa",
-      "Llegada a Padrón y Santiago"
-    ],
-    "etapas": [
-      {
-        "dia": 1,
-        "origen": "Porto",
-        "destino": "Vilarinho",
-        "desc": "Salida de Porto hacia el norte.",
-        "km": 26,
-        "horas": "6-7",
-        "desnivel": "+100/-50"
-      },
-      {
-        "dia": 2,
-        "origen": "Vilarinho",
-        "destino": "Barcelos",
-        "desc": "Etapa de transición hacia el interior.",
-        "km": 27,
-        "horas": "6-7",
-        "desnivel": "+150/-100"
-      }
-    ],
-    "galeria": [
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
-      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
-      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
-      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
     ]
   },
   {
     "id": "portugues-tui",
     "nombre": "Camino Portugués desde Tui",
     "slug": "/rutas/portugues-tui",
-    "imagen": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+    "imagen": "../../assets/ruta_portugues.png",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
     "badge": "🇵🇹 Desde Tui",
     "badgeColor": "bg-green-600 text-white",
@@ -249,7 +190,7 @@
       }
     ],
     "galeria": [
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "../../assets/ruta_portugues.png",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
