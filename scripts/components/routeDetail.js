@@ -72,27 +72,64 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Stages
     const etapasContainer = document.getElementById('dyn-etapas-list');
     if (etapasContainer && ruta.etapas) {
-      etapasContainer.innerHTML = ruta.etapas.map(etapa => `
-        <div class="bg-[var(--light-background-color)] rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 group mb-4">
-          <div class="flex flex-col md:flex-row md:items-center gap-4">
-            <div class="flex-shrink-0">
-              <div class="w-16 h-16 bg-[var(--primary-color)] rounded-full flex items-center justify-center text-white font-bold text-xl">${etapa.dia}</div>
-            </div>
-            <div class="flex-1">
-              <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-2 group-hover:text-[var(--primary-color)] transition-colors" style="font-family: var(--font-family-heading);">
-                ${etapa.origen} → ${etapa.destino}
-              </h3>
-              <p class="text-[var(--gray-text-color)] mb-3">${etapa.desc}</p>
-              <div class="flex flex-wrap gap-4 text-sm text-[var(--gray-text-color)]">
-                <span class="flex items-center gap-2"><i class="fa-solid fa-route text-[var(--primary-color)]"></i>${etapa.km} km</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-[var(--primary-color)]"></i>${etapa.horas} h</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-mountain text-[var(--primary-color)]"></i>${etapa.desnivel}</span>
+      const getDificultadColor = (dif) => {
+        if (!dif || dif === '-') return '';
+        const d = dif.toLowerCase();
+        if (d === 'baja') return 'bg-green-100 text-green-700';
+        if (d === 'media') return 'bg-yellow-100 text-yellow-700';
+        if (d === 'alta' || d === 'muy alta') return 'bg-red-100 text-red-700';
+        return 'bg-gray-100 text-gray-600';
+      };
+
+      etapasContainer.innerHTML = ruta.etapas.map(etapa => {
+        const isArrival = etapa.km === 0;
+
+        const statsHTML = isArrival
+          ? `<span class="flex items-center gap-2 text-[var(--accent-color)] font-semibold"><i class="fa-solid fa-star text-[var(--accent-color)]"></i>Día de llegada</span>`
+          : `
+            <span class="flex items-center gap-2"><i class="fa-solid fa-route text-[var(--primary-color)]"></i>${etapa.km} km</span>
+            <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-[var(--primary-color)]"></i>${etapa.horas} h</span>
+            ${etapa.desnivel ? `<span class="flex items-center gap-2"><i class="fa-solid fa-mountain text-[var(--primary-color)]"></i>${etapa.desnivel}</span>` : ''}
+            ${etapa.dificultad && etapa.dificultad !== '-' ? `<span class="flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold ${getDificultadColor(etapa.dificultad)}"><i class="fa-solid fa-gauge mr-1"></i>Dificultad ${etapa.dificultad}</span>` : ''}
+          `;
+
+        const puntosHTML = etapa.puntosInteres && etapa.puntosInteres.length > 0
+          ? `<div class="mt-4 pt-4 border-t border-gray-200">
+              <p class="text-xs font-bold text-[var(--dark-text-color)] uppercase tracking-wide mb-2 flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-[var(--accent-color)]"></i> Puntos de interés
+              </p>
+              <ul class="space-y-1">
+                ${etapa.puntosInteres.map(p => `
+                  <li class="flex items-start gap-2 text-sm text-[var(--gray-text-color)]">
+                    <i class="fa-solid fa-circle-dot text-[var(--primary-color)] mt-1 text-xs flex-shrink-0"></i>
+                    <span>${p}</span>
+                  </li>`).join('')}
+              </ul>
+            </div>`
+          : '';
+
+        return `
+          <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 group mb-4 border border-gray-100">
+            <div class="flex flex-col md:flex-row md:items-start gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-16 h-16 bg-[var(--primary-color)] rounded-full flex items-center justify-center text-white font-bold text-xl">${etapa.dia}</div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-2 group-hover:text-[var(--primary-color)] transition-colors" style="font-family: var(--font-family-heading);">
+                  ${isArrival ? etapa.destino : `${etapa.origen} → ${etapa.destino}`}
+                </h3>
+                <p class="text-[var(--gray-text-color)] mb-3">${etapa.desc}</p>
+                <div class="flex flex-wrap gap-4 text-sm text-[var(--gray-text-color)]">
+                  ${statsHTML}
+                </div>
+                ${puntosHTML}
               </div>
             </div>
           </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
+
 
     // Gallery
     const galeriaContainer = document.getElementById('dyn-galeria');

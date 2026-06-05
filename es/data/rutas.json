@@ -116,5 +116,143 @@
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
     ]
+  },
+  {
+    "id": "portugues-tui",
+    "nombre": "Camino Portugués desde Tui",
+    "slug": "/rutas/portugues-tui",
+    "imagen": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🇵🇹 Desde Tui",
+    "badgeColor": "bg-green-600 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Fácil",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Fácil. Terreno predominantemente llano y suave, con alguna etapa de dificultad media.",
+    "km": "117 km",
+    "dias": "7 días (6 etapas)",
+    "descripcion": "El tramo gallego del Camino Portugués, comenzando en Tui junto al río Miño. La opción más popular para completar los kilómetros necesarios para la Compostela en una semana.",
+    "descripcionLarga": [
+      "El Camino Portugués desde Tui es el tramo gallego de la ruta jacobea internacional más frecuentada. Tui, ciudad histórica junto al río Miño, es uno de los puntos de inicio más populares porque desde aquí se completan los kilómetros necesarios para obtener la Compostela.",
+      "El recorrido combina caminos rurales, pequeñas aldeas gallegas, bosques y paisajes de las Rías Baixas. A lo largo de las etapas se atraviesan municipios como O Porriño, Redondela, Pontevedra, Caldas de Reis y Padrón antes de llegar a Santiago de Compostela.",
+      "Es una ruta accesible, bien señalizada y con excelente infraestructura para el peregrino, ideal tanto para quienes se estrenan en el Camino como para quienes quieren disfrutar de una semana tranquila caminando por Galicia."
+    ],
+    "inicio": "Tui",
+    "fin": "Santiago de Compostela",
+    "epoca": "Todo el año (mejor primavera y otoño)",
+    "tags": ["Tramo gallego", "Obtén la Compostela", "Ideal para 1 semana"],
+    "precio": "365 €/persona",
+    "puntosDestacados": [
+      "La Catedral de Santa María de Tui y su casco medieval",
+      "La Casa Consistorial de O Porriño, obra de Antonio Palacios",
+      "Los viaductos ferroviarios de Redondela",
+      "El casco histórico de Pontevedra y la Basílica de Santa María la Mayor",
+      "La Cascada de Segade en la etapa a Caldas de Reis",
+      "Padrón y su tradición jacobea: la Iglesia de Santiago de Padrón",
+      "Llegada a la Catedral de Santiago de Compostela"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Llegada",
+        "destino": "Tui",
+        "desc": "Tui es uno de los puntos de inicio más populares del Camino Portugués a Santiago, ya que desde aquí se completan los kilómetros necesarios para obtener la Compostela. Esta ciudad histórica situada junto al río Miño conserva un bonito casco antiguo y un gran ambiente peregrino.",
+        "km": 0,
+        "horas": "-",
+        "dificultad": "-",
+        "puntosInteres": [
+          "Catedral de Santa María de Tui, situada en lo alto de la ciudad",
+          "Casco histórico medieval con sus calles empedradas",
+          "Capilla de San Telmo, dedicada al patrón de la ciudad",
+          "Paseo fluvial del río Miño y vistas hacia Valença (Portugal)"
+        ]
+      },
+      {
+        "dia": 2,
+        "origen": "Tui",
+        "destino": "O Porriño",
+        "desc": "Primera etapa del Camino Portugués en Galicia. El recorrido alterna caminos rurales, pequeños núcleos de población y zonas tranquilas entre bosques y campos.",
+        "km": 16,
+        "horas": "4",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Pequeñas iglesias rurales y cruceiros tradicionales del Camino Portugués",
+          "Casa Consistorial de O Porriño, obra del arquitecto Antonio Palacios"
+        ]
+      },
+      {
+        "dia": 3,
+        "origen": "O Porriño",
+        "destino": "Redondela",
+        "desc": "La etapa atraviesa el municipio de Mos y combina tramos de bosque con pequeñas aldeas y caminos tradicionales del Camino Portugués.",
+        "km": 16,
+        "horas": "4–5",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Capilla de Santiaguiño de Antas, lugar con gran tradición jacobea",
+          "Viaductos ferroviarios de Redondela, que dominan el paisaje del municipio"
+        ]
+      },
+      {
+        "dia": 4,
+        "origen": "Redondela",
+        "destino": "Pontevedra",
+        "desc": "Una de las etapas más agradables del Camino Portugués, con senderos entre bosques y caminos tradicionales que atraviesan zonas rurales.",
+        "km": 19,
+        "horas": "5",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Vistas hacia la ría de Vigo durante algunos tramos del recorrido",
+          "Basílica de Santa María la Mayor en Pontevedra",
+          "Plaza de la Leña y Santuario de la Virgen Peregrina en Pontevedra"
+        ]
+      },
+      {
+        "dia": 5,
+        "origen": "Pontevedra",
+        "destino": "Caldas de Reis",
+        "desc": "Etapa tranquila que atraviesa paisajes rurales, viñedos y pequeñas aldeas típicas gallegas.",
+        "km": 23,
+        "horas": "6",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Puentes históricos del Camino y zonas naturales junto al río",
+          "Cascada de Segade, uno de los rincones naturales más conocidos de la zona",
+          "Tradición termal de Caldas de Reis"
+        ]
+      },
+      {
+        "dia": 6,
+        "origen": "Caldas de Reis",
+        "destino": "Padrón",
+        "desc": "El Camino continúa entre bosques, aldeas y caminos rurales hasta llegar a uno de los lugares con mayor tradición jacobea.",
+        "km": 19,
+        "horas": "5",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Villa de Padrón, muy vinculada a la historia del Apóstol Santiago",
+          "Iglesia de Santiago de Padrón, donde según la tradición se conserva el pedrón relacionado con la llegada de los restos del Apóstol"
+        ]
+      },
+      {
+        "dia": 7,
+        "origen": "Padrón",
+        "destino": "Santiago de Compostela",
+        "desc": "Última etapa antes de llegar a Santiago de Compostela. El recorrido atraviesa pequeñas localidades y zonas rurales hasta acercarse a la capital gallega.",
+        "km": 24,
+        "horas": "6",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Casco histórico de Santiago de Compostela, declarado Patrimonio de la Humanidad",
+          "Catedral de Santiago de Compostela, meta del Camino y uno de los lugares de peregrinación más importantes del mundo"
+        ]
+      }
+    ],
+    "galeria": [
+      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=80",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
   }
 ]

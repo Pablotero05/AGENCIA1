@@ -14,8 +14,16 @@ class StsFooter extends HTMLElement {
         privacidad: "Política de Privacidad",
         aviso: "Aviso Legal",
         terminos: "Términos y Condiciones",
-        faq: "FAQ",
-        whatsapp: "Contactar por WhatsApp"
+        whatsapp: "Contactar por WhatsApp",
+        rFrances: "Camino Francés",
+        rPortugues: "Camino Portugués",
+        rNorte: "Camino del Norte",
+        rPrimitivo: "Camino Primitivo",
+        sDesayunos: "Desayunos",
+        sComidas: "Comidas y Cenas",
+        sMochilas: "Transporte de Mochilas",
+        sAeropuerto: "Traslado al Aeropuerto",
+        sInicio: "Transporte al Inicio"
       },
       en: {
         desc: "Agency specialized in the Camino de Santiago from Santiago de Compostela. More than 10 years accompanying pilgrims on their spiritual journey.",
@@ -27,8 +35,16 @@ class StsFooter extends HTMLElement {
         privacidad: "Privacy Policy",
         aviso: "Legal Notice",
         terminos: "Terms and Conditions",
-        faq: "FAQ",
-        whatsapp: "Contact us via WhatsApp"
+        whatsapp: "Contact us via WhatsApp",
+        rFrances: "French Way",
+        rPortugues: "Portuguese Way",
+        rNorte: "Northern Way",
+        rPrimitivo: "Primitive Way",
+        sDesayunos: "Breakfasts",
+        sComidas: "Lunches & Dinners",
+        sMochilas: "Luggage Transport",
+        sAeropuerto: "Airport Transfer",
+        sInicio: "Transfer to Start"
       },
       por: {
         desc: "Agência especializada no Caminho de Santiago a partir de Santiago de Compostela. Mais de 10 anos acompanhando peregrinos em sua jornada espiritual.",
@@ -40,8 +56,16 @@ class StsFooter extends HTMLElement {
         privacidad: "Política de Privacidade",
         aviso: "Aviso Legal",
         terminos: "Termos e Condições",
-        faq: "FAQ",
-        whatsapp: "Contatar por WhatsApp"
+        whatsapp: "Contatar por WhatsApp",
+        rFrances: "Caminho Francês",
+        rPortugues: "Caminho Português",
+        rNorte: "Caminho do Norte",
+        rPrimitivo: "Caminho Primitivo",
+        sDesayunos: "Pequenos-almoços",
+        sComidas: "Almoços e Jantares",
+        sMochilas: "Transporte de Mochilas",
+        sAeropuerto: "Transfer para o Aeroporto",
+        sInicio: "Transporte para o Ponto de Partida"
       }
     };
 
@@ -87,10 +111,10 @@ class StsFooter extends HTMLElement {
                 ${t.rutas}
               </h4>
               <ul class="space-y-3">
-                <li><a href="/${lang}/pages/rutas/camino-frances.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino Francés</a></li>
-                <li><a href="/${lang}/pages/rutas/camino-portugues.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino Portugués</a></li>
-                <li><a href="/${lang}/pages/rutas/camino-del-norte.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino del Norte</a></li>
-                <li><a href="/${lang}/pages/rutas/camino-primitivo.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino Primitivo</a></li>
+                <li><a href="/${lang}/pages/ruta.html?id=frances" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.rFrances}</a></li>
+                <li><a href="/${lang}/pages/ruta.html?id=portugues" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.rPortugues}</a></li>
+                <li><a href="/${lang}/pages/rutas.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.rNorte}</a></li>
+                <li><a href="/${lang}/pages/rutas.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.rPrimitivo}</a></li>
                 <li><a href="/${lang}/pages/rutas.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.verTodas}</a></li>
               </ul>
             </div>
@@ -101,10 +125,11 @@ class StsFooter extends HTMLElement {
                 ${t.servicios}
               </h4>
               <ul class="space-y-3">
-                <li><a href="/${lang}/pages/servicios.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino Individual</a></li>
-                <li><a href="/${lang}/pages/servicios.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino en Grupo</a></li>
-                <li><a href="/${lang}/pages/servicios.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino Privado</a></li>
-                <li><a href="/${lang}/pages/servicios.html" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">Camino en Bicicleta</a></li>
+                <li><a href="/${lang}/pages/servicios.html#desayunos" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.sDesayunos}</a></li>
+                <li><a href="/${lang}/pages/servicios.html#comidas" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.sComidas}</a></li>
+                <li><a href="/${lang}/pages/servicios.html#mochilas" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.sMochilas}</a></li>
+                <li><a href="/${lang}/pages/servicios.html#aeropuerto" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.sAeropuerto}</a></li>
+                <li><a href="/${lang}/pages/servicios.html#inicio" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">${t.sInicio}</a></li>
               </ul>
             </div>
 
@@ -116,7 +141,7 @@ class StsFooter extends HTMLElement {
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
                   <i class="fa-solid fa-location-dot text-[var(--accent-color)] mt-1" aria-hidden="true"></i>
-                  <span class="text-white/70 text-sm">Rúa do Vilar, 54<br>15705 Santiago de Compostela<br>Galicia, España</span>
+                  <span class="text-white/70 text-sm">Santiago de Compostela, España</span>
                 </li>
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-phone text-[var(--accent-color)]" aria-hidden="true"></i>
@@ -147,7 +172,6 @@ class StsFooter extends HTMLElement {
                 <a href="/${lang}/pages/politicas.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.privacidad}</a>
                 <a href="/${lang}/pages/legal.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.aviso}</a>
                 <a href="/${lang}/pages/terminos.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.terminos}</a>
-                <a href="/${lang}/pages/faq.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.faq}</a>
               </div>
             </div>
           </div>

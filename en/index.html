@@ -11,6 +11,7 @@
     rel="stylesheet">
   <script src="../scripts/components/sts-header.js"></script>
   <script src="../scripts/components/sts-footer.js" defer></script>
+  <script src="../scripts/components/routesHome.js" defer></script>
   <script src="../scripts/animations.js" defer></script>
   
   <link rel="stylesheet" href="../fontawesome/css/all.min.css">
@@ -174,7 +175,7 @@
                       aria-hidden="true"></i>
                   </div>
                   <div class="text-4xl md:text-5xl font-bold text-[var(--accent2-color)] mb-2">
-                    8
+                    <span data-route-count>8</span>
                   </div>
                   <div class="text-[var(--gray-text-color)] font-medium">
                     Jacobean routes available
@@ -237,240 +238,14 @@
                   Discover the perfect Camino for you
                 </h2>
                 <p class="text-[var(--gray-text-color)] text-lg max-w-2xl mx-auto">
-                  8 rutas jacobeas disponibles con itinerarios diseñados por expertos
+                  <span data-route-count>8</span> rutas jacobeas disponibles con itinerarios diseñados por expertos
                   locales
                 </p>
               </div>
 
               <!-- Routes Grid -->
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <!-- Route Card 1: Camino Francés -->
-                <div
-                  class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-2">
-                  <div class="relative h-48 overflow-hidden">
-                    <img
-                      src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
-                      alt="French Way - Forest and nature"
-                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      data-media="{&quot;id&quot;:&quot;2247237822&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
-                    <div class="absolute top-4 right-4">
-                      <span class="px-3 py-1 bg-[var(--accent-color)] text-white text-xs font-bold rounded-full">Más
-                        popular</span>
-                    </div>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                      style="font-family: var(--font-family-heading);">
-                      Camino Francés
-                    </h3>
-                    <div class="flex flex-wrap gap-3 mb-4">
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-regular fa-clock" aria-hidden="true"></i> 30-35 days
-                      </span>
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-solid fa-road" aria-hidden="true"></i> 800 km
-                      </span>
-                      <span
-                        class="px-2 py-1 bg-[var(--accent2-color)]/10 text-[var(--accent2-color)] text-xs font-medium rounded-full">Moderate</span>
-                    </div>
-                    <p class="text-[var(--gray-text-color)] text-sm mb-4">
-                      La ruta clásica y más transitada. Desde Saint-Jean-Pied-de-Port
-                      hasta Santiago.
-                    </p>
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
-                        <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.290€</span>
-                      </div>
-                      <a href="/en/pages/ruta.html?id=frances"
-                        class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
-                        View itinerary <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Route Card 2: Camino Portugués -->
-                <div
-                  class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-2">
-                  <div class="relative h-48 overflow-hidden">
-                    <img
-                      src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
-                      alt="Portuguese Way - Trail signage in the forest"
-                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      data-media="{&quot;id&quot;:&quot;2168149269&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                      style="font-family: var(--font-family-heading);">
-                      Camino Portugués
-                    </h3>
-                    <div class="flex flex-wrap gap-3 mb-4">
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-regular fa-clock" aria-hidden="true"></i> 10-14 days
-                      </span>
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-solid fa-road" aria-hidden="true"></i> 260 km
-                      </span>
-                      <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">Easy</span>
-                    </div>
-                    <p class="text-[var(--gray-text-color)] text-sm mb-4">
-                      The second most popular route. From Lisbon or Porto to Santiago.
-                    </p>
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
-                        <span class="text-xl font-bold text-[var(--primary-color)] ml-1">890€</span>
-                      </div>
-                      <a href="/en/pages/ruta.html?id=portugues"
-                        class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
-                        View itinerary <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Route Card 3: Camino del Norte -->
-                <div
-                  class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-2">
-                  <div class="relative h-48 overflow-hidden">
-                    <img
-                      src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/cf5babb9-5491-45db-c696-1cee8bf74c00/public"
-                      alt="Northern Way - Coastal trail"
-                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      data-media="{&quot;id&quot;:&quot;2224488886&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                      style="font-family: var(--font-family-heading);">
-                      Camino del Norte
-                    </h3>
-                    <div class="flex flex-wrap gap-3 mb-4">
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-regular fa-clock" aria-hidden="true"></i> 30-35 days
-                      </span>
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-solid fa-road" aria-hidden="true"></i> 825 km
-                      </span>
-                      <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">Hard</span>
-                    </div>
-                    <p class="text-[var(--gray-text-color)] text-sm mb-4">
-                      La ruta costera más exigente. Playas, acantilados y montañas de
-                      Cantabria y Asturias.
-                    </p>
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
-                        <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.490€</span>
-                      </div>
-                      <a href="/en/pages/ruta.html?id=norte"
-                        class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
-                        View itinerary <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Route Card 4: Camino Primitivo -->
-                <div
-                  class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-2">
-                  <div class="relative h-48 overflow-hidden">
-                    <img
-                      src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/6406846c-b9f1-4515-4721-19fd20da6a00/public"
-                      alt="Primitive Way - Footprints in the forest"
-                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      data-media="{&quot;id&quot;:&quot;2163402625&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                      style="font-family: var(--font-family-heading);">
-                      Camino Primitivo
-                    </h3>
-                    <div class="flex flex-wrap gap-3 mb-4">
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-regular fa-clock" aria-hidden="true"></i> 14-18 days
-                      </span>
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-solid fa-road" aria-hidden="true"></i> 310 km
-                      </span>
-                      <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">Hard</span>
-                    </div>
-                    <p class="text-[var(--gray-text-color)] text-sm mb-4">
-                      El camino más antiguo. Desde Oviedo, atravesando las montañas de
-                      Asturias.
-                    </p>
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
-                        <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.090€</span>
-                      </div>
-                      <a href="/en/pages/ruta.html?id=primitivo"
-                        class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
-                        View itinerary <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Route Card 5: Vía de la Plata -->
-                <div
-                  class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-2">
-                  <div class="relative h-48 overflow-hidden">
-                    <img
-                      src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/57d6b6d4-426d-4a35-305e-07c6b9eb6b00/publicContain"
-                      alt="Silver Route - Autumn forest"
-                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      data-media="{&quot;id&quot;:&quot;2173944480&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold text-[var(--dark-text-color)] mb-3"
-                      style="font-family: var(--font-family-heading);">
-                      Vía de la Plata
-                    </h3>
-                    <div class="flex flex-wrap gap-3 mb-4">
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-regular fa-clock" aria-hidden="true"></i> 40-45 days
-                      </span>
-                      <span class="flex items-center gap-1 text-sm text-[var(--gray-text-color)]">
-                        <i class="fa-solid fa-road" aria-hidden="true"></i> 900 km
-                      </span>
-                      <span
-                        class="px-2 py-1 bg-[var(--accent-color)]/10 text-[var(--accent-color)] text-xs font-medium rounded-full">Moderate</span>
-                    </div>
-                    <p class="text-[var(--gray-text-color)] text-sm mb-4">
-                      La ruta más larga. Desde Sevilla, atravesando Extremadura y
-                      Castilla.
-                    </p>
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <span class="text-xs text-[var(--gray-text-color)]">Desde</span>
-                        <span class="text-xl font-bold text-[var(--primary-color)] ml-1">1.590€</span>
-                      </div>
-                      <a href="/en/pages/ruta.html?id=plata"
-                        class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1">
-                        View itinerary <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Route Card 6: Más Rutas -->
-                <div
-                  class="bg-gradient-to-br from-[var(--primary-color)] to-[var(--dark-background-color)] rounded-2xl p-6 flex flex-col items-center justify-center text-center text-white">
-                  <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-route text-3xl text-[var(--accent-color)]" aria-hidden="true"></i>
-                  </div>
-                  <h3 class="text-xl font-bold mb-3" style="font-family: var(--font-family-heading);">
-                    Haven't decided yet?
-                  </h3>
-                  <p class="text-white/80 text-sm mb-6">
-                    Discover all our available routes
-                  </p>
-                  <a href="/en/pages/rutas.html"
-                    class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent-color)] text-[var(--dark-text-color)] font-bold rounded-lg hover:bg-white transition-all duration-300">
-                    View all routes <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                  </a>
-                </div>
+              <div id="routes-home-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Will load dynamically via routesHome.js -->
               </div>
             </div>
           </section>

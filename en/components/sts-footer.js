@@ -72,7 +72,7 @@ class StsFooter extends HTMLElement {
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
                   <i class="fa-solid fa-location-dot text-[var(--accent-color)] mt-1" aria-hidden="true"></i>
-                  <span class="text-white/70 text-sm">Rúa do Vilar, 54<br>15705 Santiago de Compostela<br>Galicia, España</span>
+                  <span class="text-white/70 text-sm"><br></span>
                 </li>
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-phone text-[var(--accent-color)]" aria-hidden="true"></i>

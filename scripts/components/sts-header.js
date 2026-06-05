@@ -313,6 +313,20 @@ class StsHeader extends HTMLElement {
     `;
 
     this._initMobileMenu();
+    this._updateRouteCounts(lang, assetPrefix);
+  }
+
+  async _updateRouteCounts(lang, assetPrefix) {
+    try {
+      const response = await fetch(`${assetPrefix}${lang}/data/rutas.json`);
+      if (!response.ok) return;
+      const rutas = await response.json();
+      document.querySelectorAll('[data-route-count]').forEach(el => {
+        el.textContent = rutas.length;
+      });
+    } catch(e) {
+      console.error('Error fetching route count:', e);
+    }
   }
 
   _getLangFromPath(path) {
