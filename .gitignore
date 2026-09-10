@@ -6,3 +6,4 @@ Thumbs.db
 .gemini/
 .claude/
 *.log
+public/
