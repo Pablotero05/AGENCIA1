@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT_DIR = 'c:/Users/Pablo/Documents/WEBS/STEPBYSTEP';
+// Resolve the project root from this script so builds work locally and on Vercel.
+const ROOT_DIR = path.resolve(__dirname, '..');
 const BASE_URL = 'https://www.steptosantiago.com';
 
 // Load routes data
