@@ -75,28 +75,42 @@ document.addEventListener('DOMContentLoaded', async () => {
       const getDificultadColor = (dif) => {
         if (!dif || dif === '-') return '';
         const d = dif.toLowerCase();
-        if (d === 'baja') return 'bg-green-100 text-green-700';
-        if (d === 'media') return 'bg-yellow-100 text-yellow-700';
-        if (d === 'alta' || d === 'muy alta') return 'bg-red-100 text-red-700';
+        if (d.includes('baja') || d.includes('low') || d.includes('fácil') || d.includes('facil') || d.includes('easy')) return 'bg-green-100 text-green-700';
+        if (d.includes('media') || d.includes('medium') || d.includes('moderado') || d.includes('moderate')) return 'bg-yellow-100 text-yellow-700';
+        if (d.includes('alta') || d.includes('high') || d.includes('exigente') || d.includes('dura') || d.includes('hard')) return 'bg-red-100 text-red-700';
         return 'bg-gray-100 text-gray-600';
       };
 
+      const formatKm = (km) => {
+        if (km === undefined || km === null) return '';
+        const str = String(km).trim();
+        if (str.toLowerCase().includes('km')) return str;
+        return `${str} km`;
+      };
+
+      const formatHoras = (horas) => {
+        if (!horas || horas === '-') return '';
+        const str = String(horas).trim();
+        if (str.toLowerCase().includes('h')) return str;
+        return `${str} h`;
+      };
+
       etapasContainer.innerHTML = ruta.etapas.map(etapa => {
-        const isArrival = etapa.km === 0;
+        const isArrival = etapa.km === 0 || etapa.km === '0';
 
         const statsHTML = isArrival
-          ? `<span class="flex items-center gap-2 text-[var(--accent-color)] font-semibold"><i class="fa-solid fa-star text-[var(--accent-color)]"></i>Día de llegada</span>`
+          ? `<span class="flex items-center gap-2 text-[var(--accent-color)] font-semibold"><i class="fa-solid fa-star text-[var(--accent-color)]"></i>${lang === 'en' ? 'Arrival day' : lang === 'por' ? 'Dia de chegada' : 'Día de llegada'}</span>`
           : `
-            <span class="flex items-center gap-2"><i class="fa-solid fa-route text-[var(--primary-color)]"></i>${etapa.km} km</span>
-            <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-[var(--primary-color)]"></i>${etapa.horas} h</span>
-            ${etapa.desnivel ? `<span class="flex items-center gap-2"><i class="fa-solid fa-mountain text-[var(--primary-color)]"></i>${etapa.desnivel}</span>` : ''}
-            ${etapa.dificultad && etapa.dificultad !== '-' ? `<span class="flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold ${getDificultadColor(etapa.dificultad)}"><i class="fa-solid fa-gauge mr-1"></i>Dificultad ${etapa.dificultad}</span>` : ''}
+            <span class="flex items-center gap-2 font-medium"><i class="fa-solid fa-route text-[var(--primary-color)]"></i>${formatKm(etapa.km)}</span>
+            ${etapa.horas && etapa.horas !== '-' ? `<span class="flex items-center gap-2 font-medium"><i class="fa-solid fa-clock text-[var(--primary-color)]"></i>${formatHoras(etapa.horas)}</span>` : ''}
+            ${etapa.desnivel ? `<span class="flex items-center gap-2 font-medium"><i class="fa-solid fa-mountain text-[var(--primary-color)]"></i>${etapa.desnivel}</span>` : ''}
+            ${etapa.dificultad && etapa.dificultad !== '-' ? `<span class="flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold ${getDificultadColor(etapa.dificultad)}"><i class="fa-solid fa-gauge mr-1"></i>${lang === 'en' ? 'Difficulty' : lang === 'por' ? 'Dificuldade' : 'Dificultad'} ${etapa.dificultad}</span>` : ''}
           `;
 
         const puntosHTML = etapa.puntosInteres && etapa.puntosInteres.length > 0
           ? `<div class="mt-4 pt-4 border-t border-gray-200">
               <p class="text-xs font-bold text-[var(--dark-text-color)] uppercase tracking-wide mb-2 flex items-center gap-1">
-                <i class="fa-solid fa-location-dot text-[var(--accent-color)]"></i> Puntos de interés
+                <i class="fa-solid fa-location-dot text-[var(--accent-color)]"></i> ${lang === 'en' ? 'Points of interest' : lang === 'por' ? 'Pontos de interesse' : 'Puntos de interés'}
               </p>
               <ul class="space-y-1">
                 ${etapa.puntosInteres.map(p => `

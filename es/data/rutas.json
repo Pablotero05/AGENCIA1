@@ -195,5 +195,464 @@
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
     ]
+  },
+  {
+    "id": "portugues-costa-oporto",
+    "nombre": "Camino Portugués de la Costa desde Oporto",
+    "slug": "/rutas/portugues-costa-oporto",
+    "imagen": "../../assets/ruta_portugues.png",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🌊 Costa Atlántica",
+    "badgeColor": "bg-sky-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderado",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderada. Perfil mayoritariamente llano junto a la costa con tramos arenosos y etapas de distancia media-alta.",
+    "km": "270 km",
+    "dias": "14 días (13 etapas)",
+    "descripcion": "Ruta atlántica completa desde la monumental Oporto hasta Santiago de Compostela. Recorre pasarelas de madera sobre playas, pueblos marineros, el cruce en ferry del Miño y la costa gallega.",
+    "descripcionLarga": [
+      "El Camino Portugués de la Costa desde Oporto es una de las experiencias costeras más bellas de todas las rutas jacobeas. Arranca en la histórica ciudad del Duero y discurre hacia el norte pegado a las playas y pasarelas de madera del litoral atlántico portugués.",
+      "A lo largo de las etapas se atraviesan poblaciones costeras llenas de tradición marinera como Vila do Conde, Esposende, Viana do Castelo y Caminha, donde se realiza el emblemático cruce en barca del río Miño hacia A Guarda (Galicia).",
+      "En Galicia, el camino bordea el océano por Oia y Baiona, recorre los senderos con vistas a la ría de Vigo y confluye en Redondela con el trazado central para culminar en la Plaza del Obradoiro de Santiago de Compostela."
+    ],
+    "inicio": "Oporto",
+    "fin": "Santiago de Compostela",
+    "epoca": "Abril a Octubre",
+    "tags": ["Junto al Océano", "Pasarelas y Playas", "Cruce en Ferry"],
+    "precio": "790 €/persona",
+    "puntosDestacados": [
+      "Salida desde Oporto siguiendo el río Duero hasta el Atlántico",
+      "Pasarelas de madera, dunas y faros de la costa portuguesa",
+      "Monte de Santa Luzia en Viana do Castelo con vistas panorámicas",
+      "Cruce en barca/ferry del río Miño hacia A Guarda",
+      "Monasterio de Santa María de Oia frente a las olas del océano",
+      "Fortaleza de Monterreal y puerto de Baiona",
+      "Vistas a la Ría de Vigo y viaductos de Redondela",
+      "Llegada a la Catedral de Santiago de Compostela"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Oporto",
+        "destino": "Labruge / Vila do Conde",
+        "desc": "Salida desde Oporto siguiendo el Duero hasta el Atlántico. Primer contacto con el mar, playas y pasarelas de madera.",
+        "km": "22–27 km",
+        "horas": "5–6 h",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 2,
+        "origen": "Vila do Conde",
+        "destino": "Esposende",
+        "desc": "Etapa muy costera, con dunas, faros y pueblos pesqueros. Muy llana y agradable.",
+        "km": "20–24 km",
+        "horas": "5–6 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 3,
+        "origen": "Esposende",
+        "destino": "Viana do Castelo",
+        "desc": "Uno de los tramos más bonitos. Llegada a Viana do Castelo, con opción de subir al monte de Santa Luzia (vistas espectaculares).",
+        "km": "22 km",
+        "horas": "5h30",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 4,
+        "origen": "Viana do Castelo",
+        "destino": "Caminha",
+        "desc": "Etapa larga pero preciosa junto al mar. Final en Caminha, ya en la desembocadura del Miño.",
+        "km": "25 km",
+        "horas": "6 h",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 5,
+        "origen": "Caminha",
+        "destino": "A Guarda (ferry)",
+        "desc": "Cruzas el río Miño en barca hacia A Guarda. Etapa corta, ideal para descansar o explorar el Castro de Santa Trega.",
+        "km": "5 km caminando + ferry",
+        "horas": "2–3 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 6,
+        "origen": "A Guarda",
+        "destino": "Oia",
+        "desc": "Tramo espectacular pegado al mar. Pasas por el monasterio de Santa María de Oia, literalmente frente al océano.",
+        "km": "13–15 km",
+        "horas": "3–4 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 7,
+        "origen": "Oia",
+        "destino": "Baiona",
+        "desc": "Sigues la costa con vistas constantes al Atlántico. Llegada a Baiona, villa histórica muy animada.",
+        "km": "18 km",
+        "horas": "4h30",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 8,
+        "origen": "Baiona",
+        "destino": "Vigo",
+        "desc": "Etapa variada, con costa, senderos y tramos urbanos. Llegas a Vigo.",
+        "km": "25 km",
+        "horas": "6 h",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 9,
+        "origen": "Vigo",
+        "destino": "Redondela",
+        "desc": "Subidas y bajadas con vistas a la ría. En Redondela te unes al Camino Portugués interior.",
+        "km": "15–16 km",
+        "horas": "4 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 10,
+        "origen": "Redondela",
+        "destino": "Pontevedra",
+        "desc": "Bosques, caminos antiguos y muy buen ambiente peregrino. Llegada a Pontevedra.",
+        "km": "19–20 km",
+        "horas": "4h30",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 11,
+        "origen": "Pontevedra",
+        "destino": "Caldas de Reis",
+        "desc": "Etapa cómoda y verde. Final en Caldas de Reis, famosa por sus aguas termales.",
+        "km": "21 km",
+        "horas": "5–6 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 12,
+        "origen": "Caldas de Reis",
+        "destino": "Padrón",
+        "desc": "Tramo relajado entre pueblos y bosque. Llegada a Padrón.",
+        "km": "18–19 km",
+        "horas": "4h30",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 13,
+        "origen": "Padrón",
+        "destino": "Santiago de Compostela",
+        "desc": "Última etapa hasta Santiago de Compostela, con la llegada a la catedral.",
+        "km": "24 km",
+        "horas": "5–6 h",
+        "dificultad": "Media"
+      }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "portugues-costa-guarda",
+    "nombre": "Camino Portugués de la Costa desde A Guarda",
+    "slug": "/rutas/portugues-costa-guarda",
+    "imagen": "../../assets/ruta_portugues.png",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+    "badge": "🌊 Costa Gallega",
+    "badgeColor": "bg-cyan-600 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Fácil",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Fácil. Perfil predominantemente costero y llano con pendientes suaves al adentrarse hacia la ría.",
+    "km": "160 km",
+    "dias": "9 días (8 etapas)",
+    "descripcion": "El tramo gallego del Camino de la Costa comenzando en A Guarda, frente al estuario del Miño. Acantilados, monasterios marineros, la ría de Vigo y villas históricas hasta Santiago.",
+    "descripcionLarga": [
+      "El Camino Portugués de la Costa desde A Guarda permite recorrer todo el litoral suroeste de Galicia, disfrutando de impresionantes panorámicas sobre el océano Atlántico.",
+      "Desde el pintoresco pueblo marinero de A Guarda y el emblemático Monasterio de Santa María de Oia, la ruta avanza por la histórica villa de Baiona, la ciudad de Vigo y la ría de Redondela.",
+      "A partir de Redondela se une con el Camino Portugués tradicional, pasando por la monumental Pontevedra, la villa termal de Caldas de Reis y la cuna jacobea de Padrón, completando los kilómetros requeridos para conseguir la Compostela."
+    ],
+    "inicio": "A Guarda",
+    "fin": "Santiago de Compostela",
+    "epoca": "Todo el año (ideal primavera y verano)",
+    "tags": ["Obtén la Compostela", "Monasterio de Oia", "Vistas a las Cíes"],
+    "precio": "445 €/persona",
+    "puntosDestacados": [
+      "Castro de Santa Trega y puerto marinero de A Guarda",
+      "Monasterio de Santa María de Oia frente a las olas del Atlántico",
+      "Fortaleza de Monterreal y puerto de Baiona",
+      "Vistas panorámicas a las Islas Cíes y ría de Vigo",
+      "Casco histórico y Basílica de Santa María en Pontevedra",
+      "Fuentes termales de Caldas de Reis",
+      "Plaza del Obradoiro y Catedral de Santiago"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "A Guarda",
+        "destino": "Oia",
+        "desc": "Tramo espectacular pegado al mar. Pasas por el monasterio de Santa María de Oia, literalmente frente al océano.",
+        "km": "13–15 km",
+        "horas": "3–4 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 2,
+        "origen": "Oia",
+        "destino": "Baiona",
+        "desc": "Sigues la costa con vistas constantes al Atlántico. Llegada a Baiona, villa histórica muy animada.",
+        "km": "18 km",
+        "horas": "4h30",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 3,
+        "origen": "Baiona",
+        "destino": "Vigo",
+        "desc": "Etapa variada, con costa, senderos y tramos urbanos. Llegas a Vigo.",
+        "km": "25 km",
+        "horas": "6 h",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 4,
+        "origen": "Vigo",
+        "destino": "Redondela",
+        "desc": "Subidas y bajadas con vistas a la ría. En Redondela te unes al Camino Portugués interior.",
+        "km": "15–16 km",
+        "horas": "4 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 5,
+        "origen": "Redondela",
+        "destino": "Pontevedra",
+        "desc": "Bosques, caminos antiguos y muy buen ambiente peregrino. Llegada a Pontevedra.",
+        "km": "19–20 km",
+        "horas": "4h30",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 6,
+        "origen": "Pontevedra",
+        "destino": "Caldas de Reis",
+        "desc": "Etapa cómoda y verde. Final en Caldas de Reis, famosa por sus aguas termales.",
+        "km": "21 km",
+        "horas": "5–6 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 7,
+        "origen": "Caldas de Reis",
+        "destino": "Padrón",
+        "desc": "Tramo relajado entre pueblos y bosque. Llegada a Padrón.",
+        "km": "18–19 km",
+        "horas": "4h30",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 8,
+        "origen": "Padrón",
+        "destino": "Santiago de Compostela",
+        "desc": "Última etapa hasta Santiago de Compostela, con la llegada a la catedral.",
+        "km": "24 km",
+        "horas": "5–6 h",
+        "dificultad": "Media"
+      }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "ingles-ferrol",
+    "nombre": "Camino Inglés desde Ferrol",
+    "slug": "/rutas/ingles-ferrol",
+    "imagen": "../../assets/miniatura-valencia.jpg",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+    "badge": "🛡️ 100% Gallego",
+    "badgeColor": "bg-emerald-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderado",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderada. Combina tramos llanos junto a las rías con etapas interiores con desnivel y tramos solitarios.",
+    "km": "115 km",
+    "dias": "6 días (6 etapas)",
+    "descripcion": "La ruta histórica que seguían los peregrinos del norte de Europa que desembarcaban en Galicia. Rías marítimas, bosques frondosos y villas medievales como Pontedeume y Betanzos.",
+    "descripcionLarga": [
+      "El Camino Inglés era la vía marítima utilizada en la Edad Media por los peregrinos procedentes de Gran Bretaña, Irlanda y los países escandinavos que desembarcaban en los puertos de Ferrol y A Coruña.",
+      "Iniciando en el histórico puerto de Ferrol, el itinerario bordea rías espectaculares antes de adentrarse en los verdes bosques y paisajes rurales del interior gallego.",
+      "Con más de 100 km, permite conseguir la Compostela en menos de una semana, atravesando villas de enorme encanto medieval como Pontedeume y Betanzos, y la soledad auténtica de Hospital de Bruma."
+    ],
+    "inicio": "Ferrol",
+    "fin": "Santiago de Compostela",
+    "epoca": "Todo el año (especialmente de Mayo a Octubre)",
+    "tags": ["Obtén la Compostela", "Villas medievales", "Ideal en 6 días"],
+    "precio": "375 €/persona",
+    "puntosDestacados": [
+      "Salida desde el Puerto de Curuxeiras en Ferrol y paseo por la ría",
+      "Villa medieval de Pontedeume y puente de piedra sobre el río Eume",
+      "Casco histórico monumental y gastronomía de Betanzos",
+      "Paso por el legendario Hospital de Bruma en plena naturaleza",
+      "Frondosos bosques autóctonos de robles y castaños",
+      "Llegada emocionante a la Plaza del Obradoiro"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Ferrol",
+        "destino": "Neda",
+        "desc": "Empiezas en Ferrol, saliendo desde el puerto y bordeando la ría. Es una etapa suave, con bastante tramo urbano al principio que poco a poco se vuelve más rural. Perfecta para entrar en ritmo sin esfuerzo.",
+        "km": "15 km",
+        "horas": "3–4 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 2,
+        "origen": "Neda",
+        "destino": "Pontedeume",
+        "desc": "Camino agradable entre pequeñas aldeas y zonas verdes. Sigues viendo la ría durante parte del recorrido. Llegada a Pontedeume, una villa medieval muy bonita.",
+        "km": "16 km",
+        "horas": "4 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 3,
+        "origen": "Pontedeume",
+        "destino": "Betanzos",
+        "desc": "Primera etapa exigente. Nada más salir hay una subida fuerte que marca el día. Alterna bosque y carreteras secundarias. Final en Betanzos, con un casco histórico muy bien conservado.",
+        "km": "20–21 km",
+        "horas": "5–6 h",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 4,
+        "origen": "Betanzos",
+        "destino": "Hospital de Bruma",
+        "desc": "La etapa más dura del camino. Larga, con desnivel y tramos solitarios. Es muy rural, con pocos servicios, pero también muy auténtica. Requiere buena gestión del esfuerzo.",
+        "km": "24–28 km",
+        "horas": "6–7 h",
+        "dificultad": "Alta"
+      },
+      {
+        "dia": 5,
+        "origen": "Hospital de Bruma",
+        "destino": "Sigüeiro",
+        "desc": "Etapa más llevadera tras el esfuerzo del día anterior. Caminos forestales, tranquilidad y buen terreno para caminar cómodo. Llegada a Sigüeiro.",
+        "km": "24 km",
+        "horas": "5–6 h",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 6,
+        "origen": "Sigüeiro",
+        "destino": "Santiago de Compostela",
+        "desc": "Último tramo sencillo, con algo más de presencia urbana a medida que te acercas. La emoción crece hasta la llegada a Santiago de Compostela, en la Plaza del Obradoiro.",
+        "km": "16 km",
+        "horas": "4 h",
+        "dificultad": "Baja"
+      }
+    ],
+    "galeria": [
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "../../assets/miniatura-frances.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
+    ]
+  },
+  {
+    "id": "primitivo-lugo",
+    "nombre": "Camino Primitivo desde Lugo",
+    "slug": "/rutas/primitivo-lugo",
+    "imagen": "../../assets/home_experiencia.png",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🏛️ Historia y Naturaleza",
+    "badgeColor": "bg-amber-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderado",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderada. Etapas rurales con sensación de aislamiento y algunas jornadas de kilometraje exigente.",
+    "km": "102 km",
+    "dias": "5 días (5 etapas)",
+    "descripcion": "El tramo final del camino más antiguo del mundo, comenzando en la bimilenaria ciudad de Lugo. Naturaleza salvaje, tranquilidad absoluta y fusión con el Camino Francés en Melide.",
+    "descripcionLarga": [
+      "El Camino Primitivo es la ruta jacobea original, inaugurada por el rey Alfonso II el Casto en el siglo IX. Su tramo desde Lugo permite recorrer los más de 100 km necesarios para obtener la Compostela.",
+      "La peregrinación arranca atravesando la imponente muralla romana de Lugo, Patrimonio de la Humanidad, y continúa por senderos solitarios, aldeas tradicionales y bosques centenarios de robles y castaños.",
+      "En Melide, el Camino Primitivo confluye con el Camino Francés, aportando un animado ambiente peregrino y la mejor gastronomía antes de culminar ante la Catedral en Santiago de Compostela."
+    ],
+    "inicio": "Lugo",
+    "fin": "Santiago de Compostela",
+    "epoca": "Mayo a Octubre",
+    "tags": ["Obtén la Compostela", "Muralla de Lugo", "Ruta histórica"],
+    "precio": "355 €/persona",
+    "puntosDestacados": [
+      "Paseo sobre la Muralla Romana de Lugo (Patrimonio Mundial de la UNESCO)",
+      "Auténticas aldeas y pistas rurales de San Román da Retorta",
+      "Unión con el Camino Francés en Melide y degustación de pulpo tradicional",
+      "Bosques de eucaliptos y senderos sombríos de Arzúa y O Pedrouzo",
+      "Llegada al Monte do Gozo con las primeras vistas de las torres de la Catedral",
+      "Final soñado en la Plaza del Obradoiro en Santiago de Compostela"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Lugo",
+        "destino": "San Román da Retorta",
+        "desc": "Salida desde la muralla romana de Lugo. Etapa tranquila, con pistas rurales, bosques y aldeas pequeñas. Perfecta para empezar sin demasiada exigencia.",
+        "km": "19–20 km",
+        "horas": "4h30–5 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 2,
+        "origen": "San Román da Retorta",
+        "destino": "Melide",
+        "desc": "Etapa larga y algo exigente. Mucho entorno rural y sensación de aislamiento. Llegada a Melide, donde el Primitivo se une con el Camino Francés (más ambiente y servicios).",
+        "km": "27–28 km",
+        "horas": "6–7 h",
+        "dificultad": "Alta"
+      },
+      {
+        "dia": 3,
+        "origen": "Melide",
+        "destino": "Arzúa",
+        "desc": "Etapa corta y cómoda, ideal para recuperar. Mucho bosque, buen firme y bastantes peregrinos al unirse con el Francés. Final en Arzúa.",
+        "km": "14–15 km",
+        "horas": "3–4 h",
+        "dificultad": "Baja"
+      },
+      {
+        "dia": 4,
+        "origen": "Arzúa",
+        "destino": "O Pedrouzo",
+        "desc": "Camino agradable entre eucaliptos y senderos bien cuidados. Subidas suaves. Llegada a O Pedrouzo, punto típico antes de la última etapa.",
+        "km": "19 km",
+        "horas": "4h30–5 h",
+        "dificultad": "Media"
+      },
+      {
+        "dia": 5,
+        "origen": "O Pedrouzo",
+        "destino": "Santiago de Compostela",
+        "desc": "Última etapa con mezcla de bosque y tramos más urbanos al acercarte. Llegada a Santiago de Compostela.",
+        "km": "20 km",
+        "horas": "5 h",
+        "dificultad": "Media"
+      }
+    ],
+    "galeria": [
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "../../assets/home_experiencia.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public"
+    ]
   }
 ]

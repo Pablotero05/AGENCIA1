@@ -1,0 +1,22 @@
+[Unit]
+Description=ComfyUI Service (CPU mode, on Tailscale interface only)
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=comfyui
+Group=comfyui
+WorkingDirectory=/opt/comfyui/app
+ExecStart=/opt/comfyui/app/venv/bin/python main.py --cpu --listen 100.101.164.31 --port 8188
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+Environment=HOME=/opt/comfyui
+Environment=PYTHONUNBUFFERED=1
+TimeoutStopSec=30
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

@@ -115,7 +115,7 @@
         "desc": "First stage of the Portuguese Way in Galicia. The route alternates rural paths, small population centers, and quiet areas among forests and fields.",
         "km": 16,
         "horas": "4",
-        "dificultad": "Baja",
+        "dificultad": "Low",
         "puntosInteres": [
           "Small rural churches and traditional cruceiros of the Portuguese Way",
           "Town Hall of O Porriño, work of the architect Antonio Palacios"
@@ -128,7 +128,7 @@
         "desc": "The stage crosses the municipality of Mos and combines forest stretches with small villages and traditional paths of the Portuguese Way.",
         "km": 16,
         "horas": "4–5",
-        "dificultad": "Media",
+        "dificultad": "Medium",
         "puntosInteres": [
           "Chapel of Santiaguiño de Antas, a place with great Jacobean tradition",
           "Railway viaducts of Redondela, dominating the municipality's landscape"
@@ -141,7 +141,7 @@
         "desc": "One of the most pleasant stages of the Portuguese Way, with paths among forests and traditional roads crossing rural areas.",
         "km": 19,
         "horas": "5",
-        "dificultad": "Baja",
+        "dificultad": "Low",
         "puntosInteres": [
           "Views towards the Vigo estuary during some sections of the route",
           "Basilica of Santa María la Mayor in Pontevedra",
@@ -155,7 +155,7 @@
         "desc": "Quiet stage crossing rural landscapes, vineyards, and small typical Galician villages.",
         "km": 23,
         "horas": "6",
-        "dificultad": "Baja",
+        "dificultad": "Low",
         "puntosInteres": [
           "Historic bridges of the Camino and natural areas next to the river",
           "Segade Waterfall, one of the best-known natural corners of the area",
@@ -169,7 +169,7 @@
         "desc": "The Camino continues through forests, villages, and rural paths until reaching one of the places with the greatest Jacobean tradition.",
         "km": 19,
         "horas": "5",
-        "dificultad": "Baja",
+        "dificultad": "Low",
         "puntosInteres": [
           "Town of Padrón, closely linked to the history of the Apostle Santiago",
           "Church of Santiago de Padrón, where according to tradition the pedrón related to the arrival of the Apostle's remains is preserved"
@@ -182,7 +182,7 @@
         "desc": "Last stage before reaching Santiago de Compostela. The route crosses small towns and rural areas until approaching the Galician capital.",
         "km": 24,
         "horas": "6",
-        "dificultad": "Media",
+        "dificultad": "Medium",
         "puntosInteres": [
           "Historic center of Santiago de Compostela, declared a World Heritage Site",
           "Cathedral of Santiago de Compostela, goal of the Camino and one of the most important pilgrimage sites in the world"
@@ -194,6 +194,465 @@
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "portugues-costa-oporto",
+    "nombre": "Coastal Portuguese Way from Porto",
+    "slug": "/rutas/portugues-costa-oporto",
+    "imagen": "../../assets/ruta_portugues.png",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🌊 Atlantic Coast",
+    "badgeColor": "bg-sky-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderate",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderate. Mainly flat coastal terrain with sandy paths and medium-to-long distance stages.",
+    "km": "270 km",
+    "dias": "14 days (13 stages)",
+    "descripcion": "Complete Atlantic route from monumental Porto to Santiago de Compostela. Walk across wooden boardwalks over ocean beaches, fishing villages, the Minho river ferry crossing, and the Galician coast.",
+    "descripcionLarga": [
+      "The Coastal Portuguese Way from Porto is one of the most stunning coastal experiences among all Jacobean paths. It starts in the historic Douro city and heads north following beaches and wooden walkways along the Portuguese Atlantic shore.",
+      "Throughout the stages, pilgrims pass through coastal towns rich in seafaring tradition such as Vila do Conde, Esposende, Viana do Castelo, and Caminha, where the iconic ferry crossing takes you across the Minho River into Galicia (A Guarda).",
+      "In Galicia, the trail follows the ocean through Oia and Baiona, climbs along trails overlooking the Vigo estuary, and merges in Redondela with the central way towards the Obradoiro Square in Santiago."
+    ],
+    "inicio": "Porto",
+    "fin": "Santiago de Compostela",
+    "epoca": "April to October",
+    "tags": ["By the Ocean", "Boardwalks & Beaches", "Ferry Crossing"],
+    "precio": "790 €/person",
+    "puntosDestacados": [
+      "Departure from Porto following the Douro River to the Atlantic",
+      "Wooden boardwalks, sand dunes, and lighthouses of the Portuguese coast",
+      "Mount Santa Luzia in Viana do Castelo with panoramic ocean vistas",
+      "Scenic ferry crossing of the Minho River to A Guarda",
+      "Monastery of Santa María de Oia facing the ocean waves",
+      "Monterreal Fortress and historic harbour in Baiona",
+      "Stunning views of the Vigo estuary and viaducts of Redondela",
+      "Grand arrival at the Cathedral of Santiago de Compostela"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Porto",
+        "destino": "Labruge / Vila do Conde",
+        "desc": "Departure from Porto following the Douro River to the Atlantic. First contact with the sea, beaches, and wooden boardwalks.",
+        "km": "22–27 km",
+        "horas": "5–6 h",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 2,
+        "origen": "Vila do Conde",
+        "destino": "Esposende",
+        "desc": "Very coastal stage with dunes, lighthouses, and fishing villages. Very flat and pleasant.",
+        "km": "20–24 km",
+        "horas": "5–6 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 3,
+        "origen": "Esposende",
+        "destino": "Viana do Castelo",
+        "desc": "One of the most beautiful sections. Arrival in Viana do Castelo with the option to climb Mount Santa Luzia (spectacular views).",
+        "km": "22 km",
+        "horas": "5h30",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 4,
+        "origen": "Viana do Castelo",
+        "destino": "Caminha",
+        "desc": "Long but gorgeous stage by the sea. Finishes in Caminha at the mouth of the Minho River.",
+        "km": "25 km",
+        "horas": "6 h",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 5,
+        "origen": "Caminha",
+        "destino": "A Guarda (ferry)",
+        "desc": "Cross the Minho River by boat to A Guarda. Short stage, ideal for resting or exploring the Santa Trega Celtic hill fort.",
+        "km": "5 km walking + ferry",
+        "horas": "2–3 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 6,
+        "origen": "A Guarda",
+        "destino": "Oia",
+        "desc": "Spectacular stretch right next to the sea. You pass the Monastery of Santa María de Oia, literally facing the ocean.",
+        "km": "13–15 km",
+        "horas": "3–4 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 7,
+        "origen": "Oia",
+        "destino": "Baiona",
+        "desc": "Follow the coast with continuous views of the Atlantic. Arrival in lively, historic Baiona.",
+        "km": "18 km",
+        "horas": "4h30",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 8,
+        "origen": "Baiona",
+        "destino": "Vigo",
+        "desc": "Varied stage featuring coast, woodland trails, and urban sections. Arrival in Vigo.",
+        "km": "25 km",
+        "horas": "6 h",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 9,
+        "origen": "Vigo",
+        "destino": "Redondela",
+        "desc": "Ups and downs with views of the estuary. In Redondela you join the inland Portuguese Way.",
+        "km": "15–16 km",
+        "horas": "4 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 10,
+        "origen": "Redondela",
+        "destino": "Pontevedra",
+        "desc": "Forests, ancient stone paths, and a great pilgrim atmosphere. Arrival in Pontevedra.",
+        "km": "19–20 km",
+        "horas": "4h30",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 11,
+        "origen": "Pontevedra",
+        "destino": "Caldas de Reis",
+        "desc": "Comfortable and green stage. End in Caldas de Reis, famous for its thermal waters.",
+        "km": "21 km",
+        "horas": "5–6 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 12,
+        "origen": "Caldas de Reis",
+        "destino": "Padrón",
+        "desc": "Relaxed stretch through villages and woods. Arrival in Padrón.",
+        "km": "18–19 km",
+        "horas": "4h30",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 13,
+        "origen": "Padrón",
+        "destino": "Santiago de Compostela",
+        "desc": "Final stage to Santiago de Compostela, culminating at the Cathedral.",
+        "km": "24 km",
+        "horas": "5–6 h",
+        "dificultad": "Medium"
+      }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "portugues-costa-guarda",
+    "nombre": "Coastal Portuguese Way from A Guarda",
+    "slug": "/rutas/portugues-costa-guarda",
+    "imagen": "../../assets/ruta_portugues.png",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+    "badge": "🌊 Galician Coast",
+    "badgeColor": "bg-cyan-600 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Easy",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Easy. Predominantly coastal and flat profile with gentle slopes as it turns inland towards the ría.",
+    "km": "160 km",
+    "dias": "9 days (8 stages)",
+    "descripcion": "The Galician stretch of the Coastal Way starting in A Guarda, opposite the Minho estuary. Cliffs, seaside monasteries, the Vigo estuary, and historic towns all the way to Santiago.",
+    "descripcionLarga": [
+      "The Coastal Portuguese Way from A Guarda allows pilgrims to travel along the entire southwestern coastline of Galicia while taking in breathtaking views over the Atlantic Ocean.",
+      "Starting from the picturesque fishing village of A Guarda and the iconic Monastery of Santa María de Oia, the route continues past historic Baiona, the city of Vigo, and the Redondela inlet.",
+      "From Redondela it joins the traditional Portuguese Way, passing monumental Pontevedra, the thermal spa town of Caldas de Reis, and the Jacobean cradle of Padrón to complete the distance required for the Compostela certificate."
+    ],
+    "inicio": "A Guarda",
+    "fin": "Santiago de Compostela",
+    "epoca": "All year (ideal in spring and summer)",
+    "tags": ["Get the Compostela", "Oia Monastery", "Views of the Cíes"],
+    "precio": "445 €/person",
+    "puntosDestacados": [
+      "Castro de Santa Trega and the fishing harbour of A Guarda",
+      "Monastery of Santa María de Oia facing ocean breakers",
+      "Monterreal Fortress and Baiona marina",
+      "Panoramic views of the Cíes Islands and Vigo estuary",
+      "Old quarter and Basilica of Santa María in Pontevedra",
+      "Thermal mineral springs in Caldas de Reis",
+      "Plaza del Obradoiro and Cathedral of Santiago"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "A Guarda",
+        "destino": "Oia",
+        "desc": "Spectacular stretch right next to the sea. You pass the Monastery of Santa María de Oia, literally facing the ocean.",
+        "km": "13–15 km",
+        "horas": "3–4 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 2,
+        "origen": "Oia",
+        "destino": "Baiona",
+        "desc": "Follow the coast with continuous views of the Atlantic. Arrival in lively, historic Baiona.",
+        "km": "18 km",
+        "horas": "4h30",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 3,
+        "origen": "Baiona",
+        "destino": "Vigo",
+        "desc": "Varied stage featuring coast, woodland trails, and urban sections. Arrival in Vigo.",
+        "km": "25 km",
+        "horas": "6 h",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 4,
+        "origen": "Vigo",
+        "destino": "Redondela",
+        "desc": "Ups and downs with views of the estuary. In Redondela you join the inland Portuguese Way.",
+        "km": "15–16 km",
+        "horas": "4 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 5,
+        "origen": "Redondela",
+        "destino": "Pontevedra",
+        "desc": "Forests, ancient stone paths, and a great pilgrim atmosphere. Arrival in Pontevedra.",
+        "km": "19–20 km",
+        "horas": "4h30",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 6,
+        "origen": "Pontevedra",
+        "destino": "Caldas de Reis",
+        "desc": "Comfortable and green stage. End in Caldas de Reis, famous for its thermal waters.",
+        "km": "21 km",
+        "horas": "5–6 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 7,
+        "origen": "Caldas de Reis",
+        "destino": "Padrón",
+        "desc": "Relaxed stretch through villages and woods. Arrival in Padrón.",
+        "km": "18–19 km",
+        "horas": "4h30",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 8,
+        "origen": "Padrón",
+        "destino": "Santiago de Compostela",
+        "desc": "Final stage to Santiago de Compostela, culminating at the Cathedral.",
+        "km": "24 km",
+        "horas": "5–6 h",
+        "dificultad": "Medium"
+      }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "ingles-ferrol",
+    "nombre": "English Way from Ferrol",
+    "slug": "/rutas/ingles-ferrol",
+    "imagen": "../../assets/miniatura-valencia.jpg",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+    "badge": "🛡️ 100% Galician",
+    "badgeColor": "bg-emerald-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderate",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderate. Combines flat sections along the estuaries with inland stages featuring hills and remote rural areas.",
+    "km": "115 km",
+    "dias": "6 days (6 stages)",
+    "descripcion": "The historical route taken by northern European pilgrims arriving by sea in Galicia. Maritime estuaries, lush forests, and medieval towns such as Pontedeume and Betanzos.",
+    "descripcionLarga": [
+      "The English Way was the maritime route used in the Middle Ages by pilgrims arriving from Great Britain, Ireland, and Scandinavia at the northern ports of Ferrol and A Coruña.",
+      "Starting at the historic port of Ferrol, the route winds along spectacular coastal rías before venturing into the dense green forests and tranquil farmland of the Galician interior.",
+      "Covering over 100 km, it allows walkers to earn the Compostela in under a week, visiting medieval jewels like Pontedeume and Betanzos, and experiencing the untamed solitude of Hospital de Bruma."
+    ],
+    "inicio": "Ferrol",
+    "fin": "Santiago de Compostela",
+    "epoca": "All year (especially May to October)",
+    "tags": ["Get the Compostela", "Medieval Towns", "Ideal in 6 Days"],
+    "precio": "375 €/person",
+    "puntosDestacados": [
+      "Departure from Curuxeiras port in Ferrol and coastal promenade",
+      "Medieval town of Pontedeume and historic stone bridge across the Eume river",
+      "Well-preserved medieval center and famous gastronomy in Betanzos",
+      "Passing through legendary Hospital de Bruma in serene nature",
+      "Lush native oak and chestnut forests",
+      "Exciting arrival at the Plaza del Obradoiro"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Ferrol",
+        "destino": "Neda",
+        "desc": "You start in Ferrol, departing from the port and following the estuary. A gentle stage, initially urban, gradually becoming rural. Perfect for getting into rhythm effortlessly.",
+        "km": "15 km",
+        "horas": "3–4 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 2,
+        "origen": "Neda",
+        "destino": "Pontedeume",
+        "desc": "Pleasant walk between small hamlets and green fields, keeping the estuary in sight for part of the way. Arrival in picturesque medieval Pontedeume.",
+        "km": "16 km",
+        "horas": "4 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 3,
+        "origen": "Pontedeume",
+        "destino": "Betanzos",
+        "desc": "First demanding stage. Right after departure there is a steep climb setting the tone for the day. Alternates woodland and country lanes. Finish in beautiful Betanzos.",
+        "km": "20–21 km",
+        "horas": "5–6 h",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 4,
+        "origen": "Betanzos",
+        "destino": "Hospital de Bruma",
+        "desc": "The toughest stage of the route. Long, with elevation gain and secluded stretches. Very rural with few services, but intensely authentic. Requires good stamina.",
+        "km": "24–28 km",
+        "horas": "6–7 h",
+        "dificultad": "High"
+      },
+      {
+        "dia": 5,
+        "origen": "Hospital de Bruma",
+        "destino": "Sigüeiro",
+        "desc": "More manageable stage following the previous day's effort. Forest paths, tranquility, and comfortable terrain. Arrival in Sigüeiro.",
+        "km": "24 km",
+        "horas": "5–6 h",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 6,
+        "origen": "Sigüeiro",
+        "destino": "Santiago de Compostela",
+        "desc": "Straightforward final stretch, gradually becoming more urban as you approach. Excitement builds toward arrival at Plaza del Obradoiro in Santiago.",
+        "km": "16 km",
+        "horas": "4 h",
+        "dificultad": "Low"
+      }
+    ],
+    "galeria": [
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "../../assets/miniatura-frances.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
+    ]
+  },
+  {
+    "id": "primitivo-lugo",
+    "nombre": "Primitive Way from Lugo",
+    "slug": "/rutas/primitivo-lugo",
+    "imagen": "../../assets/home_experiencia.png",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🏛️ History & Nature",
+    "badgeColor": "bg-amber-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderate",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderate. Rural stages with deep tranquility, isolation, and some long distance days.",
+    "km": "102 km",
+    "dias": "5 days (5 stages)",
+    "descripcion": "The final section of the oldest pilgrimage trail in the world, starting from the bimillenary city of Lugo. Untamed nature, complete peace, and joining the French Way in Melide.",
+    "descripcionLarga": [
+      "The Primitive Way is the original Jacobean route, first walked by King Alfonso II the Chaste in the 9th century. Its section from Lugo spans the required 100+ km to receive the Compostela.",
+      "The pilgrimage begins passing through the UNESCO World Heritage Roman Wall of Lugo, continuing along quiet country trails, authentic hamlets, and ancient forests.",
+      "In Melide, the Primitive Way joins the bustling French Way, offering vibrant pilgrim culture and great regional food before reaching the Cathedral in Santiago de Compostela."
+    ],
+    "inicio": "Lugo",
+    "fin": "Santiago de Compostela",
+    "epoca": "May to October",
+    "tags": ["Get the Compostela", "Roman Wall of Lugo", "Historic Route"],
+    "precio": "355 €/person",
+    "puntosDestacados": [
+      "Walking atop the Roman Wall of Lugo (UNESCO World Heritage Site)",
+      "Traditional hamlets and rustic paths of San Román da Retorta",
+      "Merging with the French Way in Melide and tasting traditional Galician octopus",
+      "Shady eucalyptus and oak forests around Arzúa and O Pedrouzo",
+      "First glimpse of the Cathedral towers from Monte do Gozo",
+      "Unforgettable finish in Plaza del Obradoiro in Santiago de Compostela"
+    ],
+    "etapas": [
+      {
+        "dia": 1,
+        "origen": "Lugo",
+        "destino": "San Román da Retorta",
+        "desc": "Departure from the Roman wall of Lugo. Peaceful stage featuring rural tracks, woods, and tiny hamlets. Perfect to begin without excessive strain.",
+        "km": "19–20 km",
+        "horas": "4h30–5 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 2,
+        "origen": "San Román da Retorta",
+        "destino": "Melide",
+        "desc": "Long and somewhat demanding stage. Deep rural environment and a feeling of solitude. Arrival in Melide where the Primitive merges with the French Way.",
+        "km": "27–28 km",
+        "horas": "6–7 h",
+        "dificultad": "High"
+      },
+      {
+        "dia": 3,
+        "origen": "Melide",
+        "destino": "Arzúa",
+        "desc": "Short and comfortable stage, ideal for recovery. Plenty of forest, solid terrain, and more pilgrims upon joining the French Way. Finishes in Arzúa.",
+        "km": "14–15 km",
+        "horas": "3–4 h",
+        "dificultad": "Low"
+      },
+      {
+        "dia": 4,
+        "origen": "Arzúa",
+        "destino": "O Pedrouzo",
+        "desc": "Pleasant path through eucalyptus groves and well-kept trails. Gentle uphills. Arrival in O Pedrouzo, classic stop before the final day.",
+        "km": "19 km",
+        "horas": "4h30–5 h",
+        "dificultad": "Medium"
+      },
+      {
+        "dia": 5,
+        "origen": "O Pedrouzo",
+        "destino": "Santiago de Compostela",
+        "desc": "Final stage with a mix of woodlands and urban approaches. Memorable arrival in Santiago de Compostela.",
+        "km": "20 km",
+        "horas": "5 h",
+        "dificultad": "Medium"
+      }
+    ],
+    "galeria": [
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "../../assets/home_experiencia.png",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public"
     ]
   }
 ]

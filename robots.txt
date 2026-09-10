@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /assets/private/
+Sitemap: https://www.steptosantiago.com/sitemap.xml
