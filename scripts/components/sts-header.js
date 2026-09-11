@@ -147,7 +147,26 @@ class StsHeader extends HTMLElement {
     const flags = {
       es: `${assetPrefix}assets/flags/es_flag.png`,
       en: `${assetPrefix}assets/flags/en_flag.png`,
-      por: `${assetPrefix}assets/flags/por_flag.svg` // Using local flag if available
+      por: `${assetPrefix}assets/flags/por_flag.svg`
+    };
+
+    // Pre-calculate lang-switch URLs from current path
+    const _buildLangUrl = (targetLang) => {
+      const p = currentPath;
+      // Try to replace the language segment in the path
+      for (const srcLang of ['es', 'en', 'por', 'pt']) {
+        if (p.includes(`/${srcLang}/`)) {
+          return p.replace(`/${srcLang}/`, `/${targetLang}/`);
+        }
+      }
+      // Fallback: go to root of target lang
+      return `/${targetLang}/`;
+    };
+
+    const langUrls = {
+      es:  _buildLangUrl('es'),
+      en:  _buildLangUrl('en'),
+      por: _buildLangUrl('por'),
     };
 
     this.innerHTML = `
@@ -266,20 +285,20 @@ class StsHeader extends HTMLElement {
               </a>
 
               <!-- Selector Circular "Quesito" -->
-              <div class="lang-selector-container">
-                <div class="lang-main-circle">
+              <div class="lang-selector-container" id="lang-selector-desktop">
+                <div class="lang-main-circle" id="lang-main-circle">
                   <img src="${flags[lang]}" alt="${lang}">
                 </div>
-                <div class="lang-options">
-                   <div class="lang-sector sector-es" onclick="location.href = location.pathname.replace('/' + '${lang}' + '/', '/es/')">
+                <div class="lang-options" id="lang-options">
+                   <a href="${langUrls.es}" class="lang-sector sector-es" aria-label="Español">
                       <img src="${flags.es}" alt="ES">
-                   </div>
-                   <div class="lang-sector sector-en" onclick="location.href = location.pathname.replace('/' + '${lang}' + '/', '/en/')">
+                   </a>
+                   <a href="${langUrls.en}" class="lang-sector sector-en" aria-label="English">
                       <img src="${flags.en}" alt="EN">
-                   </div>
-                   <div class="lang-sector sector-por" onclick="location.href = location.pathname.replace('/' + '${lang}' + '/', '/por/')">
+                   </a>
+                   <a href="${langUrls.por}" class="lang-sector sector-por" aria-label="Português">
                       <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT">
-                   </div>
+                   </a>
                 </div>
               </div>
             </nav>
@@ -297,15 +316,15 @@ class StsHeader extends HTMLElement {
               ${t.cta}
             </a>
             <div class="flex justify-center gap-4 py-4 border-t border-gray-100 mt-4">
-              <button onclick="location.href = location.pathname.replace('/' + '${lang}' + '/', '/es/')" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm ${lang === 'es' ? 'ring-2 ring-[var(--primary-color)]' : ''}">
+              <a href="${langUrls.es}" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center ${lang === 'es' ? 'ring-2 ring-[var(--primary-color)]' : ''}" aria-label="Español">
                 <img src="${flags.es}" alt="ES" class="w-full h-full object-cover">
-              </button>
-              <button onclick="location.href = location.pathname.replace('/' + '${lang}' + '/', '/en/')" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm ${lang === 'en' ? 'ring-2 ring-[var(--primary-color)]' : ''}">
+              </a>
+              <a href="${langUrls.en}" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center ${lang === 'en' ? 'ring-2 ring-[var(--primary-color)]' : ''}" aria-label="English">
                 <img src="${flags.en}" alt="EN" class="w-full h-full object-cover">
-              </button>
-              <button onclick="location.href = location.pathname.replace('/' + '${lang}' + '/', '/por/')" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm ${lang === 'por' ? 'ring-2 ring-[var(--primary-color)]' : ''}">
+              </a>
+              <a href="${langUrls.por}" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center ${lang === 'por' ? 'ring-2 ring-[var(--primary-color)]' : ''}" aria-label="Português">
                 <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" class="w-full h-full object-cover">
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -313,6 +332,7 @@ class StsHeader extends HTMLElement {
     `;
 
     this._initMobileMenu();
+    this._initLangSelector();
     this._updateRouteCounts(lang, assetPrefix);
   }
 
@@ -352,6 +372,59 @@ class StsHeader extends HTMLElement {
       } else {
         menu.style.maxHeight = '0';
         icon?.classList.replace('fa-xmark', 'fa-bars');
+      }
+    });
+  }
+
+  _initLangSelector() {
+    const container = this.querySelector('#lang-selector-desktop');
+    const options = this.querySelector('#lang-options');
+    if (!container || !options) return;
+
+    let isOpen = false;
+    let closeTimeout = null;
+
+    const openMenu = () => {
+      clearTimeout(closeTimeout);
+      if (!isOpen) {
+        isOpen = true;
+        options.style.pointerEvents = 'auto';
+        options.style.opacity = '1';
+        options.style.transform = 'scale(1) rotate(0deg)';
+      }
+    };
+
+    const closeMenu = () => {
+      closeTimeout = setTimeout(() => {
+        isOpen = false;
+        options.style.pointerEvents = 'none';
+        options.style.opacity = '0';
+        options.style.transform = 'scale(0.5) rotate(-90deg)';
+      }, 150);
+    };
+
+    container.addEventListener('mouseenter', openMenu);
+    container.addEventListener('mouseleave', closeMenu);
+    options.addEventListener('mouseenter', openMenu);
+    options.addEventListener('mouseleave', closeMenu);
+
+    // Touch support: toggle on tap of the main circle
+    const circle = this.querySelector('#lang-main-circle');
+    if (circle) {
+      circle.addEventListener('click', (e) => {
+        if (isOpen) {
+          closeMenu();
+        } else {
+          e.stopPropagation();
+          openMenu();
+        }
+      });
+    }
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!container.contains(e.target)) {
+        closeMenu();
       }
     });
   }
