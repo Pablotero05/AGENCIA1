@@ -5,7 +5,7 @@ const rootDir = path.resolve(__dirname, '..');
 const outputDir = path.join(rootDir, 'public');
 const directories = ['assets', 'css', 'en', 'es', 'fontawesome', 'por', 'pt'];
 const browserScripts = ['animations.js', 'filterDiff.js', 'LeadsContact.js', 'mobileMenu.js'];
-const rootFiles = ['index.html', 'robots.txt', 'sitemap.xml'];
+const rootFiles = ['index.html', 'robots.txt', 'sitemap.xml', 'googlee93585bedc255548.html'];
 
 fs.rmSync(outputDir, { recursive: true, force: true });
 fs.mkdirSync(outputDir, { recursive: true });
