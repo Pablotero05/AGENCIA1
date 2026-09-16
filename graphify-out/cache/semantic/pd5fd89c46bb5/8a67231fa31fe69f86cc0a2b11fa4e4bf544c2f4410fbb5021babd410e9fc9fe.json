@@ -1,0 +1,1 @@
+{"nodes": [{"id": "es_pages_rutas_html_doc", "label": "Routes Listing Template (es/pages/rutas.html)", "type": "Document", "source_file": "es/pages/rutas.html", "summary": "Routes catalog page utilizing routeCards.js and filterDiff.js to render filtered route cards."}], "edges": [], "hyperedges": []}

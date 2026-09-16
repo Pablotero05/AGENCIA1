@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="h-full" lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/contacto/">
   <link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/contact/">
   <link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/contato/">
-  <link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/contact/">
+  <link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/contacto/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contacto — Solicita tu Presupuesto para el Camino | Step to Santiago">
@@ -25,9 +25,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Analytics & Atribución -->
+  <script src="/scripts/analytics/sts-analytics.js"></script>
+
   <script src="../../scripts/components/sts-header.js"></script>
   <script src="../../scripts/components/sts-footer.js" defer></script>
-  <script src="../../scripts/components/contactForm.js" defer></script>
 
   <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../css/tailwind.css">
@@ -38,12 +40,12 @@
   <div class="frame-root">
     <div class="frame-content">
       <div class="[font-family:var(--font-family-body)]">
-        <sts-header logo="../../assets/ststrasp.png"></sts-header>
+        <sts-header logo="../../assets/ststrasp.webp"></sts-header>
 
         <!-- Hero Sec -->
         <section class="relative py-24 bg-[var(--primary-color)] flex items-center justify-center overflow-hidden">
           <div class="absolute inset-0 z-0">
-            <img src="../../assets/rutas_banner.png" alt="Camino" class="w-full h-full object-cover opacity-20">
+            <img src="../../assets/rutas_banner.webp" alt="Camino" class="w-full h-full object-cover opacity-20" fetchpriority="high" decoding="async" width="1920" height="600">
           </div>
           <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style="font-family: var(--font-family-heading);">Contacta con nosotros</h1>
@@ -72,7 +74,7 @@
                     </div>
                     <div>
                       <h4 class="font-bold text-[var(--dark-text-color)]">Oficina Central</h4>
-                      <p class="text-[var(--gray-text-color)]">Rúa do Vilar, Santiago de Compostela, Galicia</p>
+                      <p class="text-[var(--gray-text-color)]">Santiago de Compostela, España</p>
                     </div>
                   </div>
                   
@@ -92,7 +94,7 @@
                     </div>
                     <div>
                       <h4 class="font-bold text-[var(--dark-text-color)]">Email</h4>
-                      <p class="text-[var(--gray-text-color)]">info@steptosantiago.com</p>
+                      <p class="text-[var(--gray-text-color)]">steptosantiago.contact@gmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -101,53 +103,83 @@
               <!-- Form -->
               <div class="bg-[var(--light-background-color)] rounded-2xl p-8 shadow-xl">
                 <form id="sts-contact-form" class="space-y-6">
+                  <!-- Campos de Atribución y Tracking (rellenados automáticamente) -->
+                  <input type="hidden" name="utm_source">
+                  <input type="hidden" name="utm_medium">
+                  <input type="hidden" name="utm_campaign">
+                  <input type="hidden" name="utm_content">
+                  <input type="hidden" name="utm_term">
+                  <input type="hidden" name="gclid">
+                  <input type="hidden" name="gbraid">
+                  <input type="hidden" name="wbraid">
+
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Nombre completo</label>
-                      <input type="text" name="nombre" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Nombre completo *</label>
+                      <input type="text" name="nombre" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
                     </div>
                     <div>
-                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Teléfono</label>
-                      <input type="tel" name="telefono" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Teléfono *</label>
+                      <input type="tel" name="telefono" required placeholder="+34 600 000 000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
                     </div>
                   </div>
                   
                   <div>
-                    <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Email</label>
-                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
+                    <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Email *</label>
+                    <input type="email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
                   </div>
                   
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Ruta de interés</label>
                       <select name="ruta" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all bg-white">
-                        <option value="sin-decidir">Aún no lo sé</option>
-                        <option value="frances">Camino Francés</option>
-                        <option value="portugues-tui">Camino Portugués desde Tui</option>
-                        <option value="portugues-costa-oporto">Camino Portugués de la Costa (desde Oporto)</option>
-                        <option value="portugues-costa-guarda">Camino Portugués de la Costa (desde A Guarda)</option>
-                        <option value="ingles-ferrol">Camino Inglés desde Ferrol</option>
-                        <option value="primitivo-lugo">Camino Primitivo desde Lugo</option>
+                        <option value="sin-decidir">Aún no lo sé / Asesoradme</option>
+                        <option value="sarria">Camino de Santiago desde Sarria (115 km — Más popular)</option>
+                        <option value="frances">Camino Francés (Completo o tramos)</option>
+                        <option value="portugues-tui">Camino Portugués desde Tui (117 km)</option>
+                        <option value="portugues-costa-oporto">Camino Portugués de la Costa desde Oporto</option>
+                        <option value="portugues-costa-guarda">Camino Portugués de la Costa desde A Guarda</option>
+                        <option value="ingles-ferrol">Camino Inglés desde Ferrol (120 km)</option>
+                        <option value="primitivo-lugo">Camino Primitivo desde Lugo (100 km)</option>
                       </select>
                     </div>
                     <div>
                       <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Nº Personas</label>
-                      <input type="number" name="personas" min="1" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
+                      <input type="number" name="personas" min="1" value="2" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
+                    </div>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Fecha aproximada</label>
+                      <input type="month" name="fecha" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
+                    </div>
+                    <div>
+                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Preferencia de alojamiento</label>
+                      <select name="tipo_habitacion" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all bg-white">
+                        <option value="doble">Habitación Doble (baño privado)</option>
+                        <option value="individual">Habitación Individual (baño privado)</option>
+                        <option value="triple">Habitación Triple / Familiar</option>
+                        <option value="rural">Casas rurales / Alojamientos con encanto</option>
+                      </select>
                     </div>
                   </div>
                   
                   <div>
-                    <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Fecha aproximada</label>
-                    <input type="month" name="fecha" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all">
-                  </div>
-                  
-                  <div>
                     <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">Mensaje / Requisitos especiales</label>
-                    <textarea name="mensaje" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all"></textarea>
+                    <textarea name="mensaje" rows="4" placeholder="¿Quieres añadir noches extra, traslados desde el aeropuerto o tienes alguna necesidad de accesibilidad o dieta?" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[var(--primary-color)] focus:ring-2 focus:ring-[var(--primary-color)]/20 outline-none transition-all"></textarea>
+                  </div>
+
+                  <!-- Consentimiento RGPD -->
+                  <div class="flex items-start gap-3 pt-2">
+                    <input type="checkbox" id="rgpd-consent" name="rgpd" required class="mt-1 h-4 w-4 text-[var(--primary-color)] focus:ring-[var(--primary-color)] border-gray-300 rounded">
+                    <label for="rgpd-consent" class="text-xs text-gray-600 leading-relaxed">
+                      Acepto la <a href="/es/pages/politicas.html" class="underline text-[var(--primary-color)]" target="_blank" rel="noopener">política de privacidad</a> y el tratamiento de mis datos para recibir la propuesta personalizada del Camino. No enviamos spam.
+                    </label>
                   </div>
                   
-                  <button type="submit" class="w-full py-4 bg-[var(--primary-color)] text-white font-bold rounded-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 shadow-md">
-                    <i class="fa-solid fa-paper-plane mr-2"></i> Enviar Consulta
+                  <button type="submit" class="w-full py-4 bg-[var(--primary-color)] text-white font-bold rounded-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Solicitar Presupuesto Gratis
                   </button>
                 </form>
                 <script src="../../scripts/LeadsContact.js"></script>
@@ -157,9 +189,10 @@
           </div>
         </section>
 
-        <sts-footer logo="../../assets/stsLOGO.png"></sts-footer>
+        <sts-footer logo="../../assets/stsLOGO.webp"></sts-footer>
       </div>
     </div>
   </div>
+  <script>stsInitPage('contacto');</script>
 </body>
 </html>

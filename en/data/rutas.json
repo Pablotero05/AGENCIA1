@@ -3,7 +3,7 @@
     "id": "frances",
     "nombre": "French Way",
     "slug": "/rutas/frances",
-    "imagen": "../../assets/miniatura-frances.png",
+    "imagen": "../../assets/miniatura-frances.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
     "badge": "⭐ Most popular",
     "badgeColor": "bg-yellow-400 text-yellow-900",
@@ -54,7 +54,7 @@
     "galeria": [
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
-      "../../assets/ruta_portugues.png",
+      "../../assets/ruta_portugues.webp",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
     ]
   },
@@ -62,7 +62,7 @@
     "id": "portugues-tui",
     "nombre": "Portuguese Way from Tui",
     "slug": "/rutas/portugues-tui",
-    "imagen": "../../assets/ruta_portugues.png",
+    "imagen": "../../assets/ruta_portugues.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
     "badge": "🇵🇹 From Tui",
     "badgeColor": "bg-green-600 text-white",
@@ -190,7 +190,7 @@
       }
     ],
     "galeria": [
-      "../../assets/ruta_portugues.png",
+      "../../assets/ruta_portugues.webp",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
@@ -200,7 +200,7 @@
     "id": "portugues-costa-oporto",
     "nombre": "Coastal Portuguese Way from Porto",
     "slug": "/rutas/portugues-costa-oporto",
-    "imagen": "../../assets/ruta_portugues.png",
+    "imagen": "../../assets/ruta_portugues.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
     "badge": "🌊 Atlantic Coast",
     "badgeColor": "bg-sky-600 text-white",
@@ -351,7 +351,7 @@
       }
     ],
     "galeria": [
-      "../../assets/ruta_portugues.png",
+      "../../assets/ruta_portugues.webp",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
@@ -361,7 +361,7 @@
     "id": "portugues-costa-guarda",
     "nombre": "Coastal Portuguese Way from A Guarda",
     "slug": "/rutas/portugues-costa-guarda",
-    "imagen": "../../assets/ruta_portugues.png",
+    "imagen": "../../assets/ruta_portugues.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
     "badge": "🌊 Galician Coast",
     "badgeColor": "bg-cyan-600 text-white",
@@ -466,7 +466,7 @@
       }
     ],
     "galeria": [
-      "../../assets/ruta_portugues.png",
+      "../../assets/ruta_portugues.webp",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
@@ -476,7 +476,7 @@
     "id": "ingles-ferrol",
     "nombre": "English Way from Ferrol",
     "slug": "/rutas/ingles-ferrol",
-    "imagen": "../../assets/miniatura-valencia.jpg",
+    "imagen": "../../assets/miniatura-valencia.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
     "badge": "🛡️ 100% Galician",
     "badgeColor": "bg-emerald-600 text-white",
@@ -564,7 +564,7 @@
     "galeria": [
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
-      "../../assets/miniatura-frances.png",
+      "../../assets/miniatura-frances.webp",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
     ]
   },
@@ -572,7 +572,7 @@
     "id": "primitivo-lugo",
     "nombre": "Primitive Way from Lugo",
     "slug": "/rutas/primitivo-lugo",
-    "imagen": "../../assets/home_experiencia.png",
+    "imagen": "../../assets/home_experiencia.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
     "badge": "🏛️ History & Nature",
     "badgeColor": "bg-amber-600 text-white",
@@ -651,7 +651,7 @@
     "galeria": [
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
-      "../../assets/home_experiencia.png",
+      "../../assets/home_experiencia.webp",
       "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public"
     ]
   }

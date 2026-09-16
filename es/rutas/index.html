@@ -1,4 +1,4 @@
-<html class="h-full" lang="es">
+﻿<html class="h-full" lang="es">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,19 +11,22 @@
   <link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/">
   <link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/">
   <link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/">
-  <link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/">
+  <link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/rutas/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rutas del Camino de Santiago Organizadas | Step to Santiago">
   <meta property="og:description" content="Descubre todas las rutas del Camino de Santiago: Francés, Portugués de la Costa, Inglés y Primitivo. Viajes organizados con hoteles y traslado de mochilas.">
-  <meta property="og:image" content="https://www.steptosantiago.com/assets/rutas_banner.png">
+  <meta property="og:image" content="https://www.steptosantiago.com/assets/rutas_banner.webp">
   <meta property="og:url" content="https://www.steptosantiago.com/es/rutas/">
   <meta property="og:locale" content="es_ES">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Rutas del Camino de Santiago Organizadas | Step to Santiago">
   <meta name="twitter:description" content="Descubre todas las rutas del Camino de Santiago: Francés, Portugués de la Costa, Inglés y Primitivo. Viajes organizados con hoteles y traslado de mochilas.">
-  <meta name="twitter:image" content="https://www.steptosantiago.com/assets/rutas_banner.png">
+  <meta name="twitter:image" content="https://www.steptosantiago.com/assets/rutas_banner.webp">
+
+  <!-- Analytics & Atribución -->
+  <script src="/scripts/analytics/sts-analytics.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
@@ -46,11 +49,11 @@
     "@type": "TravelAgency",
     "name": "Step To Santiago",
     "url": "https://www.steptosantiago.com",
-    "logo": "https://www.steptosantiago.com/assets/ststrasp.png",
-    "image": "https://www.steptosantiago.com/assets/rutas_banner.png",
+    "logo": "https://www.steptosantiago.com/assets/ststrasp.webp",
+    "image": "https://www.steptosantiago.com/assets/rutas_banner.webp",
     "description": "Agencia especializada en viajes organizados del Camino de Santiago.",
     "telephone": "+34 981 00 00 00",
-    "email": "info@steptosantiago.com"
+    "email": "steptosantiago.contact@gmail.com"
   }
   </script>
 </head>
@@ -59,13 +62,13 @@
   <div class="frame-root">
     <div class="frame-content">
       <div class="[font-family:var(--font-family-body)]">
-        <sts-header logo="../../assets/ststrasp.png"></sts-header>
+        <sts-header logo="../../assets/ststrasp.webp"></sts-header>
 
           
   <!-- ===== HERO ===== -->
   <section class="relative py-24 overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="../../assets/rutas_banner.png" alt="Catedral de Santiago de Compostela" class="w-full h-full object-cover">
+      <img src="../../assets/rutas_banner.webp" alt="Catedral de Santiago de Compostela" class="w-full h-full object-cover" fetchpriority="high" decoding="async" width="1920" height="600">
       <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-transparent"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,18 +148,24 @@
           <p class="text-[var(--gray-text-color)] text-sm">El Camino Primitivo o la Vía de la Plata son para quienes buscan un reto físico y la máxima soledad.</p>
         </div>
       </div>
-      <div class="text-center">
-        <a href="/pages/contacto.html"
+      <div class="text-center flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/es/contacto/"
            class="inline-flex items-center gap-3 px-8 py-4 bg-[var(--primary-color)] text-white font-bold rounded-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
           <i class="fa-solid fa-comments"></i>
           Habla con un experto gratis
+        </a>
+        <a href="/es/planificador-camino-santiago/"
+           class="inline-flex items-center gap-3 px-8 py-4 bg-white border-2 border-[var(--primary-color)] text-[var(--primary-color)] font-bold rounded-lg hover:bg-emerald-50 transition-all duration-300">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          Probar Planificador Interactivo
         </a>
       </div>
     </div>
   </section>
 
-    <sts-footer logo="../../assets/stsLOGO.png"></sts-footer>
+    <sts-footer logo="../../assets/stsLOGO.webp"></sts-footer>
 
+  <script>stsInitPage('rutas-hub');</script>
 </body>
 
 </html>

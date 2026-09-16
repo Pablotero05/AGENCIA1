@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 // Resolve the project root from this script so builds work locally and on Vercel.
@@ -176,10 +176,8 @@ function generateRoutePageHTML(ruta, lang) {
       "description": "Agencia de viajes especializada en el Camino de Santiago.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Rúa do Vilar",
         "addressLocality": "Santiago de Compostela",
         "addressRegion": "A Coruña",
-        "postalCode": "15705",
         "addressCountry": "ES"
       },
       "geo": {
@@ -188,7 +186,7 @@ function generateRoutePageHTML(ruta, lang) {
         "longitude": -8.5448
       },
       "telephone": "+34 981 00 00 00",
-      "email": "info@steptosantiago.com",
+      "email": "steptosantiago.contact@gmail.com",
       "priceRange": "€€"
     },
     {

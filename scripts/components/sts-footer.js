@@ -1,5 +1,16 @@
 class StsFooter extends HTMLElement {
   connectedCallback() {
+    // Inyectar script del gestor de cookies si no está presente
+    if (!document.getElementById('sts-cookie-consent-script')) {
+      const isPages = window.location.pathname.includes('/pages/');
+      const scriptPath = isPages ? '../../scripts/components/sts-cookie-consent.js' : '../scripts/components/sts-cookie-consent.js';
+      const script = document.createElement('script');
+      script.id = 'sts-cookie-consent-script';
+      script.src = scriptPath;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+
     const currentPath = window.location.pathname;
     const lang = this._getLangFromPath(currentPath);
 
@@ -10,10 +21,14 @@ class StsFooter extends HTMLElement {
         verTodas: "Ver todas las rutas",
         servicios: "Servicios",
         contacto: "Contacto",
+        faq: "Preguntas Frecuentes",
+        opiniones: "Opiniones de Peregrinos",
         derechos: "Todos los derechos reservados.",
         privacidad: "Política de Privacidad",
         aviso: "Aviso Legal",
         terminos: "Términos y Condiciones",
+        cookies: "Política de Cookies",
+        cookieSettings: "Configuración de Cookies",
         whatsapp: "Contactar por WhatsApp",
         rFrances: "Camino Francés",
         rPortugues: "Camino Portugués",
@@ -31,10 +46,14 @@ class StsFooter extends HTMLElement {
         verTodas: "View all routes",
         servicios: "Services",
         contacto: "Contact",
+        faq: "Frequently Asked Questions",
+        opiniones: "Pilgrim Reviews",
         derechos: "All rights reserved.",
         privacidad: "Privacy Policy",
         aviso: "Legal Notice",
         terminos: "Terms and Conditions",
+        cookies: "Cookie Policy",
+        cookieSettings: "Cookie Settings",
         whatsapp: "Contact us via WhatsApp",
         rFrances: "French Way",
         rPortugues: "Portuguese Way",
@@ -52,10 +71,14 @@ class StsFooter extends HTMLElement {
         verTodas: "Ver todas as rotas",
         servicios: "Serviços",
         contacto: "Contato",
+        faq: "Perguntas Frecuentes",
+        opiniones: "Opiniões de Peregrinos",
         derechos: "Todos os direitos reservados.",
         privacidad: "Política de Privacidade",
         aviso: "Aviso Legal",
         terminos: "Termos e Condições",
+        cookies: "Política de Cookies",
+        cookieSettings: "Configuração de Cookies",
         whatsapp: "Contatar por WhatsApp",
         rFrances: "Caminho Francês",
         rPortugues: "Caminho Português",
@@ -81,8 +104,12 @@ class StsFooter extends HTMLElement {
             <div class="lg:col-span-1">
               <a href="/${lang}/index.html" class="inline-block mb-6">
                 <img
-                  src="${this.getAttribute('logo') || '../../assets/stsLOGO.png'}"
+                  src="${this.getAttribute('logo') || '../../assets/stsLOGO.webp'}"
                   alt="Step To Santiago"
+                  width="180"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
                   class="h-48 w-auto object-contain">
               </a>
               <p class="text-white/70 text-sm mb-6 leading-relaxed">
@@ -139,21 +166,9 @@ class StsFooter extends HTMLElement {
                 ${t.contacto}
               </h4>
               <ul class="space-y-3">
-                <li class="flex items-start gap-3">
-                  <i class="fa-solid fa-location-dot text-[var(--accent-color)] mt-1" aria-hidden="true"></i>
-                  <span class="text-white/70 text-sm">Santiago de Compostela, España</span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-phone text-[var(--accent-color)]" aria-hidden="true"></i>
-                  <a href="tel:+34666666666" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">+34 666 666 666</a>
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-brands fa-whatsapp text-[var(--accent-color)]" aria-hidden="true"></i>
-                  <a href="https://wa.me/34666666666" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">+34 666 666 666</a>
-                </li>
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-envelope text-[var(--accent-color)]" aria-hidden="true"></i>
-                  <a href="mailto:info@stepbystep.es" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">info@stepbystep.es</a>
+                  <a href="mailto:steptosantiago.contact@gmail.com" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">steptosantiago.contact@gmail.com</a>
                 </li>
               </ul>
             </div>
@@ -168,10 +183,14 @@ class StsFooter extends HTMLElement {
               <p class="text-white/50 text-sm">
                 © ${new Date().getFullYear()} Step To Santiago. ${t.derechos}
               </p>
-              <div class="flex flex-wrap gap-6 justify-center">
+              <div class="flex flex-wrap gap-6 justify-center items-center">
+                <a href="/${lang}/pages/preguntas-frecuentes.html" class="text-white/70 hover:text-[var(--accent-color)] text-sm transition-colors font-medium">${t.faq}</a>
+                <a href="/${lang}/pages/opiniones.html" class="text-white/70 hover:text-[var(--accent-color)] text-sm transition-colors font-medium">${t.opiniones}</a>
                 <a href="/${lang}/pages/politicas.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.privacidad}</a>
                 <a href="/${lang}/pages/legal.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.aviso}</a>
                 <a href="/${lang}/pages/terminos.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.terminos}</a>
+                <a href="/${lang}/pages/cookies.html" class="text-white/50 hover:text-white text-sm transition-colors">${t.cookies}</a>
+                <button type="button" onclick="if(window.stsOpenCookieSettings) window.stsOpenCookieSettings();" class="text-white/50 hover:text-[var(--accent-color)] text-sm transition-colors underline cursor-pointer bg-transparent border-0 p-0">${t.cookieSettings}</button>
               </div>
             </div>
           </div>
@@ -189,7 +208,7 @@ class StsFooter extends HTMLElement {
 
   _getLangFromPath(path) {
     if (path.includes('/en/')) return 'en';
-    if (path.includes('/por/')) return 'por';
+    if (path.includes('/por/') || path.includes('/pt/')) return 'por';
     return 'es';
   }
 }

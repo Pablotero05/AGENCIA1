@@ -211,6 +211,23 @@
     const form = document.getElementById('sts-contact-form');
     if (!form) return;
 
+    // Auto-seleccionar ruta de la URL (?ruta=...)
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const rutaParam = (urlParams.get('ruta') || '').toLowerCase();
+      if (rutaParam) {
+        const selectRuta = form.querySelector('select[name="ruta"]');
+        if (selectRuta) {
+          const matchingOption = Array.from(selectRuta.options).find(function (opt) {
+            return opt.value.toLowerCase() === rutaParam || opt.value.toLowerCase().indexOf(rutaParam) !== -1;
+          });
+          if (matchingOption) {
+            selectRuta.value = matchingOption.value;
+          }
+        }
+      }
+    } catch (e) {}
+
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
       clearErrorMessage(form);
@@ -222,6 +239,11 @@
       const t = getTranslations(lang);
       const formData = new FormData(form);
 
+      // Obtener UTMs de sessionStorage si no están en formData
+      function getAttr(key) {
+        return (formData.get(key) || sessionStorage.getItem('sts_' + key) || '').toString().trim();
+      }
+
       const payload = {
         nombre: (formData.get('nombre') || '').toString().trim(),
         telefono: (formData.get('telefono') || '').toString().trim(),
@@ -229,7 +251,16 @@
         ruta: (formData.get('ruta') || 'sin-decidir').toString().trim(),
         personas: (formData.get('personas') || '1').toString().trim(),
         fecha: (formData.get('fecha') || '').toString().trim(),
+        tipo_habitacion: (formData.get('tipo_habitacion') || '').toString().trim(),
         mensaje: (formData.get('mensaje') || '').toString().trim(),
+        utm_source: getAttr('utm_source'),
+        utm_medium: getAttr('utm_medium'),
+        utm_campaign: getAttr('utm_campaign'),
+        utm_content: getAttr('utm_content'),
+        utm_term: getAttr('utm_term'),
+        gclid: getAttr('gclid'),
+        gbraid: getAttr('gbraid'),
+        wbraid: getAttr('wbraid'),
         idioma: lang,
         pageUrl: window.location.href,
         source: 'website',
@@ -243,6 +274,16 @@
         console.log('Sending payload:', payload);
 
         await submitLead(payload);
+
+        // GA4 tracking
+        if (typeof window.stsTrack === 'function') {
+          window.stsTrack('form_submit', {
+            route_slug: payload.ruta,
+            locale: lang,
+            form_id: 'sts-contact-form'
+          });
+        }
+
         showSuccessAnimation(form, t);
       } catch (error) {
         console.error('Submit error:', error);

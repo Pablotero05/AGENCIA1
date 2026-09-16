@@ -1,0 +1,1 @@
+{"nodes": [{"id": "es_rutas_index_html_doc", "label": "Routes Catalog Hub Page", "type": "Document", "source_file": "es/rutas/index.html", "summary": "All routes index page rendering route cards dynamically via routeCards.js and providing difficulty filtering via filterDiff.js."}], "edges": [], "hyperedges": []}

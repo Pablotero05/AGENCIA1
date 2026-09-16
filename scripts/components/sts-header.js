@@ -1,8 +1,8 @@
-// Loader hiperfluido
+// Loader hiperfluido y prefetch instantáneo
 (function() {
   if (typeof window !== 'undefined' && document) {
     const isPages = window.location.pathname.includes('/pages/');
-    const logoSrc = isPages ? '../../assets/stsLOGO.png' : '../assets/stsLOGO.png';
+    const logoSrc = isPages ? '../../assets/stsLOGO.webp' : '../assets/stsLOGO.webp';
     const loader = document.createElement('div');
     loader.id = 'sts-global-loader';
     loader.innerHTML = `
@@ -15,40 +15,91 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), visibility 0.4s;
+          transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), visibility 0.2s;
           opacity: 1;
           visibility: visible;
+          pointer-events: none;
         }
         #sts-global-loader.hide {
           opacity: 0;
           visibility: hidden;
-          pointer-events: none;
         }
         .loader-logo {
-          width: 250px;
+          width: 220px;
           height: auto;
           object-fit: contain;
+          will-change: transform, opacity;
         }
       </style>
-      <img src="${logoSrc}" alt="Logo" class="loader-logo" />
+      <img src="${logoSrc}" alt="Step To Santiago" class="loader-logo" width="220" height="147" fetchpriority="high" decoding="async" />
     `;
     document.documentElement.appendChild(loader);
-    
-    // Ocultar al terminar de cargar
-    window.addEventListener('load', () => {
-      setTimeout(() => {
+
+    // Ocultar de inmediato en cuanto el DOM esté listo o la ventana cargue
+    const hideLoader = () => {
+      requestAnimationFrame(() => {
         loader.classList.add('hide');
-      }, 50);
+      });
+    };
+
+    if (document.readyState === 'interactive' || document.readyState === 'complete') {
+      hideLoader();
+    } else {
+      document.addEventListener('DOMContentLoaded', hideLoader, { once: true });
+    }
+    window.addEventListener('load', hideLoader, { once: true });
+
+    // Manejar caché bfcache (botón atrás del navegador instantáneo)
+    window.addEventListener('pageshow', (e) => {
+      hideLoader();
     });
 
-    // Interceptar clics para hacer transición de salida
+    // ─── INSTANT PREFETCH SYSTEM (0ms Latency Perception) ──────────
+    // Precarga automática al hacer hover o focus en cualquier enlace interno
+    const prefetchedUrls = new Set();
+    const prefetchUrl = (url) => {
+      if (!url || prefetchedUrls.has(url)) return;
+      try {
+        const parsed = new URL(url, window.location.href);
+        // Solo enlaces del mismo origen y páginas HTML
+        if (parsed.origin !== window.location.origin) return;
+        if (parsed.pathname === window.location.pathname) return;
+
+        prefetchedUrls.add(url);
+        const linkElem = document.createElement('link');
+        linkElem.rel = 'prefetch';
+        linkElem.href = url;
+        linkElem.as = 'document';
+        document.head.appendChild(linkElem);
+      } catch (e) {}
+    };
+
+    document.addEventListener('mouseover', (e) => {
+      const link = e.target.closest('a');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (href && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:') && !href.startsWith('javascript:')) {
+        prefetchUrl(href);
+      }
+    }, { passive: true });
+
+    document.addEventListener('touchstart', (e) => {
+      const link = e.target.closest('a');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (href && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:') && !href.startsWith('javascript:')) {
+        prefetchUrl(href);
+      }
+    }, { passive: true });
+
+    // Interceptar clics para no bloquear la navegación artificialmente
     document.addEventListener('click', (e) => {
       const link = e.target.closest('a');
       if (!link) return;
-      
+
       const href = link.getAttribute('href');
       const target = link.getAttribute('target');
-      
+
       // Ignorar: sin href, anclajes, target _blank, emails, telefonos, js...
       if (!href || href.startsWith('#') || href.includes('#') || target === '_blank' || href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('javascript:')) {
         return;
@@ -56,25 +107,18 @@
 
       // Omitir si es un onclick directo en el DOM que hace otra cosa
       if (link.getAttribute('onclick')) {
-        return; // Dejar que el onclick se ejecute normal
+        return;
       }
 
-      e.preventDefault();
-      
-      // Mostrar pantalla de carga
-      loader.classList.remove('hide');
-      
-      // Navegar a la otra página suavemente
-      setTimeout(() => {
-        window.location.href = href;
-      }, 400); 
-    });
+      // Navegación fluida e instantánea sin retardo artificial
+      // Solo atenuamos suavemente si la navegación tarda más de 80ms
+      const slowTimer = setTimeout(() => {
+        loader.classList.remove('hide');
+      }, 80);
 
-    // Manejar caché bfcache (botón atrás del navegador)
-    window.addEventListener('pageshow', (e) => {
-      if (e.persisted) {
-        loader.classList.add('hide');
-      }
+      window.addEventListener('beforeunload', () => {
+        clearTimeout(slowTimer);
+      }, { once: true });
     });
   }
 })();
@@ -87,6 +131,7 @@ class StsHeader extends HTMLElement {
     const labels = {
       es: {
         rutas: 'Todas las Rutas',
+        planificador: 'Planificador',
         servicios: 'Servicios',
         nosotros: 'Sobre Nosotros',
         cta: 'Consigue Tu Presupuesto Gratis',
@@ -94,6 +139,7 @@ class StsHeader extends HTMLElement {
       },
       en: {
         rutas: 'All Routes',
+        planificador: 'Planner',
         servicios: 'Services',
         nosotros: 'About Us',
         cta: 'Get Your Free Quote',
@@ -101,6 +147,7 @@ class StsHeader extends HTMLElement {
       },
       por: {
         rutas: 'Todas as Rotas',
+        planificador: 'Planejador',
         servicios: 'Serviços',
         nosotros: 'Sobre Nós',
         cta: 'Consiga Seu Orçamento Grátis',
@@ -112,6 +159,7 @@ class StsHeader extends HTMLElement {
 
     const navLinks = [
       { href: `/${lang}/pages/rutas.html`, label: t.rutas },
+      { href: `/${lang}/pages/planificador.html`, label: t.planificador },
       { href: `/${lang}/pages/servicios.html`, label: t.servicios },
       { href: `/${lang}/pages/nosotros.html`, label: t.nosotros },
     ];
@@ -121,7 +169,7 @@ class StsHeader extends HTMLElement {
       return `
         <a href="${link.href}" class="${isActive
           ? 'text-[var(--primary-color)] font-semibold border-b-2 border-[var(--primary-color)]'
-          : 'text-[var(--dark-text-color)] font-semibold hover:text-[var(--primary-color)] transition-colors duration-300'
+          : 'text-[var(--dark-text-color)] font-semibold hover:text-[var(--primary-color)] transition-colors duration-200'
         }">${link.label}</a>
       `;
     }).join('');
@@ -136,30 +184,22 @@ class StsHeader extends HTMLElement {
       `;
     }).join('');
 
-    const depth = currentPath.split('/').filter(p => p && p !== 'index.html').length;
-    // For /es/pages/legal.html -> depth is 2 or 3 depending on how it's split.
-    // If it's a local file path, split by / might get complex.
-    // Let's assume standard relative paths for assets inside the component as it's meant to be portable.
-    
-    // Simpler approach: find the root relative to the current language folder.
     const assetPrefix = currentPath.includes('/pages/') ? '../../' : '../';
 
     const flags = {
-      es: `${assetPrefix}assets/flags/es_flag.png`,
-      en: `${assetPrefix}assets/flags/en_flag.png`,
+      es: `${assetPrefix}assets/flags/es_flag.webp`,
+      en: `${assetPrefix}assets/flags/en_flag.webp`,
       por: `${assetPrefix}assets/flags/por_flag.svg`
     };
 
     // Pre-calculate lang-switch URLs from current path
     const _buildLangUrl = (targetLang) => {
       const p = currentPath;
-      // Try to replace the language segment in the path
       for (const srcLang of ['es', 'en', 'por', 'pt']) {
         if (p.includes(`/${srcLang}/`)) {
           return p.replace(`/${srcLang}/`, `/${targetLang}/`);
         }
       }
-      // Fallback: go to root of target lang
       return `/${targetLang}/`;
     };
 
@@ -190,7 +230,7 @@ class StsHeader extends HTMLElement {
           justify-content: center;
           z-index: 20;
           cursor: pointer;
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           overflow: hidden;
           box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
@@ -208,7 +248,7 @@ class StsHeader extends HTMLElement {
           pointer-events: none;
           opacity: 0;
           transform: scale(0.5) rotate(-90deg);
-          transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
           z-index: 10;
         }
         .lang-selector-container:hover .lang-options {
@@ -217,33 +257,24 @@ class StsHeader extends HTMLElement {
           transform: scale(1) rotate(0deg);
         }
         .lang-selector-container:hover .lang-main-circle {
-          transform: scale(0.8);
+          transform: scale(0.85);
           box-shadow: 0 0 0 4px rgba(44, 74, 110, 0.1);
         }
         .lang-sector {
           position: absolute;
           width: 100%;
           height: 100%;
-          clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%); /* Top Right quadrant */
+          clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
           cursor: pointer;
-          transition: all 0.3s ease;
+          transition: all 0.2s ease;
           display: flex;
           align-items: center;
           justify-content: center;
         }
-        
-        /* ES Sector */
-        .sector-es {
-          transform: rotate(-30deg);
-        }
-        /* EN Sector */
-        .sector-en {
-          transform: rotate(90deg);
-        }
-        /* PT Sector */
-        .sector-por {
-          transform: rotate(210deg);
-        }
+
+        .sector-es { transform: rotate(-30deg); }
+        .sector-en { transform: rotate(90deg); }
+        .sector-por { transform: rotate(210deg); }
 
         .lang-sector img {
            position: absolute;
@@ -272,8 +303,12 @@ class StsHeader extends HTMLElement {
           <div class="flex justify-between items-center h-24">
 
             <a href="/${lang}/index.html" class="flex items-center">
-              <img src="${this.getAttribute('logo') || '../../assets/ststrasp.png'}"
+              <img src="${this.getAttribute('logo') || '../../assets/ststrasp.webp'}"
                 alt="${t.logoAlt}"
+                width="288"
+                height="192"
+                fetchpriority="high"
+                decoding="async"
                 class="h-48 p-6 w-auto object-contain">
             </a>
 
@@ -287,17 +322,17 @@ class StsHeader extends HTMLElement {
               <!-- Selector Circular "Quesito" -->
               <div class="lang-selector-container" id="lang-selector-desktop">
                 <div class="lang-main-circle" id="lang-main-circle">
-                  <img src="${flags[lang]}" alt="${lang}">
+                  <img src="${flags[lang]}" alt="${lang}" width="40" height="40" decoding="async">
                 </div>
                 <div class="lang-options" id="lang-options">
                    <a href="${langUrls.es}" class="lang-sector sector-es" aria-label="Español">
-                      <img src="${flags.es}" alt="ES">
+                      <img src="${flags.es}" alt="ES" width="24" height="24" decoding="async">
                    </a>
                    <a href="${langUrls.en}" class="lang-sector sector-en" aria-label="English">
-                      <img src="${flags.en}" alt="EN">
+                      <img src="${flags.en}" alt="EN" width="24" height="24" decoding="async">
                    </a>
                    <a href="${langUrls.por}" class="lang-sector sector-por" aria-label="Português">
-                      <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT">
+                      <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" width="24" height="24" decoding="async">
                    </a>
                 </div>
               </div>
@@ -309,7 +344,7 @@ class StsHeader extends HTMLElement {
           </div>
         </div>
 
-        <div id="mobile-menu" class="max-h-0 overflow-hidden lg:hidden bg-white border-t border-[var(--light-border-color)] shadow-xl absolute w-full left-0 transition-all duration-500 ease-in-out">
+        <div id="mobile-menu" class="max-h-0 overflow-hidden lg:hidden bg-white border-t border-[var(--light-border-color)] shadow-xl absolute w-full left-0 transition-all duration-300 ease-in-out">
           <div class="px-4 py-6 space-y-4">
             ${mobileLinks}
             <a href="/${lang}/pages/contacto.html" class="block text-center px-6 py-4 bg-[var(--primary-color)] text-white font-semibold rounded-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-all">
@@ -317,13 +352,13 @@ class StsHeader extends HTMLElement {
             </a>
             <div class="flex justify-center gap-4 py-4 border-t border-gray-100 mt-4">
               <a href="${langUrls.es}" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center ${lang === 'es' ? 'ring-2 ring-[var(--primary-color)]' : ''}" aria-label="Español">
-                <img src="${flags.es}" alt="ES" class="w-full h-full object-cover">
+                <img src="${flags.es}" alt="ES" class="w-full h-full object-cover" width="40" height="40" decoding="async">
               </a>
               <a href="${langUrls.en}" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center ${lang === 'en' ? 'ring-2 ring-[var(--primary-color)]' : ''}" aria-label="English">
-                <img src="${flags.en}" alt="EN" class="w-full h-full object-cover">
+                <img src="${flags.en}" alt="EN" class="w-full h-full object-cover" width="40" height="40" decoding="async">
               </a>
               <a href="${langUrls.por}" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center ${lang === 'por' ? 'ring-2 ring-[var(--primary-color)]' : ''}" aria-label="Português">
-                <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" class="w-full h-full object-cover">
+                <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" class="w-full h-full object-cover" width="40" height="40" decoding="async">
               </a>
             </div>
           </div>
@@ -408,7 +443,6 @@ class StsHeader extends HTMLElement {
     options.addEventListener('mouseenter', openMenu);
     options.addEventListener('mouseleave', closeMenu);
 
-    // Touch support: toggle on tap of the main circle
     const circle = this.querySelector('#lang-main-circle');
     if (circle) {
       circle.addEventListener('click', (e) => {
@@ -421,7 +455,6 @@ class StsHeader extends HTMLElement {
       });
     }
 
-    // Close on outside click
     document.addEventListener('click', (e) => {
       if (!container.contains(e.target)) {
         closeMenu();

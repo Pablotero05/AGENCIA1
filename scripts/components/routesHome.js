@@ -101,7 +101,10 @@
                   src="${imagePath}"
                   alt="${ruta.nombre}"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy">
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                  decoding="async">
                 ${badgeHTML}
               </div>
               <div class="p-6 pb-0">

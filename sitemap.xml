@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- =========================================================
+       PÁGINAS PRINCIPALES
+       ========================================================= -->
   <url>
     <loc>https://www.steptosantiago.com/es/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,288 +18,236 @@
     <loc>https://www.steptosantiago.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/"/>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/pt/</loc>
+    <loc>https://www.steptosantiago.com/por/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/"/>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
+
+  <!-- =========================================================
+       RUTAS — HUB (CATÁLOGO)
+       ========================================================= -->
   <url>
-    <loc>https://www.steptosantiago.com/es/rutas/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/"/>
+    <loc>https://www.steptosantiago.com/es/pages/rutas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/rutas.html"/>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/en/routes/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/"/>
+    <loc>https://www.steptosantiago.com/en/pages/rutas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/rutas.html"/>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/pt/rotas/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/"/>
+    <loc>https://www.steptosantiago.com/por/pages/rutas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/rutas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/rutas.html"/>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- =========================================================
+       PLANIFICADOR DEL CAMINO DE SANTIAGO
+       ========================================================= -->
+  <url>
+    <loc>https://www.steptosantiago.com/es/pages/planificador.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/planificador.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/es/servicios/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/servicos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/services/"/>
+    <loc>https://www.steptosantiago.com/en/pages/planificador.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/planificador.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.steptosantiago.com/por/pages/planificador.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/planificador.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/planificador.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- =========================================================
+       SERVICIOS
+       ========================================================= -->
+  <url>
+    <loc>https://www.steptosantiago.com/es/pages/servicios.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/servicios.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/en/services/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/servicos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/services/"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/pt/servicos/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/services/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/servicos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/services/"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/es/nosotros/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/nosotros/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/sobre-nos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/about/"/>
+    <loc>https://www.steptosantiago.com/en/pages/servicios.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/servicios.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/en/about/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/nosotros/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/sobre-nos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/about/"/>
+    <loc>https://www.steptosantiago.com/por/pages/servicios.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/servicios.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- =========================================================
+       NOSOTROS / ABOUT
+       ========================================================= -->
+  <url>
+    <loc>https://www.steptosantiago.com/es/pages/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/nosotros.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/pt/sobre-nos/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/nosotros/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/sobre-nos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/about/"/>
+    <loc>https://www.steptosantiago.com/en/pages/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/nosotros.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.steptosantiago.com/por/pages/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/nosotros.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- =========================================================
+       CONTACTO
+       ========================================================= -->
+  <url>
+    <loc>https://www.steptosantiago.com/es/pages/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/contacto.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.steptosantiago.com/en/pages/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/contacto.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/es/contacto/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/contato/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/contact/"/>
+    <loc>https://www.steptosantiago.com/por/pages/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/contacto.html"/>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- =========================================================
+       OPINIONES
+       ========================================================= -->
+  <url>
+    <loc>https://www.steptosantiago.com/es/pages/opiniones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/opiniones.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/en/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/contato/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/contact/"/>
+    <loc>https://www.steptosantiago.com/en/pages/opiniones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/opiniones.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.steptosantiago.com/por/pages/opiniones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/opiniones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/opiniones.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- =========================================================
+       PREGUNTAS FRECUENTES (FAQ)
+       ========================================================= -->
+  <url>
+    <loc>https://www.steptosantiago.com/es/pages/preguntas-frecuentes.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/preguntas-frecuentes.html"/>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/pt/contato/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/contato/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/contact/"/>
+    <loc>https://www.steptosantiago.com/en/pages/preguntas-frecuentes.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/preguntas-frecuentes.html"/>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.steptosantiago.com/es/rutas/frances/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/frances/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/frances/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/frances/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/frances/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.steptosantiago.com/por/pages/preguntas-frecuentes.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/por/pages/preguntas-frecuentes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/pages/preguntas-frecuentes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://www.steptosantiago.com/en/routes/frances/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/frances/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/frances/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/frances/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/frances/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/pt/rotas/frances/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/frances/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/frances/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/frances/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/frances/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/es/rutas/portugues-tui/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-tui/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/en/routes/portugues-tui/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-tui/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/pt/rotas/portugues-tui/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-tui/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-tui/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/es/rutas/portugues-costa-oporto/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-costa-oporto/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/en/routes/portugues-costa-oporto/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-costa-oporto/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/pt/rotas/portugues-costa-oporto/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-costa-oporto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-costa-oporto/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/es/rutas/portugues-costa-guarda/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-costa-guarda/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/en/routes/portugues-costa-guarda/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-costa-guarda/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/pt/rotas/portugues-costa-guarda/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/portugues-costa-guarda/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/portugues-costa-guarda/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/es/rutas/ingles-ferrol/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/ingles-ferrol/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/en/routes/ingles-ferrol/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/ingles-ferrol/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/pt/rotas/ingles-ferrol/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/ingles-ferrol/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/ingles-ferrol/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/es/rutas/primitivo-lugo/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/primitivo-lugo/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/en/routes/primitivo-lugo/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/primitivo-lugo/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.steptosantiago.com/pt/rotas/primitivo-lugo/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/primitivo-lugo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/primitivo-lugo/"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+
 </urlset>

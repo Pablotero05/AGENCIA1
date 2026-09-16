@@ -1,0 +1,770 @@
+{
+  ".vscode/settings.json": {
+    "mtime": 1779907282.339353,
+    "seen": 1789484470.9072134,
+    "ast_hash": "19751b2a32e46d1ba1477f357123a898",
+    "semantic_hash": "19751b2a32e46d1ba1477f357123a898"
+  },
+  "en/components/routeCards.js": {
+    "mtime": 1773886635.6143997,
+    "seen": 1789484470.9072204,
+    "ast_hash": "d52176e0e0c633cd92a68896fdb879a5",
+    "semantic_hash": "d52176e0e0c633cd92a68896fdb879a5"
+  },
+  "en/components/sts-footer.js": {
+    "mtime": 1779907854.0533304,
+    "seen": 1789484470.9072232,
+    "ast_hash": "142847508ebc2695796e22dff41e81b4",
+    "semantic_hash": "142847508ebc2695796e22dff41e81b4"
+  },
+  "en/components/sts-header.js": {
+    "mtime": 1779103803.7510016,
+    "seen": 1789484470.907225,
+    "ast_hash": "214842db90e748fa027f261344d55df5",
+    "semantic_hash": "214842db90e748fa027f261344d55df5"
+  },
+  "en/data/rutas.json": {
+    "mtime": 1787841049.2480142,
+    "seen": 1789484470.9072266,
+    "ast_hash": "43696cc3db12293e03e0094d6ccdb8a3",
+    "semantic_hash": "43696cc3db12293e03e0094d6ccdb8a3"
+  },
+  "es/components/routeCards.js": {
+    "mtime": 1773845032.7551317,
+    "seen": 1789484470.907228,
+    "ast_hash": "d52176e0e0c633cd92a68896fdb879a5",
+    "semantic_hash": "d52176e0e0c633cd92a68896fdb879a5"
+  },
+  "es/components/sts-footer.js": {
+    "mtime": 1779103811.187317,
+    "seen": 1789484470.9072294,
+    "ast_hash": "7b45532cb20bc4b4e9712f51f3c56770",
+    "semantic_hash": "7b45532cb20bc4b4e9712f51f3c56770"
+  },
+  "es/components/sts-header.js": {
+    "mtime": 1779103799.3053982,
+    "seen": 1789484470.9072306,
+    "ast_hash": "2da2190a64aaf64b8a123eabb4770c52",
+    "semantic_hash": "2da2190a64aaf64b8a123eabb4770c52"
+  },
+  "es/data/rutas.json": {
+    "mtime": 1787841030.0162034,
+    "seen": 1789484470.907232,
+    "ast_hash": "5fc77bc22ebc3b21a78f0273f2d9ad2e",
+    "semantic_hash": "5fc77bc22ebc3b21a78f0273f2d9ad2e"
+  },
+  "package.json": {
+    "mtime": 1789429898.696788,
+    "seen": 1789484470.9072332,
+    "ast_hash": "6a2c025e592c4e92cc1bdbca712598ca",
+    "semantic_hash": "6a2c025e592c4e92cc1bdbca712598ca"
+  },
+  "por/data/rutas.json": {
+    "mtime": 1787841071.806694,
+    "seen": 1789484470.9072347,
+    "ast_hash": "1288dd4f8e83ecf8e270a9ead546bb08",
+    "semantic_hash": "1288dd4f8e83ecf8e270a9ead546bb08"
+  },
+  "remove-defer.js": {
+    "mtime": 1777552383.0849316,
+    "seen": 1789484470.907236,
+    "ast_hash": "b64b330809f8df654c69cd4819a407c8",
+    "semantic_hash": "b64b330809f8df654c69cd4819a407c8"
+  },
+  "scripts/LeadsContact.js": {
+    "mtime": 1789428442.1527205,
+    "seen": 1789484470.9072373,
+    "ast_hash": "6c6ffd7f50823730cb253510a515c117",
+    "semantic_hash": "6c6ffd7f50823730cb253510a515c117"
+  },
+  "scripts/analytics/sts-analytics.js": {
+    "mtime": 1789427177.3008308,
+    "seen": 1789484470.907239,
+    "ast_hash": "1064a62df8ac75faf07f3eccd9c8d1d8",
+    "semantic_hash": "1064a62df8ac75faf07f3eccd9c8d1d8"
+  },
+  "scripts/animations.js": {
+    "mtime": 1776278031.4521906,
+    "seen": 1789484470.9072402,
+    "ast_hash": "55e183f3eaab4324f1e8c0a0c6f76528",
+    "semantic_hash": "55e183f3eaab4324f1e8c0a0c6f76528"
+  },
+  "scripts/build-seo.js": {
+    "mtime": 1789055872.7276595,
+    "seen": 1789484470.9072416,
+    "ast_hash": "169ec27c80963e1b16de1d033a7fb01d",
+    "semantic_hash": "169ec27c80963e1b16de1d033a7fb01d"
+  },
+  "scripts/build_servicios.js": {
+    "mtime": 1779411569.9897738,
+    "seen": 1789484470.9072428,
+    "ast_hash": "6176ace1722319f5effe37e2e44e4b3d",
+    "semantic_hash": "6176ace1722319f5effe37e2e44e4b3d"
+  },
+  "scripts/build_terminos.js": {
+    "mtime": 1779408717.3148694,
+    "seen": 1789484470.907244,
+    "ast_hash": "c659b9f02b07285d0f5075a700c36c67",
+    "semantic_hash": "c659b9f02b07285d0f5075a700c36c67"
+  },
+  "scripts/components/contactForm.js": {
+    "mtime": 1777560968.7295356,
+    "seen": 1789484470.9072454,
+    "ast_hash": "83f8ccbcc0d55e34de604a297a02299e",
+    "semantic_hash": "83f8ccbcc0d55e34de604a297a02299e"
+  },
+  "scripts/components/routeCards.js": {
+    "mtime": 1779910959.8128085,
+    "seen": 1789484470.9072466,
+    "ast_hash": "6d714058a96706543336b6a88be2d585",
+    "semantic_hash": "6d714058a96706543336b6a88be2d585"
+  },
+  "scripts/components/routeDetail.js": {
+    "mtime": 1787841006.7276685,
+    "seen": 1789484470.9072478,
+    "ast_hash": "f579f06954b06688952cf26b78f2aab6",
+    "semantic_hash": "f579f06954b06688952cf26b78f2aab6"
+  },
+  "scripts/components/routesHome.js": {
+    "mtime": 1779910948.2336738,
+    "seen": 1789484470.9072492,
+    "ast_hash": "ed29a11621c45c0bd28aa402839f3a75",
+    "semantic_hash": "ed29a11621c45c0bd28aa402839f3a75"
+  },
+  "scripts/components/sts-footer.js": {
+    "mtime": 1779908218.077582,
+    "seen": 1789484470.907251,
+    "ast_hash": "ddd40ab46e52fcea18deaeb823cc1ea4",
+    "semantic_hash": "ddd40ab46e52fcea18deaeb823cc1ea4"
+  },
+  "scripts/components/sts-header.js": {
+    "mtime": 1789137455.3906436,
+    "seen": 1789484470.9072526,
+    "ast_hash": "a86931d844d92b050b54eca41e62fc61",
+    "semantic_hash": "a86931d844d92b050b54eca41e62fc61"
+  },
+  "scripts/filterDiff.js": {
+    "mtime": 1776277940.6019638,
+    "seen": 1789484470.9072537,
+    "ast_hash": "f80a7c428f239eaa543330cd70d2023b",
+    "semantic_hash": "f80a7c428f239eaa543330cd70d2023b"
+  },
+  "scripts/mobileMenu.js": {
+    "mtime": 1765997406.0,
+    "seen": 1789484470.907255,
+    "ast_hash": "7061ac48173445776f484cbbbe3f3cd5",
+    "semantic_hash": "7061ac48173445776f484cbbbe3f3cd5"
+  },
+  "scripts/stage-public.js": {
+    "mtime": 1789428407.3127947,
+    "seen": 1789484470.9072564,
+    "ast_hash": "0fd82ac89c4c38ca346fb31f5ce8c539",
+    "semantic_hash": "0fd82ac89c4c38ca346fb31f5ce8c539"
+  },
+  "vercel.json": {
+    "mtime": 1789428397.8455646,
+    "seen": 1789484470.9072576,
+    "ast_hash": "5c17858c246fda1e07738abb19996d39",
+    "semantic_hash": "5c17858c246fda1e07738abb19996d39"
+  },
+  "README.md": {
+    "mtime": 1779103245.153489,
+    "seen": 1789484470.907259,
+    "ast_hash": "273264ef359225a1895b0cfbd95bb80d",
+    "semantic_hash": "273264ef359225a1895b0cfbd95bb80d"
+  },
+  "css/safelist.html": {
+    "mtime": 1773889181.3362806,
+    "seen": 1789484470.9072602,
+    "ast_hash": "da131932f1708cd579844e26ca0605d3",
+    "semantic_hash": "da131932f1708cd579844e26ca0605d3"
+  },
+  "directrices-seo-agencia1.md": {
+    "mtime": 1787847097.690329,
+    "seen": 1789484470.9072616,
+    "ast_hash": "2ab831c52e839f679fed48b52e182103",
+    "semantic_hash": "2ab831c52e839f679fed48b52e182103"
+  },
+  "docs/seo/baseline-auditoria-2026-09-15.md": {
+    "mtime": 1789480266.6099746,
+    "seen": 1789484470.907263,
+    "ast_hash": "92def066d289d35414dfd39d8eebef59",
+    "semantic_hash": "92def066d289d35414dfd39d8eebef59"
+  },
+  "en/about/index.html": {
+    "mtime": 1789056590.2026098,
+    "seen": 1789484470.9072642,
+    "ast_hash": "47ed572b7a985ebe3c4f6a07b57a490e",
+    "semantic_hash": "47ed572b7a985ebe3c4f6a07b57a490e"
+  },
+  "en/contact/index.html": {
+    "mtime": 1789056590.207633,
+    "seen": 1789484470.9072654,
+    "ast_hash": "f66e96f01f85f205b928e65c29286f2e",
+    "semantic_hash": "f66e96f01f85f205b928e65c29286f2e"
+  },
+  "en/index.html": {
+    "mtime": 1787849495.8544173,
+    "seen": 1789484470.9072669,
+    "ast_hash": "48b8707d3720e36e9cb5a16e9f2a3445",
+    "semantic_hash": "48b8707d3720e36e9cb5a16e9f2a3445"
+  },
+  "en/pages/contacto.html": {
+    "mtime": 1787849661.269814,
+    "seen": 1789484470.9072683,
+    "ast_hash": "f66e96f01f85f205b928e65c29286f2e",
+    "semantic_hash": "f66e96f01f85f205b928e65c29286f2e"
+  },
+  "en/pages/legal.html": {
+    "mtime": 1787848707.1704862,
+    "seen": 1789484470.9072697,
+    "ast_hash": "b5a1c1696a682e6b87fe3f5bfe71876e",
+    "semantic_hash": "b5a1c1696a682e6b87fe3f5bfe71876e"
+  },
+  "en/pages/nosotros.html": {
+    "mtime": 1787849637.9818108,
+    "seen": 1789484470.907271,
+    "ast_hash": "47ed572b7a985ebe3c4f6a07b57a490e",
+    "semantic_hash": "47ed572b7a985ebe3c4f6a07b57a490e"
+  },
+  "en/pages/politicas.html": {
+    "mtime": 1787848726.3090699,
+    "seen": 1789484470.907272,
+    "ast_hash": "54ab5b43242539c7610f04a91fd8fb1c",
+    "semantic_hash": "54ab5b43242539c7610f04a91fd8fb1c"
+  },
+  "en/pages/ruta.html": {
+    "mtime": 1777552417.2390997,
+    "seen": 1789484470.9072735,
+    "ast_hash": "7a7e7954558af2bb1aa160770c4eb3bf",
+    "semantic_hash": "7a7e7954558af2bb1aa160770c4eb3bf"
+  },
+  "en/pages/rutas.html": {
+    "mtime": 1787849015.2562869,
+    "seen": 1789484470.907275,
+    "ast_hash": "bf4ec517b7c41124b94234632bada051",
+    "semantic_hash": "bf4ec517b7c41124b94234632bada051"
+  },
+  "en/pages/servicios.html": {
+    "mtime": 1779412707.997243,
+    "seen": 1789484470.9072764,
+    "ast_hash": "33fe6a4cc2ce65d0f27eef6f6e4e7ffb",
+    "semantic_hash": "33fe6a4cc2ce65d0f27eef6f6e4e7ffb"
+  },
+  "en/pages/terminos.html": {
+    "mtime": 1787848775.8411145,
+    "seen": 1789484470.9072776,
+    "ast_hash": "20ff45d4f1e1329c1efe7fa66ddc1043",
+    "semantic_hash": "20ff45d4f1e1329c1efe7fa66ddc1043"
+  },
+  "en/routes/frances/index.html": {
+    "mtime": 1789056590.1443384,
+    "seen": 1789484470.9072793,
+    "ast_hash": "98f87ac894d0a6ef682219b2a370a22b",
+    "semantic_hash": "98f87ac894d0a6ef682219b2a370a22b"
+  },
+  "en/routes/index.html": {
+    "mtime": 1789056590.190634,
+    "seen": 1789484470.9072807,
+    "ast_hash": "bf4ec517b7c41124b94234632bada051",
+    "semantic_hash": "bf4ec517b7c41124b94234632bada051"
+  },
+  "en/routes/ingles-ferrol/index.html": {
+    "mtime": 1789056590.1503172,
+    "seen": 1789484470.9072819,
+    "ast_hash": "7857635af7997935d27ca02dba9f9019",
+    "semantic_hash": "7857635af7997935d27ca02dba9f9019"
+  },
+  "en/routes/portugues-costa-guarda/index.html": {
+    "mtime": 1789056590.149339,
+    "seen": 1789484470.9072833,
+    "ast_hash": "686cf4b40831cc1b42d68462f5a658a4",
+    "semantic_hash": "686cf4b40831cc1b42d68462f5a658a4"
+  },
+  "en/routes/portugues-costa-oporto/index.html": {
+    "mtime": 1789056590.1483157,
+    "seen": 1789484470.9072845,
+    "ast_hash": "59aeca5738dbeaa8db7c5414d9f62f8e",
+    "semantic_hash": "59aeca5738dbeaa8db7c5414d9f62f8e"
+  },
+  "en/routes/portugues-tui/index.html": {
+    "mtime": 1789056590.1463163,
+    "seen": 1789484470.907286,
+    "ast_hash": "4c4e4f105a5d464cefe74fbe819d38f3",
+    "semantic_hash": "4c4e4f105a5d464cefe74fbe819d38f3"
+  },
+  "en/routes/primitivo-lugo/index.html": {
+    "mtime": 1789056590.1513236,
+    "seen": 1789484470.9072874,
+    "ast_hash": "58cf9ae2ec7d15808ca4a229d549d09f",
+    "semantic_hash": "58cf9ae2ec7d15808ca4a229d549d09f"
+  },
+  "en/services/index.html": {
+    "mtime": 1789056590.1966124,
+    "seen": 1789484470.9072886,
+    "ast_hash": "33fe6a4cc2ce65d0f27eef6f6e4e7ffb",
+    "semantic_hash": "33fe6a4cc2ce65d0f27eef6f6e4e7ffb"
+  },
+  "es/contacto/index.html": {
+    "mtime": 1789428463.5051715,
+    "seen": 1789484470.9072897,
+    "ast_hash": "6260bec2a2f474905319213319e3865e",
+    "semantic_hash": "6260bec2a2f474905319213319e3865e"
+  },
+  "es/guias/camino-portugues-desde-tui/index.html": {
+    "mtime": 1789428600.6373231,
+    "seen": 1789484470.9072912,
+    "ast_hash": "ffa69c50e38978e2d9a5b645ba59f398",
+    "semantic_hash": "ffa69c50e38978e2d9a5b645ba59f398"
+  },
+  "es/index.html": {
+    "mtime": 1789225198.3731189,
+    "seen": 1789484470.9072924,
+    "ast_hash": "d350c50374f902d3ec16e6c056129a6e",
+    "semantic_hash": "d350c50374f902d3ec16e6c056129a6e"
+  },
+  "es/nosotros/index.html": {
+    "mtime": 1789056590.2006352,
+    "seen": 1789484470.9072938,
+    "ast_hash": "4bf0b797047294a2c9120f3a21269e8a",
+    "semantic_hash": "4bf0b797047294a2c9120f3a21269e8a"
+  },
+  "es/opiniones/index.html": {
+    "mtime": 1789428749.498558,
+    "seen": 1789484470.907295,
+    "ast_hash": "c56e5750b289ead951a9a8a1a76cbb8f",
+    "semantic_hash": "c56e5750b289ead951a9a8a1a76cbb8f"
+  },
+  "es/pages/contacto.html": {
+    "mtime": 1787849609.3702555,
+    "seen": 1789484470.9072962,
+    "ast_hash": "ef6fe9d207caf0c8bba75b9598991de3",
+    "semantic_hash": "ef6fe9d207caf0c8bba75b9598991de3"
+  },
+  "es/pages/legal.html": {
+    "mtime": 1787848551.1162355,
+    "seen": 1789484470.9072976,
+    "ast_hash": "84d980e50bb5514f56d89545c9045bb2",
+    "semantic_hash": "84d980e50bb5514f56d89545c9045bb2"
+  },
+  "es/pages/nosotros.html": {
+    "mtime": 1787849586.7671874,
+    "seen": 1789484470.9072988,
+    "ast_hash": "4bf0b797047294a2c9120f3a21269e8a",
+    "semantic_hash": "4bf0b797047294a2c9120f3a21269e8a"
+  },
+  "es/pages/politicas.html": {
+    "mtime": 1787848556.5858097,
+    "seen": 1789484470.9073,
+    "ast_hash": "6818499a9a0d880a02ee2eda415c4299",
+    "semantic_hash": "6818499a9a0d880a02ee2eda415c4299"
+  },
+  "es/pages/ruta.html": {
+    "mtime": 1777552417.2772777,
+    "seen": 1789484470.9073014,
+    "ast_hash": "58e9193570cc96dc4321106feed5cd18",
+    "semantic_hash": "58e9193570cc96dc4321106feed5cd18"
+  },
+  "es/pages/rutas.html": {
+    "mtime": 1787849005.6918318,
+    "seen": 1789484470.9073026,
+    "ast_hash": "9522f618bc09c32a8896432f13c79169",
+    "semantic_hash": "9522f618bc09c32a8896432f13c79169"
+  },
+  "es/pages/servicios.html": {
+    "mtime": 1787849550.2670188,
+    "seen": 1789484470.907304,
+    "ast_hash": "5064296209c3b3fabe903352bfa8370a",
+    "semantic_hash": "5064296209c3b3fabe903352bfa8370a"
+  },
+  "es/pages/terminos.html": {
+    "mtime": 1787848690.12906,
+    "seen": 1789484470.9073055,
+    "ast_hash": "eb289ec2e115a97385b498a4b09eed70",
+    "semantic_hash": "eb289ec2e115a97385b498a4b09eed70"
+  },
+  "es/planificador-camino-santiago/index.html": {
+    "mtime": 1789428705.330723,
+    "seen": 1789484470.9073067,
+    "ast_hash": "435e1810476395119696e93bb39e1b54",
+    "semantic_hash": "435e1810476395119696e93bb39e1b54"
+  },
+  "es/preguntas-frecuentes/index.html": {
+    "mtime": 1789428788.7622192,
+    "seen": 1789484470.907308,
+    "ast_hash": "9d0242e8c916107d4675ffbc1c3b2f74",
+    "semantic_hash": "9d0242e8c916107d4675ffbc1c3b2f74"
+  },
+  "es/rutas/frances/index.html": {
+    "mtime": 1789428427.9477997,
+    "seen": 1789484470.9073093,
+    "ast_hash": "05cea86c05adfb4b3c1086f213e48be6",
+    "semantic_hash": "05cea86c05adfb4b3c1086f213e48be6"
+  },
+  "es/rutas/frances/sarria/index.html": {
+    "mtime": 1789428016.450318,
+    "seen": 1789484470.907311,
+    "ast_hash": "7a3c1326dac06a00222d7d794addd97f",
+    "semantic_hash": "7a3c1326dac06a00222d7d794addd97f"
+  },
+  "es/rutas/index.html": {
+    "mtime": 1789429932.568976,
+    "seen": 1789484470.9073122,
+    "ast_hash": "4391efa6a4e0e699f0ef6c47c32db984",
+    "semantic_hash": "4391efa6a4e0e699f0ef6c47c32db984"
+  },
+  "es/rutas/ingles-ferrol/index.html": {
+    "mtime": 1789427385.5656087,
+    "seen": 1789484470.9073133,
+    "ast_hash": "5d9a3b6b46a3c7d8dc45b3f2d65e46b5",
+    "semantic_hash": "5d9a3b6b46a3c7d8dc45b3f2d65e46b5"
+  },
+  "es/rutas/portugues-costa-guarda/index.html": {
+    "mtime": 1789427448.3880153,
+    "seen": 1789484470.9073148,
+    "ast_hash": "5c0cab0a353537fdd7e4a4987e2b2606",
+    "semantic_hash": "5c0cab0a353537fdd7e4a4987e2b2606"
+  },
+  "es/rutas/portugues-costa-oporto/index.html": {
+    "mtime": 1789428419.8601067,
+    "seen": 1789484470.9073162,
+    "ast_hash": "35ede8ca0d60d9cdedb80c9dc886e983",
+    "semantic_hash": "35ede8ca0d60d9cdedb80c9dc886e983"
+  },
+  "es/rutas/portugues-tui/index.html": {
+    "mtime": 1789427281.7261186,
+    "seen": 1789484470.9073174,
+    "ast_hash": "67bd04c66030625586786e20311dcad4",
+    "semantic_hash": "67bd04c66030625586786e20311dcad4"
+  },
+  "es/rutas/primitivo-lugo/index.html": {
+    "mtime": 1789427406.120678,
+    "seen": 1789484470.9073188,
+    "ast_hash": "6a94a5a928b5aed09c6c313d41a6efba",
+    "semantic_hash": "6a94a5a928b5aed09c6c313d41a6efba"
+  },
+  "es/servicios/index.html": {
+    "mtime": 1789056590.1946094,
+    "seen": 1789484470.9073203,
+    "ast_hash": "5064296209c3b3fabe903352bfa8370a",
+    "semantic_hash": "5064296209c3b3fabe903352bfa8370a"
+  },
+  "es/viajes-organizados-camino-santiago/index.html": {
+    "mtime": 1789428547.8857412,
+    "seen": 1789484470.9073217,
+    "ast_hash": "b5ab2f93327f96e2af80f690d181bc6b",
+    "semantic_hash": "b5ab2f93327f96e2af80f690d181bc6b"
+  },
+  "googlee93585bedc255548.html": {
+    "mtime": 1789225183.6487849,
+    "seen": 1789484470.907323,
+    "ast_hash": "4adb31ac3f0ee0ef17f3de3d8fc3d0d7",
+    "semantic_hash": "4adb31ac3f0ee0ef17f3de3d8fc3d0d7"
+  },
+  "index.html": {
+    "mtime": 1789428401.723186,
+    "seen": 1789484470.907324,
+    "ast_hash": "277f8c516f49970dd88984ffecf0e606",
+    "semantic_hash": "277f8c516f49970dd88984ffecf0e606"
+  },
+  "plan-implementacion-seo-sem-steptosantiago.md": {
+    "mtime": 1789307322.6988504,
+    "seen": 1789484470.9073255,
+    "ast_hash": "9078ba393d1288bfa3974ddb25b0c99f",
+    "semantic_hash": "9078ba393d1288bfa3974ddb25b0c99f"
+  },
+  "por/contato/index.html": {
+    "mtime": 1789056590.2106116,
+    "seen": 1789484470.9073267,
+    "ast_hash": "22db5e69ee2e501095862f87ccf29177",
+    "semantic_hash": "22db5e69ee2e501095862f87ccf29177"
+  },
+  "por/index.html": {
+    "mtime": 1787849527.8535926,
+    "seen": 1789484470.9073286,
+    "ast_hash": "3857cfe9db7765b421718466d423f253",
+    "semantic_hash": "3857cfe9db7765b421718466d423f253"
+  },
+  "por/pages/contacto.html": {
+    "mtime": 1787849683.012328,
+    "seen": 1789484470.9073296,
+    "ast_hash": "22db5e69ee2e501095862f87ccf29177",
+    "semantic_hash": "22db5e69ee2e501095862f87ccf29177"
+  },
+  "por/pages/legal.html": {
+    "mtime": 1787848785.0656743,
+    "seen": 1789484470.9073308,
+    "ast_hash": "6f2423a512c0ba0862bd467ad43f6199",
+    "semantic_hash": "6f2423a512c0ba0862bd467ad43f6199"
+  },
+  "por/pages/nosotros.html": {
+    "mtime": 1787849718.4409385,
+    "seen": 1789484470.9073324,
+    "ast_hash": "39a65827440d72e3392e79ec01678105",
+    "semantic_hash": "39a65827440d72e3392e79ec01678105"
+  },
+  "por/pages/politicas.html": {
+    "mtime": 1787848796.1904016,
+    "seen": 1789484470.9073334,
+    "ast_hash": "bb49c57b79157b9336f2faff5c78993f",
+    "semantic_hash": "bb49c57b79157b9336f2faff5c78993f"
+  },
+  "por/pages/ruta.html": {
+    "mtime": 1777552417.4188125,
+    "seen": 1789484470.9073348,
+    "ast_hash": "9159d79ade63172d8320de66a9b3c468",
+    "semantic_hash": "9159d79ade63172d8320de66a9b3c468"
+  },
+  "por/pages/rutas.html": {
+    "mtime": 1787849023.1877737,
+    "seen": 1789484470.907338,
+    "ast_hash": "d52a4c90afa167baff79756dfc903a83",
+    "semantic_hash": "d52a4c90afa167baff79756dfc903a83"
+  },
+  "por/pages/servicios.html": {
+    "mtime": 1779412760.0112555,
+    "seen": 1789484470.9073393,
+    "ast_hash": "14c0c4173df8485d36daffbe533e1370",
+    "semantic_hash": "14c0c4173df8485d36daffbe533e1370"
+  },
+  "por/pages/terminos.html": {
+    "mtime": 1787848943.6321206,
+    "seen": 1789484470.9073408,
+    "ast_hash": "6facb6c8a98f360d7a859d5184e17ca1",
+    "semantic_hash": "6facb6c8a98f360d7a859d5184e17ca1"
+  },
+  "por/rotas/frances/index.html": {
+    "mtime": 1789056590.154314,
+    "seen": 1789484470.9073422,
+    "ast_hash": "69abfe15a5b56140ee5438c9d1a2b11f",
+    "semantic_hash": "69abfe15a5b56140ee5438c9d1a2b11f"
+  },
+  "por/rotas/index.html": {
+    "mtime": 1789056590.1926103,
+    "seen": 1789484470.9073434,
+    "ast_hash": "d52a4c90afa167baff79756dfc903a83",
+    "semantic_hash": "d52a4c90afa167baff79756dfc903a83"
+  },
+  "por/rotas/ingles-ferrol/index.html": {
+    "mtime": 1789056590.178415,
+    "seen": 1789484470.9073446,
+    "ast_hash": "444ef376269065d209cfbd711b710a82",
+    "semantic_hash": "444ef376269065d209cfbd711b710a82"
+  },
+  "por/rotas/portugues-costa-guarda/index.html": {
+    "mtime": 1789056590.1725757,
+    "seen": 1789484470.907346,
+    "ast_hash": "33a02bddcf3d6d53ecdf8237c12e257b",
+    "semantic_hash": "33a02bddcf3d6d53ecdf8237c12e257b"
+  },
+  "por/rotas/portugues-costa-oporto/index.html": {
+    "mtime": 1789056590.165409,
+    "seen": 1789484470.9073472,
+    "ast_hash": "129bc0632176f5991e1bfd94712bdc0a",
+    "semantic_hash": "129bc0632176f5991e1bfd94712bdc0a"
+  },
+  "por/rotas/portugues-tui/index.html": {
+    "mtime": 1789056590.1574357,
+    "seen": 1789484470.9073484,
+    "ast_hash": "866dba939b6a1af2cb17477bd525d0e6",
+    "semantic_hash": "866dba939b6a1af2cb17477bd525d0e6"
+  },
+  "por/rotas/primitivo-lugo/index.html": {
+    "mtime": 1789056590.1834161,
+    "seen": 1789484470.90735,
+    "ast_hash": "34644129c3684ca09b15848d770c2bf1",
+    "semantic_hash": "34644129c3684ca09b15848d770c2bf1"
+  },
+  "por/servicos/index.html": {
+    "mtime": 1789056590.19861,
+    "seen": 1789484470.9073513,
+    "ast_hash": "14c0c4173df8485d36daffbe533e1370",
+    "semantic_hash": "14c0c4173df8485d36daffbe533e1370"
+  },
+  "por/sobre-nos/index.html": {
+    "mtime": 1789056590.20461,
+    "seen": 1789484470.9073527,
+    "ast_hash": "39a65827440d72e3392e79ec01678105",
+    "semantic_hash": "39a65827440d72e3392e79ec01678105"
+  },
+  "pt/contato/index.html": {
+    "mtime": 1789056590.209617,
+    "seen": 1789484470.9073539,
+    "ast_hash": "22db5e69ee2e501095862f87ccf29177",
+    "semantic_hash": "22db5e69ee2e501095862f87ccf29177"
+  },
+  "pt/index.html": {
+    "mtime": 1789056590.2126117,
+    "seen": 1789484470.9073548,
+    "ast_hash": "3857cfe9db7765b421718466d423f253",
+    "semantic_hash": "3857cfe9db7765b421718466d423f253"
+  },
+  "pt/rotas/frances/index.html": {
+    "mtime": 1789056590.1533394,
+    "seen": 1789484470.9073565,
+    "ast_hash": "69abfe15a5b56140ee5438c9d1a2b11f",
+    "semantic_hash": "69abfe15a5b56140ee5438c9d1a2b11f"
+  },
+  "pt/rotas/index.html": {
+    "mtime": 1789056590.191635,
+    "seen": 1789484470.9073577,
+    "ast_hash": "d52a4c90afa167baff79756dfc903a83",
+    "semantic_hash": "d52a4c90afa167baff79756dfc903a83"
+  },
+  "pt/rotas/ingles-ferrol/index.html": {
+    "mtime": 1789056590.1754355,
+    "seen": 1789484470.907359,
+    "ast_hash": "444ef376269065d209cfbd711b710a82",
+    "semantic_hash": "444ef376269065d209cfbd711b710a82"
+  },
+  "pt/rotas/portugues-costa-guarda/index.html": {
+    "mtime": 1789056590.1685305,
+    "seen": 1789484470.9073606,
+    "ast_hash": "33a02bddcf3d6d53ecdf8237c12e257b",
+    "semantic_hash": "33a02bddcf3d6d53ecdf8237c12e257b"
+  },
+  "pt/rotas/portugues-costa-oporto/index.html": {
+    "mtime": 1789056590.1597404,
+    "seen": 1789484470.9073617,
+    "ast_hash": "129bc0632176f5991e1bfd94712bdc0a",
+    "semantic_hash": "129bc0632176f5991e1bfd94712bdc0a"
+  },
+  "pt/rotas/portugues-tui/index.html": {
+    "mtime": 1789056590.1563373,
+    "seen": 1789484470.9073634,
+    "ast_hash": "866dba939b6a1af2cb17477bd525d0e6",
+    "semantic_hash": "866dba939b6a1af2cb17477bd525d0e6"
+  },
+  "pt/rotas/primitivo-lugo/index.html": {
+    "mtime": 1789056590.1804378,
+    "seen": 1789484470.9073646,
+    "ast_hash": "34644129c3684ca09b15848d770c2bf1",
+    "semantic_hash": "34644129c3684ca09b15848d770c2bf1"
+  },
+  "pt/servicos/index.html": {
+    "mtime": 1789056590.1976328,
+    "seen": 1789484470.9073658,
+    "ast_hash": "14c0c4173df8485d36daffbe533e1370",
+    "semantic_hash": "14c0c4173df8485d36daffbe533e1370"
+  },
+  "pt/sobre-nos/index.html": {
+    "mtime": 1789056590.2036088,
+    "seen": 1789484470.9073727,
+    "ast_hash": "39a65827440d72e3392e79ec01678105",
+    "semantic_hash": "39a65827440d72e3392e79ec01678105"
+  },
+  "robots.txt": {
+    "mtime": 1789427054.801755,
+    "seen": 1789484470.9073741,
+    "ast_hash": "cd8a58fea083bec9ea71013aef85d8ce",
+    "semantic_hash": "cd8a58fea083bec9ea71013aef85d8ce"
+  },
+  "assets/catedral-hero.jpg": {
+    "mtime": 1773845572.361048,
+    "seen": 1789484470.9073756,
+    "ast_hash": "f7e342e8b02e260e2477a3a0474f312c",
+    "semantic_hash": "f7e342e8b02e260e2477a3a0474f312c"
+  },
+  "assets/flags/en_flag.png": {
+    "mtime": 1773886635.610399,
+    "seen": 1789484470.907377,
+    "ast_hash": "2d9349813326d9e52fa004dd914c837a",
+    "semantic_hash": "2d9349813326d9e52fa004dd914c837a"
+  },
+  "assets/flags/es_flag.png": {
+    "mtime": 1773886635.6123998,
+    "seen": 1789484470.9073904,
+    "ast_hash": "b4ab95d30f39b5b5ce0153ae11f43db5",
+    "semantic_hash": "b4ab95d30f39b5b5ce0153ae11f43db5"
+  },
+  "assets/flags/por_flag.svg": {
+    "mtime": 1779418457.8121004,
+    "seen": 1789484470.907392,
+    "ast_hash": "f0f95b343296722c38dc0857f3a4c73d",
+    "semantic_hash": "f0f95b343296722c38dc0857f3a4c73d"
+  },
+  "assets/home_experiencia.png": {
+    "mtime": 1780686082.843367,
+    "seen": 1789484470.9073932,
+    "ast_hash": "de0c25183871e23abc448a3d77ee9587",
+    "semantic_hash": "de0c25183871e23abc448a3d77ee9587"
+  },
+  "assets/home_hero.png": {
+    "mtime": 1780686072.3638275,
+    "seen": 1789484470.9073951,
+    "ast_hash": "aae32af11d63316c5c4254c63ffdeb43",
+    "semantic_hash": "aae32af11d63316c5c4254c63ffdeb43"
+  },
+  "assets/miniatura-frances.png": {
+    "mtime": 1773845921.6263084,
+    "seen": 1789484470.9073966,
+    "ast_hash": "144a8613070f158a04ff9869341e1200",
+    "semantic_hash": "144a8613070f158a04ff9869341e1200"
+  },
+  "assets/miniatura-valencia.jpg": {
+    "mtime": 1773846126.4025846,
+    "seen": 1789484470.90741,
+    "ast_hash": "604842796a30b5de8347184f10a53ec6",
+    "semantic_hash": "604842796a30b5de8347184f10a53ec6"
+  },
+  "assets/ruta_portugues.png": {
+    "mtime": 1780687487.844131,
+    "seen": 1789484470.907411,
+    "ast_hash": "6bfb766e26035b6cc72a05402c5644f6",
+    "semantic_hash": "6bfb766e26035b6cc72a05402c5644f6"
+  },
+  "assets/rutas_banner.png": {
+    "mtime": 1780686102.4935076,
+    "seen": 1789484470.9074128,
+    "ast_hash": "d076b2e1b8b0c4e92a4e7daeb5fdabd9",
+    "semantic_hash": "d076b2e1b8b0c4e92a4e7daeb5fdabd9"
+  },
+  "assets/service_airport.png": {
+    "mtime": 1779410602.393615,
+    "seen": 1789484470.9074142,
+    "ast_hash": "eec2698ffe1eddd74d09871eb87cc6ec",
+    "semantic_hash": "eec2698ffe1eddd74d09871eb87cc6ec"
+  },
+  "assets/service_breakfast.png": {
+    "mtime": 1779410241.833061,
+    "seen": 1789484470.9074159,
+    "ast_hash": "0ce650ed9662c477c360b1c92050f171",
+    "semantic_hash": "0ce650ed9662c477c360b1c92050f171"
+  },
+  "assets/service_luggage.png": {
+    "mtime": 1779410430.193962,
+    "seen": 1789484470.9074173,
+    "ast_hash": "a0eb38dfaf7a165883b4fe96a9f387d1",
+    "semantic_hash": "a0eb38dfaf7a165883b4fe96a9f387d1"
+  },
+  "assets/service_meals.png": {
+    "mtime": 1779410414.0819123,
+    "seen": 1789484470.907419,
+    "ast_hash": "8f856ac29356b346e263fbb6a9d8fcad",
+    "semantic_hash": "8f856ac29356b346e263fbb6a9d8fcad"
+  },
+  "assets/service_transfer.png": {
+    "mtime": 1779410613.7011285,
+    "seen": 1789484470.9074204,
+    "ast_hash": "bc6ad574deb9f72f694aaa79ad0c3576",
+    "semantic_hash": "bc6ad574deb9f72f694aaa79ad0c3576"
+  },
+  "assets/sobre_nosotros_banner.png": {
+    "mtime": 1780680367.4347465,
+    "seen": 1789484470.9074216,
+    "ast_hash": "74125bfb9ddc6aaab46aa8a84504c002",
+    "semantic_hash": "74125bfb9ddc6aaab46aa8a84504c002"
+  },
+  "assets/sobre_nosotros_equipo.png": {
+    "mtime": 1780680378.3098166,
+    "seen": 1789484470.9074233,
+    "ast_hash": "81eb20ac52845c374373508dec784966",
+    "semantic_hash": "81eb20ac52845c374373508dec784966"
+  },
+  "assets/stsLOGO.png": {
+    "mtime": 1773834820.675241,
+    "seen": 1789484470.9074247,
+    "ast_hash": "7ac4ebcef9df95b3a9999810cd95ff99",
+    "semantic_hash": "7ac4ebcef9df95b3a9999810cd95ff99"
+  }
+}

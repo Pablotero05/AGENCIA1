@@ -1,15 +1,9 @@
 @import "tailwindcss";
+@import "./cookies.css";
 
-@source "../index.html";
-@source "../es/index.html";
-@source "../es/pages/**/*.html";
-@source "../en/index.html";
-@source "../en/pages/**/*.html";
-@source "../es/components/**/*.js";
-@source "../en/components/**/*.js";
-@source "../scripts/**/*.js";
-@source "../es/data/**/*.json";
-@source "../en/data/**/*.json";
+@source "../**/*.html";
+@source "../**/*.js";
+@source "../**/*.json";
 
 /* Safelist de clases dinámicas */
 @source "./safelist.html";

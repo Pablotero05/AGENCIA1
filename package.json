@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node scripts/build-seo.js && node scripts/stage-public.js",
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/tailwind.css --minify",
+    "build": "tailwindcss -i ./css/input.css -o ./css/tailwind.css --minify && node scripts/stage-public.js",
+    "build:seo-legacy": "node scripts/build-seo.js && node scripts/stage-public.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +24,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
   }
 }

@@ -70,21 +70,9 @@ class StsFooter extends HTMLElement {
                 Contacto
               </h4>
               <ul class="space-y-3">
-                <li class="flex items-start gap-3">
-                  <i class="fa-solid fa-location-dot text-[var(--accent-color)] mt-1" aria-hidden="true"></i>
-                  <span class="text-white/70 text-sm"><br></span>
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-solid fa-phone text-[var(--accent-color)]" aria-hidden="true"></i>
-                  <a href="tel:+34666666666" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">+34 666 666 666</a>
-                </li>
-                <li class="flex items-center gap-3">
-                  <i class="fa-brands fa-whatsapp text-[var(--accent-color)]" aria-hidden="true"></i>
-                  <a href="https://wa.me/34666666666" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">+34 666 666 666</a>
-                </li>
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-envelope text-[var(--accent-color)]" aria-hidden="true"></i>
-                  <a href="mailto:info@stepbystep.es" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">info@stepbystep.es</a>
+                  <a href="mailto:steptosantiago.contact@gmail.com" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">steptosantiago.contact@gmail.com</a>
                 </li>
               </ul>
             </div>

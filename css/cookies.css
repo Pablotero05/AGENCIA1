@@ -1,0 +1,423 @@
+/**
+ * StepToSantiago — Cookie Consent & Preference Modal Styles
+ * =========================================================
+ * Cumplimiento RGPD & Directrices AEPD (Equiprobabilidad, Legibilidad y Responsive).
+ */
+
+:root {
+  --sts-cookie-bg: #1A1A2E;
+  --sts-cookie-card-bg: rgba(26, 26, 46, 0.95);
+  --sts-cookie-border: rgba(255, 255, 255, 0.12);
+  --sts-cookie-text: #FFFFFF;
+  --sts-cookie-text-muted: rgba(255, 255, 255, 0.75);
+  --sts-cookie-primary: #2C4A6E;
+  --sts-cookie-primary-hover: #1e334d;
+  --sts-cookie-accent: #C8973A;
+  --sts-cookie-accent-hover: #b0822e;
+  --sts-cookie-secondary: rgba(255, 255, 255, 0.1);
+  --sts-cookie-secondary-hover: rgba(255, 255, 255, 0.18);
+}
+
+/* ─── BANNER CAPA 1 ─── */
+.sts-cookie-banner {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  background: var(--sts-cookie-card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--sts-cookie-border);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  z-index: 99998;
+  color: var(--sts-cookie-text);
+  font-family: var(--font-family-body, 'Plus Jakarta Sans', sans-serif);
+  animation: stsFadeInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes stsFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sts-cookie-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .sts-cookie-banner-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+.sts-cookie-banner-text {
+  flex: 1;
+}
+
+.sts-cookie-banner-title {
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.sts-cookie-banner-text p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--sts-cookie-text-muted);
+  margin: 0;
+}
+
+.sts-cookie-policy-link {
+  color: var(--sts-cookie-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.sts-cookie-policy-link:hover {
+  color: #e5b35a;
+}
+
+/* ─── BOTONES EQUIPROBABLES (AEPD REGLA DE ORO) ─── */
+.sts-cookie-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: stretch;
+}
+
+@media (min-width: 640px) {
+  .sts-cookie-banner-actions {
+    justify-content: flex-end;
+  }
+}
+
+.sts-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  text-align: center;
+  white-space: nowrap;
+  flex: 1 1 auto;
+}
+
+@media (min-width: 640px) {
+  .sts-btn {
+    flex: 0 0 auto;
+  }
+}
+
+.sts-btn-primary {
+  background-color: var(--sts-cookie-primary);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.sts-btn-primary:hover {
+  background-color: var(--sts-cookie-primary-hover);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.sts-btn-secondary {
+  background-color: var(--sts-cookie-secondary);
+  color: #FFFFFF;
+  border-color: var(--sts-cookie-border);
+}
+
+.sts-btn-secondary:hover {
+  background-color: var(--sts-cookie-secondary-hover);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.sts-btn-outline {
+  background-color: transparent;
+  color: var(--sts-cookie-text-muted);
+  border-color: var(--sts-cookie-border);
+}
+
+.sts-btn-outline:hover {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.sts-btn-accent {
+  background-color: var(--sts-cookie-accent);
+  color: #1A1A2E;
+  font-weight: 700;
+}
+
+.sts-btn-accent:hover {
+  background-color: var(--sts-cookie-accent-hover);
+  color: #000000;
+}
+
+/* ─── MODAL CAPA 2 (PREFERENCIAS) ─── */
+.sts-cookie-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 10, 20, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: stsFadeIn 0.25s ease-out forwards;
+}
+
+@keyframes stsFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.sts-cookie-modal-container {
+  background: var(--sts-cookie-card-bg);
+  border: 1px solid var(--sts-cookie-border);
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 44rem;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  color: var(--sts-cookie-text);
+  font-family: var(--font-family-body, 'Plus Jakarta Sans', sans-serif);
+}
+
+.sts-cookie-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 1.75rem;
+  border-bottom: 1px solid var(--sts-cookie-border);
+}
+
+.sts-cookie-modal-title {
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.sts-cookie-modal-subtitle {
+  font-size: 0.875rem;
+  color: var(--sts-cookie-text-muted);
+  margin: 0.25rem 0 0 0;
+}
+
+.sts-cookie-modal-close {
+  background: transparent;
+  border: none;
+  color: var(--sts-cookie-text-muted);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.sts-cookie-modal-close:hover {
+  color: #FFFFFF;
+}
+
+.sts-cookie-modal-body {
+  padding: 1.5rem 1.75rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Categorías individuales */
+.sts-cookie-category {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.sts-cookie-category:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.sts-cookie-cat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.sts-cookie-cat-info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.sts-cookie-cat-name {
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.sts-badge-required {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(200, 151, 58, 0.2);
+  color: var(--sts-cookie-accent);
+  border: 1px solid rgba(200, 151, 58, 0.4);
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.sts-cookie-cat-desc {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--sts-cookie-text-muted);
+  margin: 0;
+}
+
+/* ─── TOGGLE SWITCH (ESTILO iOS / MATERIAL) ─── */
+.sts-toggle {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.sts-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sts-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: .3s;
+  border-radius: 24px;
+}
+
+.sts-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+.sts-toggle input:checked + .sts-toggle-slider {
+  background-color: var(--sts-cookie-accent);
+}
+
+.sts-toggle input:checked + .sts-toggle-slider:before {
+  transform: translateX(20px);
+}
+
+.sts-toggle-slider.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Footer del modal */
+.sts-cookie-modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  padding: 1.25rem 1.75rem;
+  border-top: 1px solid var(--sts-cookie-border);
+  background: rgba(20, 20, 35, 0.5);
+}
+
+/* ─── BOTÓN FLOTANTE PERMANENTE DE REAPERTURA ─── */
+.sts-cookie-floating-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: var(--sts-cookie-card-bg);
+  color: var(--sts-cookie-accent);
+  border: 1px solid var(--sts-cookie-border);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99990;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.sts-cookie-floating-btn:hover {
+  transform: scale(1.1);
+  background: var(--sts-cookie-accent);
+  color: #1A1A2E;
+  border-color: var(--sts-cookie-accent);
+}
+
+@media (max-width: 640px) {
+  .sts-cookie-banner {
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 1.25rem;
+  }
+  .sts-cookie-floating-btn {
+    bottom: 1rem;
+    left: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}

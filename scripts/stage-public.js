@@ -21,15 +21,29 @@ const scriptsDir = path.join(outputDir, 'scripts');
 fs.mkdirSync(scriptsDir, { recursive: true });
 
 for (const script of browserScripts) {
-  fs.copyFileSync(path.join(rootDir, 'scripts', script), path.join(scriptsDir, script));
+  const scriptPath = path.join(rootDir, 'scripts', script);
+  if (fs.existsSync(scriptPath)) {
+    fs.copyFileSync(scriptPath, path.join(scriptsDir, script));
+  }
 }
 
-fs.cpSync(path.join(rootDir, 'scripts', 'components'), path.join(scriptsDir, 'components'), {
-  recursive: true
-});
+if (fs.existsSync(path.join(rootDir, 'scripts', 'components'))) {
+  fs.cpSync(path.join(rootDir, 'scripts', 'components'), path.join(scriptsDir, 'components'), {
+    recursive: true
+  });
+}
+
+if (fs.existsSync(path.join(rootDir, 'scripts', 'analytics'))) {
+  fs.cpSync(path.join(rootDir, 'scripts', 'analytics'), path.join(scriptsDir, 'analytics'), {
+    recursive: true
+  });
+}
 
 for (const file of rootFiles) {
-  fs.copyFileSync(path.join(rootDir, file), path.join(outputDir, file));
+  const filePath = path.join(rootDir, file);
+  if (fs.existsSync(filePath)) {
+    fs.copyFileSync(filePath, path.join(outputDir, file));
+  }
 }
 
 console.log('Staged static site in public/.');
