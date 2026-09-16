@@ -2,8 +2,7 @@ class StsFooter extends HTMLElement {
   connectedCallback() {
     // Inyectar script del gestor de cookies si no está presente
     if (!document.getElementById('sts-cookie-consent-script')) {
-      const isPages = window.location.pathname.includes('/pages/');
-      const scriptPath = isPages ? '../../scripts/components/sts-cookie-consent.js' : '../scripts/components/sts-cookie-consent.js';
+      const scriptPath = '/scripts/components/sts-cookie-consent.js';
       const script = document.createElement('script');
       script.id = 'sts-cookie-consent-script';
       script.src = scriptPath;
@@ -104,7 +103,7 @@ class StsFooter extends HTMLElement {
             <div class="lg:col-span-1">
               <a href="/${lang}/index.html" class="inline-block mb-6">
                 <img
-                  src="${this.getAttribute('logo') || '../../assets/stsLOGO.webp'}"
+                  src="${this.getAttribute('logo') || '/assets/stsLOGO.webp'}"
                   alt="Step To Santiago"
                   width="180"
                   height="120"

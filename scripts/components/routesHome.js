@@ -40,9 +40,8 @@
   const normalizeImagePath = (src) => {
     if (!src) return '';
     if (src.startsWith('http://') || src.startsWith('https://')) return src;
-    // From homepage (/es/index.html), routes JSON path '../../assets/miniatura-frances.png'
-    // should become '../assets/miniatura-frances.png'
-    return src.replace(/^\.\.\/\.\.\//, '../');
+    // Ensure all local images are root-relative (/assets/...)
+    return src.replace(/^(\.\.\/)+/, '/').replace(/^\.\//, '/').replace(/^(?![\/])/, '/');
   };
 
   const getDifficultyClass = (dificultad) => {

@@ -1,8 +1,7 @@
 // Loader hiperfluido y prefetch instantáneo
 (function() {
   if (typeof window !== 'undefined' && document) {
-    const isPages = window.location.pathname.includes('/pages/');
-    const logoSrc = isPages ? '../../assets/stsLOGO.webp' : '../assets/stsLOGO.webp';
+    const logoSrc = '/assets/stsLOGO.webp';
     const loader = document.createElement('div');
     loader.id = 'sts-global-loader';
     loader.innerHTML = `
@@ -184,12 +183,10 @@ class StsHeader extends HTMLElement {
       `;
     }).join('');
 
-    const assetPrefix = currentPath.includes('/pages/') ? '../../' : '../';
-
     const flags = {
-      es: `${assetPrefix}assets/flags/es_flag.webp`,
-      en: `${assetPrefix}assets/flags/en_flag.webp`,
-      por: `${assetPrefix}assets/flags/por_flag.svg`
+      es: `/assets/flags/es_flag.webp`,
+      en: `/assets/flags/en_flag.webp`,
+      por: `/assets/flags/por_flag.svg`
     };
 
     // Pre-calculate lang-switch URLs from current path
@@ -303,7 +300,7 @@ class StsHeader extends HTMLElement {
           <div class="flex justify-between items-center h-24">
 
             <a href="/${lang}/index.html" class="flex items-center">
-              <img src="${this.getAttribute('logo') || '../../assets/ststrasp.webp'}"
+              <img src="${this.getAttribute('logo') || '/assets/ststrasp.webp'}"
                 alt="${t.logoAlt}"
                 width="288"
                 height="192"
