@@ -1,7 +1,8 @@
 (function () {
   const getLangFromPath = (path) => {
-    if (path.includes('/en/')) return 'en';
-    if (path.includes('/por/')) return 'por';
+    const p = path.toLowerCase();
+    if (p.includes('/en/') || p.endsWith('/en')) return 'en';
+    if (p.includes('/por/') || p.includes('/pt/') || p.endsWith('/por') || p.endsWith('/pt')) return 'por';
     return 'es';
   };
 
@@ -76,7 +77,8 @@
     `;
 
     try {
-      const response = await fetch(`../../${lang === 'es' ? 'es' : lang === 'en' ? 'en' : 'por'}/data/rutas.json`);
+      const dataLang = lang === 'en' ? 'en' : lang === 'por' ? 'por' : 'es';
+      const response = await fetch(`/${dataLang}/data/rutas.json`);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const rutas = await response.json();
       grid.innerHTML = rutas.map(r => createRouteCard(r, lang)).join('');

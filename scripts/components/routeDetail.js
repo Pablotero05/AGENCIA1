@@ -8,15 +8,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   const getLangFromPath = (path) => {
-    if (path.includes('/en/')) return 'en';
-    if (path.includes('/por/')) return 'por';
+    const p = path.toLowerCase();
+    if (p.includes('/en/') || p.endsWith('/en')) return 'en';
+    if (p.includes('/por/') || p.includes('/pt/') || p.endsWith('/por') || p.endsWith('/pt')) return 'por';
     return 'es';
   };
 
   const lang = getLangFromPath(window.location.pathname);
-  
+
   try {
-    const response = await fetch(`../../${lang}/data/rutas.json`);
+    const dataLang = lang === 'en' ? 'en' : lang === 'por' ? 'por' : 'es';
+    const response = await fetch(`/${dataLang}/data/rutas.json`);
     const rutas = await response.json();
     const ruta = rutas.find(r => r.id === routeId);
     

@@ -3,7 +3,7 @@
     "id": "frances",
     "nombre": "Caminho Francês",
     "slug": "/rutas/frances",
-    "imagen": "../../assets/miniatura-frances.webp",
+    "imagen": "/assets/miniatura-frances.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
     "badge": "⭐ Mais popular",
     "badgeColor": "bg-yellow-400 text-yellow-900",
@@ -22,7 +22,11 @@
     "inicio": "Saint-Jean-Pied-de-Port",
     "fin": "Santiago de Compostela",
     "epoca": "Abril a Outubro",
-    "tags": ["Paisagens únicas", "Mais serviços", "Ideal para iniciantes"],
+    "tags": [
+      "Paisagens únicas",
+      "Mais serviços",
+      "Ideal para iniciantes"
+    ],
     "precio": "365 €/pessoa",
     "puntosDestacados": [
       "Atravessar os Pirenéus a partir de França",
@@ -62,7 +66,7 @@
     "id": "portugues-tui",
     "nombre": "Caminho Português desde Tui",
     "slug": "/rutas/portugues-tui",
-    "imagen": "../../assets/ruta_portugues.webp",
+    "imagen": "/assets/ruta_portugues.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
     "badge": "🇵🇹 Desde Tui",
     "badgeColor": "bg-green-600 text-white",
@@ -81,7 +85,11 @@
     "inicio": "Tui",
     "fin": "Santiago de Compostela",
     "epoca": "Todo o ano (melhor primavera e outono)",
-    "tags": ["Trecho galego", "Obtenha a Compostela", "Ideal para 1 semana"],
+    "tags": [
+      "Trecho galego",
+      "Obtenha a Compostela",
+      "Ideal para 1 semana"
+    ],
     "precio": "365 €/pessoa",
     "puntosDestacados": [
       "A Catedral de Santa Maria de Tui e o seu centro histórico medieval",
@@ -200,7 +208,7 @@
     "id": "portugues-costa-oporto",
     "nombre": "Caminho Português da Costa desde o Porto",
     "slug": "/rutas/portugues-costa-oporto",
-    "imagen": "../../assets/ruta_portugues.webp",
+    "imagen": "/assets/ruta_portugues.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
     "badge": "🌊 Costa Atlântica",
     "badgeColor": "bg-sky-600 text-white",
@@ -219,7 +227,11 @@
     "inicio": "Porto",
     "fin": "Santiago de Compostela",
     "epoca": "Abril a Outubro",
-    "tags": ["Junto ao Oceano", "Passadiços e Praias", "Travessia de Barco"],
+    "tags": [
+      "Junto ao Oceano",
+      "Passadiços e Praias",
+      "Travessia de Barco"
+    ],
     "precio": "790 €/pessoa",
     "puntosDestacados": [
       "Saída do Porto seguindo o Rio Douro até ao Atlântico",
@@ -361,7 +373,7 @@
     "id": "portugues-costa-guarda",
     "nombre": "Caminho Português da Costa desde A Guarda",
     "slug": "/rutas/portugues-costa-guarda",
-    "imagen": "../../assets/ruta_portugues.webp",
+    "imagen": "/assets/ruta_portugues.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
     "badge": "🌊 Costa Galega",
     "badgeColor": "bg-cyan-600 text-white",
@@ -380,7 +392,11 @@
     "inicio": "A Guarda",
     "fin": "Santiago de Compostela",
     "epoca": "Todo o ano (ideal na primavera e verão)",
-    "tags": ["Obtenha a Compostela", "Mosteiro de Oia", "Vistas para as Cíes"],
+    "tags": [
+      "Obtenha a Compostela",
+      "Mosteiro de Oia",
+      "Vistas para as Cíes"
+    ],
     "precio": "445 €/pessoa",
     "puntosDestacados": [
       "Castro de Santa Trega e porto piscatório de A Guarda",
@@ -476,7 +492,7 @@
     "id": "ingles-ferrol",
     "nombre": "Caminho Inglês desde Ferrol",
     "slug": "/rutas/ingles-ferrol",
-    "imagen": "../../assets/miniatura-valencia.webp",
+    "imagen": "/assets/miniatura-valencia.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
     "badge": "🛡️ 100% Galego",
     "badgeColor": "bg-emerald-600 text-white",
@@ -495,7 +511,11 @@
     "inicio": "Ferrol",
     "fin": "Santiago de Compostela",
     "epoca": "Todo o ano (especialmente de Maio a Outubro)",
-    "tags": ["Obtenha a Compostela", "Vilas Medievais", "Ideal em 6 Dias"],
+    "tags": [
+      "Obtenha a Compostela",
+      "Vilas Medievais",
+      "Ideal em 6 Dias"
+    ],
     "precio": "375 €/pessoa",
     "puntosDestacados": [
       "Saída do Porto de Curuxeiras em Ferrol e passeio ribeirinho pela ria",
@@ -572,7 +592,7 @@
     "id": "primitivo-lugo",
     "nombre": "Caminho Primitivo desde Lugo",
     "slug": "/rutas/primitivo-lugo",
-    "imagen": "../../assets/home_experiencia.webp",
+    "imagen": "/assets/home_experiencia.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
     "badge": "🏛️ História e Natureza",
     "badgeColor": "bg-amber-600 text-white",
@@ -591,7 +611,11 @@
     "inicio": "Lugo",
     "fin": "Santiago de Compostela",
     "epoca": "Maio a Outubro",
-    "tags": ["Obtenha a Compostela", "Muralha de Lugo", "Rota Histórica"],
+    "tags": [
+      "Obtenha a Compostela",
+      "Muralha de Lugo",
+      "Rota Histórica"
+    ],
     "precio": "355 €/pessoa",
     "puntosDestacados": [
       "Passeio sobre a Muralha Romana de Lugo (Património Mundial da UNESCO)",

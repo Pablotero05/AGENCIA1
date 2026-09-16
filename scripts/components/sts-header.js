@@ -365,12 +365,13 @@ class StsHeader extends HTMLElement {
 
     this._initMobileMenu();
     this._initLangSelector();
-    this._updateRouteCounts(lang, assetPrefix);
+    this._updateRouteCounts(lang);
   }
 
-  async _updateRouteCounts(lang, assetPrefix) {
+  async _updateRouteCounts(lang) {
     try {
-      const response = await fetch(`${assetPrefix}${lang}/data/rutas.json`);
+      const dataLang = lang === 'en' ? 'en' : lang === 'por' ? 'por' : 'es';
+      const response = await fetch(`/${dataLang}/data/rutas.json`);
       if (!response.ok) return;
       const rutas = await response.json();
       document.querySelectorAll('[data-route-count]').forEach(el => {
@@ -382,8 +383,9 @@ class StsHeader extends HTMLElement {
   }
 
   _getLangFromPath(path) {
-    if (path.includes('/en/')) return 'en';
-    if (path.includes('/por/')) return 'por';
+    const p = (path || '').toLowerCase();
+    if (p.includes('/en/') || p.endsWith('/en')) return 'en';
+    if (p.includes('/por/') || p.includes('/pt/') || p.endsWith('/por') || p.endsWith('/pt')) return 'por';
     return 'es';
   }
 
