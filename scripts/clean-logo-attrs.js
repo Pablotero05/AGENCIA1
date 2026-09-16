@@ -5,7 +5,7 @@ function getAllFiles(dir, exts = ['.html']) {
   let results = [];
   const list = fs.readdirSync(dir);
   for (const file of list) {
-    if (file === 'node_modules' || file === 'public' || file === '.git' || file === 'archive') continue;
+    if (file === 'node_modules' || file === '.git' || file === 'archive') continue;
     const fullPath = path.join(dir, file);
     const stat = fs.statSync(fullPath);
     if (stat && stat.isDirectory()) {
@@ -24,7 +24,7 @@ for (const file of htmlFiles) {
   let original = content;
 
   // Clean logo attribute on <sts-header> and <sts-footer>
-  content = content.replace(/<(sts-header|sts-footer)\s+logo=["'][^"']*["']/g, '<$1');
+  content = content.replace(/<(sts-header|sts-footer)([^>]*?)\s+logo=["'][^"']*["']([^>]*?)>/gi, '<$1$2$3>');
 
   if (content !== original) {
     fs.writeFileSync(file, content, 'utf8');

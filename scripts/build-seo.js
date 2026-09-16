@@ -381,7 +381,7 @@ ${JSON.stringify(jsonLdData, null, 2)}
   <div class="frame-root">
     <div class="frame-content">
       <div class="[font-family:var(--font-family-body)]">
-        <sts-header logo="../../assets/ststrasp.png"></sts-header>
+        <sts-header></sts-header>
   
         <!-- HERO -->
         <section class="relative min-h-[80vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden py-16">
@@ -585,7 +585,7 @@ ${JSON.stringify(jsonLdData, null, 2)}
           </div>
         </section>
 
-        <sts-footer logo="../../assets/stsLOGO.png"></sts-footer>
+        <sts-footer></sts-footer>
       </div>
     </div>
   </div>

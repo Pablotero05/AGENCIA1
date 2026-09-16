@@ -77,10 +77,26 @@
     `;
 
     try {
-      const dataLang = lang === 'en' ? 'en' : lang === 'por' ? 'por' : 'es';
-      const response = await fetch(`/${dataLang}/data/rutas.json`);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const rutas = await response.json();
+      const candidates = [
+        `/${lang}/data/rutas.json`,
+        `/${lang === 'en' ? 'en' : (lang === 'por' || lang === 'pt') ? 'por' : 'es'}/data/rutas.json`,
+        `/${lang === 'en' ? 'en' : (lang === 'por' || lang === 'pt') ? 'pt' : 'es'}/data/rutas.json`,
+        `/es/data/rutas.json`
+      ];
+
+      let rutas = null;
+      for (const url of candidates) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            rutas = await res.json();
+            if (Array.isArray(rutas) && rutas.length > 0) break;
+          }
+        } catch (e) {}
+      }
+
+      if (!rutas) throw new Error('No se pudo cargar rutas.json desde ninguna ruta');
+
       grid.innerHTML = rutas.map(r => createRouteCard(r, lang)).join('');
       document.dispatchEvent(new CustomEvent('routesLoaded', { detail: { total: rutas.length } }));
     } catch (error) {
@@ -95,5 +111,9 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', loadRoutes);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadRoutes);
+  } else {
+    loadRoutes();
+  }
 })();

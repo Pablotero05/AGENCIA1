@@ -35,12 +35,12 @@
   <div class="frame-root">
     <div class="frame-content">
       <div class="[font-family:var(--font-family-body)]">
-        <sts-header logo="../assets/ststrasp.png"></sts-header>
+        <sts-header></sts-header>
 
 
 
 
-        <sts-footer logo="../assets/stsLOGO.png"></sts-footer>
+        <sts-footer></sts-footer>
       </div>
     </div>
     <div class="frame-content"></div>

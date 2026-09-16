@@ -665,7 +665,7 @@ langs.forEach(lang => {
 
         <!-- HEADER -->
         <div>
-          <sts-header logo="../../assets/ststrasp.png"></sts-header>
+          <sts-header></sts-header>
         </div>
 
         <!-- HERO SECTION -->
