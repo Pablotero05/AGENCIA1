@@ -7,7 +7,10 @@ const directories = ['assets', 'css', 'en', 'es', 'fontawesome', 'por', 'pt'];
 const browserScripts = ['animations.js', 'filterDiff.js', 'LeadsContact.js', 'mobileMenu.js'];
 const rootFiles = ['index.html', 'robots.txt', 'sitemap.xml', 'googlee93585bedc255548.html'];
 
-fs.rmSync(outputDir, { recursive: true, force: true });
+// Clean and recreate output directory
+try {
+  fs.rmSync(outputDir, { recursive: true, force: true });
+} catch (e) {}
 fs.mkdirSync(outputDir, { recursive: true });
 
 for (const directory of directories) {
@@ -39,10 +42,12 @@ if (fs.existsSync(path.join(rootDir, 'scripts', 'analytics'))) {
   });
 }
 
+// Copy root files ensuring sitemap.xml and robots.txt are directly overwritten in public/
 for (const file of rootFiles) {
   const filePath = path.join(rootDir, file);
   if (fs.existsSync(filePath)) {
-    fs.copyFileSync(filePath, path.join(outputDir, file));
+    const destPath = path.join(outputDir, file);
+    fs.copyFileSync(filePath, destPath);
   }
 }
 
