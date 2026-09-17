@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 // Resolve the project root from this script so builds work locally and on Vercel.
@@ -171,7 +171,7 @@ function generateRoutePageHTML(ruta, lang) {
       "@type": "TravelAgency",
       "name": "Step To Santiago",
       "url": "https://www.steptosantiago.com",
-      "logo": "https://www.steptosantiago.com/assets/ststrasp.png",
+      "logo": "https://www.steptosantiago.com/assets/stsLOGO.webp",
       "image": "https://www.steptosantiago.com/assets/rutas_banner.png",
       "description": "Agencia de viajes especializada en el Camino de Santiago.",
       "address": {
@@ -348,6 +348,7 @@ function generateRoutePageHTML(ruta, lang) {
   <link rel="alternate" hreflang="pt" href="${ptUrl}">
   <link rel="alternate" hreflang="x-default" href="${enUrl}">
 
+  <meta name="thumbnail" content="https://www.steptosantiago.com/assets/stsLOGO.webp">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${metaDesc}">
