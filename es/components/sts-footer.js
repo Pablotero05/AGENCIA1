@@ -72,7 +72,7 @@ class StsFooter extends HTMLElement {
               <ul class="space-y-3">
                 <li class="flex items-center gap-3">
                   <i class="fa-solid fa-envelope text-[var(--accent-color)]" aria-hidden="true"></i>
-                  <a href="mailto:steptosantiago.contact@gmail.com" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">steptosantiago.contact@gmail.com</a>
+                  <a href="mailto:info@steptosantiago.com" class="text-white/70 hover:text-[var(--accent-color)] transition-colors text-sm">info@steptosantiago.com</a>
                 </li>
               </ul>
             </div>
