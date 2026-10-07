@@ -34,9 +34,11 @@ class StsHeader extends HTMLElement {
           <div class="flex justify-between items-center h-24">
 
             <a href="/" class="flex items-center">
-              <img src="${this.getAttribute('logo') || 'assets/ststrasp.png'}"
+              <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal.png'}"
                 alt="Step To Santiago - Agencia del Camino de Santiago"
-                class="h-48 p-6 w-auto object-contain">
+                width="220"
+                height="70"
+                class="h-14 sm:h-16 w-auto object-contain">
             </a>
 
             <nav class="hidden lg:flex items-center space-x-8">

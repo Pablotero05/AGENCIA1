@@ -11,9 +11,11 @@ class StsFooter extends HTMLElement {
             <div class="lg:col-span-1">
               <a href="/" class="inline-block mb-6">
                 <img
-                  src="${this.getAttribute('logo') || 'assets/stsLOGO.png'}"
+                  src="${this.getAttribute('logo') || '/assets/stsLOGO-footer.webp'}"
                   alt="Step To Santiago - Agencia del Camino de Santiago"
-                  class="h-48 w-auto object-contain">
+                  width="160"
+                  height="148"
+                  class="h-20 md:h-24 w-auto object-contain">
               </a>
               <p class="text-white/70 text-sm mb-6 leading-relaxed">
                 Agencia especializada en el Camino de Santiago desde Santiago de

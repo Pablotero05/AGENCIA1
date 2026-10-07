@@ -103,13 +103,13 @@ class StsFooter extends HTMLElement {
             <div class="lg:col-span-1">
               <a href="/${lang}/index.html" class="inline-block mb-6">
                 <img
-                  src="${this.getAttribute('logo') || '/assets/stsLOGO.webp'}"
+                  src="${this.getAttribute('logo') || '/assets/stsLOGO-footer.webp'}"
                   alt="Step To Santiago"
-                  width="180"
-                  height="120"
+                  width="135"
+                  height="124"
                   loading="lazy"
                   decoding="async"
-                  class="h-48 w-auto object-contain">
+                  class="h-24 md:h-28 w-auto object-contain">
               </a>
               <p class="text-white/70 text-sm mb-6 leading-relaxed">
                 ${t.desc}

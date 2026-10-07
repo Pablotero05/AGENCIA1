@@ -1,7 +1,7 @@
 // Loader hiperfluido y prefetch instantáneo
 (function() {
   if (typeof window !== 'undefined' && document) {
-    const logoSrc = '/assets/stsLOGO.webp';
+    const logoSrc = '/assets/stsLogoHeader_horizontal.png';
     const loader = document.createElement('div');
     loader.id = 'sts-global-loader';
     loader.innerHTML = `
@@ -24,13 +24,13 @@
           visibility: hidden;
         }
         .loader-logo {
-          width: 220px;
+          width: 180px;
           height: auto;
           object-fit: contain;
           will-change: transform, opacity;
         }
       </style>
-      <img src="${logoSrc}" alt="Step To Santiago" class="loader-logo" width="220" height="147" fetchpriority="high" decoding="async" />
+      <img src="${logoSrc}" alt="Step To Santiago" class="loader-logo" width="180" height="166" fetchpriority="high" decoding="async" />
     `;
     document.documentElement.appendChild(loader);
 
@@ -300,13 +300,13 @@ class StsHeader extends HTMLElement {
           <div class="flex justify-between items-center h-24">
 
             <a href="/${lang}/index.html" class="flex items-center">
-              <img src="${this.getAttribute('logo') || '/assets/ststrasp.webp'}"
+              <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal.png'}"
                 alt="${t.logoAlt}"
-                width="288"
-                height="192"
+                width="490"
+                height="175"
                 fetchpriority="high"
                 decoding="async"
-                class="h-48 p-6 w-auto object-contain">
+                class="h-16 sm:h-14 lg:h-16 w-auto object-contain">
             </a>
 
             <nav class="hidden lg:flex items-center space-x-8">
