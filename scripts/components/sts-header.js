@@ -1,7 +1,7 @@
 // Loader hiperfluido y prefetch instantáneo
 (function() {
   if (typeof window !== 'undefined' && document) {
-    const logoSrc = '/assets/stsLogoHeader_horizontal.png';
+    const logoSrc = '/assets/stsLogoHeader_horizontal-transparent.png';
     const loader = document.createElement('div');
     loader.id = 'sts-global-loader';
     loader.innerHTML = `
@@ -300,7 +300,7 @@ class StsHeader extends HTMLElement {
           <div class="flex justify-between items-center h-24">
 
             <a href="/${lang}/index.html" class="flex items-center" style="background: transparent;">
-              <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal.png'}"
+              <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal-transparent.png'}"
                 alt="${t.logoAlt}"
                 width="490"
                 height="175"

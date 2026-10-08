@@ -34,7 +34,7 @@ class StsHeader extends HTMLElement {
           <div class="flex justify-between items-center h-24">
 
             <a href="/" class="flex items-center">
-              <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal.png'}"
+              <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal-transparent.png'}"
                 alt="Step To Santiago - Agencia del Camino de Santiago"
                 width="220"
                 height="70"
