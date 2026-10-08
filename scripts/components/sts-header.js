@@ -306,7 +306,7 @@ class StsHeader extends HTMLElement {
                 height="175"
                 fetchpriority="high"
                 decoding="async"
-                class="h-16 sm:h-14 lg:h-16 w-auto object-contain">
+                class="h-16 sm:h-14 lg:h-16 w-auto object-contain" style="mix-blend-mode: multiply;">
             </a>
 
             <nav class="hidden lg:flex items-center space-x-8">
