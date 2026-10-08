@@ -299,14 +299,15 @@ class StsHeader extends HTMLElement {
         <div class="max-w-7xl mx-auto pl-0 pr-4 sm:pl-0 sm:pr-6 lg:pl-2 lg:pr-8">
           <div class="flex justify-between items-center h-24">
 
-            <a href="/${lang}/index.html" class="flex items-center">
+            <a href="/${lang}/index.html" class="flex items-center" style="background: transparent;">
               <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal.png'}"
                 alt="${t.logoAlt}"
                 width="490"
                 height="175"
                 fetchpriority="high"
                 decoding="async"
-                class="h-16 sm:h-14 lg:h-16 w-auto object-contain" style="mix-blend-mode: multiply;">
+                class="h-16 sm:h-14 lg:h-16 w-auto object-contain"
+                style="background: transparent; display: block;">
             </a>
 
             <nav class="hidden lg:flex items-center space-x-8">
