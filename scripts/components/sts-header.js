@@ -294,9 +294,22 @@ class StsHeader extends HTMLElement {
           filter: brightness(1.1);
           z-index: 15;
         }
+        .sts-header-content {
+          padding-left: 1rem;
+        }
+        @media (min-width: 640px) {
+          .sts-header-content {
+            padding-left: 1.5rem;
+          }
+        }
+        @media (min-width: 1024px) {
+          .sts-header-content {
+            padding-left: 0.5rem;
+          }
+        }
       </style>
       <header id="global-header" class="bg-[var(--light-background-color)] sticky top-0 z-50 shadow-lg px-0">
-        <div class="max-w-7xl mx-auto pl-0 pr-4 sm:pl-0 sm:pr-6 lg:pl-2 lg:pr-8">
+        <div class="sts-header-content max-w-7xl mx-auto pr-4 sm:pr-6 lg:pr-8">
           <div class="flex justify-between items-center h-24">
 
             <a href="/${lang}/index.html" class="flex items-center" style="background: transparent;">
