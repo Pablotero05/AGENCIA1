@@ -111,7 +111,7 @@ htmlFiles.forEach(filePath => {
 
   // 4. Corregir cualquier bloque de oficina en los formularios de contacto
   content = content.replace(
-    /<div class="flex items-center gap-4 text-white">\s*<div class="w-12 h-12 bg-white\/10 rounded-full flex items-center justify-center">\s*<i class="fa-solid fa-location-dot[^"]*"><\/i>\s*<\/div>\s*<div>\s*<p class="text-sm text-white\/60">(?:Oficina|Escritório|Office)<\/p>\s*<p class="font-semibold">[^<]*<\/p>\s*<\/div>\s*<\/div>/gis,
+    /<div class="flex items-center gap-4 text-white">\s*<div class="w-12 h-12 bg-white\/10 rounded-full flex items-center justify-center">\s*<i class="fa-solid fa-location-dot[^>]*><\/i>\s*<\/div>\s*<div>\s*<p class="text-sm text-white\/60">(?:Oficina|Escritório|Office)<\/p>\s*<p class="font-semibold">[^<]*<\/p>\s*<\/div>\s*<\/div>/gis,
     ''
   );
 
