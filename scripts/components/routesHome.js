@@ -133,7 +133,8 @@
                   <span class="text-xl font-bold text-[var(--primary-color)] ml-1">${ruta.precio}</span>
                 </div>
                 <a href="/${lang}/pages/ruta.html?id=${ruta.id}"
-                  class="text-[var(--accent-color)] font-semibold hover:underline flex items-center gap-1"
+                  class="text-[var(--primary-color)] font-bold hover:underline flex items-center gap-1"
+                  aria-label="${t.viewItinerary}: ${ruta.nombre}"
                   onclick="event.stopPropagation();">
                   ${t.viewItinerary} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </a>
@@ -149,12 +150,12 @@
           class="bg-gradient-to-br from-[var(--primary-color)] to-[var(--dark-background-color)] rounded-2xl p-6 flex flex-col items-center justify-center text-center text-white min-h-[350px] justify-between">
           <div class="my-auto flex flex-col items-center justify-center">
             <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-6">
-              <i class="fa-solid fa-route text-3xl text-[var(--accent-color)]" aria-hidden="true"></i>
+              <i class="fa-solid fa-route text-3xl text-[var(--accent-bright, #F5C86C)]" aria-hidden="true"></i>
             </div>
             <h3 class="text-xl font-bold mb-3" style="font-family: var(--font-family-heading);">
               ${t.notDecided}
             </h3>
-            <p class="text-white/80 text-sm mb-6 max-w-[200px]">
+            <p class="text-white/90 text-sm mb-6 max-w-[200px]">
               ${t.discoverMore}
             </p>
           </div>

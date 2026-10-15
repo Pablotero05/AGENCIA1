@@ -14,14 +14,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), visibility 0.2s;
+          transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
           opacity: 1;
-          visibility: visible;
           pointer-events: none;
+          will-change: opacity;
         }
         #sts-global-loader.hide {
           opacity: 0;
-          visibility: hidden;
+          pointer-events: none;
         }
         .loader-logo {
           width: 180px;
@@ -38,6 +38,9 @@
     const hideLoader = () => {
       requestAnimationFrame(() => {
         loader.classList.add('hide');
+        setTimeout(() => {
+          if (loader.parentNode) loader.remove();
+        }, 250);
       });
     };
 
@@ -312,7 +315,7 @@ class StsHeader extends HTMLElement {
         <div class="sts-header-content max-w-7xl mx-auto pr-4 sm:pr-6 lg:pr-8">
           <div class="flex justify-between items-center h-24">
 
-            <a href="/${lang}/index.html" class="flex items-center" style="background: transparent;">
+            <a href="/${lang}/index.html" class="flex items-center" aria-label="${t.logoAlt}" style="background: transparent;">
               <img src="${this.getAttribute('logo') || '/assets/stsLogoHeader_horizontal-transparent.png'}"
                 alt="${t.logoAlt}"
                 width="490"
@@ -343,7 +346,7 @@ class StsHeader extends HTMLElement {
                       <img src="${flags.en}" alt="EN" width="24" height="24" decoding="async">
                    </a>
                    <a href="${langUrls.por}" class="lang-sector sector-por" aria-label="Português">
-                      <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" width="24" height="24" decoding="async">
+                      <img src="${flags.por}" alt="PT" width="24" height="24" decoding="async">
                    </a>
                 </div>
               </div>
@@ -369,7 +372,7 @@ class StsHeader extends HTMLElement {
                 <img src="${flags.en}" alt="EN" class="w-full h-full object-cover" width="40" height="40" decoding="async">
               </a>
               <a href="${langUrls.por}" class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center ${lang === 'por' ? 'ring-2 ring-[var(--primary-color)]' : ''}" aria-label="Português">
-                <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" class="w-full h-full object-cover" width="40" height="40" decoding="async">
+                <img src="${flags.por}" alt="PT" class="w-full h-full object-cover" width="40" height="40" decoding="async">
               </a>
             </div>
           </div>

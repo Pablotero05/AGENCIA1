@@ -31,20 +31,26 @@
   <meta name="twitter:description" content="Local expert agency for self-guided Camino de Santiago tours. Selected hotels, luggage transfer and 24/7 assistance.">
   <meta name="twitter:image" content="https://www.steptosantiago.com/assets/stsLOGO.webp">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link id="google-fonts-link"
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
-    rel="stylesheet">
-  <script src="/scripts/components/sts-header.js"></script>
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap">
+  </noscript>
+  <script src="/scripts/components/sts-header.js" defer></script>
   <script src="/scripts/components/sts-footer.js" defer></script>
   <script src="/scripts/components/routesHome.js" defer></script>
   <script src="/scripts/animations.js" defer></script>
 
-  <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="/fontawesome/css/brands.min.css">
   <link rel="stylesheet" href="/css/tailwind.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/fontawesome/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+  </noscript>
 
   <script type="application/ld+json">
   {
@@ -114,8 +120,8 @@
 
                 <!-- Subheadline -->
                 <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-                  Más de 10 años organizando peregrinaciones únicas desde Galicia.
-                  Especialistas locales en el Camino de Santiago.
+                  Over 10 years organizing unique pilgrimages from Galicia.
+                  Local specialists in the Camino de Santiago.
                 </p>
 
                 <!-- CTAs -->
@@ -153,7 +159,8 @@
             <!-- Scroll Indicator -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
               <a href="#confianza"
-                class="text-white/70 hover:text-white transition-colors">
+                class="text-white/70 hover:text-white transition-colors"
+                aria-label="Scroll to trust section">
                 <i class="fa-solid fa-chevron-down text-2xl" aria-hidden="true"></i>
               </a>
             </div>
@@ -168,8 +175,7 @@
                   Thousands of pilgrims trust us
                 </h2>
                 <p class="text-[var(--gray-text-color)] text-lg max-w-2xl mx-auto">
-                  Nuestra experiencia y dedicación nos convierten en tu mejor aliado para
-                  vivir el Camino de Santiago
+                  Our experience and dedication make us your best ally to experience the Camino de Santiago
                 </p>
               </div>
 
@@ -271,7 +277,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <!-- Section Header -->
               <div class="text-center mb-12">
-                <p class="text-[var(--accent-color)] font-semibold text-sm uppercase tracking-wider mb-2">
+                <p class="text-[var(--accent-dark,#855708)] font-semibold text-sm uppercase tracking-wider mb-2">
                   Our Routes
                 </p>
                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)] mb-4"
@@ -279,8 +285,7 @@
                   Discover the perfect Camino for you
                 </h2>
                 <p class="text-[var(--gray-text-color)] text-lg max-w-2xl mx-auto">
-                  <span data-route-count>8</span> rutas jacobeas disponibles con itinerarios diseñados por expertos
-                  locales
+                  <span data-route-count>8</span> Jacobean routes available with itineraries designed by local experts
                 </p>
               </div>
 
@@ -318,7 +323,7 @@
 
                 <!-- Right Column - Content -->
                 <div>
-                  <p class="text-[var(--accent-color)] font-semibold text-sm uppercase tracking-wider mb-2">
+                  <p class="text-[var(--accent-dark,#855708)] font-semibold text-sm uppercase tracking-wider mb-2">
                     Why choose us?
                   </p>
                   <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)] mb-6"
@@ -326,9 +331,9 @@
                     We know the Camino because we live it
                   </h2>
                   <p class="text-[var(--gray-text-color)] text-lg mb-8">
-                    Somos una agencia local especializada exclusivamente en el Camino de
-                    Santiago. Nuestra pasión por este camino milenario se refleja en cada
-                    detalle de nuestros servicios.
+                    We are a local agency specializing exclusively in the Camino de
+                    Santiago. Our passion for this ancient route is reflected in every
+                    detail of our services.
                   </p>
 
                   <!-- Features List -->
@@ -340,9 +345,9 @@
                         <i class="fa-solid fa-map-marked-alt text-[var(--primary-color)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <h4 class="font-bold text-[var(--dark-text-color)]">
+                        <h3 class="font-bold text-[var(--dark-text-color)]">
                           Local specialists in Galicia
-                        </h4>
+                        </h3>
                         <p class="text-sm text-[var(--gray-text-color)]">
                           We know every stage, hostel and restaurant on the route
                         </p>
@@ -356,9 +361,9 @@
                         <i class="fa-solid fa-id-card text-[var(--accent-color)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <h4 class="font-bold text-[var(--dark-text-color)]">
+                        <h3 class="font-bold text-[var(--dark-text-color)]">
                           Official Tourism Guides
-                        </h4>
+                        </h3>
                         <p class="text-sm text-[var(--gray-text-color)]">
                           Certified by the Secretaría Xeral de Turismo de Galicia
                         </p>
@@ -372,9 +377,9 @@
                         <i class="fa-solid fa-bed text-[var(--accent2-color)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <h4 class="font-bold text-[var(--dark-text-color)]">
+                        <h3 class="font-bold text-[var(--dark-text-color)]">
                           Hand-picked accommodation
-                        </h4>
+                        </h3>
                         <p class="text-sm text-[var(--gray-text-color)]">
                           Charming hotels, manor houses and quality rural cottages
                         </p>
@@ -388,9 +393,9 @@
                         <i class="fa-solid fa-suitcase text-[var(--accent4-color)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <h4 class="font-bold text-[var(--dark-text-color)]">
+                        <h3 class="font-bold text-[var(--dark-text-color)]">
                           Luggage transfer included
-                        </h4>
+                        </h3>
                         <p class="text-sm text-[var(--gray-text-color)]">
                           We make sure your backpack arrives at every stage
                         </p>
@@ -404,9 +409,9 @@
                         <i class="fa-solid fa-ban text-[var(--primary-color)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <h4 class="font-bold text-[var(--dark-text-color)]">
+                        <h3 class="font-bold text-[var(--dark-text-color)]">
                           Free cancellation
-                        </h4>
+                        </h3>
                         <p class="text-sm text-[var(--gray-text-color)]">
                           Up to 15 days before your start date
                         </p>
@@ -420,9 +425,9 @@
                         <i class="fa-solid fa-shield-heart text-[var(--accent-color)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <h4 class="font-bold text-[var(--dark-text-color)]">
+                        <h3 class="font-bold text-[var(--dark-text-color)]">
                           Travel insurance included
-                        </h4>
+                        </h3>
                         <p class="text-sm text-[var(--gray-text-color)]">
                           Full coverage in all our packages
                         </p>
@@ -438,7 +443,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <!-- Section Header -->
               <div class="text-center mb-12">
-                <p class="text-[var(--accent-color)] font-semibold text-sm uppercase tracking-wider mb-2">
+                <p class="text-[var(--accent-dark,#855708)] font-semibold text-sm uppercase tracking-wider mb-2">
                   Simple process
                 </p>
                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-text-color)] mb-4"
@@ -476,8 +481,8 @@
                       Tell us your plan
                     </h3>
                     <p class="text-[var(--gray-text-color)] text-sm">
-                      Completa nuestro formulario o llámanos. Cuéntanos tus preferencias,
-                      fechas y el tipo de experiencia que buscas.
+                      Complete our form or contact us. Tell us your preferences,
+                      dates and the kind of experience you are looking for.
                     </p>
                   </div>
 
@@ -499,8 +504,8 @@
                       We design your itinerary
                     </h3>
                     <p class="text-[var(--gray-text-color)] text-sm">
-                      Nuestro equipo crea una ruta personalizada adaptada a tu nivel,
-                      preferencias y disponibilidad.
+                      Our team creates a custom itinerary tailored to your pace,
+                      preferences and schedule.
                     </p>
                   </div>
 
@@ -522,8 +527,8 @@
                       We confirm everything
                     </h3>
                     <p class="text-[var(--gray-text-color)] text-sm">
-                      Reservamos todos los alojamientos, transfers y servicios. Recibirás
-                      un dossier completo con toda la información.
+                      We book all accommodations, transfers and services. You will receive
+                      a comprehensive dossier with all the details.
                     </p>
                   </div>
 
@@ -545,8 +550,8 @@
                       Enjoy the Camino!
                     </h3>
                     <p class="text-[var(--gray-text-color)] text-sm">
-                      Tú solo camina y disfruta. Nosotros nos encargamos de todo lo demás
-                      durante tu peregrinación.
+                      Just walk and enjoy. We take care of everything else
+                      throughout your pilgrimage.
                     </p>
                   </div>
                 </div>
@@ -576,46 +581,46 @@
               <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <!-- Left Content -->
                 <div>
-                  <p class="text-[var(--accent-color)] font-semibold text-sm uppercase tracking-wider mb-2">
+                  <p class="text-[var(--accent-bright,#F5C86C)] font-semibold text-sm uppercase tracking-wider mb-2">
                     Ready to start?
                   </p>
                   <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
                     style="font-family: var(--font-family-heading);">
-                    Plan Your Camino de Santiago hoy
+                    Plan Your Camino de Santiago today
                   </h2>
-                  <p class="text-white/80 text-lg mb-8">
-                    Solicita tu presupuesto gratuito sin compromiso. Nuestro equipo te
-                    responderá en menos de 24 horas con una propuesta personalizada.
+                  <p class="text-white/90 text-lg mb-8">
+                    Request your free quote with no obligation. Our team will
+                    respond in under 24 hours with a personalized proposal.
                   </p>
 
                   <!-- Contact Info -->
                   <div class="space-y-4">
                     <div class="flex items-center gap-4 text-white">
                       <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-phone text-[var(--accent-color)]" aria-hidden="true"></i>
+                        <i class="fa-solid fa-phone text-[var(--accent-bright,#F5C86C)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <p class="text-sm text-white/60">Call us</p>
-                        <p class="font-semibold">+34 xxx xxx xxx</p>
+                        <p class="text-sm text-gray-300">Call us</p>
+                        <p class="font-semibold">+34 981 00 00 00</p>
                       </div>
                     </div>
 
                     <div class="flex items-center gap-4 text-white">
                       <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                        <i class="fa-brands fa-whatsapp text-[var(--accent-color)]" aria-hidden="true"></i>
+                        <i class="fa-brands fa-whatsapp text-[var(--accent-bright,#F5C86C)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <p class="text-sm text-white/60">WhatsApp</p>
-                        <p class="font-semibold">+34 xxx xxx xxx</p>
+                        <p class="text-sm text-gray-300">WhatsApp</p>
+                        <p class="font-semibold">+34 666 66 66 66</p>
                       </div>
                     </div>
 
                     <div class="flex items-center gap-4 text-white">
                       <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-envelope text-[var(--accent-color)]" aria-hidden="true"></i>
+                        <i class="fa-solid fa-envelope text-[var(--accent-bright,#F5C86C)]" aria-hidden="true"></i>
                       </div>
                       <div>
-                        <p class="text-sm text-white/60">Email</p>
+                        <p class="text-sm text-gray-300">Email</p>
                         <p class="font-semibold">info@steptosantiago.com</p>
                       </div>
                     </div>
@@ -634,10 +639,11 @@
                   <form id="sts-contact-form" class="space-y-4">
                     <div class="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                        <label for="contact-nombre" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
                           Full name
                         </label>
                         <input
+                          id="contact-nombre"
                           type="text"
                           name="nombre"
                           required
@@ -647,10 +653,11 @@
                       </div>
 
                       <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                        <label for="contact-telefono" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
                           Phone
                         </label>
                         <input
+                          id="contact-telefono"
                           type="tel"
                           name="telefono"
                           required
@@ -661,10 +668,11 @@
                     </div>
 
                     <div>
-                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                      <label for="contact-email" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
                         Email
                       </label>
                       <input
+                        id="contact-email"
                         type="email"
                         name="email"
                         required
@@ -675,10 +683,11 @@
 
                     <div class="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                        <label for="contact-ruta" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
                           Route of interest
                         </label>
                         <select
+                          id="contact-ruta"
                           name="ruta"
                           class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all bg-white"
                         >
@@ -692,10 +701,11 @@
                       </div>
 
                       <div>
-                        <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                        <label for="contact-personas" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
                           Number of people
                         </label>
                         <input
+                          id="contact-personas"
                           type="number"
                           name="personas"
                           min="1"
@@ -706,10 +716,11 @@
                     </div>
 
                     <div>
-                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                      <label for="contact-fecha" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
                         Approximate date
                       </label>
                       <input
+                        id="contact-fecha"
                         type="month"
                         name="fecha"
                         class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all"
@@ -717,10 +728,11 @@
                     </div>
 
                     <div>
-                      <label class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                      <label for="contact-mensaje" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
                         Message / Special requirements
                       </label>
                       <textarea
+                        id="contact-mensaje"
                         name="mensaje"
                         rows="4"
                         class="w-full px-4 py-3 border border-[var(--light-border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none transition-all resize-none"
@@ -740,7 +752,7 @@
                       By submitting this form, you agree to our privacy policy.
                     </p>
                   </form>
-                  <script src="/scripts/LeadsContact.js"></script>
+                  <script src="/scripts/LeadsContact.js" defer></script>
                 </div>
               </div>
             </div>

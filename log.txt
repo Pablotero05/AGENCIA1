@@ -1,0 +1,83 @@
+Original metadata: {
+  format: 'png',
+  mediaType: 'image/png',
+  width: 3000,
+  height: 3000,
+  space: 'srgb',
+  channels: 3,
+  depth: 'uchar',
+  density: 144,
+  isProgressive: false,
+  isPalette: false,
+  bitsPerSample: 8,
+  resolutionUnit: 'inch',
+  hasProfile: false,
+  hasAlpha: false,
+  autoOrient: { width: 3000, height: 3000 },
+  exif: <Buffer 4d 4d 00 2a 00 00 00 08 00 04 01 1a 00 05 00 00 00 01 00 00 00 3e 01 1b 00 05 00 00 00 01 00 00 00 46 01 28 00 03 00 00 00 01 00 02 00 00 02 13 00 03 ... 28 more bytes>,
+  xmpAsString: "<?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?>\n" +
+    "<x:xmpmeta xmlns:x='adobe:ns:meta/'>\n" +
+    "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>\n" +
+    '\n' +
+    " <rdf:Description rdf:about=''\n" +
+    "  xmlns:Attrib='http://ns.attribution.com/ads/1.0/'>\n" +
+    '  <Attrib:Ads>\n' +
+    '   <rdf:Seq>\n' +
+    "    <rdf:li rdf:parseType='Resource'>\n" +
+    '     <Attrib:Created>2026-06-14</Attrib:Created>\n' +
+    '     <Attrib:Data>{&quot;doc&quot;:&quot;DAHMj3gMxwY&quot;,&quot;user&quot;:&quot;UAGfwP5zWRY&quot;,&quot;brand&quot;:&quot;BAGfwAZD6yw&quot;,&quot;template&quot;:&quot;White and Black Simple Planet Logo&quot;}</Attrib:Data>\n' +
+    '     <Attrib:ExtId>590a1cfb-0432-48ba-95eb-77b5f0065934</Attrib:ExtId>\n' +
+    '     <Attrib:FbId>525265914179580</Attrib:FbId>\n' +
+    '     <Attrib:TouchType>2</Attrib:TouchType>\n' +
+    '    </rdf:li>\n' +
+    '   </rdf:Seq>\n' +
+    '  </Attrib:Ads>\n' +
+    ' </rdf:Description>\n' +
+    '\n' +
+    " <rdf:Description rdf:about=''\n" +
+    "  xmlns:dc='http://purl.org/dc/elements/1.1/'>\n" +
+    '  <dc:title>\n' +
+    '   <rdf:Alt>\n' +
+    "    <rdf:li xml:lang='x-default'>ORIONA - 4</rdf:li>\n" +
+    '   </rdf:Alt>\n' +
+    '  </dc:title>\n' +
+    ' </rdf:Description>\n' +
+    '\n' +
+    " <rdf:Description rdf:about=''\n" +
+    "  xmlns:pdf='http://ns.adobe.com/pdf/1.3/'>\n" +
+    '  <pdf:Author>Pablo Otero</pdf:Author>\n' +
+    ' </rdf:Description>\n' +
+    '\n' +
+    " <rdf:Description rdf:about=''\n" +
+    "  xmlns:xmp='http://ns.adobe.com/xap/1.0/'>\n" +
+    '  <xmp:CreatorTool>Canva (Renderer) doc=DAHMj3gMxwY user=UAGfwP5zWRY brand=BAGfwAZD6yw template=White and Black Simple Planet Logo</xmp:CreatorTool>\n' +
+    ' </rdf:Description>\n' +
+    '</rdf:RDF>\n' +
+    '</x:xmpmeta>\n' +
+    "<?xpacket end='r'?>",
+  xmp: <Buffer 3c 3f 78 70 61 63 6b 65 74 20 62 65 67 69 6e 3d 27 ef bb bf 27 20 69 64 3d 27 57 35 4d 30 4d 70 43 65 68 69 48 7a 72 65 53 7a 4e 54 63 7a 6b 63 39 64 ... 1388 more bytes>
+}
+Channels: 3 Width: 3000 Height: 3000
+Top-left pixel: 255 255 255 no-alpha
+Saved white version: {
+  format: 'webp',
+  width: 1891,
+  height: 288,
+  channels: 4,
+  premultiplied: false,
+  trimOffsetLeft: -527,
+  trimOffsetTop: -1340,
+  hasAlpha: true,
+  size: 12264
+}
+Saved dark version: {
+  format: 'webp',
+  width: 1891,
+  height: 288,
+  channels: 4,
+  premultiplied: false,
+  trimOffsetLeft: -527,
+  trimOffsetTop: -1340,
+  hasAlpha: true,
+  size: 12264
+}
