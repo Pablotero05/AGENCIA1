@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="es" href="https://www.steptosantiago.com/es/rutas/">
   <link rel="alternate" hreflang="en" href="https://www.steptosantiago.com/en/routes/">
   <link rel="alternate" hreflang="pt" href="https://www.steptosantiago.com/pt/rotas/">
-  <link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/es/rutas/">
+  <link rel="alternate" hreflang="x-default" href="https://www.steptosantiago.com/en/routes/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rutas del Camino de Santiago Organizadas | Step to Santiago">
@@ -25,9 +25,6 @@
   <meta name="twitter:title" content="Rutas del Camino de Santiago Organizadas | Step to Santiago">
   <meta name="twitter:description" content="Descubre todas las rutas del Camino de Santiago: Francés, Portugués de la Costa, Inglés y Primitivo. Viajes organizados con hoteles y traslado de mochilas.">
   <meta name="twitter:image" content="https://www.steptosantiago.com/assets/rutas_banner.webp">
-
-  <!-- Analytics & Atribución -->
-  <script src="/scripts/analytics/sts-analytics.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
@@ -57,6 +54,61 @@
     "email": "info@steptosantiago.com"
   }
   </script>
+  <script>if(!/[?&]exp=(adventure|premium)(&|$)/.test(location.search))document.documentElement.classList.add('exp-select-mode');</script>
+  <style data-exp-v2-css>
+    html.exp-select-mode body section:not(#experience-selector),
+    html.exp-select-mode sts-footer{display:none!important}
+    #experience-selector{position:relative;display:flex;flex-direction:column;width:100%;
+      height:calc(100vh - 6rem);height:calc(100svh - 6rem);min-height:30rem;background:#0b0b0b;overflow:hidden}
+    .exp-pill{position:absolute;top:.75rem;left:50%;transform:translateX(-50%);z-index:5;pointer-events:none;
+      padding:.4rem 1rem;border-radius:999px;background:rgba(255,255,255,.92);color:#111;font-size:.7rem;font-weight:700;
+      letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+    .exp-panel{position:relative;flex:1 1 0;min-height:0;width:100%;display:block;padding:0;border:0;margin:0;overflow:hidden;
+      cursor:pointer;text-align:left;color:#fff;background:#111;-webkit-tap-highlight-color:transparent;
+      transition:flex-grow .7s cubic-bezier(.22,1,.36,1)}
+    .exp-panel+.exp-panel{border-top:2px solid rgba(255,255,255,.85)}
+    .exp-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+      transition:transform 1.2s cubic-bezier(.22,1,.36,1),filter .6s ease}
+    .exp-overlay{position:absolute;inset:0}
+    .exp-adventure .exp-overlay{background:linear-gradient(to top,rgba(8,50,28,.92) 5%,rgba(0,0,0,.2) 75%)}
+    .exp-premium .exp-overlay{background:linear-gradient(to top,rgba(66,42,8,.92) 5%,rgba(0,0,0,.2) 75%)}
+    .exp-content{position:absolute;left:0;right:0;bottom:0;display:block;padding:1rem 1.25rem 1.25rem;
+      animation:expRise .8s cubic-bezier(.22,1,.36,1) both}
+    .exp-tag{display:inline-block;margin-bottom:.4rem;padding:.25rem .7rem;border-radius:999px;background:rgba(255,255,255,.18);
+      backdrop-filter:blur(4px);font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .exp-title{display:block;margin-bottom:.35rem;font-size:clamp(1.75rem,8vw,2.5rem);font-weight:700;line-height:1.05;
+      font-family:var(--font-family-heading)}
+    .exp-text{display:block;max-width:28rem;margin-bottom:.7rem;font-size:.9rem;line-height:1.4;color:#e5e7eb}
+    .exp-list{display:none;list-style:none;margin:0 0 1rem;padding:0}
+    .exp-list li{margin-bottom:.3rem;font-size:.95rem}
+    .exp-list i{margin-right:.4rem;color:#fbbf24}
+    .exp-cta{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.2rem;border-radius:.6rem;background:#fff;color:#111;
+      font-size:.9rem;font-weight:700;transition:gap .3s ease}
+    .exp-panel:active{filter:brightness(.92)}
+    @media(min-width:480px) and (min-height:640px){.exp-text{font-size:1rem}.exp-list{display:block}}
+    @media(min-width:768px){
+      #experience-selector{flex-direction:row;min-height:34rem}
+      .exp-pill{top:1.5rem;font-size:.8rem;padding:.5rem 1.4rem}
+      .exp-panel+.exp-panel{border-top:0;border-left:2px solid rgba(255,255,255,.85)}
+      .exp-content{padding:2.5rem 2.5rem 3rem}
+      .exp-title{font-size:clamp(2.5rem,5vw,4.5rem)}
+      .exp-text{font-size:1.05rem}
+      .exp-list{display:block}
+    }
+    @media(min-width:768px) and (hover:hover){
+      .exp-text,.exp-list,.exp-cta{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+      .exp-panel:hover .exp-text,.exp-panel:focus-visible .exp-text,
+      .exp-panel:hover .exp-list,.exp-panel:focus-visible .exp-list,
+      .exp-panel:hover .exp-cta,.exp-panel:focus-visible .exp-cta{opacity:1;transform:none}
+      #experience-selector:hover .exp-panel{flex-grow:.7}
+      #experience-selector .exp-panel:hover,#experience-selector .exp-panel:focus-visible{flex-grow:1.6}
+      .exp-panel:hover img,.exp-panel:focus-visible img{transform:scale(1.08)}
+      #experience-selector:hover .exp-panel:not(:hover) img{filter:grayscale(.6) brightness(.7)}
+      .exp-panel:hover .exp-cta{gap:1rem}
+    }
+    @keyframes expRise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){.exp-panel,.exp-panel img,.exp-content,.exp-text,.exp-list,.exp-cta{transition:none!important;animation:none!important}}
+  </style>
 </head>
 
 <body class="h-full bg-white">
@@ -88,7 +140,40 @@
     </div>
   </section>
 
-  <!-- ===== FILTRO VISUAL ===== -->
+  <!-- ===== SELECTOR DE EXPERIENCIA (v2) ===== -->
+  <section id="experience-selector" data-exp-v2 aria-label="Elige tu experiencia">
+    <span class="exp-pill">Elige tu experiencia</span>
+    <button type="button" class="exp-panel exp-adventure" onclick="stsSelectExperience('adventure')" aria-label="Adventure">
+      <img src="/assets/adventure.png" alt="" loading="eager" decoding="async">
+      <span class="exp-overlay"></span>
+      <span class="exp-content">
+        <span class="exp-tag">Camino auténtico</span>
+        <span class="exp-title">Adventure</span>
+        <span class="exp-text">Naturaleza, espíritu peregrino y alojamientos con encanto a un precio ajustado.</span>
+        <ul class="exp-list"><li><i class="fa-solid fa-check" aria-hidden="true"></i>Alojamientos con encanto</li><li><i class="fa-solid fa-check" aria-hidden="true"></i>Traslado de mochilas</li><li><i class="fa-solid fa-check" aria-hidden="true"></i>Mejor relación calidad-precio</li></ul>
+        <span class="exp-cta">Ver rutas <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+      </span>
+    </button>
+    <button type="button" class="exp-panel exp-premium" onclick="stsSelectExperience('premium')" aria-label="Premium">
+      <img src="/assets/premium.png" alt="" loading="lazy" decoding="async">
+      <span class="exp-overlay"></span>
+      <span class="exp-content">
+        <span class="exp-tag">Máximo confort</span>
+        <span class="exp-title">Premium</span>
+        <span class="exp-text">Hoteles seleccionados, más comodidad y atención personalizada en cada etapa.</span>
+        <ul class="exp-list"><li><i class="fa-solid fa-check" aria-hidden="true"></i>Hoteles seleccionados</li><li><i class="fa-solid fa-check" aria-hidden="true"></i>Traslado de mochilas</li><li><i class="fa-solid fa-check" aria-hidden="true"></i>Atención personalizada</li></ul>
+        <span class="exp-cta">Ver rutas <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+      </span>
+    </button>
+  </section>
+  <div id="routes-list-wrapper" style="display:none">
+    <div class="bg-white border-b border-[var(--light-border-color)]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-3">
+        <span class="text-[var(--gray-text-color)] text-sm">Experiencia: <strong class="text-[var(--dark-text-color)]" data-exp-label></strong></span>
+        <button type="button" onclick="stsResetExperience()" class="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 hover:bg-gray-200 transition-all"><i class="fa-solid fa-arrow-left"></i> Cambiar experiencia</button>
+      </div>
+    </div>
+    <!-- ===== FILTRO VISUAL ===== -->
   <section class="py-8 bg-white border-b border-[var(--light-border-color)] top-24 z-40 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-wrap gap-3 items-center">
@@ -111,6 +196,7 @@
       </div>
     </div>
   </section>
+  </div>
 
   <!-- ===== ¿QUÉ RUTA ELEGIR? ===== -->
   <section class="py-20 bg-white">
@@ -149,16 +235,11 @@
           <p class="text-[var(--gray-text-color)] text-sm">El Camino Primitivo o la Vía de la Plata son para quienes buscan un reto físico y la máxima soledad.</p>
         </div>
       </div>
-      <div class="text-center flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/es/contacto/"
+      <div class="text-center">
+        <a href="/es/pages/contacto.html"
            class="inline-flex items-center gap-3 px-8 py-4 bg-[var(--primary-color)] text-white font-bold rounded-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
           <i class="fa-solid fa-comments"></i>
           Habla con un experto gratis
-        </a>
-        <a href="/es/planificador-camino-santiago/"
-           class="inline-flex items-center gap-3 px-8 py-4 bg-white border-2 border-[var(--primary-color)] text-[var(--primary-color)] font-bold rounded-lg hover:bg-emerald-50 transition-all duration-300">
-          <i class="fa-solid fa-wand-magic-sparkles"></i>
-          Probar Planificador Interactivo
         </a>
       </div>
     </div>
@@ -168,8 +249,6 @@
       </div>
     </div>
   </div>
-
-  <script>stsInitPage('rutas-hub');</script>
 </body>
 
 </html>

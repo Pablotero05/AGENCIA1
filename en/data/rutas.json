@@ -1,58 +1,132 @@
 [
   {
     "id": "frances",
-    "nombre": "French Way",
+    "nombre": "French Way from Sarria",
     "slug": "/rutas/frances",
     "imagen": "/assets/miniatura-frances.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
     "badge": "⭐ Most popular",
     "badgeColor": "bg-yellow-400 text-yellow-900",
-    "dificultad": "moderado",
-    "dificultadLabel": "Moderate",
-    "dificultadColor": "bg-yellow-500/90",
-    "dificultadDesc": "Moderate. Varied terrain with some mountain stages and good infrastructure.",
-    "km": "780 km",
-    "dias": "30-35 days",
-    "descripcion": "The classic route par excellence. Starting from Saint-Jean-Pied-de-Port, it crosses the most iconic landscapes of Navarra, La Rioja, Castilla and Galicia.",
+    "dificultad": "facil",
+    "dificultadLabel": "Easy",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Easy. Predominantly gentle and comfortable profile, ideal on foot with excellent infrastructure at every stage.",
+    "km": "115 km",
+    "dias": "6 days (5 stages)",
+    "descripcion": "The last 115 km of the French Way from Sarria to Santiago. The most popular section with the greatest pilgrim atmosphere, perfect for obtaining the Compostela in less than a week.",
     "descripcionLarga": [
-      "The French Way is the Jacobean route with the greatest historical tradition and the most internationally recognized.",
-      "It crosses the north of the Iberian Peninsula from Roncesvalles to Santiago de Compostela.",
-      "It is a transformative experience full of culture, art, and nature."
+      "The French Way from Sarria is the favorite Jacobean route for thousands of pilgrims worldwide to experience the magic of the Camino de Santiago and earn the coveted Compostela certificate, comfortably exceeding the required 100 km on foot.",
+      "The itinerary crosses the greenest and most authentic rural Galicia: stone villages with centuries-old granaries (hórreos), lush oak and chestnut forests, and historic towns like Portomarín, Palas de Rei, Melide, Arzúa, and O Pedrouzo.",
+      "With handpicked charming stays, daily luggage transfers, and continuous support, you will enjoy the authentic pilgrim adventure with complete peace of mind and the best value for money."
     ],
-    "inicio": "Saint-Jean-Pied-de-Port",
+    "inicio": "Sarria",
     "fin": "Santiago de Compostela",
-    "epoca": "April to October",
+    "epoca": "All year (especially April to October)",
     "tags": [
-      "Unique landscapes",
-      "More services",
-      "Ideal for beginners"
+      "Most popular",
+      "Get your Compostela",
+      "Ideal for 1 week"
     ],
-    "precio": "365 €/person",
+    "precio": "187 €/person",
     "puntosDestacados": [
-      "Crossing the Pyrenees from France",
-      "The Cathedral of Burgos and León",
-      "The Iron Cross in Astorga",
-      "The mystical arrival in O Cebreiro",
-      "Triumphant entry into the Plaza del Obradoiro"
+      "Medieval historic quarter and fortress of Sarria",
+      "Crossing the Miño River into historic Portomarín",
+      "Romanesque fortress-church of San Nicolás in Portomarín",
+      "Lameiros stone cross and traditional rural Galician villages",
+      "Traditional gastronomy: pulpo á feira in Melide and Arzúa cheese",
+      "Monte do Gozo with the first panoramic view of the Cathedral towers",
+      "Triumphant arrival at Plaza del Obradoiro in Santiago de Compostela"
     ],
     "etapas": [
       {
         "dia": 1,
-        "origen": "Saint-Jean-Pied-de-Port",
-        "destino": "Roncesvalles",
-        "desc": "Hard stage crossing the Pyrenees.",
-        "km": 25,
-        "horas": "7-8",
-        "desnivel": "+1200/-500"
+        "origen": "Arrival",
+        "destino": "Sarria",
+        "desc": "Individual arrival in Sarria and check-in at your accommodation. Free afternoon to explore its medieval old town, visit the fortress and Santa Mariña church, and pick up your pilgrim credential.",
+        "km": 0,
+        "horas": "-",
+        "desnivel": "-",
+        "dificultad": "-",
+        "puntosInteres": [
+          "Fortress and medieval quarter of Sarria",
+          "Magdalena Monastery",
+          "Rúa Maior and valley viewpoint"
+        ]
       },
       {
         "dia": 2,
-        "origen": "Roncesvalles",
-        "destino": "Zubiri",
-        "desc": "Descent through lush Navarrese forests.",
-        "km": 21,
+        "origen": "Sarria",
+        "destino": "Portomarín",
+        "desc": "First walking day through lovely forest corridors, oak groves and small Galician hamlets with traditional granaries. Descend across the bridge over the Miño river into Portomarín.",
+        "km": 22,
         "horas": "5-6",
-        "desnivel": "+200/-500"
+        "desnivel": "+280m / -340m",
+        "dificultad": "Low",
+        "puntosInteres": [
+          "Traditional hamlets of Barbadelo and Rente",
+          "Bridge over Belesar reservoir and Miño river",
+          "Fortress-church of San Nicolás in Portomarín"
+        ]
+      },
+      {
+        "dia": 3,
+        "origen": "Portomarín",
+        "destino": "Palas de Rei",
+        "desc": "Gentle initial ascent crossing the Sierra de Ligonde along rural paths and tracks surrounded by meadows and centuries-old stone crosses to reach Palas de Rei.",
+        "km": 25,
+        "horas": "6",
+        "desnivel": "+390m / -210m",
+        "dificultad": "Medium",
+        "puntosInteres": [
+          "Sierra de Ligonde and Lameiros stone cross",
+          "Romanesque church of Vilar de Donas",
+          "Rural cattle-farming landscapes of Lugo"
+        ]
+      },
+      {
+        "dia": 4,
+        "origen": "Palas de Rei",
+        "destino": "Arzúa",
+        "desc": "Stage entering the province of A Coruña, passing through the town of Melide, the junction with the Original Way (Camino Primitivo) and the best spot to taste authentic Galician octopus.",
+        "km": 29,
+        "horas": "6-7",
+        "desnivel": "+320m / -390m",
+        "dificultad": "Medium",
+        "puntosInteres": [
+          "Medieval bridge of Furelos",
+          "Melide: junction with Camino Primitivo and octopus taverns",
+          "Land of Arzúa-Ulloa designation cheese"
+        ]
+      },
+      {
+        "dia": 5,
+        "origen": "Arzúa",
+        "destino": "O Pedrouzo",
+        "desc": "Pleasant and comfortable walking day through shaded forest tracks of eucalyptus and oak trees, passing quiet hamlets before the final evening prior to Santiago.",
+        "km": 19,
+        "horas": "4-5",
+        "desnivel": "+210m / -270m",
+        "dificultad": "Low",
+        "puntosInteres": [
+          "Chapel and fountain of Santa Irene",
+          "Oak and eucalyptus woodlands",
+          "Pilgrim eve atmosphere in O Pedrouzo"
+        ]
+      },
+      {
+        "dia": 6,
+        "origen": "O Pedrouzo",
+        "destino": "Santiago de Compostela",
+        "desc": "Final and exciting stage. Reach Monte do Gozo to catch your first glimpse of the Cathedral towers, and descend triumphantly into the Plaza del Obradoiro.",
+        "km": 20,
+        "horas": "5",
+        "desnivel": "+240m / -310m",
+        "dificultad": "Medium",
+        "puntosInteres": [
+          "Monte do Gozo and Pilgrim Monument",
+          "Porta do Camiño entry into the historic center",
+          "Plaza del Obradoiro and Cathedral of Santiago"
+        ]
       }
     ],
     "galeria": [
@@ -90,7 +164,7 @@
       "Get the Compostela",
       "Ideal for 1 week"
     ],
-    "precio": "365 €/person",
+    "precio": "232 €/person",
     "puntosDestacados": [
       "The Cathedral of Santa María de Tui and its medieval historic center",
       "The Town Hall of O Porriño, work of Antonio Palacios",
@@ -397,7 +471,7 @@
       "Oia Monastery",
       "Views of the Cíes"
     ],
-    "precio": "445 €/person",
+    "precio": "250 €/person",
     "puntosDestacados": [
       "Castro de Santa Trega and the fishing harbour of A Guarda",
       "Monastery of Santa María de Oia facing ocean breakers",
@@ -516,7 +590,7 @@
       "Medieval Towns",
       "Ideal in 6 Days"
     ],
-    "precio": "375 €/person",
+    "precio": "449 €/person",
     "puntosDestacados": [
       "Departure from Curuxeiras port in Ferrol and coastal promenade",
       "Medieval town of Pontedeume and historic stone bridge across the Eume river",
@@ -616,7 +690,7 @@
       "Roman Wall of Lugo",
       "Historic Route"
     ],
-    "precio": "355 €/person",
+    "precio": "350 €/person",
     "puntosDestacados": [
       "Walking atop the Roman Wall of Lugo (UNESCO World Heritage Site)",
       "Traditional hamlets and rustic paths of San Román da Retorta",

@@ -1,0 +1,217 @@
+[
+  {
+    "id": "portugues-tui-premium",
+    "nombre": "Portuguese Way from Tui Premium",
+    "slug": "/rutas/portugues-tui",
+    "imagen": "/assets/ruta_portugues.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🇵🇹 From Tui",
+    "badgeColor": "bg-green-600 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Easy",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Easy. Predominantly flat and gentle terrain with some moderate stages.",
+    "km": "117 km",
+    "dias": "7 days (6 stages)",
+    "descripcion": "The Galician section of the Portuguese Way with first-class hotel accommodation, personalized attention and all premium services included.",
+    "descripcionLarga": [
+      "The Premium experience of the Portuguese Way from Tui elevates the pilgrimage to another level. Walk the most popular Galician Jacobean route while staying in selected superior category hotels.",
+      "Each stage is planned so you enjoy the Way without worries: door-to-door luggage transport, 24h phone assistance and recommended restaurants at every stop.",
+      "From historic Tui by the Miño river to the Plaza del Obradoiro, you'll live an unforgettable week with maximum comfort and the peace of mind of a fully personalized service."
+    ],
+    "inicio": "Tui",
+    "fin": "Santiago de Compostela",
+    "epoca": "All year (best in spring and autumn)",
+    "tags": [
+      "Selected hotels",
+      "Personalized service",
+      "Get your Compostela"
+    ],
+    "precio": "500 €/person",
+    "puntosDestacados": [
+      "First-class and boutique hotel accommodation at each stage",
+      "The Cathedral of Santa María de Tui and its medieval old town",
+      "The railway viaducts of Redondela",
+      "The historic center of Pontevedra and the Basilica of Santa María la Mayor",
+      "Dinners at selected restaurants with premium Galician cuisine",
+      "24h personalized assistance throughout the route",
+      "Arrival at Santiago de Compostela Cathedral"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "Arrival", "destino": "Tui", "desc": "Reception at your premium hotel in Tui. Check-in, personalized briefing about the route and welcome dinner at a selected restaurant.", "km": 0, "horas": "-", "dificultad": "-", "puntosInteres": ["Cathedral of Santa María de Tui", "Medieval old town", "Miño river promenade with views to Valença (Portugal)"] },
+      { "dia": 2, "origen": "Tui", "destino": "O Porriño", "desc": "First stage through rural paths and small villages among forests and fields. Your luggage will be waiting at the hotel.", "km": 16, "horas": "4", "dificultad": "Low", "puntosInteres": ["Rural churches and traditional cruceiros", "Casa Consistorial by architect Antonio Palacios"] },
+      { "dia": 3, "origen": "O Porriño", "destino": "Redondela", "desc": "Stage combining forest trails with small villages. Charming hotel in Redondela.", "km": 16, "horas": "4–5", "dificultad": "Medium", "puntosInteres": ["Chapel of Santiaguiño de Antas", "Railway viaducts of Redondela"] },
+      { "dia": 4, "origen": "Redondela", "destino": "Pontevedra", "desc": "One of the most pleasant stages with paths through forests. Superior category hotel in the heart of Pontevedra.", "km": 19, "horas": "5", "dificultad": "Low", "puntosInteres": ["Views of the Vigo estuary", "Basilica of Santa María la Mayor", "Plaza de la Leña and Pilgrim Virgin Sanctuary"] },
+      { "dia": 5, "origen": "Pontevedra", "destino": "Caldas de Reis", "desc": "Quiet stage through rural landscapes and vineyards. Spa hotel in Caldas de Reis.", "km": 23, "horas": "6", "dificultad": "Low", "puntosInteres": ["Historic bridges", "Segade Waterfall", "Thermal tradition of Caldas de Reis"] },
+      { "dia": 6, "origen": "Caldas de Reis", "destino": "Padrón", "desc": "Walking through forests, villages and rural paths to Padrón, cradle of the Jacobean tradition.", "km": 19, "horas": "5", "dificultad": "Low", "puntosInteres": ["Town of Padrón, linked to the history of the Apostle", "Church of Santiago de Padrón"] },
+      { "dia": 7, "origen": "Padrón", "destino": "Santiago de Compostela", "desc": "Final stage with triumphant arrival in Santiago. Luxury hotel next to the historic center.", "km": 24, "horas": "6", "dificultad": "Medium", "puntosInteres": ["Old town of Santiago, UNESCO World Heritage", "Cathedral of Santiago de Compostela"] }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "frances-sarria-premium",
+    "nombre": "French Way from Sarria Premium",
+    "slug": "/rutas/frances-sarria",
+    "imagen": "/assets/miniatura-frances.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+    "badge": "⭐ The classic",
+    "badgeColor": "bg-yellow-400 text-yellow-900",
+    "dificultad": "facil",
+    "dificultadLabel": "Easy",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Easy. The final stretch of the French Way with gentle terrain and excellent infrastructure.",
+    "km": "115 km",
+    "dias": "6 days (5 stages)",
+    "descripcion": "The last 115 km of the French Way, the most popular stretch. Superior category hotels, fine dining and exclusive attention at every stage.",
+    "descripcionLarga": [
+      "The French Way from Sarria is the most popular stretch to earn the Compostela. In its Premium version, every detail is carefully curated to offer a high-level pilgrimage experience.",
+      "From Sarria, the Way traverses the most authentic Galicia: stone villages, ancient forests, traditional granaries and the legendary Arzúa region.",
+      "Selected hotels, Galician gourmet cuisine, luggage transport and personalized assistance make this an unparalleled pilgrimage experience."
+    ],
+    "inicio": "Sarria",
+    "fin": "Santiago de Compostela",
+    "epoca": "All year (best April to October)",
+    "tags": [
+      "Selected hotels",
+      "Most popular",
+      "Get your Compostela"
+    ],
+    "precio": "410 €/person",
+    "puntosDestacados": [
+      "Boutique and superior category hotels at each stage",
+      "Medieval old town and Fortress of Sarria",
+      "Monastery of Samos, one of the oldest in the West",
+      "The iconic 100 km milestones of the French Way",
+      "Premium gastronomy: pulpo á feira in Melide, Arzúa cheese",
+      "Monte do Gozo: first view of the Cathedral towers",
+      "Arrival at the Plaza del Obradoiro"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "Arrival", "destino": "Sarria", "desc": "Reception at your premium hotel in Sarria. Personalized briefing, pilgrim kit delivery and welcome dinner.", "km": 0, "horas": "-", "dificultad": "-", "puntosInteres": ["Fortress and medieval old town of Sarria", "Monastery of La Magdalena", "Escalinata Mayor and cobblestone streets"] },
+      { "dia": 2, "origen": "Sarria", "destino": "Portomarín", "desc": "First stage through forests, stone villages and rural Galician landscapes.", "km": 23, "horas": "5–6", "dificultad": "Medium", "puntosInteres": ["Stone villages with traditional granaries", "Belesar reservoir and Miño river bridge", "Fortress-church of San Nicolás in Portomarín"] },
+      { "dia": 3, "origen": "Portomarín", "destino": "Palas de Rei", "desc": "Comfortable stage through rural paths and forests.", "km": 25, "horas": "6", "dificultad": "Medium", "puntosInteres": ["Sierra de Ligonde and its medieval cruceiro", "Romanesque church of Vilar de Donas", "Typical Galician rural villages"] },
+      { "dia": 4, "origen": "Palas de Rei", "destino": "Arzúa", "desc": "Long stage passing through Melide where the Primitive Way joins. The famous pulpo á feira is a must-try.", "km": 29, "horas": "7", "dificultad": "Medium", "puntosInteres": ["Pambre Castle, medieval fortress", "Melide: junction with the Primitive Way", "Arzúa-Ulloa cheese, denomination of origin"] },
+      { "dia": 5, "origen": "Arzúa", "destino": "O Pedrouzo", "desc": "Pleasant stage through eucalyptus and forest trails. The penultimate day before Santiago.", "km": 19, "horas": "4–5", "dificultad": "Low", "puntosInteres": ["Eucalyptus and chestnut forests", "Rural villages with fountains and cruceiros", "Pre-arrival pilgrim atmosphere"] },
+      { "dia": 6, "origen": "O Pedrouzo", "destino": "Santiago de Compostela", "desc": "Final stage with the growing excitement of arrival. Monte do Gozo with views of the Cathedral towers. Luxury hotel in the old town.", "km": 20, "horas": "5", "dificultad": "Medium", "puntosInteres": ["Monte do Gozo: first view of the Cathedral", "Old town of Santiago, UNESCO World Heritage", "Cathedral and Plaza del Obradoiro"] }
+    ],
+    "galeria": [
+      "../../assets/miniatura-frances.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
+    ]
+  },
+  {
+    "id": "portugues-costa-guarda-premium",
+    "nombre": "Coastal Portuguese Way (A Guarda) Premium",
+    "slug": "/rutas/portugues-costa-guarda",
+    "imagen": "/assets/ruta_portugues.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+    "badge": "🌊 Galician Coast",
+    "badgeColor": "bg-cyan-600 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Easy",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Easy. Predominantly coastal and flat profile with gentle slopes.",
+    "km": "160 km",
+    "dias": "9 days (8 stages)",
+    "descripcion": "The spectacular Galician coastal route with oceanfront hotels, first-class Atlantic cuisine and a completely exclusive coastal pilgrimage experience.",
+    "descripcionLarga": [
+      "The Premium Coastal Portuguese Way from A Guarda is the ultimate coastal experience. Atlantic-view hotels, fresh seafood restaurants, and the privilege of walking with the ocean as your constant companion.",
+      "From picturesque A Guarda and the seaside Oia Monastery, the route advances through Baiona, Vigo and the Redondela estuary, with superior category accommodation at every stop.",
+      "From Redondela it joins the central Portuguese Way through Pontevedra, Caldas de Reis and Padrón, always with maximum comfort and fully personalized attention."
+    ],
+    "inicio": "A Guarda",
+    "fin": "Santiago de Compostela",
+    "epoca": "All year (ideal spring and summer)",
+    "tags": [
+      "Oceanfront hotels",
+      "Atlantic cuisine",
+      "Cíes Islands views"
+    ],
+    "precio": "590 €/person",
+    "puntosDestacados": [
+      "Hotels with Atlantic views and marine spas",
+      "Castro de Santa Trega and A Guarda fishing port",
+      "Oia Monastery facing the ocean",
+      "Monterreal Fortress and gourmet dining in Baiona",
+      "Panoramic views of the Cíes Islands from the Vigo estuary",
+      "Selected seafood restaurants at each stage",
+      "Plaza del Obradoiro and Santiago Cathedral"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "A Guarda", "destino": "Oia", "desc": "Spectacular seaside stretch. Hotel with ocean views by the Oia Monastery.", "km": "13–15 km", "horas": "3–4 h", "dificultad": "Low" },
+      { "dia": 2, "origen": "Oia", "destino": "Baiona", "desc": "Atlantic coast with constant views. Gourmet dinner in charming Baiona.", "km": "18 km", "horas": "4h30", "dificultad": "Medium" },
+      { "dia": 3, "origen": "Baiona", "destino": "Vigo", "desc": "Varied stage with coast, trails and urban stretches. Superior hotel in Vigo.", "km": "25 km", "horas": "6 h", "dificultad": "Medium" },
+      { "dia": 4, "origen": "Vigo", "destino": "Redondela", "desc": "Ups and downs with estuary views. In Redondela you join the inland Portuguese Way.", "km": "15–16 km", "horas": "4 h", "dificultad": "Low" },
+      { "dia": 5, "origen": "Redondela", "destino": "Pontevedra", "desc": "Forests, ancient paths and pilgrim atmosphere. Charming hotel in Pontevedra.", "km": "19–20 km", "horas": "4h30", "dificultad": "Low" },
+      { "dia": 6, "origen": "Pontevedra", "destino": "Caldas de Reis", "desc": "Green and comfortable stage. Thermal spa hotel in Caldas de Reis.", "km": "21 km", "horas": "5–6 h", "dificultad": "Low" },
+      { "dia": 7, "origen": "Caldas de Reis", "destino": "Padrón", "desc": "Relaxed stretch through villages and forest. Padrón, cradle of Jacobean tradition.", "km": "18–19 km", "horas": "4h30", "dificultad": "Low" },
+      { "dia": 8, "origen": "Padrón", "destino": "Santiago de Compostela", "desc": "Final stage with triumphant arrival in Santiago. Luxury hotel by the old town.", "km": "24 km", "horas": "5–6 h", "dificultad": "Medium" }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "ingles-ferrol-premium",
+    "nombre": "English Way from Ferrol Premium",
+    "slug": "/rutas/ingles-ferrol",
+    "imagen": "/assets/miniatura-valencia.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+    "badge": "🛡️ 100% Galician",
+    "badgeColor": "bg-emerald-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderate",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderate. Combines flat stretches along the estuaries with inland stages with elevation.",
+    "km": "115 km",
+    "dias": "6 days (6 stages)",
+    "descripcion": "The historic maritime route with first-class hotels, exclusive Galician cuisine and personalized assistance at every stage of the way.",
+    "descripcionLarga": [
+      "The Premium English Way from Ferrol offers the most authentic Galician pilgrimage with the highest level of service. Selected hotels at each stage, reference restaurants and personalized monitoring.",
+      "From the historic port of Ferrol, the itinerary borders spectacular estuaries before entering the green forests and rural landscapes of inland Galicia, always with exceptional accommodation.",
+      "Medieval towns like Pontedeume and Betanzos, the forest solitude of Hospital de Bruma and the arrival in Santiago compose an unforgettable experience with the comfort you deserve."
+    ],
+    "inicio": "Ferrol",
+    "fin": "Santiago de Compostela",
+    "epoca": "All year (especially May to October)",
+    "tags": [
+      "Selected hotels",
+      "Medieval towns",
+      "Get your Compostela"
+    ],
+    "precio": "420 €/person",
+    "puntosDestacados": [
+      "Superior category hotel in Ferrol with harbor views",
+      "Medieval town of Pontedeume and stone bridge over the Eume river",
+      "Excellence gastronomy in Betanzos",
+      "Premium rural accommodation in Hospital de Bruma",
+      "Native forests of oak and chestnut trees",
+      "24h personalized assistance throughout the route",
+      "Luxury hotel in Santiago to celebrate the arrival"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "Ferrol", "destino": "Neda", "desc": "Departure from Ferrol port along the estuary. Gentle stage, perfect to get into rhythm. Charming hotel in Neda.", "km": "15 km", "horas": "3–4 h", "dificultad": "Low" },
+      { "dia": 2, "origen": "Neda", "destino": "Pontedeume", "desc": "Pleasant walk through villages and green areas by the estuary. Boutique hotel in medieval Pontedeume.", "km": "16 km", "horas": "4 h", "dificultad": "Low" },
+      { "dia": 3, "origen": "Pontedeume", "destino": "Betanzos", "desc": "Demanding stage with steep ascent at the start. Premium hotel in Betanzos with its monumental old town.", "km": "20–21 km", "horas": "5–6 h", "dificultad": "Medium" },
+      { "dia": 4, "origen": "Betanzos", "destino": "Hospital de Bruma", "desc": "The hardest stage. Long, rural and authentic. Exclusive rural accommodation in Hospital de Bruma.", "km": "24–28 km", "horas": "6–7 h", "dificultad": "High" },
+      { "dia": 5, "origen": "Hospital de Bruma", "destino": "Sigüeiro", "desc": "Easier stage through forest trails. Charming hotel in Sigüeiro.", "km": "24 km", "horas": "5–6 h", "dificultad": "Medium" },
+      { "dia": 6, "origen": "Sigüeiro", "destino": "Santiago de Compostela", "desc": "Final stretch to the Plaza del Obradoiro. Luxury hotel by the historic center of Santiago.", "km": "16 km", "horas": "4 h", "dificultad": "Low" }
+    ],
+    "galeria": [
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "../../assets/miniatura-frances.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
+    ]
+  }
+]

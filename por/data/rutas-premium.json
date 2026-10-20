@@ -1,0 +1,217 @@
+[
+  {
+    "id": "portugues-tui-premium",
+    "nombre": "Caminho Português desde Tui Premium",
+    "slug": "/rutas/portugues-tui",
+    "imagen": "/assets/ruta_portugues.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+    "badge": "🇵🇹 Desde Tui",
+    "badgeColor": "bg-green-600 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Fácil",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Fácil. Terreno predominantemente plano e suave, com algumas etapas de dificuldade média.",
+    "km": "117 km",
+    "dias": "7 dias (6 etapas)",
+    "descripcion": "O trecho galego do Caminho Português com alojamento em hotéis de primeira categoria, atendimento personalizado e todos os serviços premium incluídos.",
+    "descripcionLarga": [
+      "A experiência Premium do Caminho Português desde Tui eleva a peregrinação a outro nível. Percorra o trecho galego da rota jacobeia mais frequentada hospedando-se em hotéis selecionados de categoria superior.",
+      "Cada etapa está planeada para que desfrute do caminho sem preocupações: transporte de bagagem porta a porta, assistência telefónica permanente e restaurantes recomendados em cada paragem.",
+      "Desde a histórica Tui junto ao Minho até à Praça do Obradoiro, viverá uma semana inesquecível com o máximo conforto e a tranquilidade de um serviço completamente personalizado."
+    ],
+    "inicio": "Tui",
+    "fin": "Santiago de Compostela",
+    "epoca": "Todo o ano (melhor primavera e outono)",
+    "tags": [
+      "Hotéis selecionados",
+      "Serviço personalizado",
+      "Obtenha a Compostela"
+    ],
+    "precio": "500 €/pessoa",
+    "puntosDestacados": [
+      "Alojamento em hotéis de primeira categoria e boutique em cada etapa",
+      "A Catedral de Santa Maria de Tui e o seu centro histórico medieval",
+      "Os viadutos ferroviários de Redondela",
+      "O centro histórico de Pontevedra e a Basílica de Santa María la Mayor",
+      "Jantares em restaurantes selecionados com gastronomia galega premium",
+      "Assistência personalizada 24h durante todo o percurso",
+      "Chegada à Catedral de Santiago de Compostela"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "Chegada", "destino": "Tui", "desc": "Receção no seu hotel premium em Tui. Check-in, briefing personalizado sobre a rota e jantar de boas-vindas num restaurante selecionado.", "km": 0, "horas": "-", "dificultad": "-", "puntosInteres": ["Catedral de Santa Maria de Tui, joia do românico", "Centro histórico medieval com ruas empedradas", "Passeio fluvial do rio Minho com vistas para Valença (Portugal)"] },
+      { "dia": 2, "origen": "Tui", "destino": "O Porriño", "desc": "Primeira etapa com caminhos rurais e pequenos núcleos populacionais entre bosques e campos. A sua bagagem estará à espera no hotel.", "km": 16, "horas": "4", "dificultad": "Baixa", "puntosInteres": ["Igrejas rurais e cruzeiros tradicionais", "Casa Consistorial de O Porriño, obra do arquiteto Antonio Palacios"] },
+      { "dia": 3, "origen": "O Porriño", "destino": "Redondela", "desc": "Etapa que combina trechos de bosque com pequenas aldeias. Hotel com charme em Redondela.", "km": 16, "horas": "4–5", "dificultad": "Média", "puntosInteres": ["Capela de Santiaguiño de Antas", "Viadutos ferroviários de Redondela"] },
+      { "dia": 4, "origen": "Redondela", "destino": "Pontevedra", "desc": "Uma das etapas mais agradáveis com sendeiros entre bosques. Hotel de categoria superior no coração de Pontevedra.", "km": 19, "horas": "5", "dificultad": "Baixa", "puntosInteres": ["Vistas para a ria de Vigo", "Basílica de Santa María la Mayor", "Praça de la Leña e Santuário da Virgem Peregrina"] },
+      { "dia": 5, "origen": "Pontevedra", "destino": "Caldas de Reis", "desc": "Etapa tranquila entre paisagens rurais e vinhedos. Hotel com spa termal em Caldas de Reis.", "km": 23, "horas": "6", "dificultad": "Baixa", "puntosInteres": ["Pontes históricas do Caminho", "Cascata de Segade", "Tradição termal de Caldas de Reis"] },
+      { "dia": 6, "origen": "Caldas de Reis", "destino": "Padrón", "desc": "Caminho entre bosques, aldeias e caminhos rurais até Padrón, berço da tradição jacobeia.", "km": 19, "horas": "5", "dificultad": "Baixa", "puntosInteres": ["Vila de Padrón, vinculada à história do Apóstolo", "Igreja de Santiago de Padrón"] },
+      { "dia": 7, "origen": "Padrón", "destino": "Santiago de Compostela", "desc": "Última etapa com chegada triunfal a Santiago. Hotel de luxo junto ao centro histórico.", "km": 24, "horas": "6", "dificultad": "Média", "puntosInteres": ["Centro histórico de Santiago, Património da Humanidade", "Catedral de Santiago de Compostela"] }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "frances-sarria-premium",
+    "nombre": "Caminho Francês desde Sarria Premium",
+    "slug": "/rutas/frances-sarria",
+    "imagen": "/assets/miniatura-frances.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+    "badge": "⭐ O clássico",
+    "badgeColor": "bg-yellow-400 text-yellow-900",
+    "dificultad": "facil",
+    "dificultadLabel": "Fácil",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Fácil. O trecho final do Caminho Francês com terreno suave e excelente infraestrutura.",
+    "km": "115 km",
+    "dias": "6 dias (5 etapas)",
+    "descripcion": "Os últimos 115 km do Caminho Francês, o trecho mais popular. Hotéis de categoria superior, gastronomia selecionada e atenção exclusiva em cada etapa.",
+    "descripcionLarga": [
+      "O Caminho Francês desde Sarria é o trecho mais popular para obter a Compostela. Na sua versão Premium, cada detalhe é cuidadosamente preparado para oferecer uma experiência de peregrinação de alto nível.",
+      "Desde Sarria, o caminho percorre a Galiza mais autêntica: aldeias de pedra, bosques milenares, espigueiros tradicionais e a lendária comarca de Arzúa.",
+      "Hotéis selecionados, gastronomia galega de autor, transporte de bagagem e assistência personalizada tornam esta experiência numa peregrinação sem igual."
+    ],
+    "inicio": "Sarria",
+    "fin": "Santiago de Compostela",
+    "epoca": "Todo o ano (melhor de abril a outubro)",
+    "tags": [
+      "Hotéis selecionados",
+      "O mais popular",
+      "Obtenha a Compostela"
+    ],
+    "precio": "410 €/pessoa",
+    "puntosDestacados": [
+      "Alojamento em hotéis boutique e de categoria superior em cada etapa",
+      "Centro histórico medieval de Sarria e a sua Fortaleza",
+      "Mosteiro de Samos, um dos mais antigos do Ocidente",
+      "Os míticos 100 km: marcos do Caminho Francês",
+      "Gastronomia premium: pulpo á feira em Melide, queijo de Arzúa",
+      "Monte do Gozo: primeira vista das torres da Catedral",
+      "Chegada à Praça do Obradoiro"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "Chegada", "destino": "Sarria", "desc": "Receção no seu hotel premium em Sarria. Briefing personalizado, entrega do kit do peregrino e jantar de boas-vindas.", "km": 0, "horas": "-", "dificultad": "-", "puntosInteres": ["Fortaleza e centro histórico medieval de Sarria", "Mosteiro da Madalena", "Escalinata Mayor e ruas empedradas"] },
+      { "dia": 2, "origen": "Sarria", "destino": "Portomarín", "desc": "Primeira etapa entre bosques, aldeias de pedra e paisagens rurais galegas.", "km": 23, "horas": "5–6", "dificultad": "Média", "puntosInteres": ["Aldeias de pedra com espigueiros tradicionais", "Embalse de Belesar e ponte sobre o Minho", "Igreja-fortaleza de São Nicolau em Portomarín"] },
+      { "dia": 3, "origen": "Portomarín", "destino": "Palas de Rei", "desc": "Etapa cómoda por caminhos rurais e bosques.", "km": 25, "horas": "6", "dificultad": "Média", "puntosInteres": ["Serra de Ligonde e o seu cruzeiro medieval", "Igreja românica de Vilar de Donas", "Aldeias típicas da Galiza rural"] },
+      { "dia": 4, "origen": "Palas de Rei", "destino": "Arzúa", "desc": "Etapa longa passando por Melide, onde confluem o Caminho Primitivo. Imprescindível provar o polvo á feira.", "km": 29, "horas": "7", "dificultad": "Média", "puntosInteres": ["Castelo de Pambre, fortaleza medieval", "Melide: confluência com o Caminho Primitivo", "Queijo de Arzúa-Ulloa, denominação de origem"] },
+      { "dia": 5, "origen": "Arzúa", "destino": "O Pedrouzo", "desc": "Etapa agradável entre eucaliptos e sendeiros. A penúltima jornada antes de Santiago.", "km": 19, "horas": "4–5", "dificultad": "Baixa", "puntosInteres": ["Bosques de eucaliptos e castanheiros", "Aldeias rurais com fontes e cruzeiros", "Ambiente peregrino antes da chegada"] },
+      { "dia": 6, "origen": "O Pedrouzo", "destino": "Santiago de Compostela", "desc": "Última etapa com a emoção crescente da chegada. Monte do Gozo com as primeiras vistas das torres da Catedral. Hotel de luxo no centro histórico.", "km": 20, "horas": "5", "dificultad": "Média", "puntosInteres": ["Monte do Gozo: primeira vista da Catedral", "Centro histórico de Santiago, Património da Humanidade", "Catedral e Praça do Obradoiro"] }
+    ],
+    "galeria": [
+      "../../assets/miniatura-frances.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
+    ]
+  },
+  {
+    "id": "portugues-costa-guarda-premium",
+    "nombre": "Caminho Português da Costa (A Guarda) Premium",
+    "slug": "/rutas/portugues-costa-guarda",
+    "imagen": "/assets/ruta_portugues.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+    "badge": "🌊 Costa Galega",
+    "badgeColor": "bg-cyan-600 text-white",
+    "dificultad": "facil",
+    "dificultadLabel": "Fácil",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Fácil. Perfil predominantemente costeiro e plano com inclinações suaves.",
+    "km": "160 km",
+    "dias": "9 dias (8 etapas)",
+    "descripcion": "A espetacular rota costeira galega com hotéis frente ao mar, gastronomia atlântica de primeiro nível e uma experiência de peregrinação costeira completamente exclusiva.",
+    "descripcionLarga": [
+      "O Caminho Português da Costa desde A Guarda na versão Premium é a experiência costeira definitiva. Hotéis com vistas para o Atlântico, restaurantes de peixe e marisco fresco, e o privilégio de caminhar com o oceano como companheiro constante.",
+      "Desde o pitoresco A Guarda e o Mosteiro de Oia frente ao mar, a rota avança por Baiona, Vigo e a ria de Redondela, com alojamentos de categoria superior em cada paragem.",
+      "A partir de Redondela une-se ao Caminho Português central com etapas por Pontevedra, Caldas de Reis e Padrón, sempre com o máximo conforto e uma atenção completamente personalizada."
+    ],
+    "inicio": "A Guarda",
+    "fin": "Santiago de Compostela",
+    "epoca": "Todo o ano (ideal primavera e verão)",
+    "tags": [
+      "Hotéis frente ao mar",
+      "Gastronomia atlântica",
+      "Vistas às Cíes"
+    ],
+    "precio": "590 €/pessoa",
+    "puntosDestacados": [
+      "Hotéis com vistas para o Atlântico e spas marinhos",
+      "Castro de Santa Trega e porto piscatório de A Guarda",
+      "Mosteiro de Santa Maria de Oia frente ao oceano",
+      "Fortaleza de Monterreal e jantares gourmet em Baiona",
+      "Vistas panorâmicas às Ilhas Cíes desde a ria de Vigo",
+      "Restaurantes de marisco selecionados em cada etapa",
+      "Praça do Obradoiro e Catedral de Santiago"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "A Guarda", "destino": "Oia", "desc": "Trecho espetacular junto ao mar. Hotel com vistas para o oceano junto ao Mosteiro de Oia.", "km": "13–15 km", "horas": "3–4 h", "dificultad": "Baixa" },
+      { "dia": 2, "origen": "Oia", "destino": "Baiona", "desc": "Costa atlântica com vistas constantes. Jantar gourmet em Baiona, vila histórica com charme.", "km": "18 km", "horas": "4h30", "dificultad": "Média" },
+      { "dia": 3, "origen": "Baiona", "destino": "Vigo", "desc": "Etapa variada com costa, sendeiros e trechos urbanos. Hotel de categoria em Vigo.", "km": "25 km", "horas": "6 h", "dificultad": "Média" },
+      { "dia": 4, "origen": "Vigo", "destino": "Redondela", "desc": "Subidas e descidas com vistas para a ria. Em Redondela junta-se ao Caminho Português interior.", "km": "15–16 km", "horas": "4 h", "dificultad": "Baixa" },
+      { "dia": 5, "origen": "Redondela", "destino": "Pontevedra", "desc": "Bosques, caminhos antigos e bom ambiente peregrino. Hotel de charme em Pontevedra.", "km": "19–20 km", "horas": "4h30", "dificultad": "Baixa" },
+      { "dia": 6, "origen": "Pontevedra", "destino": "Caldas de Reis", "desc": "Etapa verde e confortável. Hotel com spa termal em Caldas de Reis.", "km": "21 km", "horas": "5–6 h", "dificultad": "Baixa" },
+      { "dia": 7, "origen": "Caldas de Reis", "destino": "Padrón", "desc": "Trecho relaxado entre vilas e bosque. Padrón, berço da tradição jacobeia.", "km": "18–19 km", "horas": "4h30", "dificultad": "Baixa" },
+      { "dia": 8, "origen": "Padrón", "destino": "Santiago de Compostela", "desc": "Última etapa com chegada triunfal a Santiago. Hotel de luxo junto ao centro histórico.", "km": "24 km", "horas": "5–6 h", "dificultad": "Média" }
+    ],
+    "galeria": [
+      "../../assets/ruta_portugues.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public"
+    ]
+  },
+  {
+    "id": "ingles-ferrol-premium",
+    "nombre": "Caminho Inglês desde Ferrol Premium",
+    "slug": "/rutas/ingles-ferrol",
+    "imagen": "/assets/miniatura-valencia.webp",
+    "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+    "badge": "🛡️ 100% Galego",
+    "badgeColor": "bg-emerald-600 text-white",
+    "dificultad": "moderado",
+    "dificultadLabel": "Moderado",
+    "dificultadColor": "bg-yellow-500/90",
+    "dificultadDesc": "Moderado. Combina trechos planos junto às rias com etapas interiores com desnível.",
+    "km": "115 km",
+    "dias": "6 dias (6 etapas)",
+    "descripcion": "A rota marítima histórica com hotéis de primeira categoria, gastronomia galega exclusiva e assistência personalizada em cada etapa do caminho.",
+    "descripcionLarga": [
+      "O Caminho Inglês desde Ferrol na versão Premium oferece a peregrinação galega mais autêntica com o mais alto nível de serviço. Hotéis selecionados em cada etapa, restaurantes de referência e um acompanhamento personalizado.",
+      "Desde o histórico porto de Ferrol, o itinerário bordeja rias espetaculares antes de se adentrar nos verdes bosques e paisagens rurais do interior galego, sempre com a garantia de um alojamento excecional.",
+      "Vilas medievais como Pontedeume e Betanzos, a solidão do bosque em Hospital de Bruma e a chegada a Santiago compõem uma experiência inesquecível com o conforto que merece."
+    ],
+    "inicio": "Ferrol",
+    "fin": "Santiago de Compostela",
+    "epoca": "Todo o ano (especialmente de maio a outubro)",
+    "tags": [
+      "Hotéis selecionados",
+      "Vilas medievais",
+      "Obtenha a Compostela"
+    ],
+    "precio": "420 €/pessoa",
+    "puntosDestacados": [
+      "Hotel de categoria superior em Ferrol com vistas para o porto",
+      "Vila medieval de Pontedeume e ponte de pedra sobre o Eume",
+      "Gastronomia de excelência em Betanzos",
+      "Alojamento rural premium em Hospital de Bruma",
+      "Bosques autóctones de carvalhos e castanheiros",
+      "Assistência personalizada 24h durante todo o percurso",
+      "Hotel de luxo em Santiago para celebrar a chegada"
+    ],
+    "etapas": [
+      { "dia": 1, "origen": "Ferrol", "destino": "Neda", "desc": "Saída desde o porto de Ferrol ao longo da ria. Etapa suave, perfeita para entrar em ritmo. Hotel com charme em Neda.", "km": "15 km", "horas": "3–4 h", "dificultad": "Baixa" },
+      { "dia": 2, "origen": "Neda", "destino": "Pontedeume", "desc": "Caminho agradável entre aldeias e zonas verdes junto à ria. Hotel boutique na medieval Pontedeume.", "km": "16 km", "horas": "4 h", "dificultad": "Baixa" },
+      { "dia": 3, "origen": "Pontedeume", "destino": "Betanzos", "desc": "Etapa exigente com subida forte ao início. Hotel premium em Betanzos com centro histórico monumental.", "km": "20–21 km", "horas": "5–6 h", "dificultad": "Média" },
+      { "dia": 4, "origen": "Betanzos", "destino": "Hospital de Bruma", "desc": "A etapa mais dura do caminho. Longa, rural e autêntica. Alojamento rural exclusivo em Hospital de Bruma.", "km": "24–28 km", "horas": "6–7 h", "dificultad": "Alta" },
+      { "dia": 5, "origen": "Hospital de Bruma", "destino": "Sigüeiro", "desc": "Etapa mais tranquila por caminhos florestais. Hotel com charme em Sigüeiro.", "km": "24 km", "horas": "5–6 h", "dificultad": "Média" },
+      { "dia": 6, "origen": "Sigüeiro", "destino": "Santiago de Compostela", "desc": "Último trecho até à Praça do Obradoiro. Hotel de luxo junto ao centro histórico de Santiago.", "km": "16 km", "horas": "4 h", "dificultad": "Baixa" }
+    ],
+    "galeria": [
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2e23d601-3854-418c-1a72-a7804e844d00/public",
+      "../../assets/miniatura-frances.webp",
+      "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/4cd7ef4f-6bb8-45e0-3394-473a77e21800/publicContain"
+    ]
+  }
+]

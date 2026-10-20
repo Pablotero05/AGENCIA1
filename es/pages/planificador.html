@@ -110,7 +110,7 @@
               ¿Qué Camino de Santiago Hacer?
             </h1>
             <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Existen decenas de rutas hacia Santiago. Responde a 3 sencillas preguntas sobre tus días disponibles, preferencias de paisaje y compañía, y te recomendaremos al instante la ruta idónea.
+              Existen decenas de rutas hacia Santiago. Responde a 5 sencillas preguntas sobre tus días disponibles, estilo de viaje, preferencias de paisaje, condición física y ambiente, y te recomendaremos al instante la ruta idónea.
             </p>
           </div>
         </section>
@@ -123,7 +123,7 @@
               <!-- PREGUNTA 1: DÍAS -->
               <div class="quiz-step active" id="step-1">
                 <div class="flex items-center justify-between mb-6">
-                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 1 de 3</span>
+                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 1 de 5</span>
                   <span class="text-xs text-gray-400">Tiempo de viaje</span>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2" style="font-family: var(--font-family-heading);">
@@ -145,7 +145,7 @@
                       <i class="fa-solid fa-calendar-week"></i>
                     </div>
                     <div class="font-bold text-gray-900 text-base mb-1">8 a 10 días</div>
-                    <p class="text-xs text-gray-500">Aprox. 150-180 km. Ideal para disfrutar de costa y etapas más reposadas.</p>
+                    <p class="text-xs text-gray-500">Aprox. 150-180 km. Ideal para disfrutar con más calma de la costa y villas.</p>
                   </button>
 
                   <button type="button" class="quiz-opt p-5 rounded-2xl border-2 border-gray-200 hover:border-[var(--primary-color)] text-left transition-all group focus:outline-none" data-param="dias" data-val="muchos">
@@ -158,10 +158,42 @@
                 </div>
               </div>
 
-              <!-- PREGUNTA 2: PAISAJE -->
+              <!-- PREGUNTA 2: EXPERIENCIA Y CONFORT (ADVENTURE VS PREMIUM) -->
               <div class="quiz-step hidden mt-8 pt-8 border-t border-gray-100" id="step-2">
                 <div class="flex items-center justify-between mb-6">
-                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 2 de 3</span>
+                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 2 de 5</span>
+                  <span class="text-xs text-gray-400">Estilo de viaje</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2" style="font-family: var(--font-family-heading);">
+                  ¿Qué nivel de confort y experiencia buscas?
+                </h3>
+                <p class="text-sm text-gray-500 mb-6">Elige entre la aventura auténtica del peregrino o el máximo confort y descanso exclusivo.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <button type="button" class="quiz-opt p-5 rounded-2xl border-2 border-gray-200 hover:border-[var(--primary-color)] text-left transition-all group focus:outline-none" data-param="experiencia" data-val="adventure">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                      <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div class="font-bold text-gray-900 text-base mb-1">Experiencia Adventure</div>
+                    <p class="text-xs text-gray-500">Alojamientos con encanto a precio ajustado, traslado de mochilas etapa a etapa y la esencia tradicional del peregrino.</p>
+                  </button>
+
+                  <button type="button" class="quiz-opt p-5 rounded-2xl border-2 border-gray-200 hover:border-[var(--accent-color)] text-left transition-all group focus:outline-none" data-param="experiencia" data-val="premium">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                      <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <div class="font-bold text-gray-900 text-base mb-1 flex items-center gap-2">
+                      Experiencia Premium <span class="bg-amber-100 text-amber-800 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full">Exclusivo</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Hoteles seleccionados de categoría superior, atención personalizada 24h, gastronomía selecta y máximo descanso.</p>
+                  </button>
+                </div>
+              </div>
+
+              <!-- PREGUNTA 3: PAISAJE -->
+              <div class="quiz-step hidden mt-8 pt-8 border-t border-gray-100" id="step-3">
+                <div class="flex items-center justify-between mb-6">
+                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 3 de 5</span>
                   <span class="text-xs text-gray-400">Entorno natural</span>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2" style="font-family: var(--font-family-heading);">
@@ -183,7 +215,7 @@
                       <i class="fa-solid fa-tree"></i>
                     </div>
                     <div class="font-bold text-gray-900 text-base mb-1">Bosques y Aldeas</div>
-                    <p class="text-xs text-gray-500">Corredores de robles centenarios, senderos rurales de tierra y muros de piedra.</p>
+                    <p class="text-xs text-gray-500">Corredores de robles centenarios, senderos rurales de tierra y aldeas de piedra.</p>
                   </button>
 
                   <button type="button" class="quiz-opt p-5 rounded-2xl border-2 border-gray-200 hover:border-[var(--primary-color)] text-left transition-all group focus:outline-none" data-param="paisaje" data-val="historico">
@@ -191,15 +223,53 @@
                       <i class="fa-solid fa-landmark"></i>
                     </div>
                     <div class="font-bold text-gray-900 text-base mb-1">Monumental e Histórico</div>
-                    <p class="text-xs text-gray-500">Murallas romanas, puentes medievales, catedrales góticas y leyendas milenarias.</p>
+                    <p class="text-xs text-gray-500">Murallas romanas, puentes medievales, fortalezas y villas históricas.</p>
                   </button>
                 </div>
               </div>
 
-              <!-- PREGUNTA 3: EXPERIENCIA / AMBIENTE -->
-              <div class="quiz-step hidden mt-8 pt-8 border-t border-gray-100" id="step-3">
+              <!-- PREGUNTA 4: CONDICIÓN FÍSICA Y RITMO -->
+              <div class="quiz-step hidden mt-8 pt-8 border-t border-gray-100" id="step-4">
                 <div class="flex items-center justify-between mb-6">
-                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 3 de 3</span>
+                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 4 de 5</span>
+                  <span class="text-xs text-gray-400">Condición física</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2" style="font-family: var(--font-family-heading);">
+                  ¿Cuál es tu nivel de condición física o ritmo deseado?
+                </h3>
+                <p class="text-sm text-gray-500 mb-6">Elegimos etapas con el kilometraje y perfil idóneo para ti.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <button type="button" class="quiz-opt p-5 rounded-2xl border-2 border-gray-200 hover:border-[var(--primary-color)] text-left transition-all group focus:outline-none" data-param="ritmo" data-val="suave">
+                    <div class="w-10 h-10 rounded-xl bg-green-50 text-green-700 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                      <i class="fa-solid fa-person-walking"></i>
+                    </div>
+                    <div class="font-bold text-gray-900 text-base mb-1">Suave / Principiante</div>
+                    <p class="text-xs text-gray-500">15 a 20 km diarios, desniveles cómodos y ritmo pausado con tiempo para visitar.</p>
+                  </button>
+
+                  <button type="button" class="quiz-opt p-5 rounded-2xl border-2 border-gray-200 hover:border-[var(--primary-color)] text-left transition-all group focus:outline-none" data-param="ritmo" data-val="moderado">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                      <i class="fa-solid fa-person-hiking"></i>
+                    </div>
+                    <div class="font-bold text-gray-900 text-base mb-1">Moderado / Activo</div>
+                    <p class="text-xs text-gray-500">20 a 25 km diarios, acostumbrado/a a caminar y con capacidad para pendientes medias.</p>
+                  </button>
+
+                  <button type="button" class="quiz-opt p-5 rounded-2xl border-2 border-gray-200 hover:border-[var(--primary-color)] text-left transition-all group focus:outline-none" data-param="ritmo" data-val="exigente">
+                    <div class="w-10 h-10 rounded-xl bg-red-50 text-red-700 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+                      <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <div class="font-bold text-gray-900 text-base mb-1">Exigente / Reto</div>
+                    <p class="text-xs text-gray-500">+25 km diarios o desniveles de montaña para quienes buscan superarse físicamente.</p>
+                  </button>
+                </div>
+              </div>
+
+              <!-- PREGUNTA 5: AMBIENTE -->
+              <div class="quiz-step hidden mt-8 pt-8 border-t border-gray-100" id="step-5">
+                <div class="flex items-center justify-between mb-6">
+                  <span class="text-xs font-bold text-[var(--accent-color)] uppercase tracking-wider">Paso 5 de 5</span>
                   <span class="text-xs text-gray-400">Ambiente de ruta</span>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2" style="font-family: var(--font-family-heading);">
@@ -237,33 +307,34 @@
               <!-- RESULTADO RECOMENDADO -->
               <div id="resultado-box" class="hidden mt-8 pt-8 border-t-2 border-emerald-500 animate-fadeIn">
                 <div class="text-center mb-6">
-                  <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
-                    <i class="fa-solid fa-award"></i> ¡Tu Ruta Ideal Recomendada!
+                  <span id="res-badge-container" class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-award"></i> <span id="res-badge-text">¡Tu Ruta Ideal Recomendada!</span>
                   </span>
                   <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2" id="res-nombre">Camino de Santiago desde Sarria</h3>
                   <p class="text-sm text-gray-600 max-w-xl mx-auto mt-1" id="res-subtitulo">La opción perfecta para tus preferencias seleccionadas.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-emerald-50 to-teal-50/50 rounded-2xl p-6 border border-emerald-200">
+                <div id="res-card-box" class="bg-gradient-to-br from-emerald-50 to-teal-50/50 rounded-2xl p-6 border border-emerald-200 transition-all">
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
                     <div class="md:col-span-2 space-y-3">
                       <p class="text-sm text-gray-700 leading-relaxed" id="res-descripcion">
                         Descripción detallada de la ruta recomendada...
                       </p>
                       <div class="grid grid-cols-3 gap-2 pt-2 text-center text-xs">
-                        <div class="bg-white p-2.5 rounded-xl border border-emerald-100">
+                        <div class="bg-white p-2.5 rounded-xl border border-gray-100" id="res-box-distancia">
                           <span class="text-gray-400 block">Distancia</span>
-                          <strong class="text-emerald-900 text-sm" id="res-distancia">115 km</strong>
+                          <strong class="text-gray-900 text-sm" id="res-distancia">115 km</strong>
                         </div>
-                        <div class="bg-white p-2.5 rounded-xl border border-emerald-100">
+                        <div class="bg-white p-2.5 rounded-xl border border-gray-100" id="res-box-dias">
                           <span class="text-gray-400 block">Días recomendados</span>
-                          <strong class="text-emerald-900 text-sm" id="res-dias">5 a 7 días</strong>
+                          <strong class="text-gray-900 text-sm" id="res-dias">6 días</strong>
                         </div>
-                        <div class="bg-white p-2.5 rounded-xl border border-emerald-100">
+                        <div class="bg-white p-2.5 rounded-xl border border-gray-100" id="res-box-precio">
                           <span class="text-gray-400 block">Precio base</span>
-                          <strong class="text-[var(--primary-color)] text-sm" id="res-precio">365 €</strong>
+                          <strong class="text-[var(--primary-color)] text-sm" id="res-precio">187 €</strong>
                         </div>
                       </div>
+                      <div id="res-counterpart-wrap" class="pt-2 text-xs"></div>
                     </div>
 
                     <div class="flex flex-col gap-3">
@@ -289,49 +360,125 @@
         <section class="py-16 bg-white border-t border-gray-200">
           <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-10">
+              <span class="inline-block bg-[var(--primary-color)]/10 text-[var(--primary-color)] text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-3">
+                Catálogo Completo
+              </span>
               <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2" style="font-family: var(--font-family-heading);">
-                O explora directamente las rutas disponibles
+                Explora todas las rutas y colecciones
               </h2>
-              <p class="text-sm text-gray-600">Haz clic en cualquier opción para conocer sus etapas completas y precios.</p>
+              <p class="text-sm text-gray-600">Compara las opciones de la Colección Adventure y la Colección Premium con hoteles de categoría superior.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="/es/pages/ruta.html?id=frances" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
-                <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">Francés</span>
-                <h4 class="font-bold text-gray-900 text-lg mt-2 mb-1 group-hover:text-[var(--primary-color)]">Camino Francés (Sarria y completo)</h4>
-                <p class="text-xs text-gray-500">5-35 días • El clásico por excelencia para la Compostela.</p>
-              </a>
+            <!-- BLOQUE ADVENTURE -->
+            <div class="mb-12">
+              <div class="flex items-center gap-2 mb-6 border-b pb-3">
+                <i class="fa-solid fa-compass text-emerald-600 text-lg"></i>
+                <h3 class="text-xl font-bold text-gray-900" style="font-family: var(--font-family-heading);">Rutas Adventure (Espíritu Peregrino)</h3>
+                <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-0.5 rounded-full ml-auto">Mejor precio garantizado</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/es/pages/ruta.html?id=frances&exp=adventure" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">Francés</span>
+                    <strong class="text-emerald-700 font-bold text-sm">Desde 187 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-[var(--primary-color)]">Camino Francés desde Sarria</h4>
+                  <p class="text-xs text-gray-500">6 días (115 km) • El clásico para obtener la Compostela.</p>
+                </a>
 
-              <a href="/es/pages/ruta.html?id=portugues-tui" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
-                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Portugués</span>
-                <h4 class="font-bold text-gray-900 text-lg mt-2 mb-1 group-hover:text-[var(--primary-color)]">Camino Portugués desde Tui (117 km)</h4>
-                <p class="text-xs text-gray-500">6 días • Viñedos, termas y excelente gastronomía.</p>
-              </a>
+                <a href="/es/pages/ruta.html?id=portugues-tui&exp=adventure" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Portugués</span>
+                    <strong class="text-emerald-700 font-bold text-sm">Desde 232 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-[var(--primary-color)]">Camino Portugués desde Tui</h4>
+                  <p class="text-xs text-gray-500">7 días (117 km) • Viñedos, termas y excelente gastronomía.</p>
+                </a>
 
-              <a href="/es/pages/ruta.html?id=portugues-costa-oporto" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
-                <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">Costa</span>
-                <h4 class="font-bold text-gray-900 text-lg mt-2 mb-1 group-hover:text-[var(--primary-color)]">Costa desde Oporto (270 km)</h4>
-                <p class="text-xs text-gray-500">14 días • Pasarelas frente al Atlántico de Portugal a Galicia.</p>
-              </a>
+                <a href="/es/pages/ruta.html?id=portugues-costa-guarda&exp=adventure" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">Costa Gallega</span>
+                    <strong class="text-emerald-700 font-bold text-sm">Desde 250 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-[var(--primary-color)]">Costa desde A Guarda</h4>
+                  <p class="text-xs text-gray-500">9 días (160 km) • La desembocadura del Miño, Baiona y Vigo.</p>
+                </a>
 
-              <a href="/es/pages/ruta.html?id=portugues-costa-guarda" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
-                <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">Costa Gallega</span>
-                <h4 class="font-bold text-gray-900 text-lg mt-2 mb-1 group-hover:text-[var(--primary-color)]">Costa desde A Guarda (160 km)</h4>
-                <p class="text-xs text-gray-500">8 días • La desembocadura del Miño, Baiona y Vigo.</p>
-              </a>
+                <a href="/es/pages/ruta.html?id=ingles-ferrol&exp=adventure" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">Inglés</span>
+                    <strong class="text-emerald-700 font-bold text-sm">Desde 449 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-[var(--primary-color)]">Camino Inglés desde Ferrol</h4>
+                  <p class="text-xs text-gray-500">6 días (115 km) • Tranquilo, histórico y sin masificación.</p>
+                </a>
 
-              <a href="/es/pages/ruta.html?id=ingles-ferrol" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
-                <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">Inglés</span>
-                <h4 class="font-bold text-gray-900 text-lg mt-2 mb-1 group-hover:text-[var(--primary-color)]">Camino desde Ferrol (115 km)</h4>
-                <p class="text-xs text-gray-500">6 días • Tranquilo, histórico y sin masificación.</p>
-              </a>
+                <a href="/es/pages/ruta.html?id=primitivo-lugo&exp=adventure" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded">Primitivo</span>
+                    <strong class="text-emerald-700 font-bold text-sm">Desde 350 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-[var(--primary-color)]">Primitivo desde Lugo</h4>
+                  <p class="text-xs text-gray-500">5 días (102 km) • Muralla romana y naturaleza virgen.</p>
+                </a>
 
-              <a href="/es/pages/ruta.html?id=primitivo-lugo" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
-                <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded">Primitivo</span>
-                <h4 class="font-bold text-gray-900 text-lg mt-2 mb-1 group-hover:text-[var(--primary-color)]">Primitivo desde Lugo (102 km)</h4>
-                <p class="text-xs text-gray-500">5 días • Muralla romana y naturaleza virgen.</p>
-              </a>
+                <a href="/es/pages/ruta.html?id=portugues-costa-oporto&exp=adventure" class="p-5 rounded-2xl border border-gray-200 hover:border-[var(--primary-color)] hover:shadow-md transition-all group bg-white">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">Costa</span>
+                    <strong class="text-emerald-700 font-bold text-sm">Desde 790 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-[var(--primary-color)]">Costa desde Oporto</h4>
+                  <p class="text-xs text-gray-500">14 días (270 km) • Pasarelas frente al Atlántico de Portugal a Galicia.</p>
+                </a>
+              </div>
             </div>
+
+            <!-- BLOQUE PREMIUM -->
+            <div>
+              <div class="flex items-center gap-2 mb-6 border-b pb-3">
+                <i class="fa-solid fa-crown text-amber-500 text-lg"></i>
+                <h3 class="text-xl font-bold text-gray-900" style="font-family: var(--font-family-heading);">Colección Premium (Hoteles Superiores)</h3>
+                <span class="text-xs bg-amber-100 text-amber-900 font-semibold px-2.5 py-0.5 rounded-full ml-auto">Atención 24h & Confort Exclusivo</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="/es/pages/ruta.html?id=frances-sarria-premium&exp=premium" class="p-5 rounded-2xl border border-amber-200 hover:border-amber-400 hover:shadow-md transition-all group bg-amber-50/20">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full flex items-center gap-1"><i class="fa-solid fa-crown text-[9px]"></i> Premium</span>
+                    <strong class="text-amber-800 font-bold text-sm">Desde 410 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-base mb-1 group-hover:text-amber-700">Francés desde Sarria Premium</h4>
+                  <p class="text-xs text-gray-500">6 días (115 km) • Hoteles seleccionados de categoría superior.</p>
+                </a>
+
+                <a href="/es/pages/ruta.html?id=portugues-tui-premium&exp=premium" class="p-5 rounded-2xl border border-amber-200 hover:border-amber-400 hover:shadow-md transition-all group bg-amber-50/20">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full flex items-center gap-1"><i class="fa-solid fa-crown text-[9px]"></i> Premium</span>
+                    <strong class="text-amber-800 font-bold text-sm">Desde 500 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-base mb-1 group-hover:text-amber-700">Portugués desde Tui Premium</h4>
+                  <p class="text-xs text-gray-500">7 días (117 km) • Hoteles boutique, paz y gastronomía.</p>
+                </a>
+
+                <a href="/es/pages/ruta.html?id=portugues-costa-guarda-premium&exp=premium" class="p-5 rounded-2xl border border-amber-200 hover:border-amber-400 hover:shadow-md transition-all group bg-amber-50/20">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full flex items-center gap-1"><i class="fa-solid fa-crown text-[9px]"></i> Premium</span>
+                    <strong class="text-amber-800 font-bold text-sm">Desde 590 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-base mb-1 group-hover:text-amber-700">Costa (A Guarda) Premium</h4>
+                  <p class="text-xs text-gray-500">9 días (160 km) • Hoteles con vistas atlánticas y spa.</p>
+                </a>
+
+                <a href="/es/pages/ruta.html?id=ingles-ferrol-premium&exp=premium" class="p-5 rounded-2xl border border-amber-200 hover:border-amber-400 hover:shadow-md transition-all group bg-amber-50/20">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full flex items-center gap-1"><i class="fa-solid fa-crown text-[9px]"></i> Premium</span>
+                    <strong class="text-amber-800 font-bold text-sm">Desde 420 €</strong>
+                  </div>
+                  <h4 class="font-bold text-gray-900 text-base mb-1 group-hover:text-amber-700">Inglés desde Ferrol Premium</h4>
+                  <p class="text-xs text-gray-500">6 días (115 km) • Estancias selectas en villas históricas.</p>
+                </a>
+              </div>
+            </div>
+
           </div>
         </section>
 
@@ -360,28 +507,33 @@
   <!-- SCRIPT LÓGICA DEL RECOMENDADOR -->
   <script>
     (function () {
-      var userAnswers = { dias: '', paisaje: '', ambiente: '' };
+      var userAnswers = { dias: '', experiencia: 'adventure', paisaje: '', ritmo: '', ambiente: '' };
 
       var routesData = {
+        // --- RUTAS ADVENTURE ---
         'sarria': {
-          nombre: 'Camino de Santiago Francés',
+          nombre: 'Camino Francés desde Sarria',
           subtitulo: 'La ruta más emblemática y social para obtener la Compostela.',
           descripcion: 'Ideal si buscas ambiente peregrino, servicios ininterrumpidos y senderos mágicos entre aldeas de piedra y robledales gallegos.',
-          distancia: '115 km (Sarria) / 780 km',
-          dias: '5 a 35 días',
-          precio: 'Desde 365 €',
-          url: '/es/pages/ruta.html?id=frances',
-          quoteUrl: '/es/pages/contacto.html?ruta=frances'
+          distancia: '115 km',
+          dias: '6 días (5 etapas)',
+          precio: 'Desde 187 €',
+          url: '/es/pages/ruta.html?id=frances&exp=adventure',
+          quoteUrl: '/es/pages/contacto.html?ruta=frances&exp=adventure',
+          isPremium: false,
+          counterPart: { name: 'Camino Francés Premium', price: '410 €', url: '/es/pages/ruta.html?id=frances-sarria-premium&exp=premium' }
         },
         'tui': {
           nombre: 'Camino Portugués desde Tui',
           subtitulo: 'La perfecta combinación de viñedos, rías y gastronomía gallega.',
           descripcion: 'Excelente para quienes buscan una experiencia equilibrada, con sendas fluviales, fuentes termales en Caldas de Reis y villas históricas como Pontevedra.',
           distancia: '117 km',
-          dias: '6 días (7 etapas)',
-          precio: 'Desde 365 €',
-          url: '/es/pages/ruta.html?id=portugues-tui',
-          quoteUrl: '/es/pages/contacto.html?ruta=portugues-tui'
+          dias: '7 días (6 etapas)',
+          precio: 'Desde 232 €',
+          url: '/es/pages/ruta.html?id=portugues-tui&exp=adventure',
+          quoteUrl: '/es/pages/contacto.html?ruta=portugues-tui&exp=adventure',
+          isPremium: false,
+          counterPart: { name: 'Camino Portugués Premium', price: '500 €', url: '/es/pages/ruta.html?id=portugues-tui-premium&exp=premium' }
         },
         'costa-oporto': {
           nombre: 'Camino Portugués de la Costa desde Oporto',
@@ -390,18 +542,21 @@
           distancia: '270 km',
           dias: '14 días (13 etapas)',
           precio: 'Desde 790 €',
-          url: '/es/pages/ruta.html?id=portugues-costa-oporto',
-          quoteUrl: '/es/pages/contacto.html?ruta=portugues-costa-oporto'
+          url: '/es/pages/ruta.html?id=portugues-costa-oporto&exp=adventure',
+          quoteUrl: '/es/pages/contacto.html?ruta=portugues-costa-oporto&exp=adventure',
+          isPremium: false
         },
         'costa-guarda': {
-          nombre: 'Camino de la Costa desde A Guarda',
+          nombre: 'Camino Portugués de la Costa desde A Guarda',
           subtitulo: 'El tramo costero gallego por excelencia.',
           descripcion: 'Cruza en ferry la frontera hispano-lusa y bordea los acantilados de Oia y las playas de Baiona y Vigo hasta enlazar en Redondela con la ruta a Santiago.',
           distancia: '160 km',
           dias: '9 días (8 etapas)',
-          precio: 'Desde 445 €',
-          url: '/es/pages/ruta.html?id=portugues-costa-guarda',
-          quoteUrl: '/es/pages/contacto.html?ruta=portugues-costa-guarda'
+          precio: 'Desde 250 €',
+          url: '/es/pages/ruta.html?id=portugues-costa-guarda&exp=adventure',
+          quoteUrl: '/es/pages/contacto.html?ruta=portugues-costa-guarda&exp=adventure',
+          isPremium: false,
+          counterPart: { name: 'Costa (A Guarda) Premium', price: '590 €', url: '/es/pages/ruta.html?id=portugues-costa-guarda-premium&exp=premium' }
         },
         'ferrol': {
           nombre: 'Camino Inglés desde Ferrol',
@@ -409,9 +564,11 @@
           descripcion: 'El camino preferido por quienes buscan silencio y escapar de las rutas masificadas, caminando junto a rías y bosques de ribera intactos.',
           distancia: '115 km',
           dias: '6 días (6 etapas)',
-          precio: 'Desde 375 €',
-          url: '/es/pages/ruta.html?id=ingles-ferrol',
-          quoteUrl: '/es/pages/contacto.html?ruta=ingles-ferrol'
+          precio: 'Desde 449 €',
+          url: '/es/pages/ruta.html?id=ingles-ferrol&exp=adventure',
+          quoteUrl: '/es/pages/contacto.html?ruta=ingles-ferrol&exp=adventure',
+          isPremium: false,
+          counterPart: { name: 'Camino Inglés Premium', price: '420 €', url: '/es/pages/ruta.html?id=ingles-ferrol-premium&exp=premium' }
         },
         'lugo': {
           nombre: 'Camino Primitivo desde Lugo',
@@ -419,26 +576,95 @@
           descripcion: 'Parte de la ciudad amurallada romana de Lugo y disfruta de la belleza del interior lucense antes de unirse al tramo final en Melide.',
           distancia: '102 km',
           dias: '5 días (5 etapas)',
-          precio: 'Desde 355 €',
-          url: '/es/pages/ruta.html?id=primitivo-lugo',
-          quoteUrl: '/es/pages/contacto.html?ruta=primitivo-lugo'
+          precio: 'Desde 350 €',
+          url: '/es/pages/ruta.html?id=primitivo-lugo&exp=adventure',
+          quoteUrl: '/es/pages/contacto.html?ruta=primitivo-lugo&exp=adventure',
+          isPremium: false
+        },
+
+        // --- RUTAS PREMIUM ---
+        'sarria-premium': {
+          nombre: 'Camino Francés desde Sarria Premium',
+          subtitulo: 'El tramo clásico con alojamiento en hoteles seleccionados de primera categoría.',
+          descripcion: 'Vive la peregrinación más emblemática con la máxima comodidad: hoteles boutique y de categoría superior, transporte de equipajes puerta a puerta y atención personalizada 24h.',
+          distancia: '115 km',
+          dias: '6 días (5 etapas)',
+          precio: 'Desde 410 €',
+          url: '/es/pages/ruta.html?id=frances-sarria-premium&exp=premium',
+          quoteUrl: '/es/pages/contacto.html?ruta=frances-sarria-premium&exp=premium',
+          isPremium: true,
+          counterPart: { name: 'Versión Adventure', price: '187 €', url: '/es/pages/ruta.html?id=frances&exp=adventure' }
+        },
+        'tui-premium': {
+          nombre: 'Camino Portugués desde Tui Premium',
+          subtitulo: 'Elegancia y descanso entre viñedos, rías y hoteles con encanto.',
+          descripcion: 'Disfruta del tramo gallego alojándote en hoteles de máxima categoría, degustando la mejor cocina de autor y contando con asistencia 24h permanente durante toda la ruta.',
+          distancia: '117 km',
+          dias: '7 días (6 etapas)',
+          precio: 'Desde 500 €',
+          url: '/es/pages/ruta.html?id=portugues-tui-premium&exp=premium',
+          quoteUrl: '/es/pages/contacto.html?ruta=portugues-tui-premium&exp=premium',
+          isPremium: true,
+          counterPart: { name: 'Versión Adventure', price: '232 €', url: '/es/pages/ruta.html?id=portugues-tui&exp=adventure' }
+        },
+        'costa-guarda-premium': {
+          nombre: 'Camino Portugués de la Costa (A Guarda) Premium',
+          subtitulo: 'La travesía atlántica de lujo con vistas al océano.',
+          descripcion: 'Hoteles con vistas panorámicas al mar, mariscos selectos en las Rías Baixas, transporte privado de equipajes y el relax de las mejores estancias costeras.',
+          distancia: '160 km',
+          dias: '9 días (8 etapas)',
+          precio: 'Desde 590 €',
+          url: '/es/pages/ruta.html?id=portugues-costa-guarda-premium&exp=premium',
+          quoteUrl: '/es/pages/contacto.html?ruta=portugues-costa-guarda-premium&exp=premium',
+          isPremium: true,
+          counterPart: { name: 'Versión Adventure', price: '250 €', url: '/es/pages/ruta.html?id=portugues-costa-guarda&exp=adventure' }
+        },
+        'ferrol-premium': {
+          nombre: 'Camino Inglés desde Ferrol Premium',
+          subtitulo: 'Ruta jacobea 100% gallega con hoteles boutique exclusivos.',
+          descripcion: 'Pasea por senderos y rías sin aglomeraciones descansando en hoteles de categoría superior en villas medievales con seguimiento continuo de nuestro equipo.',
+          distancia: '115 km',
+          dias: '6 días (6 etapas)',
+          precio: 'Desde 420 €',
+          url: '/es/pages/ruta.html?id=ingles-ferrol-premium&exp=premium',
+          quoteUrl: '/es/pages/contacto.html?ruta=ingles-ferrol-premium&exp=premium',
+          isPremium: true,
+          counterPart: { name: 'Versión Adventure', price: '449 €', url: '/es/pages/ruta.html?id=ingles-ferrol&exp=adventure' }
         }
       };
 
       function calculateBestRoute() {
+        var isPrem = userAnswers.experiencia === 'premium';
+
+        if (isPrem) {
+          if (userAnswers.paisaje === 'costa' || userAnswers.dias === 'medios') {
+            return 'costa-guarda-premium';
+          }
+          if (userAnswers.ambiente === 'tranquilo' || userAnswers.ritmo === 'exigente') {
+            return 'ferrol-premium';
+          }
+          if (userAnswers.ambiente === 'social' || userAnswers.paisaje === 'historico') {
+            return 'sarria-premium';
+          }
+          return 'tui-premium';
+        }
+
+        // Modo Adventure
         if (userAnswers.dias === 'muchos') {
           return 'costa-oporto';
         }
-        if (userAnswers.dias === 'medios' || userAnswers.paisaje === 'costa') {
+        if (userAnswers.paisaje === 'costa') {
+          return userAnswers.dias === 'pocos' ? 'costa-guarda' : 'costa-oporto';
+        }
+        if (userAnswers.dias === 'medios') {
           return 'costa-guarda';
         }
-        if (userAnswers.ambiente === 'tranquilo') {
+        if (userAnswers.ambiente === 'tranquilo' || userAnswers.ritmo === 'exigente') {
           return userAnswers.paisaje === 'historico' ? 'lugo' : 'ferrol';
         }
         if (userAnswers.ambiente === 'social') {
           return 'sarria';
         }
-        // Equilibrado
         return 'tui';
       }
 
@@ -453,6 +679,34 @@
         document.getElementById('res-link-ruta').href = r.url;
         document.getElementById('res-link-quote').href = r.quoteUrl;
 
+        var badgeContainer = document.getElementById('res-badge-container');
+        var badgeText = document.getElementById('res-badge-text');
+        var cardBox = document.getElementById('res-card-box');
+        var linkRuta = document.getElementById('res-link-ruta');
+        var counterpartWrap = document.getElementById('res-counterpart-wrap');
+
+        if (r.isPremium) {
+          badgeContainer.className = 'inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider shadow-sm';
+          badgeText.innerHTML = '<i class="fa-solid fa-crown text-amber-600"></i> ¡Tu Ruta Premium Recomendada!';
+          cardBox.className = 'rounded-2xl p-6 transition-all border border-amber-300 shadow-lg bg-gradient-to-br from-amber-50/80 via-white to-amber-50/40';
+          linkRuta.className = 'w-full py-3 px-5 text-center font-bold text-sm rounded-xl transition-all shadow-md bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white';
+          linkRuta.innerHTML = '<i class="fa-solid fa-crown mr-1.5"></i> Ver Itinerario Premium →';
+        } else {
+          badgeContainer.className = 'inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider';
+          badgeText.innerHTML = '<i class="fa-solid fa-award"></i> ¡Tu Ruta Ideal Recomendada!';
+          cardBox.className = 'rounded-2xl p-6 transition-all border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50/50';
+          linkRuta.className = 'w-full py-3 px-5 bg-[var(--primary-color)] text-white text-center font-bold text-sm rounded-xl hover:bg-[#122b21] transition-all shadow-md';
+          linkRuta.innerHTML = 'Ver Itinerario y Etapas →';
+        }
+
+        if (r.counterPart) {
+          counterpartWrap.innerHTML = '<span class="text-gray-500">¿Quieres comparar? </span>' +
+            '<a href="' + r.counterPart.url + '" class="font-bold underline text-[var(--primary-color)] hover:text-emerald-700">' +
+            r.counterPart.name + ' (' + r.counterPart.price + ')</a>';
+        } else {
+          counterpartWrap.innerHTML = '';
+        }
+
         var box = document.getElementById('resultado-box');
         box.classList.remove('hidden');
         box.scrollIntoView({ behavior: 'smooth' });
@@ -461,7 +715,9 @@
           window.stsTrack('planificador_resultado', {
             recommended_route: routeKey,
             dias: userAnswers.dias,
+            experiencia: userAnswers.experiencia,
             paisaje: userAnswers.paisaje,
+            ritmo: userAnswers.ritmo,
             ambiente: userAnswers.ambiente
           });
         }
@@ -476,11 +732,15 @@
           // Highlight selected
           var siblings = this.parentNode.querySelectorAll('.quiz-opt');
           siblings.forEach(function (s) {
-            s.classList.remove('border-[var(--primary-color)]', 'bg-emerald-50/50');
+            s.classList.remove('border-[var(--primary-color)]', 'border-amber-500', 'bg-emerald-50/50', 'bg-amber-50/50');
             s.classList.add('border-gray-200');
           });
           this.classList.remove('border-gray-200');
-          this.classList.add('border-[var(--primary-color)]', 'bg-emerald-50/50');
+          if (param === 'experiencia' && val === 'premium') {
+            this.classList.add('border-amber-500', 'bg-amber-50/50');
+          } else {
+            this.classList.add('border-[var(--primary-color)]', 'bg-emerald-50/50');
+          }
 
           userAnswers[param] = val;
 
@@ -488,10 +748,18 @@
             var s2 = document.getElementById('step-2');
             s2.classList.remove('hidden');
             s2.scrollIntoView({ behavior: 'smooth' });
-          } else if (param === 'paisaje') {
+          } else if (param === 'experiencia') {
             var s3 = document.getElementById('step-3');
             s3.classList.remove('hidden');
             s3.scrollIntoView({ behavior: 'smooth' });
+          } else if (param === 'paisaje') {
+            var s4 = document.getElementById('step-4');
+            s4.classList.remove('hidden');
+            s4.scrollIntoView({ behavior: 'smooth' });
+          } else if (param === 'ritmo') {
+            var s5 = document.getElementById('step-5');
+            s5.classList.remove('hidden');
+            s5.scrollIntoView({ behavior: 'smooth' });
           } else if (param === 'ambiente') {
             var best = calculateBestRoute();
             renderResult(best);
@@ -502,13 +770,15 @@
       var btnReset = document.getElementById('btn-reiniciar');
       if (btnReset) {
         btnReset.addEventListener('click', function () {
-          userAnswers = { dias: '', paisaje: '', ambiente: '' };
+          userAnswers = { dias: '', experiencia: 'adventure', paisaje: '', ritmo: '', ambiente: '' };
           document.querySelectorAll('.quiz-opt').forEach(function (s) {
-            s.classList.remove('border-[var(--primary-color)]', 'bg-emerald-50/50');
+            s.classList.remove('border-[var(--primary-color)]', 'border-amber-500', 'bg-emerald-50/50', 'bg-amber-50/50');
             s.classList.add('border-gray-200');
           });
           document.getElementById('step-2').classList.add('hidden');
           document.getElementById('step-3').classList.add('hidden');
+          document.getElementById('step-4').classList.add('hidden');
+          document.getElementById('step-5').classList.add('hidden');
           document.getElementById('resultado-box').classList.add('hidden');
           document.getElementById('step-1').scrollIntoView({ behavior: 'smooth' });
         });

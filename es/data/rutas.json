@@ -1,58 +1,132 @@
 [
   {
     "id": "frances",
-    "nombre": "Camino Francés",
+    "nombre": "Camino Francés desde Sarria",
     "slug": "/rutas/frances",
     "imagen": "/assets/miniatura-frances.webp",
     "imagenHero": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2ac67c67-8c56-4433-7442-fa088c9ecf00/public",
     "badge": "⭐ Más popular",
     "badgeColor": "bg-yellow-400 text-yellow-900",
-    "dificultad": "moderado",
-    "dificultadLabel": "Moderado",
-    "dificultadColor": "bg-yellow-500/90",
-    "dificultadDesc": "Moderada. Terreno variado con algunas etapas de montaña y buena infraestructura.",
-    "km": "780 km",
-    "dias": "30-35 días",
-    "descripcion": "El camino clásico por excelencia. Sale desde Saint-Jean-Pied-de-Port y atraviesa los paisajes más emblemáticos de Navarra, La Rioja, Castilla y Galicia.",
+    "dificultad": "facil",
+    "dificultadLabel": "Fácil",
+    "dificultadColor": "bg-green-500/90",
+    "dificultadDesc": "Fácil. Perfil predominantemente suave y cómodo, ideal para realizar a pie con buena infraestructura en todas las etapas.",
+    "km": "115 km",
+    "dias": "6 días (5 etapas)",
+    "descripcion": "Los últimos 115 km del Camino Francés desde Sarria hasta Santiago. El tramo más popular y con mayor ambiente peregrino, perfecto para conseguir la Compostela en menos de una semana.",
     "descripcionLarga": [
-      "El Camino de Santiago Francés es la ruta jacobea con mayor tradición histórica y la más reconocida internacionalmente.",
-      "Atraviesa el norte de la Península Ibérica desde Roncesvalles hasta Santiago de Compostela.",
-      "Es una experiencia transformadora llena de cultura, arte y naturaleza."
+      "El Camino Francés desde Sarria es la ruta jacobea favorita de miles de peregrinos de todo el mundo para vivir la magia del Camino de Santiago y conseguir la ansiada Compostela, superando los 100 kilómetros mínimos requeridos a pie.",
+      "El itinerario atraviesa la Galicia rural más verde y auténtica: aldeas de piedra con hórreos centenarios, frondosos bosques de robles y castaños, y pueblos llenos de historia y vida como Portomarín, Palas de Rei, Melide, Arzúa y O Pedrouzo.",
+      "Con alojamientos con encanto seleccionados, transporte diario de mochilas y asistencia continua, disfrutarás de la auténtica experiencia peregrina con total comodidad y la mejor relación calidad-precio."
     ],
-    "inicio": "Saint-Jean-Pied-de-Port",
+    "inicio": "Sarria",
     "fin": "Santiago de Compostela",
-    "epoca": "Abril a Octubre",
+    "epoca": "Todo el año (especialmente de abril a octubre)",
     "tags": [
-      "Paisajes únicos",
-      "Más servicios",
-      "Ideal para novatos"
+      "El más popular",
+      "Obtén la Compostela",
+      "Ideal para 1 semana"
     ],
-    "precio": "365 €/persona",
+    "precio": "187 €/persona",
     "puntosDestacados": [
-      "Cruzar los Pirineos desde Francia",
-      "La Catedral de Burgos y León",
-      "La Cruz de Ferro en Astorga",
-      "La llegada mística a O Cebreiro",
-      "Entrada triunfal en la Plaza del Obradoiro"
+      "Casco histórico medieval y fortaleza de Sarria",
+      "Cruce del río Miño y la villa escalonada de Portomarín",
+      "Iglesia fortaleza románica de San Nicolás en Portomarín",
+      "Cruceiro de Lameiros y aldeas típicas de la Galicia rural",
+      "Gastronomía tradicional: pulpo á feira en Melide y queso en Arzúa",
+      "Monte do Gozo con la primera panorámica de las torres de la Catedral",
+      "Llegada triunfal a la Plaza del Obradoiro en Santiago de Compostela"
     ],
     "etapas": [
       {
         "dia": 1,
-        "origen": "Saint-Jean-Pied-de-Port",
-        "destino": "Roncesvalles",
-        "desc": "Etapa dura cruzando los Pirineos.",
-        "km": 25,
-        "horas": "7-8",
-        "desnivel": "+1200/-500"
+        "origen": "Llegada",
+        "destino": "Sarria",
+        "desc": "Llegada a Sarria por cuenta propia y check-in en tu alojamiento. Tarde libre para pasear por su casco antiguo medieval, visitar la Fortaleza y la iglesia de Santa Mariña, y recoger la credencial del peregrino.",
+        "km": 0,
+        "horas": "-",
+        "desnivel": "-",
+        "dificultad": "-",
+        "puntosInteres": [
+          "Fortaleza y casco medieval de Sarria",
+          "Monasterio de la Magdalena",
+          "Rúa Maior y mirador sobre el valle"
+        ]
       },
       {
         "dia": 2,
-        "origen": "Roncesvalles",
-        "destino": "Zubiri",
-        "desc": "Descenso por frondosos bosques navarros.",
-        "km": 21,
+        "origen": "Sarria",
+        "destino": "Portomarín",
+        "desc": "Primera jornada a pie entre hermosas corredoiras, robledales y pequeñas aldeas gallegas con hórreos tradicionales. Se desciende cruzando el puente sobre el río Miño hasta la villa de Portomarín.",
+        "km": 22,
         "horas": "5-6",
-        "desnivel": "+200/-500"
+        "desnivel": "+280m / -340m",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Aldeas tradicionales de Barbadelo y Rente",
+          "Puente sobre el embalse de Belesar y río Miño",
+          "Iglesia fortaleza de San Nicolás de Portomarín"
+        ]
+      },
+      {
+        "dia": 3,
+        "origen": "Portomarín",
+        "destino": "Palas de Rei",
+        "desc": "Ascenso suave inicial cruzando la sierra de Ligonde por pistas rurales y senderos rodeados de prados y cruceiros centenarios hasta llegar a Palas de Rei.",
+        "km": 25,
+        "horas": "6",
+        "desnivel": "+390m / -210m",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Sierra de Ligonde y cruceiro de Lameiros",
+          "Iglesia románica de Vilar de Donas",
+          "Paisajes ganaderos del interior lucense"
+        ]
+      },
+      {
+        "dia": 4,
+        "origen": "Palas de Rei",
+        "destino": "Arzúa",
+        "desc": "Etapa que se adentra en la provincia de A Coruña atravesando la villa de Melide, punto de unión con el Camino Primitivo e imprescindible para degustar el mejor pulpo gallego.",
+        "km": 29,
+        "horas": "6-7",
+        "desnivel": "+320m / -390m",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Ponte medieval de Furelos",
+          "Melide: confluencia con el Camino Primitivo y pulperías",
+          "Tierra del queso con denominación Arzúa-Ulloa"
+        ]
+      },
+      {
+        "dia": 5,
+        "origen": "Arzúa",
+        "destino": "O Pedrouzo",
+        "desc": "Jornada cómoda y llana que discurre por pistas forestales sombreadas por eucaliptos y robles, atravesando pequeñas aldeas tranquilas antes de la última noche previa a Santiago.",
+        "km": 19,
+        "horas": "4-5",
+        "desnivel": "+210m / -270m",
+        "dificultad": "Baja",
+        "puntosInteres": [
+          "Ermita y fuente de Santa Irene",
+          "Bosques de robles y eucaliptos",
+          "Ambiente de víspera peregrina en O Pedrouzo"
+        ]
+      },
+      {
+        "dia": 6,
+        "origen": "O Pedrouzo",
+        "destino": "Santiago de Compostela",
+        "desc": "Última y emocionante etapa. Llegada al Monte do Gozo para contemplar por primera vez las torres de la Catedral, y descenso triunfal hasta la Plaza del Obradoiro.",
+        "km": 20,
+        "horas": "5",
+        "desnivel": "+240m / -310m",
+        "dificultad": "Media",
+        "puntosInteres": [
+          "Monte do Gozo y monumento al Peregrino",
+          "Entrada por la Porta do Camiño al casco histórico",
+          "Plaza del Obradoiro y Catedral de Santiago"
+        ]
       }
     ],
     "galeria": [
@@ -90,7 +164,7 @@
       "Obtén la Compostela",
       "Ideal para 1 semana"
     ],
-    "precio": "365 €/persona",
+    "precio": "232 €/persona",
     "puntosDestacados": [
       "La Catedral de Santa María de Tui y su casco medieval",
       "La Casa Consistorial de O Porriño, obra de Antonio Palacios",
@@ -397,7 +471,7 @@
       "Monasterio de Oia",
       "Vistas a las Cíes"
     ],
-    "precio": "445 €/persona",
+    "precio": "250 €/persona",
     "puntosDestacados": [
       "Castro de Santa Trega y puerto marinero de A Guarda",
       "Monasterio de Santa María de Oia frente a las olas del Atlántico",
@@ -516,7 +590,7 @@
       "Villas medievales",
       "Ideal en 6 días"
     ],
-    "precio": "375 €/persona",
+    "precio": "449 €/persona",
     "puntosDestacados": [
       "Salida desde el Puerto de Curuxeiras en Ferrol y paseo por la ría",
       "Villa medieval de Pontedeume y puente de piedra sobre el río Eume",
@@ -616,7 +690,7 @@
       "Muralla de Lugo",
       "Ruta histórica"
     ],
-    "precio": "355 €/persona",
+    "precio": "350 €/persona",
     "puntosDestacados": [
       "Paseo sobre la Muralla Romana de Lugo (Patrimonio Mundial de la UNESCO)",
       "Auténticas aldeas y pistas rurales de San Román da Retorta",

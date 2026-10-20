@@ -81,3 +81,388 @@ html {
       transform: translateY(0);
     }
 
+    /* ==========================================================================
+       STS PREMIUM EXPERIENCE SYSTEM
+       ========================================================================== */
+
+    :root {
+      --gold-gradient: linear-gradient(135deg, #F5C86C 0%, #C8973A 60%, #9B6D1E 100%);
+      --gold-metallic: linear-gradient(135deg, #FFF5D6 0%, #F5C86C 40%, #C8973A 80%, #9B6D1E 100%);
+      --gold-glow: 0 0 25px rgba(200, 151, 58, 0.35);
+      --dark-luxury-bg: #0C1019;
+      --dark-luxury-card: #151B28;
+    }
+
+    /* --- PREMIUM ROUTE CARDS --- */
+    .premium-card {
+      position: relative;
+      background: linear-gradient(180deg, #171E2D 0%, #101522 100%);
+      border: 1px solid rgba(200, 151, 58, 0.3);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 14px 35px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(200, 151, 58, 0.12);
+      transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .premium-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(245, 200, 108, 0.65);
+      box-shadow: 0 22px 50px -10px rgba(0, 0, 0, 0.7), 0 0 30px rgba(200, 151, 58, 0.25), 0 0 0 1px rgba(245, 200, 108, 0.3);
+    }
+
+    /* Shimmer light reflection effect on card hover */
+    .premium-card-shine {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 6;
+      background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, 0.08) 50%, transparent 65%);
+      transform: translateX(-120%);
+      transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .premium-card:hover .premium-card-shine {
+      transform: translateX(120%);
+    }
+
+    .premium-card-img-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 16rem;
+    }
+
+    .premium-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .premium-card:hover .premium-card-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .premium-card-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, #171E2D 0%, rgba(23, 30, 45, 0.5) 40%, rgba(0, 0, 0, 0.25) 100%);
+      pointer-events: none;
+    }
+
+    .premium-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.38rem 0.85rem;
+      border-radius: 9999px;
+      background: var(--gold-metallic);
+      color: #0E131C;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 14px rgba(200, 151, 58, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+    }
+
+    .premium-card-body {
+      padding: 1.5rem 1.65rem 1.65rem;
+      color: #E2E8F0;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .premium-card-title {
+      color: #FFFFFF;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .premium-card:hover .premium-card-title {
+      color: #F5C86C;
+    }
+
+    .premium-card-desc {
+      color: #94A3B8;
+      font-size: 0.875rem;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+
+    .premium-card-meta {
+      color: #CBD5E1;
+      font-size: 0.8rem;
+    }
+
+    .premium-card-icon {
+      color: #F5C86C;
+    }
+
+    .premium-card-tag {
+      display: inline-block;
+      padding: 0.28rem 0.75rem;
+      border-radius: 9999px;
+      background: rgba(200, 151, 58, 0.12);
+      border: 1px solid rgba(200, 151, 58, 0.28);
+      color: #F5C86C;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* Included services box on card */
+    .premium-card-includes {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(200, 151, 58, 0.2);
+      border-radius: 0.75rem;
+      padding: 0.75rem 0.95rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .premium-card-includes-row {
+      font-size: 0.78rem;
+      color: #E2E8F0;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .premium-card-includes-row i {
+      color: #F5C86C;
+      font-size: 0.82rem;
+      width: 1.1rem;
+      text-align: center;
+    }
+
+    /* Footer & CTA */
+    .premium-card-footer {
+      border-top: 1px solid rgba(200, 151, 58, 0.2);
+      margin-top: auto;
+      padding-top: 1.1rem;
+    }
+
+    .premium-card-from {
+      color: #94A3B8;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      display: block;
+      margin-bottom: 0.1rem;
+    }
+
+    .premium-card-price {
+      font-size: 1.35rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFF7E2 0%, #F5C86C 50%, #C8973A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.15;
+    }
+
+    .premium-card-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.35rem;
+      border-radius: 0.65rem;
+      background: var(--gold-metallic);
+      color: #0E131C;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(200, 151, 58, 0.35);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .premium-card-cta:hover {
+      background: linear-gradient(135deg, #FFFFFF 0%, #F5C86C 60%, #C8973A 100%);
+      box-shadow: 0 6px 20px rgba(200, 151, 58, 0.55);
+      transform: translateY(-2px);
+      color: #000;
+    }
+
+    /* --- PREMIUM THEME WRAPPER (rutas.html in Premium mode) --- */
+    #routes-list-wrapper.premium-theme {
+      background-color: #0B0E17;
+      color: #E2E8F0;
+    }
+
+    /* Top experience bar in premium mode */
+    #routes-list-wrapper.premium-theme > div:first-child {
+      background-color: #080B12 !important;
+      border-color: rgba(200, 151, 58, 0.25) !important;
+    }
+
+    #routes-list-wrapper.premium-theme [data-exp-label] {
+      color: #F5C86C !important;
+      font-weight: 800;
+    }
+
+    #routes-list-wrapper.premium-theme button[onclick="stsResetExperience()"] {
+      background: rgba(200, 151, 58, 0.12) !important;
+      color: #F5C86C !important;
+      border: 1px solid rgba(200, 151, 58, 0.3) !important;
+    }
+
+    #routes-list-wrapper.premium-theme button[onclick="stsResetExperience()"]:hover {
+      background: rgba(200, 151, 58, 0.24) !important;
+      color: #FFFFFF !important;
+      box-shadow: 0 4px 12px rgba(200, 151, 58, 0.25);
+    }
+
+    /* Filter section in premium mode */
+    #routes-list-wrapper.premium-theme > section:nth-of-type(1) {
+      background-color: #0E1320 !important;
+      border-color: rgba(200, 151, 58, 0.18) !important;
+    }
+
+    #routes-list-wrapper.premium-theme .filter-btn:not(.active) {
+      background-color: rgba(255, 255, 255, 0.05) !important;
+      color: #94A3B8 !important;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    #routes-list-wrapper.premium-theme .filter-btn:not(.active):hover {
+      background-color: rgba(200, 151, 58, 0.15) !important;
+      color: #F5C86C !important;
+      border-color: rgba(200, 151, 58, 0.35);
+    }
+
+    #routes-list-wrapper.premium-theme .filter-btn.active[data-filter="all"] {
+      background: var(--gold-metallic) !important;
+      color: #0E131C !important;
+      border: 1px solid #F5C86C !important;
+      box-shadow: 0 4px 14px rgba(200, 151, 58, 0.4) !important;
+    }
+
+    /* Grid container section in premium mode */
+    #routes-list-wrapper.premium-theme > section:nth-of-type(2) {
+      background: radial-gradient(circle at 50% 0%, #171E2D 0%, #0A0D15 100%) !important;
+      min-height: 60vh;
+    }
+
+    #routes-list-wrapper.premium-theme #routes-counter {
+      color: #94A3B8 !important;
+    }
+
+    /* Banner for Premium Collection above grid */
+    .premium-collection-ribbon {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      background: linear-gradient(135deg, rgba(200, 151, 58, 0.12) 0%, rgba(200, 151, 58, 0.04) 100%);
+      border: 1px solid rgba(200, 151, 58, 0.28);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .premium-collection-ribbon .badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #F5C86C;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .premium-collection-ribbon h2 {
+      font-family: var(--font-family-heading);
+      font-size: clamp(1.4rem, 3vw, 1.85rem);
+      font-weight: 700;
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    .premium-collection-ribbon p {
+      color: #A0ABC0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 0;
+      max-width: 52rem;
+    }
+
+    /* --- PREMIUM ROUTE DETAIL PAGE (ruta.html?exp=premium) --- */
+    body.premium-detail-theme {
+      background-color: #FAFAFA;
+    }
+
+    .premium-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 1.15rem;
+      border-radius: 9999px;
+      background: var(--gold-metallic);
+      color: #0E131C;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(200, 151, 58, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+    }
+
+    .premium-detail-includes {
+      margin: 1.5rem 0;
+      padding: 1.25rem;
+      border-radius: 0.85rem;
+      background: rgba(200, 151, 58, 0.08);
+      border: 1px solid rgba(200, 151, 58, 0.28);
+    }
+
+    .premium-detail-includes h4 {
+      color: #F5C86C;
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .premium-detail-includes ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .premium-detail-includes li {
+      font-size: 0.85rem;
+      color: #F5F0E8;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .premium-detail-includes li i {
+      color: #F5C86C;
+      font-size: 0.85rem;
+      width: 1.15rem;
+      text-align: center;
+    }
+
+    /* Luxury enhancements for stages in detail page */
+    body.premium-detail-theme #etapas .group:hover {
+      border-color: rgba(200, 151, 58, 0.45) !important;
+      box-shadow: 0 12px 30px rgba(200, 151, 58, 0.12) !important;
+    }
+
+
