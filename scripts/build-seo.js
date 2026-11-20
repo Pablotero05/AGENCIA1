@@ -185,7 +185,7 @@ function generateRoutePageHTML(ruta, lang) {
         "latitude": 42.8782,
         "longitude": -8.5448
       },
-      "telephone": "+34 981 00 00 00",
+      "telephone": "+34 722 690 479",
       "email": "info@steptosantiago.com",
       "priceRange": "€€"
     },
