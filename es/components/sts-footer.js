@@ -102,7 +102,7 @@ class StsFooter extends HTMLElement {
       </footer>
 
       <!-- WhatsApp Floating Button -->
-      <a href="https://wa.me/34666666666"
+      <a href="https://wa.me/34722690479"
         class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all duration-300 transform hover:scale-110 z-50"
         aria-label="Contactar por WhatsApp">
         <i class="fa-brands fa-whatsapp text-2xl" aria-hidden="true"></i>
