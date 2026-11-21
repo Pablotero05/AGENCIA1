@@ -601,7 +601,7 @@ langs.forEach(lang => {
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
   <link id="google-fonts-link" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="../../scripts/components/sts-header.js"></script>
-  <script src="../../scripts/components/sts-footer.js" defer></script>
+  <script src="../../scripts/components/sts-footer.js?v=20261121" defer></script>
   <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../fontawesome/css/brands.min.css">
   <script src="https://cdn.tailwindcss.com/"></script>
