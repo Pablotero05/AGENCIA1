@@ -75,9 +75,8 @@
     }
 
     .service-card.expanded {
-      /* La card expandida puede ocupar todo el ancho en pantallas grandes si se desea, o simplemente destacar */
+      /* Evita escalar la tarjeta: las escalas fraccionarias difuminan el texto del panel. */
       z-index: 50;
-      transform: scale(1.02);
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     }
 
